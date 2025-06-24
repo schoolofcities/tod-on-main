@@ -33,13 +33,13 @@
     - Rented
 
 ## Bedroom Data
-- /# of Bedrooms only exists for 2021-2011 & 1991
+- \# of Bedrooms only exists for 2021-2011 & 1991
 - "Average Bedrooms per dwelling" only exists for 2006-1991
 - "No Bedrooms" & "1 Bedroom": Only 2021, 2016, 1991
 - Other years it is "0-1 Bedrooms"
 
 ## Dwelling Types
-- There are 4 different types of apartments: "Apartment, detached duplex", "Apartment, duplex", "Apartment, fewer that 5 storeys", "Apartment, 5 or more storeys", "Apartment", "Apartment or flat in duplex"
+- There are many different types of apartments: "Apartment, detached duplex", "Apartment, duplex", "Apartment, fewer that 5 storeys", "Apartment, 5 or more storeys", "Apartment", "Apartment or flat in duplex"
 - Most years have "Single-detached", "Semi-detached", "Row house", "Other-single detached", "Moveable", "Apartment, fewer than 5 storeys", "Apartment, 5 or more storeys"
 - Types that only exist in 1 (or few) years: "Other Dwelling" (2006, 2011), "Apartment, detached duplex" (2001), "Other attached" (2016), "Apartment" (1976)
 - 1991 and 1986 only have: "Apartment, 5 or more storeys", "Moveable Dwelling", "Single-detached"
