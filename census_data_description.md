@@ -55,4 +55,3 @@
 - 1986: Single-detached, moevable, (A)more than 5
 - 1981: Single-detached, Semi-detached, Row, moevable, (A)flat in duplex, (A)fewer than 5, (A)more than 5
 - 1976: Single-detached, Semi-detached, Row, moevable, (A)Apartment
-- apartment 5 fewer, apartment 5 more, row house, semi-detached, apartment or flat in duplex, moveable, other, single-detached
