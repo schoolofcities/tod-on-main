@@ -16,7 +16,7 @@
 
 <div class="spacer">Fade</div>
 
-<ImageFader images={imageUrls} />
+<ImageFader images={[wilsonLot, wilsonBldg]} />
 
 <div class="spacer"></div>
 
