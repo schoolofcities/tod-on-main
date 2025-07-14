@@ -1,34 +1,111 @@
 <script>
-    import ImageScroller from "$lib/ImageScroller.svelte";
-    import ImageFader from "$lib/ImageFader.svelte";
+    import Top from "$lib/TopSofC.svelte";
+    import Scrolly from "$lib/ScrollyImages.svelte";
 
     import amrothLot from "../assets/amroth-iso-lot.svg";
     import amrothBldg from "../assets/amroth-iso-bldg.svg";
     import wilsonLot from "../assets/wilson-iso-lot.svg";
     import wilsonBldg from "../assets/wilson-iso-bldg.svg";
+    import "../assets/styles.css";
 
-    const imageUrls = [amrothLot, amrothBldg];
+    const scrollyContent = [
+        {
+            image: amrothLot,
+            heading: "Header",
+            body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        },
+        {
+            image: amrothBldg,
+            heading: "Header",
+            body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        },
+        {
+            image: wilsonLot,
+            heading: "Header",
+            body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        },
+        {
+            image: wilsonBldg,
+            heading: "Header",
+            body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        },
+    ];
 </script>
 
-<div class="spacer">Clip Path</div>
+<svelte:head>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <script
+        src="https://unpkg.com/maplibre-gl@4.3.2/dist/maplibre-gl.js"
+    ></script>
+</svelte:head>
 
-<ImageScroller images={imageUrls} />
+<Top />
 
-<div class="spacer">Fade</div>
+<main>
+    <div class="title">
+        <h1>Scrolly Images Example</h1>
+        <h3>This is an example of scrolly telly with images.</h3>
+        <p class="author">
+            <a href="" target="_blank">Author 1</a>,
+            <a href="" target="_blank">Author 2</a>,
+            <a href="" target="_blank">Author 3</a> | Month 2025
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
+    <div class="article">
+        <h2>Header 1</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
 
-<ImageFader images={[wilsonLot, wilsonBldg]} />
+    <Scrolly sections={scrollyContent} />
 
-<div class="spacer"></div>
-
-<style>
-    .spacer {
-        height: 100vh;
-        overflow: hidden;
-        border-top: 0.5px solid grey;
-        border-bottom: 0.5px solid grey;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 2rem;
-    }
-</style>
+    <div class="article">
+        <h2>Header 2</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
+</main>
