@@ -95,6 +95,12 @@
     height: 95vh;
   }
 
+  @media (max-width: 600px) {
+  .text-section {
+    padding: 30vh 1rem;
+  }
+  }
+
 </style>
 
 <div class="scrolly-wrapper" bind:this={container}>
