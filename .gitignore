@@ -21,3 +21,11 @@ Thumbs.db
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Modelling
+data_raw/
+local-data/
+.DS_Store
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
