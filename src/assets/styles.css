@@ -60,14 +60,14 @@
 }
 
 main {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 1rem;
     background-color: #ffffff;
     max-width: 700px;
-    margin: 0 auto;
+    margin: 0 auto; */
 }
 
 .text {
@@ -126,6 +126,8 @@ a {
 .title {
     width: 100%;
     margin: 0 auto;
+    max-width: 700px;
+
 }
 
 .title a {
@@ -165,7 +167,7 @@ ul {
     line-height: 1.6;
     margin: 0 auto;
     overflow: hidden;
-    /* border-top: 1px solid #ccc; */
+    max-width: 700px;
 }
 
 .article p {
