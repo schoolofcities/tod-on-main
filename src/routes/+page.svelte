@@ -6,28 +6,28 @@
     import amrothBldg from "../assets/amroth-iso-bldg.svg";
     import wilsonLot from "../assets/wilson-iso-lot.svg";
     import wilsonBldg from "../assets/wilson-iso-bldg.svg";
+
     import "../assets/styles.css";
 
+    const imageAlign = "center"; // options: "left", "center", "right"
+    const textSectionAlign = "right"; // options: "left", "center", "right"
+    const textSectionMaxWidth = "600px"; // max width of text sections, they will shrink to fit smaller screens
     const scrollyContent = [
         {
             image: amrothLot,
-            heading: "Header",
-            body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            text: "<h2>Header</h2> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
         },
         {
             image: amrothBldg,
-            heading: "Header",
-            body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            text: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
         },
         {
             image: wilsonLot,
-            heading: "Header",
-            body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            text:"", // empty text section to demonstrate transparent div
         },
         {
             image: wilsonBldg,
-            heading: "Header",
-            body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            text: "<h2>Header</h2> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
         },
     ];
 </script>
@@ -85,7 +85,7 @@
         </p>
     </div>
 
-    <Scrolly sections={scrollyContent} />
+    <Scrolly sections={scrollyContent} imageAlign={imageAlign} textSectionMaxWidth={textSectionMaxWidth} textSectionAlign={textSectionAlign} />
 
     <div class="article">
         <h2>Header 2</h2>
