@@ -10,7 +10,7 @@
     import "../assets/styles.css";
 
     const imageAlign = "center"; // options: "left", "center", "right"
-    const textSectionAlign = "right"; // options: "left", "center", "right"
+    const textSectionAlign = "center"; // options: "left", "center", "right"
     const textSectionMaxWidth = "600px"; // max width of text sections, they will shrink to fit smaller screens
     const scrollyContent = [
         {

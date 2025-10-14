@@ -88,7 +88,7 @@
   .sticky-image {
     position: sticky;
     top: 10vh;
-    height: 80dvh;
+    height: 8z0dvh;
     height: 80vh;
     margin: 0 5vw;
     z-index: 0;
