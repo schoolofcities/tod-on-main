@@ -1,0 +1,40 @@
+say population is 1000
+
+I want to loop through and sample a person (an adult?) based off of odds
+- based off of dictionary hard-coded of station area variables
+
+then i will have a little dictionary entry of a person i can plug into the model
+
+then i will have a model function, that i loop over every person
+
+output of this function into a table of their characteristics and if yes no they move
+
+then from this table, can summarize % of low income etc. that move
+
+
+
+
+MAIN inputs:
+
+dictionary of model
+
+dictionary of station area metrics - pop and %s
+
+MAIN intermediary
+
+dictionary of person 
+
+
+MAIN functions
+
+simulate a person dictionary from a station dictionary
+
+estimate a person's propensity to move yes/no
+
+
+How to account for age/n_children?
+
+only simulate adults?
+
+
+so this mean that if we arent checking our phone/laptop prior to 730am we could lose a desk we booked?
