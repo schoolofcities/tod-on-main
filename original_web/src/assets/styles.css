@@ -1,0 +1,203 @@
+@font-face {
+    font-family: TradeGothicBold;
+    src: url("trade-gothic/Trade Gothic LT Bold.ttf");
+}
+
+@font-face {
+    font-family: TradeGothicLTLightOblique;
+    src: url("trade-gothic/Trade Gothic LT Light Oblique.ttf");
+}
+
+@font-face {
+    font-family: TradeGothicLTLight;
+    src: url("trade-gothic/Trade Gothic LT Light.ttf");
+}
+
+@font-face {
+    font-family: RobotoRegular;
+    src: url("roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: RobotoBold;
+    src: url("roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: SourceSerif;
+    src: url("source-serif-pro/SourceSerifPro-Regular.otf");
+}
+
+@font-face {
+    font-family: SourceSerifBold;
+    src: url("source-serif-pro/SourceSerifPro-Bold.otf");
+}
+
+
+:root {
+    font-family: -apple-system, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+    --brandBlack: #000000;
+    --brandWhite: #ffffff;
+    --brandGray: #D0D1C9;
+    --brandGray70: #4d4d4d;
+    --brandGray80: #333333;
+    --brandGray90: #191919;
+    --brandDarkBlue: #1E3765;
+    --brandMedBlue: #007FA3;
+    --brandLightBlue: #6FC7EA;
+    --brandPurple: #6D247A;
+    --brandDarkGreen: #0D534D;
+    --brandMedGreen: #00A189;
+    --brandLightGreen: #8DBF2E;
+    --brandRed: #DC4633;
+    --brandYellow: #F1C500;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+main {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #ffffff;
+    max-width: 700px;
+    margin: 0 auto; */
+}
+
+.text {
+    position: relative;
+    background-color: none;
+    margin: 0;
+    padding: 0 20px 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(189, 189, 189, 0.7);
+    border-top: 1px solid rgba(189, 189, 189, 0.7);
+}
+
+h1 {
+    font-family: TradeGothicBold;
+    color: var(--brandBlack);
+    margin-top: 20px;
+    /* padding: 30px 0 0 0; */
+}
+
+h2 {
+    text-align: left;
+    font-family: TradeGothicBold;
+    font-size: 32px;
+    border-bottom: solid 1px var(--brandBlack);
+    margin-top: 0px;
+    color: var(--brandBlack);
+}
+
+h3 {
+    text-align: left;
+    font-family: TradeGothicBold;
+    font-weight: normal;
+    font-size: 23px;
+    color: var(--brandBlack);
+}
+
+h4 {
+    text-align: left;
+    font-family: TradeGothicBold;
+    font-size: 23px;
+    color: var(--brandBlack);
+}
+
+p {
+    font-family: SourceSerif;
+    color: var(--brandBlack);
+    text-align: left;
+    font-size: 18px;
+    line-height: auto;
+}
+
+a {
+    color: var(--brandMedBlue);
+}
+
+.title {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 700px;
+
+}
+
+.title a {
+    text-decoration: none;
+    color: var(--brandLightBlue);
+}
+
+.title h1 {
+    padding: 2rem 0 0 0;
+}
+
+.author {
+    position: relative;
+    z-index: 1000;
+    color: black;
+    font-size: 23px;
+    font-family: SourceSerif;
+    font-size: 18px;
+}
+
+a:hover {
+    color: var(--brandMedGreen);
+}
+
+ul {
+    font-family: SourceSerif;
+    color: var(--brandBlack);
+    text-align: left;
+    font-size: 18px;
+    line-height: auto;
+    padding-left: 20px;
+}
+
+.article {
+    padding: 2rem 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 700px;
+}
+
+.article p {
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 499px) {
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    ul {
+        font-size: 0.9em;
+    }
+
+    .author {
+        font-size: 0.9em;
+    }
+
+}
