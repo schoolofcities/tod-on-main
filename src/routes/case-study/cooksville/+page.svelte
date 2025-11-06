@@ -87,9 +87,9 @@
 
 <svelte:head>
 
-	<title>Design Components | School of Cities</title>
+	<title>TOD-on-main | School of Cities</title>
 
-	<meta name="description" content="Repository of design and web components for building data stories, visualizations, maps, and other custom web projects" />
+	<!-- <meta name="description" content="Repository of design and web components for building data stories, visualizations, maps, and other custom web projects" />
 	<meta name="author" content="School of Cities">
 	<meta rel="canonical" href="https://schoolofcities.github.io/design-components/">
 
@@ -104,7 +104,7 @@
 	<meta name="twitter:title" content="Design Components" />
 	<meta name="twitter:description" content="Repository of design and web components for building data stories, visualizations, maps, and other custom web projects" />
 	<meta name="twitter:site" content="https://schoolofcities.github.io/design-components/" />
-	<meta name="twitter:image" content="https://raw.githubusercontent.com/schoolofcities/design-components/main/static/web-card.png" /> 
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/schoolofcities/design-components/main/static/web-card.png" />  -->
 
 	<meta name="citation_title" content="Design Components">
 	<meta name="citation_author" content="Author Name 1">
