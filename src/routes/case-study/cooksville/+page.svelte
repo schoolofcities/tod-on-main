@@ -123,16 +123,16 @@
 
 	<!-- Full page title example -->
 
-	<!-- <TitleFullPage
-		title="Fun Captivating Project Title"
-		subtitle="Maybe a slightly longer more detailed wordier project subtitle"
+	<TitleFullPage
+		title="Cooksville, Mississauga"
+		subtitle="How do you build a high-density community bound by natural and physical land restrictions?"
 		image="https://jamaps.github.io/photos/picimgs/halifax2_2024.jpg"
 		imageOpacity=0.9
 		imageAltText="A photo"
 		titleFontColour="var(--brandWhite)"
 		subtitleFontColour="var(--brandWhite)"
 		logoType="White"
-	/> -->
+	/>
 
 
 	<!-- Here is a half split title example: -->
@@ -326,6 +326,6 @@
 		
 	</div>
 
-	<Footer />
+	<!-- <Footer /> -->
 
 </main>

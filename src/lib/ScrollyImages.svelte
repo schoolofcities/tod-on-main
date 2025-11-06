@@ -150,8 +150,8 @@
 		flex-direction: column;
 		position: relative;
 		background-color: white;
-		margin-top: 40px;
-		margin-bottom: 40px;
+		margin-top: 0px;
+		margin-bottom: 0px;
 	}
 
 	.sticky-image {

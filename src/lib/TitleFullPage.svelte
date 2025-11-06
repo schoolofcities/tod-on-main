@@ -78,7 +78,7 @@
 		width: 100%;
 		background-color: white;
 		position: relative;
-		margin-bottom: 60px;
+		margin-bottom: 0px;
 		
 	}
 
