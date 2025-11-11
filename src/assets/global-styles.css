@@ -177,8 +177,8 @@ p {
 	text-align: left;
 	padding-top: 2px;
 	padding-bottom: 2px;
-	font-size: 18px;
-	line-height: 30px;
+	font-size: 19px;
+	line-height: 32px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
@@ -211,7 +211,7 @@ em {
 	font-weight: normal;
 }
 
-a {
+.text a {
 	color: var(--brandBlack);
 	text-decoration: underline;
 	font-family: SourceSerif;
@@ -219,7 +219,7 @@ a {
 }
 
 
-a:hover {
+.text a:hover {
 	color: var(--brandMedGreen);
 }
 

@@ -3,7 +3,7 @@
 	import '../../../assets/global-styles.css';
 
 	import Logo from '$lib/LogoBody.svelte';
-	import TitleFullPage from '$lib/TitleFullPage.svelte';
+	import TitleFullPage from '$lib/TitleFullPageCaseStudy.svelte';
 	import TitleHalfSplit from '$lib/TitleHalfSplit.svelte';
 	import TitleStandard from '$lib/TitleStandard.svelte';
 	import AuthorDate from '$lib/AuthorDate.svelte';
@@ -12,6 +12,7 @@
 	import GraphicsMultiples from '$lib/GraphicMultiples.svelte';
 	import Footer from '$lib/Footer.svelte';
 	import ScrollyImages from "$lib/ScrollyImages.svelte";
+	import LineBreakMiniTransitMap from '$lib/LineBreakMiniTransitMap.svelte';
 
 
 	import imageBus from "./assets/ttc-bus-1080.jpg";
@@ -103,15 +104,20 @@
 	
 	<!-- Simple title example with logo and subtitle: -->
 
-	<div class="text" style="margin-top: 150px; margin-bottom: 20px; border-bottom: solid 1px var(--brandLightBlue);">
+	<div class="text" style="margin-top: 150px; margin-bottom: 20px;">
 		<Logo/>
+		<LineBreakMiniTransitMap
+			lineColour="var(--brandYellow)"
+			dotFill="var(--brandYellow)"
+			dotStoke="var(--brandWhite)"
+		/>
 	</div>
 	
 
 	
 	<TitleStandard
-		title="Who are transit oriented development for?"
-		subtitle="An historical analysis of rail transit station areas across Canada 1990-2016"
+		title="When transit comes, who moves in—and who moves out?"
+		subtitle="Tracking residential mobility by income around new rail transit stations in Canada, 1990–2016. "
 	/>
 
 	<div class="text">
@@ -123,14 +129,14 @@
 
 	</div>
 
-	<ImageSingle
+	<!-- <ImageSingle
 		imageURL={imageBus}
 		caption=""
 		source='Photo by <a href="https://unsplash.com/@json_pix?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason Ng</a> on <a href="https://unsplash.com/photos/a-red-and-white-bus-parked-on-the-side-of-a-street-bm5UpO1_y2w?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.'
 		altText=""
 		maxWidth="680px"
 		link="No"
-	/>
+	/> -->
 
 	<div class="text">
 		<p>

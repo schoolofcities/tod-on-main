@@ -3,7 +3,7 @@
 	import '../../../assets/global-styles.css';
 
 	import Logo from '$lib/LogoBody.svelte';
-	import TitleFullPage from '$lib/TitleFullPage.svelte';
+	import TitleFullPage from '$lib/TitleFullPageCaseStudy.svelte';
 	import TitleHalfSplit from '$lib/TitleHalfSplit.svelte';
 	import TitleStandard from '$lib/TitleStandard.svelte';
 	import AuthorDate from '$lib/AuthorDate.svelte';

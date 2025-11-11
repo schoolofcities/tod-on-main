@@ -1,10 +1,8 @@
 <script>
 
 	import "../assets/global-styles.css"
-	import LogoSofC from '../assets/sofc-uoft-logo-blue-colour.svg';
-	import LogoII from '../assets/ii-logo.svg'
-
-	import AuthorDate from "./AuthorDate.svelte";
+	import LogoBlack from '../assets/sofc-uoft-logo-black.svg';
+	import LogoWhite from '../assets/sofc-uoft-logo-white.svg';
 
 	export let title = '';
 	export let subtitle = '';
@@ -13,12 +11,16 @@
 	export let imageAltText = '';
 	// export let imageCaption = '';
 	// export let imageSource = '';
-	export let imageFeature = '';
 	export let titleFontColour = 'var(--brandDarkBlue)';
 	export let subtitleFontColour = 'var(--brandDarkBlue)';
 	export let logoType = 'Black'; // 'Black', 'White', or 'None'
 
 	let divWidth;
+
+	let Logo;
+	$: Logo = logoType === 'Black'
+	? LogoBlack : logoType === 'White'
+	? LogoWhite : '';
 
 </script>
 
@@ -37,38 +39,27 @@
 
 		{#if logoType !== 'None'}
 			<a href="https://schoolofcities.utoronto.ca/" target="_blank" class="logo-link">
-				<img src={LogoSofC} alt="UofT and School of Cities logos" class="logo-top" />
-			</a>
-			<a href="https://infrastructureinstitute.ca/" target="_blank" class="logo-link">
-				<img src={LogoII} alt="Infrastructure Institute logo" class="logo-top" />
+				<img src={Logo} alt="UofT and School of Cities logos" class="logo-top" />
 			</a>
 		{/if}
 		
 	</div>
 
 	<div class="title-text-container">
-
-		<img src={imageFeature} style="max-width: 90px; opacity: 1; border: solid 5px white; margin-bottom: -25px;"/>
 		
 		<h1 style="color: {titleFontColour};">{title}</h1>
 
-		<!-- {#if divWidth > 600} -->
+		{#if divWidth > 600}
 
-		<h2 style="color: {subtitleFontColour}; margin-bottom: 100px;">{subtitle}</h2>
+			<h2 style="color: {subtitleFontColour};">{subtitle}</h2>
 
-		<!-- {/if} -->
-		
-
-		<AuthorDate
-			authors="<a href='' target='_blank'>Author Name</a>, <a href='' target='_blank'>Author Name</a></a>, & <a href='' target='_blank'>Author Name</a>"
-			date="December 2025"
-		/>
+		{/if}
 
 	</div>
 
 </div>
 
-<!-- <div class="subtitle-text-container">
+<div class="subtitle-text-container">
 		
 	{#if divWidth <= 600}
 
@@ -76,7 +67,7 @@
 		
 	{/if}
 
-</div> -->
+</div>
 
 
 
@@ -88,7 +79,6 @@
 		background-color: white;
 		position: relative;
 		margin-bottom: 0px;
-		border-bottom: solid 3px white;
 		
 	}
 
@@ -103,8 +93,8 @@
 
 	.logo-container {
 		position: absolute;
-		top: 100px;
-		left: 100px;
+		top: 25px;
+		left: 45px;
 	}
 
 	.logo-container:hover {
@@ -112,29 +102,29 @@
 	}
 
 	.title-text-container {
-		max-width: 720px;
+		max-width: 1080px;
 		position: absolute;
-		bottom: 100px;
-		left: 100px;
+		bottom: 25px;
+		left: 45px;
 	}
 
 	.title-text-container h1 {
 		font-family: TradeGothicBold;
 		font-weight: normal;
-		font-size: 60px;
+		font-size: 64px;
 		text-decoration: none;
 		margin-bottom: 10px;
 		padding: 0px;
-		/* text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);  */
+		text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6); 
 	}
 
 	.title-text-container h2 {
 		text-align: left;
-		font-family: SourceSerifBoldItalic;
+		font-family: SourceSerifItalic;
 		font-weight: normal;
-		font-size: 25px;
+		font-size: 28px;
 		margin-top: 0px;
-		/* text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);  */
+		text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8); 
 	}
 
 	.subtitle-text-container {
@@ -148,7 +138,7 @@
 		font-weight: normal;
 	}
 
-	/* @media (max-width: 600px) {
+	@media (max-width: 600px) {
 		.title-container {
 			height: calc(100dvh - 150px);
 			margin-bottom: 5px;
@@ -168,6 +158,6 @@
 		.title-text-container h2 {
 			font-size: 24px;
 		}
-	} */
+	}
 
 </style>

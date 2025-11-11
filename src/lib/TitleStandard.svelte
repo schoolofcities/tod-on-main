@@ -36,10 +36,10 @@
 	.title-text-container h1 {
 		font-family: TradeGothicBold;
 		font-weight: normal;
-		font-size: 48px;
-		color: var(--brandGray90);
+		font-size: 42px;
+		color: var(--brandBlack);
 		text-decoration: none;
-		margin-bottom: 10px;
+		margin-bottom: 15px;
 		padding: 0px;
 	}
 

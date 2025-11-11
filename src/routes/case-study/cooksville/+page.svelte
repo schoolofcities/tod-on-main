@@ -2,8 +2,10 @@
 
 	import '../../../assets/global-styles.css';
 
+	import { onMount, onDestroy } from "svelte";
+
 	import Logo from '$lib/LogoTop.svelte';
-	import TitleFullPage from '$lib/TitleFullPage.svelte';
+	import TitleFullPage from '$lib/TitleFullPageCaseStudy.svelte';
 	import TitleHalfSplit from '$lib/TitleHalfSplit.svelte';
 	import TitleStandard from '$lib/TitleStandard.svelte';
 	import AuthorDate from '$lib/AuthorDate.svelte';
@@ -12,11 +14,15 @@
 	import GraphicsMultiples from '$lib/GraphicMultiples.svelte';
 	import Footer from '$lib/Footer.svelte';
 
-	import topImage from './assets/title-bg-test.png'
+	import topImage from './assets/CC_Background_Frame_1_dark.png'
 	import featureImage from './assets/cooksville-transit-schematic.png'
 
 	import ScrollyImages from "$lib/ScrollyImages.svelte";
 	const scrollyContentBig = [
+		{
+			image: "../web-assets/case-study/cooksville/CC_Background Frame_1.png",
+			text: ""
+		},
 		{
 			image: "../web-assets/case-study/cooksville/CC_Background Frame_1.png",
 			text: "<p>Cooksville Station, Mississauga. A future transit super-hub where the GO train will meet the new Hazel McCallion LRT and Dundas Bus Rapid Transit (BRT) will converge, making it a focal point for massive growth.  </p>"
@@ -80,6 +86,26 @@
 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat lacus eu dolor dapibus sodales. Aenean venenatis metus id eleifend tincidunt. Nulla ut lacus et urna finibus bibendum sit amet et ante. Aliquam tristique, ex sed porttitor hendrerit, ex odio accumsan ex, eu maximus leo quam quis nulla.'
 	];
 
+
+
+	let scrollY = 0;
+	let innerHeight = 1;
+
+	onMount(() => {
+		innerHeight = window.innerHeight;
+
+		const onScroll = () => {
+			scrollY = window.scrollY;
+		};
+
+		window.addEventListener('scroll', onScroll, { passive: true });
+		return () => window.removeEventListener('scroll', onScroll);
+	});
+
+	$: topOpacity = 1 - Math.min(scrollY / innerHeight, 1);
+
+	$: topPointer = topOpacity < 0.02 ? 'none' : 'auto';
+
 </script>
 
 
@@ -118,31 +144,55 @@
 
 
 
+<svelte:window on:scroll={handleScroll} />
+
 <main>
 
 	<!-- Full page title example -->
+	<div class="wrapper">
+		<!-- Top stays visually on top -->
+		<div class="top" style="opacity: {topOpacity}; pointer-events: {topPointer};">
+			<TitleFullPage
+				title="Cooksville, Mississauga"
+				subtitle="How do you build a high-density community bound by natural and physical land restrictions?"
+				image={topImage}
+				imageOpacity=1
+				imageAltText="A photo"
+				imageFeature={featureImage}
+				titleFontColour="var(--brandWhite)"
+				subtitleFontColour="var(--brandWhite)"
+				authorText="Author Name, Author Name, Author Name"
+				dateText="~ December, 2025"
+			/>
+		</div>
 
-	<TitleFullPage
-		title="Cooksville, Mississauga"
-		subtitle="How do you build a high-density community bound by natural and physical land restrictions?"
-		image={topImage}
-		imageOpacity=0.27
-		imageAltText="A photo"
-		imageFeature={featureImage}
-		titleFontColour="var(--brandDarkBlue)"
-		subtitleFontColour="var(--brandGray90)"
-		logoType="Blue"
-	/>
+		<!-- Bottom is underneath, scrolls normally -->
+		<div class="bottom">
+			<ScrollyImages
+				sections={scrollyContentBig}
+				imageAlign={"center"}
+				imageWidth={"100%"}
+				imageHeight={"100dvh"}
+				textSectionMaxWidth={"420px"}
+				textSectionAlign={"left"}
+				fadeDuration={1500}
+			/>
+		</div>
+		
+	</div>
 
-	<ScrollyImages
-		sections={scrollyContentBig}
-		imageAlign={"center"}
-		imageWidth={"100%"}
-		imageHeight={"100dvh"}
-		textSectionMaxWidth={"420px"}
-		textSectionAlign={"left"}
-		fadeDuration={1500}
-	/>
+
+
+
+
+	
+	
+
+	
+
+	
+
+	
 
 
 	<!-- Here is a half split title example: -->
@@ -331,3 +381,28 @@
 	<!-- <Footer /> -->
 
 </main>
+
+
+<style>
+	.wrapper {
+		position: relative;
+	}
+
+	.top {
+		position: fixed;
+		inset: 0;
+		height: 100vh;
+		width: 100%;
+		z-index: 2;
+		pointer-events: none; /* allows clicks to pass through if needed */
+		transition: opacity 0.1s linear;
+	}
+
+	.bottom {
+		position: relative;
+		z-index: 1;
+		min-height: 100vh; /* ensures it fills viewport behind top */
+	}
+
+	
+</style>
