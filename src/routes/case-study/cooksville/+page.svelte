@@ -12,38 +12,37 @@
 	import GraphicsMultiples from '$lib/GraphicMultiples.svelte';
 	import Footer from '$lib/Footer.svelte';
 
+	import topImage from './assets/title-bg-test.png'
+	import featureImage from './assets/cooksville-transit-schematic.png'
+
 	import ScrollyImages from "$lib/ScrollyImages.svelte";
 	const scrollyContentBig = [
 		{
-			image: "../web-assets/case-study/cooksville/cooksville-1.png",
-			text: "<p>How do you build a high-density community bound by natural and physical land restrictions?</p>"
+			image: "../web-assets/case-study/cooksville/CC_Background Frame_1.png",
+			text: "<p>Cooksville Station, Mississauga. A future transit super-hub where the GO train will meet the new Hazel McCallion LRT and Dundas Bus Rapid Transit (BRT) will converge, making it a focal point for massive growth.  </p>"
 		},
 		{
-			image: "../web-assets/case-study/cooksville/cooksville-2.png",
-			text: "<p>Cooksville Station, Mississauga. A future transit super-hub where the GO train will meet the new Hazel McCallion LRT and Dundas Bus Rapid Transit (BRT) will converge, making it a focal point for massive growth.</p>"
-		},
-		{
-			image: "../web-assets/case-study/cooksville/cooksville-3.png",
+			image: "../web-assets/case-study/cooksville/CC_Background Frame_3.png",
 			text: "<p>Matching it is a lofty density target of 300 people and jobs per hectare. </p>",
 		},
 		{
-			image: "../web-assets/case-study/cooksville/cooksville-3.png",
+			image: "../web-assets/case-study/cooksville/CC_Background Frame_4.png",
 			text: "<p>However, limitations abound. At its periphery are long-standing neighbourhoods. It is also one of the most physically constrained parts of the city. Termed a “Flood Risk MTSA”, it has over 300 buildings sitting within the Cooksville Creek floodplain.</p>",
 		},
 		{
-			image: "../web-assets/case-study/cooksville/cooksville-4.png",
+			image: "../web-assets/case-study/cooksville/CC_Background Frame_5.png",
 			text: "<p>Creating a complete community here means balancing complex technical, social, and regulatory hurdles within a limited footprint.</p>",
 		},
 		{
-			image: "../web-assets/case-study/cooksville/cooksville-5.png",
+			image: "../web-assets/case-study/cooksville/CC_Background Frame_6.png",
 			text: "<p>So, who lives here now? <br><br> Cooksville is Mississauga's quintessential gateway. A vibrant, first-stop neighbourhood for nearly 20,000 people, where 1 in 5 residents is a recent arrival. <br><br> Two-thirds of its residents are foreign-born (66.5%), and its median age is a youthful 37.4.</p>"
 		},
 		{
-			image: "../web-assets/case-study/cooksville/cooksville-6.png",
+			image: "../web-assets/case-study/cooksville/CC_Background Frame_7.png",
 			text:"<p>It's also a community of renters: over half of all residents rent (50.7%), with most living in high-rise apartments (68.1%). <br><br> Two-thirds of households are families, alongside a growing number of seniors of whom many live alone.  </p>", 
 		},
 		{
-			image: "../web-assets/case-study/cooksville/cooksville-7.png",
+			image: "../web-assets/case-study/cooksville/CC_Background Frame_8.png",
 			text: "<p>Public life is centered at the 'Four Corners' of Hurontario and Dundas. <br><br> With few formal civic amenities, residents rely on commercial plazas and small parks for daily needs.<br><br>Beyond this intersection, amenities quickly thin out, creating a gap between density and daily life. <br><br>It is also a socio-economically poorer area. <br><br>Household incomes average about $92,000 per year, starkly lower than the city’s average. </p>",
 		},
 	];
@@ -126,12 +125,23 @@
 	<TitleFullPage
 		title="Cooksville, Mississauga"
 		subtitle="How do you build a high-density community bound by natural and physical land restrictions?"
-		image="https://jamaps.github.io/photos/picimgs/halifax2_2024.jpg"
-		imageOpacity=0.9
+		image={topImage}
+		imageOpacity=0.27
 		imageAltText="A photo"
-		titleFontColour="var(--brandWhite)"
-		subtitleFontColour="var(--brandWhite)"
-		logoType="White"
+		imageFeature={featureImage}
+		titleFontColour="var(--brandDarkBlue)"
+		subtitleFontColour="var(--brandGray90)"
+		logoType="Blue"
+	/>
+
+	<ScrollyImages
+		sections={scrollyContentBig}
+		imageAlign={"center"}
+		imageWidth={"100%"}
+		imageHeight={"100dvh"}
+		textSectionMaxWidth={"420px"}
+		textSectionAlign={"left"}
+		fadeDuration={1500}
 	/>
 
 
@@ -250,15 +260,7 @@
 		fadeDuration={500}
 	/> -->
 
-	<ScrollyImages
-		sections={scrollyContentBig}
-		imageAlign={"center"}
-		imageWidth={"100%"}
-		imageHeight={"100dvh"}
-		textSectionMaxWidth={"420px"}
-		textSectionAlign={"left"}
-		fadeDuration={1000}
-	/>
+	
 
 
 	

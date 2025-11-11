@@ -151,7 +151,7 @@
 		position: relative;
 		background-color: white;
 		margin-top: 0px;
-		margin-bottom: 0px;
+		margin-bottom: 50px;
 	}
 
 	.sticky-image {
@@ -188,8 +188,12 @@
 		padding-right: 20px;
 		position: relative;
 		z-index: 1;
-		background: rgba(255, 255, 255, 0.9);
+		background: rgba(255, 255, 255, 0.96);
 		border: 1px solid #ccc;
+	}
+
+	.text-wrapper p {
+		font-size: 25px;
 	}
 
 	.text-wrapper.transparent {
@@ -208,6 +212,7 @@
 	}
 	.text-section.left {
 		margin: 0 0 0 0;
+		margin-left: 50px;
 	}
 
 	.text-section {
