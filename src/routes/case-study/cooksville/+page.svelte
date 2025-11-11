@@ -144,7 +144,7 @@
 
 
 
-<svelte:window on:scroll={handleScroll} />
+<!-- <svelte:window on:scroll={handleScroll} /> -->
 
 <main>
 
@@ -178,7 +178,7 @@
 				fadeDuration={1500}
 			/>
 		</div>
-		
+
 	</div>
 
 
