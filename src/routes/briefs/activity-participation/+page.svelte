@@ -12,7 +12,7 @@
 	import GraphicsMultiples from '$lib/GraphicMultiples.svelte';
 	import Footer from '$lib/Footer.svelte';
 	import ScrollyImages from "$lib/ScrollyImages.svelte";
-
+	import LineBreakMiniTransitMap from '$lib/LineBreakMiniTransitMap.svelte';
 
 	import imageBus from "./assets/ttc-bus-1080.jpg";
 	
@@ -103,8 +103,13 @@
 	
 	<!-- Simple title example with logo and subtitle: -->
 
-	<div class="text" style="margin-top: 150px; margin-bottom: 20px; border-bottom: solid 1px var(--brandLightBlue);">
+	<div class="text" style="margin-top: 150px; margin-bottom: 20px;">
 		<Logo/>
+		<LineBreakMiniTransitMap
+			lineColour="var(--brandYellow)"
+			dotFill="var(--brandYellow)"
+			dotStoke="var(--brandWhite)"
+		/>
 	</div>
 	
 
@@ -142,13 +147,18 @@
 
 	<div class="text">
 		<p>
-			We wrote a paper a few years ago (https://doi.org/10.1016/j.trd.2019.102212) that explored how increased transit accessibility to destinations improves people’s ability to participate in everyday life in the Greater Toronto and Hamilton Area (GTHA). A core finding of this work is that low-income and car-free households in areas with low transit accessibility were the most affected, lack of quality public transit options were limiting their ability to travel to places and participate in society. 
+			<a href="https://doi.org/10.1016/j.trd.2019.102212">We wrote a paper a few years ago</a> that explored how increased transit accessibility to destinations improves people’s ability to participate in everyday life in the Greater Toronto and Hamilton Area (GTHA). A core finding of this work is that low-income and car-free households in areas with low transit accessibility were the most affected, lack of quality public transit options were limiting their ability to travel to places and participate in society. 
 		</p>
 		<p>
 			On this page, we update some of this analysis with more recent data and specifically look at the social inclusion benefits that specifically living near major rail transit stations can have.
 			This can be measured via <b>activity participation</b>, a metric which refers to how often people can take part in everyday activities, and can be directly quantified from travel survey data by simply counting of how many activities that someone visits per day. 
 		</p>
 	</div>
+
+	<GraphicSingle
+		svg720={"./activity-participation/activity-schematic-720-web.svg"}
+		svg360={"./activity-participation/activity-schematic-360-web.svg"}
+	/>
 
 	<!-- IMAGE SCHEMATIC  -->
 

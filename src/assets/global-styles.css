@@ -31,8 +31,24 @@
 }
 
 
-/* Source Serif for body text */
-
+/* body text */
+@font-face {
+	font-family: GelasioRegular;
+	src: url("fonts/Gelasio-Regular.ttf");
+}
+@font-face {
+	font-family: GelasioItalic;
+	src: url("fonts/Gelasio-Italic.ttf");
+}
+@font-face {
+	font-family: GelasioBold;
+	src: url("fonts/Gelasio-Bold.ttf");
+}
+@font-face {
+	font-family: GelasioBoldItalic;
+	src: url("fonts/Gelasio-BoldItalic.ttf");
+}
+/* 
 @font-face {
 	font-family: SourceSerif;
 	src: url("fonts/SourceSerifPro-Regular.otf");
@@ -51,36 +67,36 @@
 @font-face {
 	font-family: SourceSerifBoldItalic;
 	src: url("fonts/SourceSerifPro-BoldIt.otf");
-}
+} */
 
 
 /* Open Sans for smaller text, labels, and UI elements */
 
 @font-face {
-	font-family: OpenSans;
-	src: url("fonts/OpenSans-Regular.ttf");
+	font-family: InterRegular;
+	src: url("fonts/Inter_24pt-Regular.ttf");
 }
 
 @font-face {
-	font-family: OpenSansItalic;
-	src: url("fonts/OpenSans-Italic.ttf");
+	font-family: InterItalic;
+	src: url("fonts/Inter_24pt-Italic.ttf");
 }
 
 @font-face {
-	font-family: OpenSansBold;
-	src: url("fonts/OpenSans-Bold.ttf");
+	font-family: InterBold;
+	src: url("fonts/Inter_24pt-Bold.ttf");
 }
 
 @font-face {
-	font-family: OpenSansBoldItalic;
-	src: url("fonts/OpenSans-BoldItalic.ttf");
+	font-family: InterBoldItalic;
+	src: url("fonts/Inter_24pt-BoldItalic.ttf");
 }
 
 
 /* brand colours */
 
 :root {
-	font-family: OpenSans, sans-serif;
+	/* font-family: OpenSans, sans-serif; */
 	--brandDarkBlue: #1E3765;
 	--brandMedBlue: #007FA3;
 	--brandLightBlue: #6FC7EA;
@@ -111,6 +127,8 @@ body {
 	background-color: var(--brandWhite);
 	min-width: calc(100% - 100dvw + 360px);
 	width: 100%;
+	font-family: "Inter", sans-serif;
+  	font-optical-sizing: auto;
 }
 
 main {
@@ -171,7 +189,7 @@ h4 {
 }
 
 p {
-	font-family: SourceSerif;
+	font-family: GelasioRegular;
 	font-weight: normal;
 	color: var(--brandGray90);
 	text-align: left;
@@ -192,29 +210,29 @@ p {
 }
 
 b {
-	font-family: SourceSerifBold;
+	font-family: GelasioBold;
 	font-weight: normal;
 }
 
 strong {
-	font-family: SourceSerifBold;
+	font-family: GelasioBold;
 	font-weight: normal;
 }
 
 i {
-	font-family: SourceSerifItalic;
+	font-family: GelasioItalic;
 	font-weight: normal;
 }
 
 em {
-	font-family: SourceSerifItalic;
+	font-family: GelasioItalic;
 	font-weight: normal;
 }
 
 .text a {
 	color: var(--brandBlack);
 	text-decoration: underline;
-	font-family: SourceSerif;
+	font-family: GelasioRegular;
 	font-weight: normal;
 }
 
@@ -231,7 +249,7 @@ ul {
 }
 
 li {
-	font-family: SourceSerif;
+	font-family: GelasioRegular;
 	font-weight: normal;
 	color: var(--brandGray90);
 	text-align: left;
@@ -259,7 +277,7 @@ li {
 }
 
 .details p {
-	font-family: SourceSerif;
+	font-family: GelasioRegular;
 	font-weight: normal;
 	color: var(--brandGray90);
 	text-align: left;
@@ -324,7 +342,7 @@ li {
 }
 
 .callout p {
-	font-family: SourceSerif;
+	font-family: GelasioRegular;
 	font-weight: normal;
 	color: var(--brandGray90);
 	text-align: left;
@@ -357,7 +375,7 @@ li {
 }
 
 .caption-container p {
-	font-family: OpenSansBold;
+	font-family: InterBold;
 	font-weight: normal;
 	color: var(--brandGray80);
 	font-size: 12px;
@@ -370,7 +388,7 @@ li {
 }
 
 .caption-text a  {
-	font-family: OpenSansBold;
+	font-family: InterBold;
 	font-weight: normal;
 	color: var(--brandGray80);
 }
@@ -379,13 +397,13 @@ li {
 }
 
 .caption-source {
-	font-family: OpenSans;
+	font-family: InterRegular;
 	font-weight: normal;
 	color: var(--brandGray60);
 }
 
 .caption-source a  {
-	font-family: OpenSans;
+	font-family: InterRegular;
 	font-weight: normal;
 	color: var(--brandGray60);
 }

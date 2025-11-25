@@ -6,26 +6,32 @@ import cairosvg
 
 FONT_MAP = {
 	# Base fonts
-	"Open Sans": "OpenSans",
-	"OpenSans": "OpenSans",
+	"Inter 24pt": "InterRegular",
+	"Inter": "InterRegular",
 	
 	# Bold variants
-	"Open Sans Bold": "OpenSansBold",
-	"OpenSans Bold": "OpenSansBold",
-	"Bold": "OpenSansBold",  # Catch-all for any font with bold weight
+	"Bold": "InterBold",  # Catch-all for any font with bold weight
+	"Inter 24pt, Bold": "InterBold",
+	"Inter 24pt Bold": "InterBold",
+	"Inter Bold": "InterBold",
+	# "Bold": "InterBold",
 	
 	# Italic variants
-	"Open Sans Italic": "OpenSansItalic",
-	"OpenSans Italic": "OpenSansItalic",
-	"Italic": "OpenSansItalic",  # Catch-all for any font with italic style
-	
+	"Italic": "InterItalic", 
+	"Inter 24pt, Italic": "InterItalic",
+	"Inter 24pt Italic": "InterItalic",
+	"Inter Italic": "InterItalic",
+	"Italic": "InterItalic",
+
 	# Bold Italic variants
-	"Open Sans Bold Italic": "OpenSansBoldItalic",
-	"Open Sans BoldItalic": "OpenSansBoldItalic",
-	"OpenSans Bold Italic": "OpenSansBoldItalic",
-	"OpenSans BoldItalic": "OpenSansBoldItalic",
-	"Bold Italic": "OpenSansBoldItalic",  # Catch-all
-	"BoldItalic": "OpenSansBoldItalic"  # Catch-all
+	"Inter 24pt, Bold Italic": "InterBoldItalic",
+	"Inter 24pt BoldItalic": "InterBoldItalic",
+	"Inter Bold Italic": "InterBoldItalic",
+	"Inter BoldItalic": "InterBoldItalic",
+	"Bold Italic": "InterBoldItalic",  # Catch-all
+	"BoldItalic": "InterBoldItalic",  # Catch-all
+
+	"TradeGothic LT Bold": "TradeGothicBold"
 }
 
 def get_svg_pixel_dimensions(root):
@@ -389,24 +395,28 @@ def process_svg(input_svg_path, output_svg_path, font_map):
 # 	["../routes/greensboro-nc/assets/greensboro-grocery-1080.svg", "../../static/greensboro-nc/greensboro-grocery-1080.svg"]
 # ]
 
-# INPUT_SVG_PATH = "../routes/bridgeport-ct/assets/map-asthma-360.svg"
-# OUTPUT_SVG_PATH = "../routes/bridgeport-ct/assets/map-asthma-360-web.svg"
-
 # if __name__ == "__main__":
 # 	for svg in svg_to_convert:
 # 		process_svg(svg[0], svg[1], FONT_MAP)
 
+INPUT_SVG_PATH = "../routes/briefs/activity-participation/assets/activity-schematic-360.svg"
+OUTPUT_SVG_PATH = "../../static/briefs/activity-participation/activity-schematic-360-web.svg"
 
-from pathlib import Path
-
-def main():
-	city = "halifax-ns"
-	input_dir = "../routes/" + city + "/assets"  
-	output_dir = "../../static/"  + city + "/web-svg"
-
-	for svg_file in Path(input_dir).glob("*.svg"):
-		output_path = Path(output_dir) / svg_file.name
-		process_svg(svg_file, output_path, FONT_MAP)
 
 if __name__ == "__main__":
-	main()
+	process_svg(INPUT_SVG_PATH, OUTPUT_SVG_PATH, FONT_MAP)
+
+
+# from pathlib import Path
+
+# def main():
+# 	city = "halifax-ns"
+# 	input_dir = "../routes/" + city + "/assets"  
+# 	output_dir = "../../static/"  + city + "/web-svg"
+
+# 	for svg_file in Path(input_dir).glob("*.svg"):
+# 		output_path = Path(output_dir) / svg_file.name
+# 		process_svg(svg_file, output_path, FONT_MAP)
+
+# if __name__ == "__main__":
+# 	main()

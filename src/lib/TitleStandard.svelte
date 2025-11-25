@@ -45,9 +45,9 @@
 
 	.title-text-container h2 {
 		text-align: left;
-		font-family: SourceSerifItalic;
+		font-family: GelasioItalic;
 		font-weight: normal;
-		font-size: 24px;
+		font-size: 22px;
 		margin-top: 0px;
 		color: var(--brandGray90);
 	}
