@@ -1,5 +1,6 @@
 /* Trade Gothic for headings and titles */
 
+/* THIS IS THE MAIN HEADER FONT */
 @font-face {
 	font-family: TradeGothicBold;
 	src: url("fonts/Trade Gothic LT Bold.ttf");
@@ -31,7 +32,8 @@
 }
 
 
-/* body text */
+/* body text serif font*/
+
 @font-face {
 	font-family: GelasioRegular;
 	src: url("fonts/Gelasio-Regular.ttf");
@@ -48,29 +50,9 @@
 	font-family: GelasioBoldItalic;
 	src: url("fonts/Gelasio-BoldItalic.ttf");
 }
-/* 
-@font-face {
-	font-family: SourceSerif;
-	src: url("fonts/SourceSerifPro-Regular.otf");
-}
-
-@font-face {
-	font-family: SourceSerifItalic;
-	src: url("fonts/SourceSerifPro-It.otf");
-}
-
-@font-face {
-	font-family: SourceSerifBold;
-	src: url("fonts/SourceSerifPro-Bold.otf");
-}
-
-@font-face {
-	font-family: SourceSerifBoldItalic;
-	src: url("fonts/SourceSerifPro-BoldIt.otf");
-} */
 
 
-/* Open Sans for smaller text, labels, and UI elements */
+/* Inter for smaller text, labels, and UI elements */
 
 @font-face {
 	font-family: InterRegular;
