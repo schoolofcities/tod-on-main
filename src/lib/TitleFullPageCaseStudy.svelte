@@ -19,6 +19,7 @@
 	export let logoType = 'Black'; // 'Black', 'White', or 'None'
 	export let authorText = "";
 	export let dateText = "";
+	export let topOpacity = 1;
 
 	let divWidth;
 
@@ -29,9 +30,11 @@
 
 	<div
         class="background-image"
+		class:background-image-shifted={topOpacity < 0.6}
         style="
             background-image: url({image});
             opacity: {imageOpacity};
+			transition: background-position 1.5s ease-in;
         "
     ></div>
 
@@ -104,9 +107,15 @@
 		width: 100%;
 		height: 100%;
 		background-size: cover; 
-		background-position: center; 
+		background-position: center;
 		background-repeat: no-repeat;
 	}
+
+	.background-image-shifted {
+		background-size: contain; 
+		background-position: right;
+	}
+
 
 	.logo-container {
 		position: absolute;

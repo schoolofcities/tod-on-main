@@ -163,6 +163,7 @@
 				subtitleFontColour="var(--brandWhite)"
 				authorText="Author Name, Author Name, Author Name"
 				dateText="~ December, 2025"
+				topOpacity={topOpacity}
 			/>
 		</div>
 
@@ -173,7 +174,7 @@
 				imageAlign={"right"}
 				imageWidth={"100%"}
 				imageHeight={"100dvh"}
-				textSectionMaxWidth={"300px"}
+				textSectionMaxWidth={"400px"}
 				textSectionAlign={"left"}
 				fadeDuration={1500}
 				mobileTextAlign={"top"}

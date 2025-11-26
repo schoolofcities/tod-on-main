@@ -183,8 +183,7 @@
 		position: absolute;
 		object-fit: contain;
 		height: 100%;
-		width: 100%;
-		border: 1px solid #ccc;
+		/* border: 1px solid #ccc; */
 	}
 
 	img.right {
