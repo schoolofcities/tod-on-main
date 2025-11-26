@@ -156,9 +156,18 @@
 		font-weight: normal;
 	}
 
-	/* @media (max-width: 600px) {
+	@media (max-width: 1000px) {
+		.title-text-container h1 {
+			font-size: 7vw;
+		}
+		.title-text-container h2 {
+			font-size: 3vw;
+		}
+	}
+
+	@media (max-width: 600px) {
 		.title-container {
-			height: calc(100dvh - 150px);
+			/* height: calc(100dvh - 150px); */
 			margin-bottom: 5px;
 		}
 		.logo-container {
@@ -176,7 +185,7 @@
 		.title-text-container h2 {
 			font-size: 24px;
 		}
-	} */
+	}
 
 	.author-date {
 		margin-top: 0px;

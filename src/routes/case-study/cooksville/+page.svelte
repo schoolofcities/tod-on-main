@@ -41,15 +41,15 @@
 		},
 		{
 			image: "../web-assets/case-study/cooksville/CC_Background Frame_6.png",
-			text: "<p>So, who lives here now? <br><br> Cooksville is Mississauga's quintessential gateway. A vibrant, first-stop neighbourhood for nearly 20,000 people, where 1 in 5 residents is a recent arrival. <br><br> Two-thirds of its residents are foreign-born (66.5%), and its median age is a youthful 37.4.</p>"
+			text: "<p>So, who lives here now? </p><p> Cooksville is Mississauga's quintessential gateway. A vibrant, first-stop neighbourhood for nearly 20,000 people, where 1 in 5 residents is a recent arrival. </p><p> Two-thirds of its residents are foreign-born (66.5%), and its median age is a youthful 37.4.</p>"
 		},
 		{
 			image: "../web-assets/case-study/cooksville/CC_Background Frame_7.png",
-			text:"<p>It's also a community of renters: over half of all residents rent (50.7%), with most living in high-rise apartments (68.1%). <br><br> Two-thirds of households are families, alongside a growing number of seniors of whom many live alone.  </p>", 
+			text:"<p>It's also a community of renters: over half of all residents rent (50.7%), with most living in high-rise apartments (68.1%). </p><p> Two-thirds of households are families, alongside a growing number of seniors of whom many live alone.  </p>", 
 		},
 		{
 			image: "../web-assets/case-study/cooksville/CC_Background Frame_8.png",
-			text: "<p>Public life is centered at the 'Four Corners' of Hurontario and Dundas. <br><br> With few formal civic amenities, residents rely on commercial plazas and small parks for daily needs.<br><br>Beyond this intersection, amenities quickly thin out, creating a gap between density and daily life. <br><br>It is also a socio-economically poorer area. <br><br>Household incomes average about $92,000 per year, starkly lower than the city’s average. </p>",
+			text: "<p>Public life is centered at the 'Four Corners' of Hurontario and Dundas. </p><p>  With few formal civic amenities, residents rely on commercial plazas and small parks for daily needs.</p><p> Beyond this intersection, amenities quickly thin out, creating a gap between density and daily life. </p><p> It is also a socio-economically poorer area. </p><p> Household incomes average about $92,000 per year, starkly lower than the city’s average. </p>",
 		},
 	];
 
@@ -170,12 +170,13 @@
 		<div class="bottom">
 			<ScrollyImages
 				sections={scrollyContentBig}
-				imageAlign={"center"}
+				imageAlign={"right"}
 				imageWidth={"100%"}
 				imageHeight={"100dvh"}
-				textSectionMaxWidth={"420px"}
+				textSectionMaxWidth={"300px"}
 				textSectionAlign={"left"}
 				fadeDuration={1500}
+				mobileTextAlign={"top"}
 			/>
 		</div>
 
