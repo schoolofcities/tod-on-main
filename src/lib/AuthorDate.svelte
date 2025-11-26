@@ -54,18 +54,18 @@
 
 	.author-date b {
 		color: var(--brandGray80);
-		font-family: SourceSerifBold;
+		font-family: GelasioBold;
 		font-weight: normal;
 	}
 
 	.author-date strong {
 		color: var(--brandGray80);
-		font-family: SourceSerifBold;
+		font-family: GelasioBold;
 		font-weight: normal;
 	}
 
 	.author-date #date {
-		font-family: SourceSerifBold;
+		font-family: GelasioBold;
 		font-size: 13px;
 		font-weight: normal;
 	}
