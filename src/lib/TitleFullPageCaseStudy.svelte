@@ -5,6 +5,7 @@
 	import LogoII from '../assets/ii-logo-white.svg'
 
 	import AuthorDate from "./AuthorDate.svelte";
+	import { onMount } from "svelte";
 
 	export let title = '';
 	export let subtitle = '';
@@ -22,7 +23,19 @@
 	export let topOpacity = 1;
 
 	let divWidth;
+	
+	let isMobile = false;
 
+	onMount(() => {
+		isMobile = window.innerWidth <= 500;
+		
+		const resizeHandler = () => {
+			isMobile = window.innerWidth <= 500;
+		};
+		window.addEventListener('resize', resizeHandler);
+
+		return () => window.removeEventListener('resize', resizeHandler);
+	})
 </script>
 
 
@@ -30,7 +43,7 @@
 
 	<div
         class="background-image"
-		class:background-image-shifted={topOpacity < 0.6}
+		class:background-image-shifted={topOpacity < 0.6 && !isMobile}
         style="
             background-image: url({image});
             opacity: {imageOpacity};
