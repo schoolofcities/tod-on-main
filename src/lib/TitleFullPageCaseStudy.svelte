@@ -43,7 +43,6 @@
 
 	<div
         class="background-image"
-		class:background-image-shifted={topOpacity < 0.6 && !isMobile}
         style="
             background-image: url({image});
             opacity: {imageOpacity};
@@ -122,11 +121,6 @@
 		background-size: cover; 
 		background-position: center;
 		background-repeat: no-repeat;
-	}
-
-	.background-image-shifted {
-		background-size: contain; 
-		background-position: right;
 	}
 
 

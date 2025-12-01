@@ -17,39 +17,107 @@
 	import topImage from './assets/CC_Background_Frame_1_dark.png'
 	import featureImage from './assets/cooksville-transit-schematic.png'
 
-	import ScrollyImages from "$lib/ScrollyImages.svelte";
+	import FadingImages from "$lib/FadingImages.svelte";
 	const scrollyContentBig = [
 		{
-			image: "../web-assets/case-study/cooksville/CC_Background Frame_1.png",
-			text: ""
+			image: "../web-assets/case-study/cooksville/CC_Background Frame_2.png",
+			text: [""]
 		},
 		{
-			image: "../web-assets/case-study/cooksville/CC_Background Frame_1.png",
-			text: "<p>Cooksville Station, Mississauga. A future transit super-hub where the GO train will meet the new Hazel McCallion LRT and Dundas Bus Rapid Transit (BRT) will converge, making it a focal point for massive growth.  </p>"
+			image: "../web-assets/case-study/cooksville/CC_Background Frame_2.png",
+			text: [""]
 		},
 		{
 			image: "../web-assets/case-study/cooksville/CC_Background Frame_3.png",
-			text: "<p>Matching it is a lofty density target of 300 people and jobs per hectare. </p>",
+			text: [""]
 		},
 		{
 			image: "../web-assets/case-study/cooksville/CC_Background Frame_4.png",
-			text: "<p>However, limitations abound. At its periphery are long-standing neighbourhoods. It is also one of the most physically constrained parts of the city. Termed a “Flood Risk MTSA”, it has over 300 buildings sitting within the Cooksville Creek floodplain.</p>",
+			text: ["<p>Cooksville Station, Mississauga. A future transit super-hub where the GO train will meet the new Hazel McCallion LRT and Dundas Bus Rapid Transit (BRT) will converge, making it a focal point for massive growth.</p><p>Matching it is a lofty density target of 300 people and jobs per hectare.</p>", 
+					"<p>However, limitations abound. At its periphery are long-standing neighbourhoods. It is also one of the most physically constrained parts of the city. Termed a “Flood Risk MTSA”, it has over 300 buildings sitting within the Cooksville Creek floodplain.</p><p>Creating a complete community here means balancing complex technical, social, and regulatory hurdles within a limited footprint.</p>"
+					]
 		},
 		{
 			image: "../web-assets/case-study/cooksville/CC_Background Frame_5.png",
-			text: "<p>Creating a complete community here means balancing complex technical, social, and regulatory hurdles within a limited footprint.</p>",
+			text: ["<p>So, who lives here now?</p><p>Cooksville is Mississauga's quintessential gateway. A vibrant, first-stop neighbourhood for nearly 20,000 people, where 1 in 5 residents is a recent arrival.</p>"]
 		},
 		{
 			image: "../web-assets/case-study/cooksville/CC_Background Frame_6.png",
-			text: "<p>So, who lives here now? </p><p> Cooksville is Mississauga's quintessential gateway. A vibrant, first-stop neighbourhood for nearly 20,000 people, where 1 in 5 residents is a recent arrival. </p><p> Two-thirds of its residents are foreign-born (66.5%), and its median age is a youthful 37.4.</p>"
+			text: ["<p>It's also a community of renters: over half of all residents rent (50.7%), with most living in high-rise apartments (68.1%).</p><p>Two-thirds of households are families, alongside a growing number of seniors of whom many live alone. </p>"]
 		},
 		{
 			image: "../web-assets/case-study/cooksville/CC_Background Frame_7.png",
-			text:"<p>It's also a community of renters: over half of all residents rent (50.7%), with most living in high-rise apartments (68.1%). </p><p> Two-thirds of households are families, alongside a growing number of seniors of whom many live alone.  </p>", 
+			text: ["<p>Public life is centered at the \"Four Corners\" of Hurontario and Dundas.</p><p>With few formal civic amenities, residents rely on commercial plazas and small parks for daily needs.</p><p>Beyond this intersection, amenities quickly thin out, creating a gap between density and daily life.</p>",
+					"<p>It is also a socio-economically poorer area.</p><p>Household incomes average about $92,000 per year, starkly lower than the city's average.</p>"
+					]
 		},
 		{
 			image: "../web-assets/case-study/cooksville/CC_Background Frame_8.png",
-			text: "<p>Public life is centered at the 'Four Corners' of Hurontario and Dundas. </p><p>  With few formal civic amenities, residents rely on commercial plazas and small parks for daily needs.</p><p> Beyond this intersection, amenities quickly thin out, creating a gap between density and daily life. </p><p> It is also a socio-economically poorer area. </p><p> Household incomes average about $92,000 per year, starkly lower than the city’s average. </p>",
+			text: ["<p>And residents here rely on public transit – more than 57% of the Mississauga average. </p><p>Yet the neighbourhood itself is built for the car. Wide arterials and fragmented sidewalks make walking and cycling a challenge.</p>"]
+		},
+		{
+			image: "../web-assets/case-study/cooksville/CC_Background Frame_9.png",
+			text: ["<p>Adding to the challenge is the land itself.</p><p>Many properties east of Hurontario St are Credit Valley Conservation (CVC)-regulated.</p>",
+					"<p>Under CVC rules, development in this area must undergo strict flood mitigation to proceed. It also incentivizes taller growth onto smaller footprints.</p>"
+					]
+		},
+		{
+			image: "../web-assets/case-study/cooksville/CC_Background Frame_10.png",
+			text: ["<p>Despite the limitations, development is booming.</p><p>Dozens of high-rise projects are in the pipeline, set to transform surface parking lots and aging retail plazas into mixed-use towers.</p>"]
+		},
+		{
+			image: "../web-assets/case-study/cooksville/CC_Background Frame_11.png",
+			text: ["<p>Developers are engineering their way around the floodplain: elevated podiums, underground storage tanks, and on-site detention systems. Expensive, and buried below grade, invisible to the public eye.</p>"]
+		},
+		{
+			image: "../web-assets/case-study/cooksville/CC_Background Frame_12.png",
+			text: ["<p>Some civic infrastructure, including the Cooksville Community Hub co-located with the TL Kennedy Secondary School, has been planned.</p><p>A new skyline is coming to fruition, driven by transit investment and the city's growth targets.</p>"]
+		},
+		{
+			image: "../web-assets/case-study/cooksville/CC_Background Frame_13.png",
+			text: ["<p>What happens if we continue this way?</p>"]
+		},
+		{
+			image: "../web-assets/case-study/cooksville/CC_Background Frame_14.png",
+			text: ["<p>Accounting for floodplain considerations and stable neighbourhoods, these are the parcels most eligible for development. </p><p>Growth becomes concentrated on a handful of underused commercial and industrial lots. </p>",
+					"<p>The default is towers on podiums – a built form tried and tested to generate density effectively.</p>",
+					"<p>But does this create a livable neighbourhood?</p><p>Crucial infrastructure is not keeping pace. The Cooksville Community Hub, while planned, needs funding. Other cultural amenities are virtually non-existent.</p>",
+					"<p>Local parks are small and discontinuous, and few institutional sites exist to anchor future population growth.</p><p>New towers cluster on fragmented lots, with density pushed further up to offset costly flood mitigation measures.</p><p>Without early investment in civic infrastructure, Cooksville risks becoming a collection of towers: dense but socially thin. </p>"
+					]
+		},
+		{
+			image: "../web-assets/case-study/cooksville/CC_Background Frame_15.png",
+			text: ["<p><strong>Is this really the best we can build?</strong></p>"]
+		},
+		{
+			image: "../web-assets/case-study/cooksville/CC_Background Frame_16.png",
+			text: ["<p>The challenge isn't just accommodating density. It's catalyzing it to create connected and amenity-rich communities where residents can flourish.</p>",
+				"<p>Here's how we could do it.</p>",
+				"<p>Our approach starts by adopting the current strategy for where to build: underused parcels like aging plazas and surface parking lots.</p><p>This leaves stable residential neighbourhoods mostly untouched.</p>"
+				]
+		},
+		{
+			image: "../web-assets/case-study/cooksville/CC_Background Frame_17.png",
+			text: ["<p>Next, let's reframe the floodplain restriction.</p><p>What happens when we approach floodplain mitigation as a public realm opportunity? This means moving beyond simply burying water tanks underground.</p><p>By weaving (less expensive!) green infrastructure across sites, we create daily spaces for social connection: new pathways, parks, and adaptive landscapes that guide future development.</p>",
+				"<p>The more developers who adopt this strategy, the larger the green network, amplifying benefits for the entire community.</p>"
+				]
+		},
+		{
+			image: "../web-assets/case-study/cooksville/CC_Background Frame_18.png",
+			text: ["<p>Now let's turn our attention to build for the life that's already here.</p><p>Data shows most residents enjoy an engaged urban life, including concerts, restaurants, fitness classes, sports, and galleries. The current landscape doesn't reflect that.</p>",
+					"<p>In a growing community, social infrastructure and third places are just as important as housing.</p><p>The optimized plan focuses on creating spaces for gathering - integrating community theatres, youth centres, and libraries directly into new mixed-use blocks.</p>",
+					"<p>Finally, let's build housing for how people actually live.</p><p>Two-thirds of households are families, yet the average new proposal allocates around 70% of new units as 1-bedrooms.</p>",
+					"<p>The market is sending an undeniable signal too. Demand for 1-bedrooms is low, with supply outpacing demand. Meanwhile, larger units are outperforming them,  with 2.5 times the sales volume – many selling above asking price.</p><p>Building what the community needs is the obvious direction.</p><p>This means prioritizing units with two or more bedrooms for families and multi-generational households.</p>",
+					"<p>This is also a more efficient way to build. Larger, family-sized units house more people in a smaller total footprint.</p><p>Think of it this way: 3 people in a 3-bedroom share 1 kitchen. 3 people in 3 separate 1-bedrooms require 3 separate kitchens.</p><p>It allows for a reduction in extreme height. Towers can be shorter, and more mid-rise buildings can be introduced to create active, human-scaled street fronts.</p>"
+					]
+		},
+		{
+			image: "../web-assets/case-study/cooksville/CC_Background Frame_16.png",
+			text: ["<p>In this vision, density is achieved through a connected urban fabric - a mix of housing forms for how people actually live.</p><p>Social infrastructure, from the community hub to vibrant local shops, is woven into a landscape where green corridors double as flood protection and public parks.</p><p>By treating housing, amenities, and water as one integrated system, the plan shifts from managing constraints to building a complete, resilient, and connected Cooksville.</p>"]
+		},
+		{
+			image: "../web-assets/case-study/cooksville/CC_Background Frame_19.png",
+			text: [""]
 		},
 	];
 
@@ -169,7 +237,7 @@
 
 		<!-- Bottom is underneath, scrolls normally -->
 		<div class="bottom">
-			<ScrollyImages
+			<FadingImages
 				sections={scrollyContentBig}
 				imageAlign={"right"}
 				imageWidth={"100%"}
