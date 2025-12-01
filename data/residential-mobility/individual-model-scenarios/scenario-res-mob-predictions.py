@@ -9,7 +9,7 @@ overall_results = []
 
 for station in ["Cooksville", "Panama",	"McKernan-Belgravia", "Arbutus", "Northfield"]:
 
-	for scenario in ["scenario1", "scenario2"]:
+	for scenario in ["scenario1", "scenario2","scenario3"]:
 
 		# station = "Cooksville"
 		# scenario = "scenario1"

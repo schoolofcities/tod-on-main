@@ -399,9 +399,9 @@ def process_svg(input_svg_path, output_svg_path, font_map):
 # 	for svg in svg_to_convert:
 # 		process_svg(svg[0], svg[1], FONT_MAP)
 
+
 INPUT_SVG_PATH = "../routes/briefs/activity-participation/assets/activity-schematic-360.svg"
 OUTPUT_SVG_PATH = "../../static/briefs/activity-participation/activity-schematic-360-web.svg"
-
 
 if __name__ == "__main__":
 	process_svg(INPUT_SVG_PATH, OUTPUT_SVG_PATH, FONT_MAP)
