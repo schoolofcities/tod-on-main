@@ -44,6 +44,19 @@
 	let imgDivHeight = 0;
 	let topImageMargin = "0px";
 	let isMobile = false;
+	
+	let processedSections = [];
+	let numSections = 0;
+
+	sections.forEach((item) => {
+		item.text.forEach((text) => {
+			processedSections.push({
+				image: item.image,
+				text: text
+			});
+			numSections += 1;
+		})
+	})
 
 	onMount(() => {
 		windowHeight = window.innerHeight;
@@ -107,7 +120,7 @@
 
 	<div class="sticky-image">
 
-		{#each sections as section, i}
+		{#each processedSections as section, i}
 
 			{#if currentIndex === i}
 				<div class="image-container">
@@ -131,7 +144,7 @@
 						out:fade={{ duration: fadeDuration/2 }}
 						in:fade={{  delay:fadeDuration/2, duration: fadeDuration/2 }}>
 					<div class="mobile-text-wrapper" >
-						{@html sections[currentIndex].text}
+						{@html processedSections[currentIndex].text}
 					</div>
 				</div>
 			{/key}
@@ -139,7 +152,7 @@
 	</div>
 
 	<div class="text-scroll">
-		{#each sections as section, i}
+		{#each processedSections as section, i}
 
 			<div
 				class="text-section {textSectionAlign}"
@@ -166,7 +179,7 @@
 		display: flex;
 		flex-direction: column;
 		position: relative;
-		background-color: #E2E2E2;
+		background-color: #f9f9f9;
 		margin-top: 0px;
 		margin-bottom: 50px;
 	}
