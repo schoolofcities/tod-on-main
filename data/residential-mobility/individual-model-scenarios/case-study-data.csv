@@ -55,3 +55,9 @@
 "scenario2_rowtownsemi_percchange",-12.6582226922108,305.255328402163,440.443697359411,246.886768607318,0.155994050643039
 "scenario2_aptsmall_percchange",455.700982445775,64.0220327936284,153.685124400053,5.29338704828814,1502.02277773789
 "scenario2_aptlarge_percchange",422.233363603296,1942.75361738141,4.88601968203052,140.94077941064,9599.56008349296
+"scenario3_totaldwellings_percchange",0,0,0,0,0
+"scenario3_avgbedrooms_percchange",0,0,0,0,0
+"scenario3_singledetached_percchange",0,0,0,0,0
+"scenario3_rowtownsemi_percchange",0,0,0,0,0
+"scenario3_aptsmall_percchange",0,0,0,0,0
+"scenario3_aptlarge_percchange",0,0,0,0,0
