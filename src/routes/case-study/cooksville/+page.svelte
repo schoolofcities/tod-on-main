@@ -14,18 +14,20 @@
 	import GraphicsMultiples from '$lib/GraphicMultiples.svelte';
 	import Footer from '$lib/Footer.svelte';
 
-	import topImage from './assets/CC_Background_Frame_1_dark.png'
+	import topImage from './assets/CC_Background_Frame_1.png' // TODO: MAKE THIS DARK
 	import featureImage from './assets/cooksville-transit-schematic.png'
 
 	import FadingImages from "$lib/FadingImages.svelte";
 	const scrollyContentBig = [
 		{
 			image: "../web-assets/case-study/cooksville/CC_Background Frame_2.png",
-			text: [""]
+			text: [""],
+			arrowColour: "white"
 		},
 		{
 			image: "../web-assets/case-study/cooksville/CC_Background Frame_2.png",
-			text: [""]
+			text: [""],
+			arrowColour: "white"
 		},
 		{
 			image: "../web-assets/case-study/cooksville/CC_Background Frame_3.png",
@@ -143,6 +145,7 @@
 	import Footnote from '$lib/Footnote.svelte';
 	import Footnotes from '$lib/Footnotes.svelte';
 	import { createFootnoteStore } from '$lib/footnoteUtils';
+    import BottomArrow from '$lib/BottomArrow.svelte';
 
 	const footnoteStore = createFootnoteStore();
 	const { footnotes, addFootnote } = footnoteStore;
@@ -173,6 +176,8 @@
 	$: topOpacity = 1 - Math.min(scrollY / innerHeight, 1);
 
 	$: topPointer = topOpacity < 0.02 ? 'none' : 'auto';
+
+	let arrowColour = "white";
 
 </script>
 
@@ -221,7 +226,9 @@
 		<!-- Top stays visually on top -->
 		<div class="top" style="opacity: {topOpacity}; pointer-events: {topPointer};">
 			<TitleFullPage
-				title="Cooksville, Mississauga"
+				title="Cooksville Station"
+				topic="Case Study"
+				location="Mississauga, ON"
 				subtitle="How do you build a high-density community bound by natural and physical land restrictions?"
 				image={topImage}
 				imageOpacity=1
@@ -234,6 +241,10 @@
 				topOpacity={topOpacity}
 			/>
 		</div>
+		
+		<BottomArrow 
+		clickable={true}
+		colour={arrowColour}/>
 
 		<!-- Bottom is underneath, scrolls normally -->
 		<div class="bottom">
@@ -246,6 +257,7 @@
 				textSectionAlign={"left"}
 				fadeDuration={1500}
 				mobileTextAlign={"top"}
+				bind:arrowColour
 			/>
 		</div>
 
@@ -385,7 +397,6 @@
 
 	
 	<div class="text">
-
 		<p>
 			Fusce sed sem nulla. Praesent congue sapien pellentesque sodales fermentum. Pellentesque dapibus ultrices lacus consectetur laoreet. Integer imperdiet sed sapien sed pharetra. Praesent sodales nunc ut lorem venenatis laoreet vitae et neque. Etiam condimentum tincidunt dignissim. 
 		</p>

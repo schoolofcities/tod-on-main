@@ -9,6 +9,8 @@
 
 	export let title = '';
 	export let subtitle = '';
+	export let topic = '';
+	export let location = '';
 	export let image = '';
 	export let imageOpacity = 1;
 	export let imageAltText = '';
@@ -67,16 +69,20 @@
 
 		<!-- <img src={imageFeature} style="max-width: 90px; opacity: 1; border: solid 5px white; margin-bottom: -25px;"/> -->
 		
-		<h1 style="color: {titleFontColour};">{title}</h1>
+		<h2 style="color: {subtitleFontColour}; margin-bottom: 20rem;">{topic.toUpperCase()}</h2>
+		
+		<h1 style="color: {titleFontColour}; margin-bottom: 8rem;">{title.toUpperCase()}</h1>
+		<h3 style="color: {subtitleFontColour}; margin-bottom: 40rem;">{location.toUpperCase()}</h3>
 
 		<!-- {#if divWidth > 600} -->
 
-		<h2 style="color: {subtitleFontColour}; margin-bottom: 100px;">{subtitle}</h2>
 
 		<!-- {/if} -->
 		
+		
+		<h4 style="color: {subtitleFontColour};">{subtitle}</h4>
 
-		<div class="author-date">
+		<!-- <div class="author-date">
 
 			<p>
 				{@html authorText}
@@ -84,7 +90,7 @@
 				<span id="date">{dateText}</span>
 			</p>
 
-		</div>
+		</div> -->
 
 	</div>
 
@@ -111,7 +117,8 @@
 		position: relative;
 		margin-bottom: 0px;
 		border-bottom: solid 3px white;
-		
+		display: flex;
+		align-items: center;
 	}
 
 	.background-image {
@@ -126,8 +133,8 @@
 
 	.logo-container {
 		position: absolute;
-		top: 100px;
-		left: 100px;
+		top: 24rem;
+		left: 24rem;
 	}
 
 	.logo-container:hover {
@@ -137,28 +144,56 @@
 	.title-text-container {
 		max-width: 1080px;
 		position: absolute;
-		bottom: 100px;
-		left: 100px;
+		top: 30vh;
+		left: 24rem;
 	}
 
 	.title-text-container h1 {
-		font-family: TradeGothicBold;
+		font-family: PoppinsBold;
 		font-weight: normal;
-		font-size: 86px;
+		font-size: 28rem;
 		text-decoration: none;
 		margin-bottom: 10px;
 		padding: 0px;
 		text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6); 
+		margin-left: -2rem;
+		line-height: 24rem;
+		letter-spacing: -0.75rem;
+		width: 45%;
 	}
 
 	.title-text-container h2 {
 		max-width: 720px;
 		text-align: left;
-		font-family: SourceSerifBoldItalic;
+		font-family: PoppinsSemiBold;
 		font-weight: normal;
-		font-size: 32px;
+		font-size: 8rem;
 		margin-top: 0px;
 		text-shadow: 0px 0px 10px rgba(0, 0, 0, 2); 
+		margin: 0;
+	}
+
+	.title-text-container h3 {
+		max-width: 720px;
+		text-align: left;
+		font-family: PoppinsSemiBold;
+		font-weight: normal;
+		font-size: 6rem;
+		margin-top: 0px;
+		text-shadow: 0px 0px 10px rgba(0, 0, 0, 2); 
+		margin: 0;
+	}
+
+	.title-text-container h4 {
+		max-width: 720px;
+		width: 55%;
+		text-align: left;
+		font-family: PoppinsMedium;
+		font-weight: normal;
+		font-size: 6rem;
+		margin-top: 0px;
+		text-shadow: 0px 0px 10px rgba(0, 0, 0, 2); 
+		margin: 0;
 	}
 
 	.subtitle-text-container {
@@ -167,18 +202,9 @@
 	}
 
 	.subtitle-text-container h2 {
-		font-size: 22px;
-		font-family: SourceSerifItalic;
+		font-size: 22rem;
+		font-family: PoppinsMedium;
 		font-weight: normal;
-	}
-
-	@media (max-width: 1000px) {
-		.title-text-container h1 {
-			font-size: 7vw;
-		}
-		.title-text-container h2 {
-			font-size: 3vw;
-		}
 	}
 
 	@media (max-width: 600px) {

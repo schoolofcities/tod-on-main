@@ -3,6 +3,7 @@
 	import "../assets/global-styles.css"	
 	import { fade } from "svelte/transition";
 	import { onMount, onDestroy } from "svelte";
+    import BottomArrow from "./BottomArrow.svelte";
 
 	export let imageAlign = "center";
 	export let imageWidth = "100%";
@@ -25,6 +26,7 @@
 		},
 	];
 	export let mobileTextAlign = "top";
+	export let arrowColour = "white";
 
 	$: console.log(imageHeight,windowHeight,topImageMargin);
 
@@ -40,7 +42,8 @@
 		item.text.forEach((text) => {
 			processedSections.push({
 				image: item.image,
-				text: text
+				text: text,
+				arrowColour: item.arrowColour ? item.arrowColour : "black"
 			});
 			numSections += 1;
 		})
@@ -48,7 +51,6 @@
 
 	onMount(() => {
 		windowHeight = window.innerHeight;
-		console.log(window.innerHeight);
 		isMobile = window.innerWidth <= 500;
 
 		const resizeHandler = () => {
@@ -80,45 +82,15 @@
 
 	const handleScroll = () => {
 		currentIndex = Math.min(Math.floor(window.scrollY / windowHeight), processedSections.length - 1);
+		arrowColour = processedSections[currentIndex].arrowColour;
 	};
 
-	const handleArrowKey = (event) => {
-		switch (event.key) {
-			case "ArrowUp":
-				if (Math.ceil(window.scrollY / windowHeight) >= processedSections.length) {
-					window.scrollBy({
-						top: -50,
-						left: 0,
-						behavior: "smooth",
-					});
-					return;
-				}
-				currentIndex = Math.max(currentIndex - 1, 0);
-				break;
-			case "ArrowDown":
-				if (Math.ceil(window.scrollY / windowHeight) >= processedSections.length) {
-					window.scrollBy({
-						top: 50,
-						left: 0,
-						behavior: "smooth",
-					});
-					return;
-				}
-				currentIndex = Math.min(currentIndex + 1, processedSections.length - 1);
-				break;
-			default:
-      			return; 
-		}
-		window.scrollTo(0, currentIndex * windowHeight);
-	};
 
 	onMount(() => {
 		window.addEventListener("scroll", handleScroll);
-		window.addEventListener("keydown", handleArrowKey);
 		handleScroll();
 		return () => {
 			window.removeEventListener("scroll", handleScroll);
-			window.removeEventListener("keydown", handleArrowKey);
 		};
 	});
 
@@ -138,7 +110,9 @@
 						class={imageAlign}
 						src={section.image}
 						alt={section.heading}
-						transition:fade={{ duration: fadeDuration }}
+						transition:fade={section.image !== processedSections[currentIndex - 1]?.image
+									? { duration: fadeDuration }
+									: null}
 						loading="eager"
 						style="max-height: {imageHeight}; max-width: {imageWidth}; top: {topImageMargin};"	
 					/>

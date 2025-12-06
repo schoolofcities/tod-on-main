@@ -13,15 +13,15 @@
 	export let sections = [
 		{
 		image: "/images/1.jpg",
-		text: "<h2>Header</h2> <p>body text </p>",
+		text: ["<h2>Header</h2> <p>body text </p>"],
 		},
 		{
 		image: "/images/2.jpg",
-		text: "<h2>Header</h2> <p>body text </p>",
+		text: ["<h2>Header</h2> <p>body text </p>"],
 		},
 		{
 		image: "/images/3.jpg",
-		text: "<h2>Header</h2> <p>body text </p>",
+		text: ["<h2>Header</h2> <p>body text </p>"],
 		},
 	];
 	export let mobileTextAlign = "center";
@@ -49,13 +49,13 @@
 	let numSections = 0;
 
 	sections.forEach((item) => {
-		item.text.forEach((text) => {
-			processedSections.push({
-				image: item.image,
-				text: text
-			});
-			numSections += 1;
-		})
+		// item.text.forEach((text) => {
+		// 	processedSections.push({
+		// 		image: item.image,
+		// 		text: text
+		// 	});
+		// 	numSections += 1;
+		// })
 	})
 
 	onMount(() => {

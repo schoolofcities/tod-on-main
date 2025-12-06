@@ -75,6 +75,56 @@
 }
 
 
+/* POPPINS! */
+@font-face {
+	font-family: PoppinsLight;
+	src: url("fonts/Poppins-Light.ttf");
+}
+
+@font-face {
+	font-family: PoppinsLightItalic;
+	src: url("fonts/Poppins-LightItalic.ttf");
+}
+
+@font-face {
+	font-family: PoppinsRegular;
+	src: url("fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+	font-family: PoppinsItalic;
+	src: url("fonts/Poppins-Italic.ttf");
+}
+
+@font-face {
+	font-family: PoppinsMedium;
+	src: url("fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+	font-family: PoppinsMediumItalic;
+	src: url("fonts/Poppins-MediumItalic.ttf");
+}
+
+@font-face {
+	font-family: PoppinsSemiBold;
+	src: url("fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+	font-family: PoppinsSemiBoldItalic;
+	src: url("fonts/Poppins-SemiBoldItalic.ttf");
+}
+
+@font-face {
+	font-family: PoppinsBold;
+	src: url("fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+	font-family: PoppinsBoldItalic;
+	src: url("fonts/Poppins-BoldItalic.ttf");
+}
 /* brand colours */
 
 :root {
@@ -102,6 +152,51 @@
 
 
 /* base page and text styling */
+html {
+	font-size: 3.25px;
+}
+
+@media (max-height: 800px) {
+	html {
+		font-size: 2.75px;
+	}
+}
+
+@media (max-height: 700px) {
+	html {
+		font-size: 2.50px;
+	}
+}
+
+@media (max-height: 600px) {
+	html {
+		font-size: 2.25px;
+	}
+}
+
+@media (max-height: 525px) {
+	html {
+		font-size: 2px;
+	}
+}
+
+@media (max-height: 475px) {
+	html {
+		font-size: 1.75px;
+	}
+}
+
+@media (max-width: 500px) {
+	html {
+		font-size: 2.5px;
+	}
+}
+
+@media (max-width: 500px) and (max-height: 700px) {
+	html {
+		font-size: 2px;
+	}
+}
 
 body {
 	padding: 0px;
@@ -147,8 +242,8 @@ h2 {
 	font-family: TradeGothicBold;
 	font-weight: normal;
 	font-size: 30px;
-	margin-top: 30px;
-	margin-bottom: 0px;
+	/* margin-top: 30px;
+	margin-bottom: 0px; */
 	color: var(--brandBlack);
 }
 
@@ -156,8 +251,8 @@ h3 {
 	text-align: left;
 	font-family: TradeGothicBold;
 	font-weight: normal;
-	margin-top: 30px;
-	margin-bottom: 0px;
+	/* margin-top: 30px;
+	margin-bottom: 0px; */
 	font-size: 25px;
 	color: var(--brandBlack);
 }
@@ -171,7 +266,7 @@ h4 {
 }
 
 p {
-	font-family: GelasioRegular;
+	font-family: PoppinsMedium;
 	font-weight: normal;
 	color: var(--brandGray90);
 	text-align: left;
