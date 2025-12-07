@@ -228,7 +228,7 @@ main {
 }
 
 h1 {
-	font-family: TradeGothicBold;
+	font-family: PoppinsBold;
 	font-weight: normal;
 	font-size: 40px;
 	color: var(--brandBlack);
@@ -239,7 +239,7 @@ h1 {
 
 h2 {
 	text-align: left;
-	font-family: TradeGothicBold;
+	font-family: PoppinsSemiBold;
 	font-weight: normal;
 	font-size: 30px;
 	/* margin-top: 30px;
@@ -249,7 +249,7 @@ h2 {
 
 h3 {
 	text-align: left;
-	font-family: TradeGothicBold;
+	font-family: PoppinsSemiBold;
 	font-weight: normal;
 	/* margin-top: 30px;
 	margin-bottom: 0px; */
@@ -259,7 +259,7 @@ h3 {
 
 h4 {
 	text-align: left;
-	font-family: TradeGothicBold;
+	font-family: PoppinsMedium;
 	font-weight: normal;
 	font-size: 20px;
 	color: var(--brandBlack);

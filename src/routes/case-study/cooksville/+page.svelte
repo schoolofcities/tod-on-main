@@ -20,14 +20,18 @@
 	import FadingImages from "$lib/FadingImages.svelte";
 	const scrollyContentBig = [
 		{
-			image: "../web-assets/case-study/cooksville/CC_Background Frame_2.png",
+			image: "../web-assets/case-study/cooksville/CC_Background Frame_1.png",
+			text: [""],
+			arrowColour: "white"
+		},
+		{
+			image: "../web-assets/case-study/cooksville/CC_Background Frame_1.png",
 			text: [""],
 			arrowColour: "white"
 		},
 		{
 			image: "../web-assets/case-study/cooksville/CC_Background Frame_2.png",
-			text: [""],
-			arrowColour: "white"
+			text: [""]
 		},
 		{
 			image: "../web-assets/case-study/cooksville/CC_Background Frame_3.png",
@@ -234,6 +238,8 @@
 				imageOpacity=1
 				imageAltText="A photo"
 				imageFeature={featureImage}
+				tintColour="black"
+				tintOpacity=0.5
 				titleFontColour="var(--brandWhite)"
 				subtitleFontColour="var(--brandWhite)"
 				authorText="Author Name, Author Name, Author Name"
@@ -250,7 +256,8 @@
 		<div class="bottom">
 			<FadingImages
 				sections={scrollyContentBig}
-				imageAlign={"right"}
+				header={"COOKSVILLE STATION"}
+				imageAlign={"center"}
 				imageWidth={"100%"}
 				imageHeight={"100dvh"}
 				textSectionMaxWidth={"400px"}

@@ -12,6 +12,8 @@
 	export let topic = '';
 	export let location = '';
 	export let image = '';
+	export let tintOpacity = 0;
+	export let tintColour = "black";
 	export let imageOpacity = 1;
 	export let imageAltText = '';
 	// export let imageCaption = '';
@@ -43,6 +45,10 @@
 
 <div class="title-container" bind:clientWidth={divWidth} >
 
+	<div class="tint-overlay"
+		style:opacity={tintOpacity}
+		style:background={tintColour}></div>
+
 	<div
         class="background-image"
         style="
@@ -56,10 +62,10 @@
 
 		{#if logoType !== 'None'}
 			<a href="https://schoolofcities.utoronto.ca/" target="_blank" class="logo-link">
-				<img src={LogoSofC} alt="UofT and School of Cities logos" class="logo-top" />
+				<img src={LogoSofC} alt="UofT and School of Cities logos" class="logo-top" id="sofc-logo"/>
 			</a>
 			<a href="https://infrastructureinstitute.ca/" target="_blank" class="logo-link">
-				<img src={LogoII} alt="Infrastructure Institute logo" class="logo-top" />
+				<img src={LogoII} alt="Infrastructure Institute logo" class="logo-top" id="ii-logo"/>
 			</a>
 		{/if}
 		
@@ -121,6 +127,13 @@
 		align-items: center;
 	}
 
+	.tint-overlay {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		z-index: 5;
+	}
+
 	.background-image {
 		position: absolute;
 		width: 100%;
@@ -135,6 +148,7 @@
 		position: absolute;
 		top: 24rem;
 		left: 24rem;
+		z-index: 6;
 	}
 
 	.logo-container:hover {
@@ -146,6 +160,7 @@
 		position: absolute;
 		top: 30vh;
 		left: 24rem;
+		z-index: 6;
 	}
 
 	.title-text-container h1 {
@@ -226,6 +241,16 @@
 		}
 		.title-text-container h2 {
 			font-size: 24px;
+		}
+	}
+
+	@media (max-width: 500px) {
+		#ii-logo {
+			width: 30%
+		}
+
+		#sofc-logo {
+			width: 60%
 		}
 	}
 
