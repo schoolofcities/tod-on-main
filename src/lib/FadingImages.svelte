@@ -4,25 +4,25 @@
 	import { fade } from "svelte/transition";
 	import { onMount, onDestroy } from "svelte";
     import BottomArrow from "./BottomArrow.svelte";
+    import { marked } from 'marked'
 
 	export let imageAlign = "center";
+	export let header = "";
 	export let imageWidth = "100%";
 	export let imageHeight = "100%";
-	export let textSectionAlign = "right";
-	export let textSectionMaxWidth = "500px";
 	export let fadeDuration = 250;
 	export let sections = [
 		{
-		image: ["/images/1.jpg"],
-		text: ["<h2>Header</h2> <p>body text </p>"],
+		image: "/images/1.jpg",
+		text: "<h2>Header</h2> <p>body text </p>",
 		},
 		{
-		image: ["/images/2.jpg"],
-		text: ["<h2>Header</h2> <p>body text </p>"],
+		image: "/images/2.jpg",
+		text: "<h2>Header</h2> <p>body text </p>",
 		},
 		{
 		image: "/images/3.jpg",
-		text: ["<h2>Header</h2> <p>body text </p>"],
+		text: "<h2>Header</h2> <p>body text </p>",
 		},
 	];
 	export let mobileTextAlign = "top";
@@ -35,19 +35,8 @@
 	let topImageMargin = "0px";
 	let isMobile = false;
 
-	let processedSections = [];
-	let numSections = 0;
+	let numSections = sections.length;
 
-	sections.forEach((item) => {
-		item.text.forEach((text) => {
-			processedSections.push({
-				image: item.image,
-				text: text,
-				arrowColour: item.arrowColour ? item.arrowColour : "black"
-			});
-			numSections += 1;
-		})
-	})
 
 	onMount(() => {
 		windowHeight = window.innerHeight;
@@ -81,8 +70,8 @@
 	let textSections = [];
 
 	const handleScroll = () => {
-		currentIndex = Math.min(Math.floor(window.scrollY / windowHeight), processedSections.length - 1);
-		arrowColour = processedSections[currentIndex].arrowColour;
+		currentIndex = Math.min(Math.floor(window.scrollY / windowHeight), numSections - 1);
+		arrowColour = sections[currentIndex].arrowColour;
 	};
 
 
@@ -102,38 +91,41 @@
 
 	<div class="sticky-image">
 
-		{#each processedSections as section, i}
-
+		{#each sections as section, i}
 			{#if currentIndex === i}
 				<div class="image-container">
 					<img
 						class={imageAlign}
 						src={section.image}
 						alt={section.heading}
-						transition:fade={section.image !== processedSections[currentIndex - 1]?.image
-									? { duration: fadeDuration }
-									: null}
+						transition:fade={{duration: section.image.valueOf() != sections[currentIndex - 1]?.image.valueOf()
+									? fadeDuration : 0 }}
 						loading="eager"
 						style="max-height: {imageHeight}; max-width: {imageWidth}; top: {topImageMargin};"	
 					/>
 				</div>
-				
 			{/if}
-			
 		{/each}
+		
+		{#if header != ""}
+			<h1 class="header-text">
+				{header}
+			</h1>
+		{/if}
 
 		{#key currentIndex} 
 			<div class="fading-text-section fading-text-{mobileTextAlign}"
-					out:fade={{ duration: fadeDuration/2 }}
-					in:fade={{  delay:fadeDuration/2, duration: fadeDuration/2 }}>
+					out:fade={{ duration: sections[currentIndex].text != sections[currentIndex - 1]?.text ? fadeDuration/2 : 0 }}
+					in:fade={{  delay: sections[currentIndex].text != sections[currentIndex - 1]?.text ? fadeDuration/2 : 0, 
+								duration: sections[currentIndex].text != sections[currentIndex - 1]?.text ? fadeDuration/2 : 0}}>
 				<div class="fading-text-wrapper" >
-					{@html processedSections[currentIndex].text}
+					{@html marked(sections[currentIndex].text)}
 				</div>
 			</div>
 		{/key}
 	</div>
 
-	<div class="text-scroll" style:height="{windowHeight*processedSections.length}px"></div>
+	<div class="text-scroll" style:height="{windowHeight*numSections}px"></div>
 
 </div>
 
@@ -162,6 +154,15 @@
 		position: absolute;
 		object-fit: contain;
 		height: 100%;
+	}
+
+	.header-text {
+		position: absolute;
+		left: 20rem;
+		width: 18rem;
+		font-size: 8rem;
+		line-height: 6.5rem;
+		letter-spacing: -0.30rem;
 	}
 
 	img.right {

@@ -287,22 +287,22 @@ p {
 }
 
 b {
-	font-family: GelasioBold;
+	font-family: PoppinsBold;
 	font-weight: normal;
 }
 
 strong {
-	font-family: GelasioBold;
+	font-family: PoppinsBold;
 	font-weight: normal;
 }
 
 i {
-	font-family: GelasioItalic;
+	font-family: PoppinsMediumItalic;
 	font-weight: normal;
 }
 
 em {
-	font-family: GelasioItalic;
+	font-family: PoppinsMediumItalic;
 	font-weight: normal;
 }
 
@@ -326,7 +326,7 @@ ul {
 }
 
 li {
-	font-family: GelasioRegular;
+	font-family: PoppinsRegular;
 	font-weight: normal;
 	color: var(--brandGray90);
 	text-align: left;

@@ -6,7 +6,6 @@
     export let clickable = "false";
 
 	let scrollPage = () => {
-		console.log("clicjked");
 		window.scrollBy({
 			top: window.innerHeight,
 			left: 0,

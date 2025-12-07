@@ -147,7 +147,7 @@
 	.logo-container {
 		position: absolute;
 		top: 24rem;
-		left: 24rem;
+		left: 20rem;
 		z-index: 6;
 	}
 
@@ -159,7 +159,7 @@
 		max-width: 1080px;
 		position: absolute;
 		top: 30vh;
-		left: 24rem;
+		left: 20rem;
 		z-index: 6;
 	}
 

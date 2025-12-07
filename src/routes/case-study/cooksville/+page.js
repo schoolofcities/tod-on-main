@@ -6,4 +6,18 @@
 
 // since there's no dynamic data here, we can prerender
 // it so that it gets served as a static asset in production
-export const prerender = true;
+import Papa from 'papaparse';
+
+export async function load({ fetch }) {
+    const res = await fetch('/web-assets/case-study/cooksville/cooksville-content.csv');
+    const csvText = await res.text();
+
+    const parsed = Papa.parse(csvText, {
+        header: true,      // CSV has column names
+        skipEmptyLines: true
+    });
+
+    return { rows: parsed.data };
+}
+
+// export const prerender = true;
