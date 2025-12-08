@@ -22,4 +22,4 @@ export async function load({ fetch }) {
     return { rows: parsed.data };
 }
 
-// export const prerender = true;
+export const prerender = true;
