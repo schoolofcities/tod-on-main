@@ -3,7 +3,7 @@
 	import "../assets/global-styles.css";  
 
 	export let colour = "black";
-    export let clickable = "false";
+    export let clickable = false;
 
 	let scrollPage = () => {
 		window.scrollBy({
@@ -73,7 +73,7 @@
 		z-index: 100;
 		bottom: 10rem;
         left: 50%;
-        right: 50%;
+        margin-left: -3.5rem;
     }
 
 </style>

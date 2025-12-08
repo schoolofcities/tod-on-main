@@ -45,6 +45,7 @@
 	import { createFootnoteStore } from '$lib/footnoteUtils';
     import BottomArrow from '$lib/BottomArrow.svelte';
     import { resolveRoute } from '$app/paths';
+    import HamburgerMenu from '$lib/HamburgerMenu.svelte';
 
 	const footnoteStore = createFootnoteStore();
 	const { footnotes, addFootnote } = footnoteStore;
@@ -149,6 +150,9 @@
 		
 		<BottomArrow 
 		clickable={true}
+		colour={arrowColour}/>
+
+		<HamburgerMenu
 		colour={arrowColour}/>
 
 		<!-- Bottom is underneath, scrolls normally -->

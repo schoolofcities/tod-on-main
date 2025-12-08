@@ -9,11 +9,13 @@
 import Papa from 'papaparse';
 
 export async function load({ fetch }) {
+    //update fetch url to match correct file
     const res = await fetch('/web-assets/case-study/cooksville/cooksville-content.csv');
     const csvText = await res.text();
 
     const parsed = Papa.parse(csvText, {
         header: true,      // CSV has column names
+        encoding: "utf-8",
         skipEmptyLines: true
     });
 

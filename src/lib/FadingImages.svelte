@@ -91,7 +91,7 @@
 
 	<div class="sticky-image">
 
-		{#each sections as section, i}
+		<!-- {#each sections as section, i}
 			{#if currentIndex === i}
 				<div class="image-container">
 					<img
@@ -105,7 +105,20 @@
 					/>
 				</div>
 			{/if}
-		{/each}
+		{/each} -->
+		{#key currentIndex} 
+			<div class="image-container">
+				<img
+					class={imageAlign}
+					src={sections[currentIndex].image}
+					alt={sections[currentIndex].heading}
+					transition:fade={{duration: sections[currentIndex].image.valueOf() != sections[currentIndex - 1]?.image.valueOf()
+								? fadeDuration : 0 }}
+					loading="eager"
+					style="max-height: {imageHeight}; max-width: {imageWidth}; top: {topImageMargin};"	
+				/>
+			</div>
+		{/key}
 		
 		{#if header != ""}
 			<h1 class="header-text">
@@ -115,12 +128,38 @@
 
 		{#key currentIndex} 
 			<div class="fading-text-section fading-text-{mobileTextAlign}"
-					out:fade={{ duration: sections[currentIndex].text != sections[currentIndex - 1]?.text ? fadeDuration/2 : 0 }}
-					in:fade={{  delay: sections[currentIndex].text != sections[currentIndex - 1]?.text ? fadeDuration/2 : 0, 
-								duration: sections[currentIndex].text != sections[currentIndex - 1]?.text ? fadeDuration/2 : 0}}>
+					out:fade={{ duration: sections[currentIndex].text.valueOf() != sections[currentIndex - 1]?.text.valueOf() ? fadeDuration/2 : 0 }}
+					in:fade={{  delay: sections[currentIndex].text.valueOf() != sections[currentIndex - 1]?.text.valueOf() ? fadeDuration/2 : 0, 
+								duration: sections[currentIndex].text.valueOf() != sections[currentIndex - 1]?.text.valueOf() ? fadeDuration/2 : 0}}>
 				<div class="fading-text-wrapper" >
 					{@html marked(sections[currentIndex].text)}
 				</div>
+			</div>
+		{/key}
+
+		{#key currentIndex} 
+			<div class="fading-overlay-section">
+				{#if sections[currentIndex].overlay1 != ""}
+					<div class="overlay-1 overlay-image" >
+						<img
+						src={sections[currentIndex].overlay1}
+						alt={sections[currentIndex].overlay1}
+						transition:fade={{duration: sections[currentIndex].overlay1.valueOf() != sections[currentIndex - 1]?.overlay1.valueOf()
+									? fadeDuration : 0 }}
+						/>
+					</div>
+				{/if}
+
+				{#if sections[currentIndex].overlay2 != ""}
+					<div class="overlay-2 overlay-image" >
+						<img
+						src={sections[currentIndex].overlay2}
+						alt={sections[currentIndex].overlay1}
+						transition:fade={{duration: sections[currentIndex].overlay2.valueOf() != sections[currentIndex - 1]?.overlay2.valueOf()
+									? fadeDuration : 0 }}
+						/>
+					</div>
+				{/if}
 			</div>
 		{/key}
 	</div>
@@ -158,7 +197,8 @@
 
 	.header-text {
 		position: absolute;
-		left: 20rem;
+		top: 15rem;
+		left: 15rem;
 		width: 18rem;
 		font-size: 8rem;
 		line-height: 6.5rem;
@@ -181,17 +221,37 @@
 	.fading-text-section {
 		position: absolute;
 		z-index: 5;
-		width: 27vw;
+		width: 25vw;
 		height: 100vh;
 		display: flex;
 		align-items: center;   
-		padding: 0 0 0 2vw;
+		padding: 0 0 0 15rem;
 		box-sizing: border-box;
 	}
 
 	.fading-text-wrapper {
 		display: inline-block;
 		width: 100%; 
+	}
+
+	.fading-overlay-section {
+		position: absolute;
+		z-index: 5;
+		width: 25vw;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 3rem;
+		right: 15rem;
+		box-sizing: border-box;
+	}
+
+	.fading-overlay-section img {
+		position: relative;
+		object-fit: contain;
+		width: 100%;
 	}
 
 	@media (max-width: 1450px) {
@@ -202,7 +262,7 @@
 			height: 100vh;
 			display: flex;
 			align-items: center;   
-			padding: 0 0 0 2vw;
+			padding: 0 0 0 10rem;
 			box-sizing: border-box;
 		}
 
@@ -210,41 +270,15 @@
 			font-size: 17px !important;
 			line-height: 28px;
 		}
-	}
 
-	@media (max-width: 1350px) {
-		.sticky-image img {
+		.header-text {
 			position: absolute;
-			object-fit: cover;
-			object-position: 35% center;
-			width: 75vw;
-			height: 96vh; 
-			margin: auto;
-			margin-left: 20vw;
-			border: 0;
-			left: 0;
-			right: 0;
-			z-index: 1;
+			top: 10rem;
+			left: 10rem;
 		}
 	}
 
-	@media (max-width: 1100px) {
-		.sticky-image img {
-			position: absolute;
-			object-fit: cover;
-			object-position: 45% center;
-			width: 75vw;
-			height: 96vh; 
-			margin: auto;
-			margin-left: 23vw;
-			border: 0;
-			left: 0;
-			right: 0;
-			z-index: 1;
-		}
-	}
-
-	@media (max-width: 850px) {
+	@media (max-width: 800px) {
 		.image-container {
 			z-index: 1;
 		}
@@ -255,14 +289,15 @@
 			width: 96vw;
 			height: 96vw; /* TODO: MAKE THIS CONFIGURABLE */
 			margin: auto;
+			object-fit: cover;
 		}
 		
 		.fading-text-section {
 			position: absolute;
 			z-index: 5;
-			margin-top: calc(96vw + 2vw);
+			margin-top: calc(94vw);
     		width: 94vw;
-			height: calc(100vh - 96vw - 2vw);
+			height: calc(100vh - 94vw);
 		}
 		
 		.fading-text-top {
@@ -276,6 +311,10 @@
 			font-size: 18px !important;
 			line-height: 28px;
 		}
+
+		.header-text {
+			font-size: 7rem;
+		}
 	}
 
 	@media (max-width: 500px) {
@@ -288,7 +327,6 @@
 		}
 		
 		.fading-text-section {
-			margin-top: calc(96vw + 10vw);
     		width: 92vw;
 			height: calc(100vh - 96vw - 10vw);
 		}
@@ -301,6 +339,10 @@
 			font-size: 16px !important;
 			line-height: 28px;
 		}
+
+		.header-text {
+			font-size: 8rem;
+		}
 	}
 
 	@media (max-width: 400px) {
@@ -309,7 +351,6 @@
 		}
 
 		.fading-text-section {
-			margin-top: calc(96vw + 4vw);
     		width: 92vw;
 			height: calc(100vh - 96vw - 4vw);
 		}
