@@ -5,10 +5,15 @@
 	import LogoII from '../assets/ii-logo-white.svg'
 
 	import AuthorDate from "./AuthorDate.svelte";
+	import { onMount } from "svelte";
 
 	export let title = '';
 	export let subtitle = '';
+	export let topic = '';
+	export let location = '';
 	export let image = '';
+	export let tintOpacity = 0;
+	export let tintColour = "black";
 	export let imageOpacity = 1;
 	export let imageAltText = '';
 	// export let imageCaption = '';
@@ -19,19 +24,37 @@
 	export let logoType = 'Black'; // 'Black', 'White', or 'None'
 	export let authorText = "";
 	export let dateText = "";
+	export let topOpacity = 1;
 
 	let divWidth;
+	
+	let isMobile = false;
 
+	onMount(() => {
+		isMobile = window.innerWidth <= 500;
+		
+		const resizeHandler = () => {
+			isMobile = window.innerWidth <= 500;
+		};
+		window.addEventListener('resize', resizeHandler);
+
+		return () => window.removeEventListener('resize', resizeHandler);
+	})
 </script>
 
 
 <div class="title-container" bind:clientWidth={divWidth} >
+
+	<div class="tint-overlay"
+		style:opacity={tintOpacity}
+		style:background={tintColour}></div>
 
 	<div
         class="background-image"
         style="
             background-image: url({image});
             opacity: {imageOpacity};
+			transition: background-position 1.5s ease-in;
         "
     ></div>
 
@@ -39,10 +62,10 @@
 
 		{#if logoType !== 'None'}
 			<a href="https://schoolofcities.utoronto.ca/" target="_blank" class="logo-link">
-				<img src={LogoSofC} alt="UofT and School of Cities logos" class="logo-top" />
+				<img src={LogoSofC} alt="UofT and School of Cities logos" class="logo-top" id="sofc-logo"/>
 			</a>
 			<a href="https://infrastructureinstitute.ca/" target="_blank" class="logo-link">
-				<img src={LogoII} alt="Infrastructure Institute logo" class="logo-top" />
+				<img src={LogoII} alt="Infrastructure Institute logo" class="logo-top" id="ii-logo"/>
 			</a>
 		{/if}
 		
@@ -52,16 +75,20 @@
 
 		<!-- <img src={imageFeature} style="max-width: 90px; opacity: 1; border: solid 5px white; margin-bottom: -25px;"/> -->
 		
-		<h1 style="color: {titleFontColour};">{title}</h1>
+		<h2 style="color: {subtitleFontColour}; margin-bottom: 20rem;">{topic.toUpperCase()}</h2>
+		
+		<h1 style="color: {titleFontColour}; margin-bottom: 8rem;">{title.toUpperCase()}</h1>
+		<h3 style="color: {subtitleFontColour}; margin-bottom: 40rem;">{location.toUpperCase()}</h3>
 
 		<!-- {#if divWidth > 600} -->
 
-		<h2 style="color: {subtitleFontColour}; margin-bottom: 100px;">{subtitle}</h2>
 
 		<!-- {/if} -->
 		
+		
+		<h4 style="color: {subtitleFontColour};">{subtitle}</h4>
 
-		<div class="author-date">
+		<!-- <div class="author-date">
 
 			<p>
 				{@html authorText}
@@ -69,7 +96,7 @@
 				<span id="date">{dateText}</span>
 			</p>
 
-		</div>
+		</div> -->
 
 	</div>
 
@@ -96,7 +123,15 @@
 		position: relative;
 		margin-bottom: 0px;
 		border-bottom: solid 3px white;
-		
+		display: flex;
+		align-items: center;
+	}
+
+	.tint-overlay {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		z-index: 5;
 	}
 
 	.background-image {
@@ -104,14 +139,16 @@
 		width: 100%;
 		height: 100%;
 		background-size: cover; 
-		background-position: center; 
+		background-position: center;
 		background-repeat: no-repeat;
 	}
 
+
 	.logo-container {
 		position: absolute;
-		top: 100px;
-		left: 100px;
+		top: 24rem;
+		left: 20rem;
+		z-index: 6;
 	}
 
 	.logo-container:hover {
@@ -121,28 +158,57 @@
 	.title-text-container {
 		max-width: 1080px;
 		position: absolute;
-		bottom: 100px;
-		left: 100px;
+		top: 30vh;
+		left: 20rem;
+		z-index: 6;
 	}
 
 	.title-text-container h1 {
-		font-family: TradeGothicBold;
+		font-family: PoppinsBold;
 		font-weight: normal;
-		font-size: 86px;
+		font-size: 28rem;
 		text-decoration: none;
 		margin-bottom: 10px;
 		padding: 0px;
 		text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6); 
+		margin-left: -2rem;
+		line-height: 24rem;
+		letter-spacing: -0.75rem;
+		width: 45%;
 	}
 
 	.title-text-container h2 {
 		max-width: 720px;
 		text-align: left;
-		font-family: SourceSerifBoldItalic;
+		font-family: PoppinsSemiBold;
 		font-weight: normal;
-		font-size: 32px;
+		font-size: 8rem;
 		margin-top: 0px;
 		text-shadow: 0px 0px 10px rgba(0, 0, 0, 2); 
+		margin: 0;
+	}
+
+	.title-text-container h3 {
+		max-width: 720px;
+		text-align: left;
+		font-family: PoppinsSemiBold;
+		font-weight: normal;
+		font-size: 6rem;
+		margin-top: 0px;
+		text-shadow: 0px 0px 10px rgba(0, 0, 0, 2); 
+		margin: 0;
+	}
+
+	.title-text-container h4 {
+		max-width: 720px;
+		width: 55%;
+		text-align: left;
+		font-family: PoppinsMedium;
+		font-weight: normal;
+		font-size: 6rem;
+		margin-top: 0px;
+		text-shadow: 0px 0px 10px rgba(0, 0, 0, 2); 
+		margin: 0;
 	}
 
 	.subtitle-text-container {
@@ -151,14 +217,14 @@
 	}
 
 	.subtitle-text-container h2 {
-		font-size: 22px;
-		font-family: SourceSerifItalic;
+		font-size: 22rem;
+		font-family: PoppinsMedium;
 		font-weight: normal;
 	}
 
-	/* @media (max-width: 600px) {
+	@media (max-width: 600px) {
 		.title-container {
-			height: calc(100dvh - 150px);
+			/* height: calc(100dvh - 150px); */
 			margin-bottom: 5px;
 		}
 		.logo-container {
@@ -176,7 +242,17 @@
 		.title-text-container h2 {
 			font-size: 24px;
 		}
-	} */
+	}
+
+	@media (max-width: 500px) {
+		#ii-logo {
+			width: 30%
+		}
+
+		#sofc-logo {
+			width: 60%
+		}
+	}
 
 	.author-date {
 		margin-top: 0px;

@@ -14,44 +14,12 @@
 	import GraphicsMultiples from '$lib/GraphicMultiples.svelte';
 	import Footer from '$lib/Footer.svelte';
 
-	import topImage from './assets/CC_Background_Frame_1_dark.png'
+	import topImage from './assets/CC_Background_Frame_1.png' // TODO: MAKE THIS DARK
 	import featureImage from './assets/cooksville-transit-schematic.png'
 
-	import ScrollyImages from "$lib/ScrollyImages.svelte";
-	const scrollyContentBig = [
-		{
-			image: "../web-assets/case-study/cooksville/CC_Background Frame_1.png",
-			text: ""
-		},
-		{
-			image: "../web-assets/case-study/cooksville/CC_Background Frame_1.png",
-			text: "<p>Cooksville Station, Mississauga. A future transit super-hub where the GO train will meet the new Hazel McCallion LRT and Dundas Bus Rapid Transit (BRT) will converge, making it a focal point for massive growth.  </p>"
-		},
-		{
-			image: "../web-assets/case-study/cooksville/CC_Background Frame_3.png",
-			text: "<p>Matching it is a lofty density target of 300 people and jobs per hectare. </p>",
-		},
-		{
-			image: "../web-assets/case-study/cooksville/CC_Background Frame_4.png",
-			text: "<p>However, limitations abound. At its periphery are long-standing neighbourhoods. It is also one of the most physically constrained parts of the city. Termed a “Flood Risk MTSA”, it has over 300 buildings sitting within the Cooksville Creek floodplain.</p>",
-		},
-		{
-			image: "../web-assets/case-study/cooksville/CC_Background Frame_5.png",
-			text: "<p>Creating a complete community here means balancing complex technical, social, and regulatory hurdles within a limited footprint.</p>",
-		},
-		{
-			image: "../web-assets/case-study/cooksville/CC_Background Frame_6.png",
-			text: "<p>So, who lives here now? <br><br> Cooksville is Mississauga's quintessential gateway. A vibrant, first-stop neighbourhood for nearly 20,000 people, where 1 in 5 residents is a recent arrival. <br><br> Two-thirds of its residents are foreign-born (66.5%), and its median age is a youthful 37.4.</p>"
-		},
-		{
-			image: "../web-assets/case-study/cooksville/CC_Background Frame_7.png",
-			text:"<p>It's also a community of renters: over half of all residents rent (50.7%), with most living in high-rise apartments (68.1%). <br><br> Two-thirds of households are families, alongside a growing number of seniors of whom many live alone.  </p>", 
-		},
-		{
-			image: "../web-assets/case-study/cooksville/CC_Background Frame_8.png",
-			text: "<p>Public life is centered at the 'Four Corners' of Hurontario and Dundas. <br><br> With few formal civic amenities, residents rely on commercial plazas and small parks for daily needs.<br><br>Beyond this intersection, amenities quickly thin out, creating a gap between density and daily life. <br><br>It is also a socio-economically poorer area. <br><br>Household incomes average about $92,000 per year, starkly lower than the city’s average. </p>",
-		},
-	];
+	import FadingImages from "$lib/FadingImages.svelte";
+
+	export let data;
 
 	// const scrollyContentSmall = [
 	// 	{
@@ -75,6 +43,9 @@
 	import Footnote from '$lib/Footnote.svelte';
 	import Footnotes from '$lib/Footnotes.svelte';
 	import { createFootnoteStore } from '$lib/footnoteUtils';
+    import BottomArrow from '$lib/BottomArrow.svelte';
+    import { resolveRoute } from '$app/paths';
+    import HamburgerMenu from '$lib/HamburgerMenu.svelte';
 
 	const footnoteStore = createFootnoteStore();
 	const { footnotes, addFootnote } = footnoteStore;
@@ -90,6 +61,10 @@
 
 	let scrollY = 0;
 	let innerHeight = 1;
+	let arrowColour = "white";
+	let scrollyContent = [];
+
+	// replace url with applicable content csv
 
 	onMount(() => {
 		innerHeight = window.innerHeight;
@@ -99,12 +74,14 @@
 		};
 
 		window.addEventListener('scroll', onScroll, { passive: true });
+	
 		return () => window.removeEventListener('scroll', onScroll);
 	});
 
 	$: topOpacity = 1 - Math.min(scrollY / innerHeight, 1);
 
 	$: topPointer = topOpacity < 0.02 ? 'none' : 'auto';
+
 
 </script>
 
@@ -153,29 +130,44 @@
 		<!-- Top stays visually on top -->
 		<div class="top" style="opacity: {topOpacity}; pointer-events: {topPointer};">
 			<TitleFullPage
-				title="Cooksville, Mississauga"
+				title="Cooksville Station"
+				topic="Case Study"
+				location="Mississauga, ON"
 				subtitle="How do you build a high-density community bound by natural and physical land restrictions?"
 				image={topImage}
 				imageOpacity=1
 				imageAltText="A photo"
 				imageFeature={featureImage}
+				tintColour="black"
+				tintOpacity=0.5
 				titleFontColour="var(--brandWhite)"
 				subtitleFontColour="var(--brandWhite)"
 				authorText="Author Name, Author Name, Author Name"
 				dateText="~ December, 2025"
+				topOpacity={topOpacity}
 			/>
 		</div>
+		
+		<BottomArrow 
+		clickable={true}
+		colour={arrowColour}/>
+
+		<HamburgerMenu
+		colour={arrowColour}/>
 
 		<!-- Bottom is underneath, scrolls normally -->
 		<div class="bottom">
-			<ScrollyImages
-				sections={scrollyContentBig}
+			<FadingImages
+				sections={data.rows}
+				header={"COOKSVILLE STATION"}
 				imageAlign={"center"}
 				imageWidth={"100%"}
 				imageHeight={"100dvh"}
-				textSectionMaxWidth={"420px"}
+				textSectionMaxWidth={"400px"}
 				textSectionAlign={"left"}
 				fadeDuration={1500}
+				mobileTextAlign={"top"}
+				bind:arrowColour
 			/>
 		</div>
 
@@ -315,7 +307,6 @@
 
 	
 	<div class="text">
-
 		<p>
 			Fusce sed sem nulla. Praesent congue sapien pellentesque sodales fermentum. Pellentesque dapibus ultrices lacus consectetur laoreet. Integer imperdiet sed sapien sed pharetra. Praesent sodales nunc ut lorem venenatis laoreet vitae et neque. Etiam condimentum tincidunt dignissim. 
 		</p>

@@ -13,17 +13,18 @@
 	export let sections = [
 		{
 		image: "/images/1.jpg",
-		text: "<h2>Header</h2> <p>body text </p>",
+		text: ["<h2>Header</h2> <p>body text </p>"],
 		},
 		{
 		image: "/images/2.jpg",
-		text: "<h2>Header</h2> <p>body text </p>",
+		text: ["<h2>Header</h2> <p>body text </p>"],
 		},
 		{
 		image: "/images/3.jpg",
-		text: "<h2>Header</h2> <p>body text </p>",
+		text: ["<h2>Header</h2> <p>body text </p>"],
 		},
 	];
+	export let mobileTextAlign = "center";
 
 	// $: topImageMargin = 0;
 
@@ -42,12 +43,28 @@
 	let windowHeight = 0;
 	let imgDivHeight = 0;
 	let topImageMargin = "0px";
+	let isMobile = false;
+	
+	let processedSections = [];
+	let numSections = 0;
+
+	sections.forEach((item) => {
+		// item.text.forEach((text) => {
+		// 	processedSections.push({
+		// 		image: item.image,
+		// 		text: text
+		// 	});
+		// 	numSections += 1;
+		// })
+	})
 
 	onMount(() => {
 		windowHeight = window.innerHeight;
+		isMobile = window.innerWidth <= 500;
 
 		const resizeHandler = () => {
 			windowHeight = window.innerHeight;
+			isMobile = window.innerWidth <= 500;
 		};
 		window.addEventListener('resize', resizeHandler);
 
@@ -103,7 +120,7 @@
 
 	<div class="sticky-image">
 
-		{#each sections as section, i}
+		{#each processedSections as section, i}
 
 			{#if currentIndex === i}
 				<div class="image-container">
@@ -118,26 +135,39 @@
 				</div>
 				
 			{/if}
-
+			
 		{/each}
 
+		{#if isMobile}
+			{#key currentIndex} 
+				<div class="mobile-text-section mobile-text-{mobileTextAlign}"
+						out:fade={{ duration: fadeDuration/2 }}
+						in:fade={{  delay:fadeDuration/2, duration: fadeDuration/2 }}>
+					<div class="mobile-text-wrapper" >
+						{@html processedSections[currentIndex].text}
+					</div>
+				</div>
+			{/key}
+		{/if}
 	</div>
 
-	{#each sections as section, i}
+	<div class="text-scroll">
+		{#each processedSections as section, i}
 
-		<div
-			class="text-section {textSectionAlign}"
-			bind:this={textSections[i]}
-			style="max-width: {textSectionMaxWidth};"
-		>
+			<div
+				class="text-section {textSectionAlign}"
+				bind:this={textSections[i]}
+				style="max-width: {textSectionMaxWidth};"
+			>
 
-			<div class="text-wrapper {section.text.trim() ? '' : 'transparent'}">
-				{@html section.text}
+				<div class="text-wrapper {section.text.trim() ? '' : 'transparent'}">
+					{@html section.text}
+				</div>
+			
 			</div>
-		
-		</div>
 
-	{/each}
+		{/each}
+	</div>
 
 </div>
 
@@ -149,7 +179,7 @@
 		display: flex;
 		flex-direction: column;
 		position: relative;
-		background-color: white;
+		background-color: #f9f9f9;
 		margin-top: 0px;
 		margin-bottom: 50px;
 	}
@@ -164,10 +194,9 @@
 
 	.sticky-image img {
 		position: absolute;
-		object-fit: cover;
+		object-fit: contain;
 		height: 100%;
-		width: 100%;
-		border: 1px solid #ccc;
+		/* border: 1px solid #ccc; */
 	}
 
 	img.right {
@@ -223,9 +252,104 @@
 		height: 90vh;
 	}
 
-	@media (max-width: 600px) {
-		.text-section {
-			padding: 30vh 1rem;
+	@media (max-width: 500px) {
+		.text-section { 
+			padding: 30vh 0;
+			width: 100%;
+			max-width: 100vw !important;
+			z-index: -10;
+		}
+
+		.text-section.left {
+			margin-left: 0;
+		}
+
+		.image-container {
+			z-index: 1;
+		}
+
+		.sticky-image img {
+			position: absolute;
+			object-fit: cover;
+			object-position: 45% center;
+			padding-top: 10vw;
+			width: 96vw;
+			height: 96vw; /* TODO: MAKE THIS CONFIGURABLE */
+			margin: auto;
+			border: 0;
+			left: 0;
+			right: 0;
+			z-index: 1;
+		}
+
+		.text-wrapper {
+			border: 0;
+			opacity: 0;
+		}
+
+		.mobile-text-section {
+			position: absolute;
+			z-index: 5;
+			margin-top: calc(96vw + 10vw);
+    		width: 92vw;
+			height: calc(100vh - 96vw - 10vw);
+		}
+		
+		.mobile-text-top {
+			display: flex;
+			align-items: flex-start;   
+			padding: 4vw 0 0 8vw;
+			box-sizing: border-box;
+		}
+
+		.mobile-text-center {
+			display: flex;
+			align-items: center;   
+			padding: 0 0 0 8vw;
+			box-sizing: border-box;
+		}
+
+		.mobile-text-wrapper {
+			display: inline-block;
+			width: 100%; /* shrink-wrap the content */
+		}
+
+		:global(.mobile-text-wrapper p) {
+			font-size: 16px !important;
+			line-height: 28px;
+		}
+	}
+
+	@media (max-width: 400px) {
+		.sticky-image img {
+			padding-top: 4vw;
+		}
+
+		.mobile-text-section {
+			position: absolute;
+			z-index: 5;
+			margin-top: calc(96vw + 4vw);
+    		width: 92vw;
+			height: calc(100vh - 96vw - 4vw);
+		}
+
+		.mobile-text-top {
+			display: flex;
+			align-items: flex-start;   
+			padding: 4vw 0 0 6vw;
+			box-sizing: border-box;
+		}
+
+		.mobile-text-center {
+			display: flex;
+			align-items: center;   
+			padding: 0 0 0 6vw;
+			box-sizing: border-box;
+		}
+
+		:global(.mobile-text-wrapper p) {
+			font-size: 15px !important;
+			line-height: 24px;
 		}
 	}
 
