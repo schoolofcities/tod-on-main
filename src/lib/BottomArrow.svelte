@@ -4,6 +4,7 @@
 
 	export let colour = "black";
     export let clickable = false;
+    export let hidden = false;
 
 	let scrollPage = () => {
 		window.scrollBy({
@@ -17,7 +18,8 @@
 
 <button class="arrow-container"
     on:click={clickable ? scrollPage : null}
-    aria-label="Next Slide">
+    aria-label="Next Slide"
+    class:hidden={hidden}>
     <svg
         width="7rem"
         height="4rem"
@@ -74,6 +76,11 @@
 		bottom: 10rem;
         left: 50%;
         margin-left: -3.5rem;
+        display: inline-block;
+    }
+
+    .hidden {
+        display: none;
     }
 
 </style>

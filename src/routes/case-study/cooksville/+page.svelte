@@ -63,14 +63,18 @@
 	let innerHeight = 1;
 	let arrowColour = "white";
 	let scrollyContent = [];
+	let textSection;
+	let arrowHidden = false;
 
 	// replace url with applicable content csv
 
 	onMount(() => {
+		textSection = document.getElementById("top-text")
 		innerHeight = window.innerHeight;
 
 		const onScroll = () => {
 			scrollY = window.scrollY;
+			arrowHidden = (textSection.getBoundingClientRect().top - window.innerHeight)> 0 ? false : true;
 		};
 
 		window.addEventListener('scroll', onScroll, { passive: true });
@@ -81,7 +85,6 @@
 	$: topOpacity = 1 - Math.min(scrollY / innerHeight, 1);
 
 	$: topPointer = topOpacity < 0.02 ? 'none' : 'auto';
-
 
 </script>
 
@@ -150,13 +153,14 @@
 		
 		<BottomArrow 
 		clickable={true}
-		colour={arrowColour}/>
+		colour={arrowColour}
+		hidden={arrowHidden}/>
 
 		<HamburgerMenu
 		colour={arrowColour}/>
 
 		<!-- Bottom is underneath, scrolls normally -->
-		<div class="bottom">
+		<div class="bottom" id="before-text">
 			<FadingImages
 				sections={data.rows}
 				header={"COOKSVILLE STATION"}
@@ -306,7 +310,7 @@
 
 
 	
-	<div class="text">
+	<div class="text" id="top-text">
 		<p>
 			Fusce sed sem nulla. Praesent congue sapien pellentesque sodales fermentum. Pellentesque dapibus ultrices lacus consectetur laoreet. Integer imperdiet sed sapien sed pharetra. Praesent sodales nunc ut lorem venenatis laoreet vitae et neque. Etiam condimentum tincidunt dignissim. 
 		</p>

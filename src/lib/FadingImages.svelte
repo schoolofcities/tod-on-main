@@ -3,7 +3,6 @@
 	import "../assets/global-styles.css"	
 	import { fade } from "svelte/transition";
 	import { onMount, onDestroy } from "svelte";
-    import BottomArrow from "./BottomArrow.svelte";
     import { marked } from 'marked'
 
 	export let imageAlign = "center";
@@ -36,11 +35,13 @@
 	let isMobile = false;
 
 	let numSections = sections.length;
+	let mounted = false;
 
 
 	onMount(() => {
 		windowHeight = window.innerHeight;
 		isMobile = window.innerWidth <= 500;
+		mounted = true;
 
 		const resizeHandler = () => {
 			windowHeight = window.innerHeight;
@@ -67,6 +68,29 @@
 	
 	let container;
 	let currentIndex = 0;
+
+	$: if (mounted) {
+		const preloadCount = 2;
+		for (let i = 1; i <= preloadCount; i++) {
+			const next = sections[currentIndex + i];
+			if (!next) continue;
+
+			if (next.image.valueOf() != sections[currentIndex].image.valueOf()){
+				const img = new Image();
+				img.src = next.image;
+			}
+
+			if (next.overlay1) {
+				const o1 = new Image();
+				o1.src = next.overlay1;
+			}
+			if (next.overlay2) {
+				const o2 = new Image();
+				o2.src = next.overlay2;
+			}
+		}
+	}
+	
 	let textSections = [];
 
 	const handleScroll = () => {
@@ -137,31 +161,29 @@
 			</div>
 		{/key}
 
-		{#key currentIndex} 
-			<div class="fading-overlay-section">
-				{#if sections[currentIndex].overlay1 != ""}
-					<div class="overlay-1 overlay-image" >
-						<img
-						src={sections[currentIndex].overlay1}
-						alt={sections[currentIndex].overlay1}
-						transition:fade={{duration: sections[currentIndex].overlay1.valueOf() != sections[currentIndex - 1]?.overlay1.valueOf()
-									? fadeDuration : 0 }}
-						/>
-					</div>
-				{/if}
+		<div class="fading-overlay-section">
+			{#if sections[currentIndex].overlay1 != ""}
+				<div class="overlay-1 overlay-image" >
+					<img
+					src={sections[currentIndex].overlay1}
+					alt={sections[currentIndex].overlay1}
+					transition:fade={{duration: sections[currentIndex].overlay1.valueOf() != sections[currentIndex - 1]?.overlay1.valueOf()
+								? fadeDuration : 0 }}
+					/>
+				</div>
+			{/if}
 
-				{#if sections[currentIndex].overlay2 != ""}
-					<div class="overlay-2 overlay-image" >
-						<img
-						src={sections[currentIndex].overlay2}
-						alt={sections[currentIndex].overlay1}
-						transition:fade={{duration: sections[currentIndex].overlay2.valueOf() != sections[currentIndex - 1]?.overlay2.valueOf()
-									? fadeDuration : 0 }}
-						/>
-					</div>
-				{/if}
-			</div>
-		{/key}
+			{#if sections[currentIndex].overlay2 != ""}
+				<div class="overlay-2 overlay-image" >
+					<img
+					src={sections[currentIndex].overlay2}
+					alt={sections[currentIndex].overlay1}
+					transition:fade={{duration: sections[currentIndex].overlay2.valueOf() != sections[currentIndex - 1]?.overlay2.valueOf()
+								? fadeDuration : 0 }}
+					/>
+				</div>
+			{/if}
+		</div>
 	</div>
 
 	<div class="text-scroll" style:height="{windowHeight*numSections}px"></div>
