@@ -154,6 +154,7 @@
 /* base page and text styling */
 html {
 	font-size: 3.25px;
+	scroll-behavior: smooth;
 }
 
 @media (max-height: 800px) {

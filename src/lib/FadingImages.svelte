@@ -4,6 +4,7 @@
 	import { fade } from "svelte/transition";
 	import { onMount, onDestroy } from "svelte";
     import { marked } from 'marked'
+    import ScrollArrow from '$lib/ScrollArrow.svelte';
 
 	export let imageAlign = "center";
 	export let header = "";
@@ -26,8 +27,8 @@
 	];
 	export let mobileTextAlign = "top";
 	export let arrowColour = "white";
-
-	$: console.log(imageHeight,windowHeight,topImageMargin);
+	export let hideUpArrow = true;
+	export let hideDownArrow = false;
 
 	let windowHeight = 0;
 	let imgDivHeight = 0;
@@ -40,12 +41,12 @@
 
 	onMount(() => {
 		windowHeight = window.innerHeight;
-		isMobile = window.innerWidth <= 500;
+		isMobile = window.innerWidth <= 550 && window.innerWidth / window.innerHeight <= 0.8;
 		mounted = true;
 
 		const resizeHandler = () => {
 			windowHeight = window.innerHeight;
-			isMobile = window.innerWidth <= 500;
+			isMobile = window.innerWidth <= 550 && window.innerWidth / window.innerHeight <= 0.8;
 		};
 		window.addEventListener('resize', resizeHandler);
 
@@ -90,20 +91,49 @@
 			}
 		}
 	}
-	
-	let textSections = [];
+
+	let containerTop = 0;
+	let containerHeight = 0;
+
+	const measureContainer = () => {
+		const rect = container.getBoundingClientRect();
+		containerTop = rect.top + window.scrollY;
+		containerHeight = rect.height;
+	};
 
 	const handleScroll = () => {
-		currentIndex = Math.min(Math.floor(window.scrollY / windowHeight), numSections - 1);
+		const scrollY = window.scrollY;
+		const localScroll = scrollY - containerTop;
+		const sectionHeight = windowHeight;
+
+		if (localScroll < 0 || localScroll > containerHeight - sectionHeight) {
+			hideDownArrow = true;
+			hideUpArrow = true;
+			return;
+		}
+
+		const index = Math.floor(localScroll / sectionHeight);
+
+		currentIndex = Math.min(
+			Math.max(index, 0),
+			numSections - 1
+		);
+
+
 		arrowColour = sections[currentIndex].arrowColour;
+		hideDownArrow = currentIndex === numSections - 1;
+		hideUpArrow = currentIndex === 0;
 	};
 
 
 	onMount(() => {
 		window.addEventListener("scroll", handleScroll);
+  		window.addEventListener("resize", measureContainer);
 		handleScroll();
+  		measureContainer();
 		return () => {
-			window.removeEventListener("scroll", handleScroll);
+			window.removeEventListener("scroll", handleScroll)
+			window.removeEventListener("resize", measureContainer);
 		};
 	});
 
@@ -114,26 +144,10 @@
 <div class="scrolly-wrapper" bind:this={container}>
 
 	<div class="sticky-image">
-
-		<!-- {#each sections as section, i}
-			{#if currentIndex === i}
-				<div class="image-container">
-					<img
-						class={imageAlign}
-						src={section.image}
-						alt={section.heading}
-						transition:fade={{duration: section.image.valueOf() != sections[currentIndex - 1]?.image.valueOf()
-									? fadeDuration : 0 }}
-						loading="eager"
-						style="max-height: {imageHeight}; max-width: {imageWidth}; top: {topImageMargin};"	
-					/>
-				</div>
-			{/if}
-		{/each} -->
 		{#key currentIndex} 
 			<div class="image-container">
 				<img
-					class={imageAlign}
+					class={`${imageAlign} ${sections[currentIndex].bg_fit}`}
 					src={sections[currentIndex].image}
 					alt={sections[currentIndex].heading}
 					transition:fade={{duration: sections[currentIndex].image.valueOf() != sections[currentIndex - 1]?.image.valueOf()
@@ -145,7 +159,8 @@
 		{/key}
 		
 		{#if header != ""}
-			<h1 class="header-text">
+			<h1 class="header-text"
+				style="color: {arrowColour}">
 				{header}
 			</h1>
 		{/if}
@@ -162,32 +177,73 @@
 		{/key}
 
 		<div class="fading-overlay-section">
-			{#if sections[currentIndex].overlay1 != ""}
-				<div class="overlay-1 overlay-image" >
-					<img
-					src={sections[currentIndex].overlay1}
-					alt={sections[currentIndex].overlay1}
-					transition:fade={{duration: sections[currentIndex].overlay1.valueOf() != sections[currentIndex - 1]?.overlay1.valueOf()
-								? fadeDuration : 0 }}
-					/>
-				</div>
-			{/if}
+			<div class="desktop-overlay"
+				style="visibility: {isMobile ? "hidden" : "visible"}">
+			
+				{#if sections[currentIndex].overlay1 != ""}
+					<div class="overlay-1 overlay-image" >
+						<img
+						src={sections[currentIndex].overlay1}
+						alt={sections[currentIndex].overlay1}
+						transition:fade={{duration: sections[currentIndex].overlay1.valueOf() != sections[currentIndex - 1]?.overlay1.valueOf()
+									? fadeDuration : 0 }}
+						/>
+					</div>
+				{/if}
 
-			{#if sections[currentIndex].overlay2 != ""}
-				<div class="overlay-2 overlay-image" >
-					<img
-					src={sections[currentIndex].overlay2}
-					alt={sections[currentIndex].overlay1}
-					transition:fade={{duration: sections[currentIndex].overlay2.valueOf() != sections[currentIndex - 1]?.overlay2.valueOf()
-								? fadeDuration : 0 }}
-					/>
-				</div>
-			{/if}
+				{#if sections[currentIndex].overlay2 != ""}
+					<div class="overlay-2 overlay-image" >
+						<img
+						src={sections[currentIndex].overlay2}
+						alt={sections[currentIndex].overlay1}
+						transition:fade={{duration: sections[currentIndex].overlay2.valueOf() != sections[currentIndex - 1]?.overlay2.valueOf()
+									? fadeDuration : 0 }}
+						/>
+					</div>
+				{/if}
+			</div>
 		</div>
 	</div>
 
-	<div class="text-scroll" style:height="{windowHeight*numSections}px"></div>
+	<!-- {#if isMobile} -->
+		<div class="mobile-overlay text-scroll"
+			style="visibility: {isMobile ? "visible" : "hidden"}">
+				{#each sections as section, i}
+					<div id={section.menu_id !== "" ? section.menu_id : null}>
+						{#if section.overlay2 == ""}
+							<div class="mobile-overlay-1 mobile-overlay-image">
+								<img
+								src={section.overlay1}
+								alt={section.overlay1}
+								/>
+							</div>
+						{/if}
+						{#if section.overlay2 !== ""}
+							<div class="mobile-overlay-2 mobile-overlay-image">
+								<img
+								src={section.overlay2}
+								alt={section.overlay2}
+								/>
+							</div>
+						{/if}
+					</div>
+				{/each}
+		</div>
+	<!-- {:else}
+		<div class="text-scroll" style:height="{windowHeight*numSections}px"></div>
+	{/if} -->
 
+	<ScrollArrow 
+		clickable={true}
+		colour={arrowColour}
+		hidden={hideDownArrow}
+		isDown={true}/>
+
+	<ScrollArrow 
+		clickable={true}
+		colour={arrowColour}
+		hidden={hideUpArrow}
+		isDown={false}/>
 </div>
 
 
@@ -213,8 +269,18 @@
 
 	.sticky-image img {
 		position: absolute;
-		object-fit: contain;
 		height: 100%;
+	}
+
+	.sticky-image img.cover {
+		width: 100%;
+		object-fit: cover; 
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.sticky-image img.contain {
+		object-fit: contain;
 	}
 
 	.header-text {
@@ -276,6 +342,22 @@
 		width: 100%;
 	}
 
+	.mobile-overlay-image {
+		height: 100vh;
+		width: 100%;
+	}
+
+	.mobile-overlay-image img {
+		width: 100%;
+		box-shadow: 0px 0px 2px black;
+	}
+
+	.mobile-overlay {
+		width: 96vw;
+		left: 2vw;
+		position: relative;
+	}
+
 	@media (max-width: 1450px) {
 		.fading-text-section {
 			position: absolute;
@@ -300,18 +382,22 @@
 		}
 	}
 
-	@media (max-width: 800px) {
+	@media (max-aspect-ratio: 5/6) {
 		.image-container {
 			z-index: 1;
 		}
 
 		.sticky-image img {
+			object-fit: cover;
+		}
+
+		.sticky-image img.contain {
+			object-fit: contain;
 			object-position: 45% center;
 			padding-top: 2vw;
 			width: 96vw;
-			height: 96vw; /* TODO: MAKE THIS CONFIGURABLE */
+			height: 96vw; 
 			margin: auto;
-			object-fit: cover;
 		}
 		
 		.fading-text-section {
@@ -339,15 +425,24 @@
 		}
 	}
 
+	@media (max-width: 650px) and (max-aspect-ratio: 5/6) {
+		:global(.fading-text-wrapper p) {
+			margin-top: -15vw;
+		}
+	}
+
 	@media (max-width: 500px) {
 		.image-container {
 			z-index: 1;
 		}
 
 		.sticky-image img {
+			object-fit: cover;
+		}
+
+		.sticky-image img.contain {
 			padding-top: 10vw;
 		}
-		
 		.fading-text-section {
     		width: 92vw;
 			height: calc(100vh - 96vw - 10vw);
@@ -360,10 +455,7 @@
 		:global(.fading-text-wrapper p) {
 			font-size: 16px !important;
 			line-height: 28px;
-		}
-
-		.header-text {
-			font-size: 8rem;
+			margin-top: 0;
 		}
 	}
 
