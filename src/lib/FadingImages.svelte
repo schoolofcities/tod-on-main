@@ -205,33 +205,30 @@
 		</div>
 	</div>
 
-	<!-- {#if isMobile} -->
-		<div class="mobile-overlay text-scroll"
-			style="visibility: {isMobile ? "visible" : "hidden"}">
-				{#each sections as section, i}
-					<div id={section.menu_id !== "" ? section.menu_id : null}>
-						{#if section.overlay2 == ""}
-							<div class="mobile-overlay-1 mobile-overlay-image">
-								<img
-								src={section.overlay1}
-								alt={section.overlay1}
-								/>
-							</div>
-						{/if}
-						{#if section.overlay2 !== ""}
-							<div class="mobile-overlay-2 mobile-overlay-image">
-								<img
-								src={section.overlay2}
-								alt={section.overlay2}
-								/>
-							</div>
-						{/if}
-					</div>
-				{/each}
-		</div>
-	<!-- {:else}
-		<div class="text-scroll" style:height="{windowHeight*numSections}px"></div>
-	{/if} -->
+	<div class="mobile-overlay text-scroll"
+		style="visibility: {isMobile ? "visible" : "hidden"}">
+			{#each sections as section, i}
+				<div id={section.menu_id !== "" ? section.menu_id : null}>
+					{#if section.overlay2 == ""}
+						<div class="mobile-overlay-1 mobile-overlay-image">
+							<img
+							src={section.overlay1}
+							alt={section.overlay1}
+							/>
+						</div>
+					{/if}
+					{#if section.overlay2 !== ""}
+						<div class="mobile-overlay-2 mobile-overlay-image">
+							<img
+							src={section.overlay2}
+							alt={section.overlay2}
+							/>
+						</div>
+					{/if}
+				</div>
+			{/each}
+	</div>
+
 
 	<ScrollArrow 
 		clickable={true}
