@@ -81,8 +81,9 @@
         top: 15rem;
         right: 15rem;
     }
+
     .icon {
-    overflow: visible;
+        overflow: visible;
     }
 
     .bar {
