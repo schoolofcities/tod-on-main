@@ -13,11 +13,9 @@
 	import GraphicSingle from '$lib/GraphicSingle.svelte';
 	import GraphicsMultiples from '$lib/GraphicMultiples.svelte';
 	import Footer from '$lib/Footer.svelte';
-
-	import topImage from './assets/CC_Background_Frame_1.png' // TODO: MAKE THIS DARK
-	import featureImage from './assets/cooksville-transit-schematic.png'
-
 	import FadingImages from "$lib/FadingImages.svelte";
+
+	import topImage from './assets/CC_Background_Frame_1.png' 
 
 	export let data;
 
@@ -43,7 +41,7 @@
 	import Footnote from '$lib/Footnote.svelte';
 	import Footnotes from '$lib/Footnotes.svelte';
 	import { createFootnoteStore } from '$lib/footnoteUtils';
-    import BottomArrow from '$lib/BottomArrow.svelte';
+    import ScrollArrow from '$lib/ScrollArrow.svelte';
     import { resolveRoute } from '$app/paths';
     import HamburgerMenu from '$lib/HamburgerMenu.svelte';
 
@@ -63,10 +61,19 @@
 	let innerHeight = 1;
 	let arrowColour = "white";
 	let scrollyContent = [];
+	let textSection;
+	let arrowHidden = false;
+	let hideDownArrow = true;
+	let hideUpArrow = true; 
 
 	// replace url with applicable content csv
 
+	let checkTextShown = () => {
+
+	}
+
 	onMount(() => {
+		textSection = document.getElementById("top-text")
 		innerHeight = window.innerHeight;
 
 		const onScroll = () => {
@@ -81,7 +88,6 @@
 	$: topOpacity = 1 - Math.min(scrollY / innerHeight, 1);
 
 	$: topPointer = topOpacity < 0.02 ? 'none' : 'auto';
-
 
 </script>
 
@@ -137,7 +143,6 @@
 				image={topImage}
 				imageOpacity=1
 				imageAltText="A photo"
-				imageFeature={featureImage}
 				tintColour="black"
 				tintOpacity=0.5
 				titleFontColour="var(--brandWhite)"
@@ -148,17 +153,26 @@
 			/>
 		</div>
 		
-		<BottomArrow 
+		<ScrollArrow 
 		clickable={true}
-		colour={arrowColour}/>
+		colour={arrowColour}
+		hidden={hideUpArrow}
+		isDown={false}/>
+
+		<ScrollArrow 
+		clickable={true}
+		colour={arrowColour}
+		hidden={hideDownArrow}
+		isDown={true}/>
 
 		<HamburgerMenu
-		colour={arrowColour}/>
+		iconColour={arrowColour}
+		contents={data.menuItems}/>
 
 		<!-- Bottom is underneath, scrolls normally -->
-		<div class="bottom">
+		<div class="bottom" id="before-text">
 			<FadingImages
-				sections={data.rows}
+				sections={data.animations[0].items}
 				header={"COOKSVILLE STATION"}
 				imageAlign={"center"}
 				imageWidth={"100%"}
@@ -168,181 +182,47 @@
 				fadeDuration={1500}
 				mobileTextAlign={"top"}
 				bind:arrowColour
+				bind:hideUpArrow
+				bind:hideDownArrow
 			/>
 		</div>
 
 	</div>
 
 
+	<div id="text_1" class="text">
+		<div id="top-text">
+			<p>
+				Fusce sed sem nulla. Praesent congue sapien pellentesque sodales fermentum. Pellentesque dapibus ultrices lacus consectetur laoreet. Integer imperdiet sed sapien sed pharetra. Praesent sodales nunc ut lorem venenatis laoreet vitae et neque. Etiam condimentum tincidunt dignissim. 
+			</p>
 
+			
 
-
-	
-	
-
-	
-
-	
-
-	
-
-
-	<!-- Here is a half split title example: -->
-
-	<!-- <TitleHalfSplit
-		title="Fun Captivating Project Title"
-		subtitle="Maybe a slightly longer more detailed wordier project subtitle that explains the project"
-		image="https://schoolofcities.github.io/eddit/_app/immutable/assets/wood-buffalo-title-img-2.CpYjt7SE.jpg"
-		imageAltText="A photo"
-		imageCaption="Wood Buffalo skyline."
-		imageSource="Wikimedia Commons."
-		titleFontColour="var(--brandWhite)"
-		titleBorderColour="var(--brandYellow)"
-		subtitleFontColour="var(--brandWhite)"
-		backgroundColour="var(--brandDarkBlue)"
-		logoStyle="Dark"
-	/> -->
-
-	
-	<!-- Simple title example with logo and subtitle: -->
-
-	<!-- <Logo logoType="Blue" backgroundColor="var(--brandWhite)"/>
-
-	<ImageSingle
-		imageURL="https://jamaps.github.io/photos/picimgs/taipei1_2025.jpg"
-		caption="Taipei skyline."
-		source="Jeff Allen."
-		altText=""
-		maxWidth="1080px"
-	/>
-
-
-	<TitleStandard
-		title="Fun Captivating Project Title"
-		subtitle="Maybe a slightly longer more detailed wordier project subtitle "
-	/>
-
-	<div class="text">
-
-		<AuthorDate
-			authors="<a href='' target='_blank'>Author Name</a> & <a href='' target='_blank'>Author Name</a>"
-			date="July 2025"
-		/>
-
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat lacus eu dolor dapibus sodales. Aenean venenatis metus id eleifend tincidunt. Nulla ut lacus et urna finibus bibendum sit amet et ante. Aliquam tristique, ex sed porttitor hendrerit, ex odio accumsan ex, eu maximus leo quam quis nulla. 
-		</p>
-
-		<p>
-			Cras tincidunt nisi non tempus suscipit. Nullam metus erat, ultrices vitae mauris commodo, placerat sollicitudin sem. In vitae dignissim eros. Phasellus porttitor orci.<Footnote id={addFootnote(fns[0])}/> nisl, vitae iaculis nulla pretium et. Fusce nec tortor erat. Vestibulum pretium nisl et ligula ultrices fringilla.
-		</p>
-
-		<p>
-			Vivamus non finibus erat. Ut quis mi at felis aliquam rhoncus eu eget augue. Nunc convallis, dui et congue suscipit, nisl sapien malesuada ligula, vitae luctus justo ligula finibus diam. Quisque aliquam et lacus vitae venenatis. Duis id vulputate augue, vel posuere ex. Nam fermentum consequat dolor, ac finibus justo finibus sit amet. Nam suscipit egestas tellus, malesuada dignissim neque dignissim sed.<Footnote id={addFootnote(fns[1])} />
-		</p>
-
-		<p>
-			Nunc vel massa turpis. Vivamus id odio ut nulla dignissim molestie. 
-		</p>
-
-	</div>
-
-	<GraphicSingle
-		svg720="./examples/map-tree-redline-720.svg"
-		svg360="./examples/map-tree-redline-360.svg"
-	/>
-	
-	<div class="text">
-
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat lacus eu dolor dapibus sodales. Aenean venenatis metus id eleifend tincidunt. Nulla ut lacus et urna finibus bibendum sit amet et ante. Aliquam tristique, ex sed porttitor hendrerit, ex odio accumsan ex, eu maximus leo quam quis nulla.<Footnote id={addFootnote(fns[2])} />
-		</p>
-		<p>
-			Cras tincidunt nisi non tempus suscipit. Nullam metus erat, ultrices vitae mauris commodo, placerat sollicitudin sem. In vitae dignissim eros. Phasellus porttitor orci nisl, vitae iaculis nulla pretium et. Fusce nec tortor erat. Vestibulum pretium nisl et ligula ultrices fringilla.<Footnote id={addFootnote(fns[3])} />
-		</p>
-		<p>
-			Vivamus non finibus erat. Ut quis mi at felis aliquam rhoncus eu eget augue. Nunc convallis, dui et congue suscipit, nisl sapien malesuada ligula, vitae luctus justo ligula finibus diam. Quisque aliquam et lacus vitae venenatis. Duis id vulputate augue, vel posuere ex. Nam fermentum consequat dolor, ac finibus justo finibus sit amet. Nam suscipit egestas tellus, malesuada dignissim neque dignissim sed.<Footnote id={addFootnote(fns[0])} />
-		</p>
-		<p>
-			Nunc vel massa turpis. Vivamus id odio ut nulla dignissim molestie. 
-		</p>
-
-	</div>
-
-	<GraphicsMultiples
-		svgPaths={["./examples/map-tree-360.svg", "./examples/map-heat-360.svg", "./examples/map-asthma-360.svg"]}
-	/>
-
-	
-
-	<div class="text">
-
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat lacus eu dolor dapibus sodales. Aenean venenatis metus id eleifend tincidunt. Nulla ut lacus et urna finibus bibendum sit amet et ante. Aliquam tristique, ex sed porttitor hendrerit, ex odio accumsan ex, eu maximus leo quam quis nulla.<Footnote id={addFootnote(fns[2])} />
-		</p>
-		<p>
-			Cras tincidunt nisi non tempus suscipit. Nullam metus erat, ultrices vitae mauris commodo, placerat sollicitudin sem. In vitae dignissim eros. Phasellus porttitor orci nisl, vitae iaculis nulla pretium et. Fusce nec tortor erat. Vestibulum pretium nisl et ligula ultrices fringilla.<Footnote id={addFootnote(fns[3])} />
-		</p>
-		<p>
-			Vivamus non finibus erat. Ut quis mi at felis aliquam rhoncus eu eget augue. Nunc convallis, dui et congue suscipit, nisl sapien malesuada ligula, vitae luctus justo ligula finibus diam. Quisque aliquam et lacus vitae venenatis. Duis id vulputate augue, vel posuere ex. Nam fermentum consequat dolor, ac finibus justo finibus sit amet. Nam suscipit egestas tellus, malesuada dignissim neque dignissim sed.<Footnote id={addFootnote(fns[0])} />
-		</p>
-		<p>
-			Nunc vel massa turpis. Vivamus id odio ut nulla dignissim molestie. 
-		</p>
-
-	</div> -->
-
-	<!-- <ScrollyImages
-		sections={scrollyContentSmall}
-		imageAlign={"center"}
-		imageWidth={"540px"}
-		imageHeight={"540px"} 
-		textSectionMaxWidth={"540px"}
-		textSectionAlign={"right"}
-		fadeDuration={500}
-	/> -->
-
-	
-
-
-	
-	<div class="text">
-		<p>
-			Fusce sed sem nulla. Praesent congue sapien pellentesque sodales fermentum. Pellentesque dapibus ultrices lacus consectetur laoreet. Integer imperdiet sed sapien sed pharetra. Praesent sodales nunc ut lorem venenatis laoreet vitae et neque. Etiam condimentum tincidunt dignissim. 
-		</p>
-
-		
-
-		<p>	
-			Praesent placerat purus vitae rhoncus auctor. Aliquam faucibus porta scelerisque. In bibendum ornare sagittis. Nam accumsan turpis sit amet elementum sollicitudin. Mauris auctor nec velit id iaculis. Proin venenatis nisl a iaculis dignissim. Nunc volutpat nulla at dolor mollis eleifend. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam commodo purus in risus placerat, sed vehicula enim viverra. 
-		</p>
-		<h2>
-			A subheading that is nice
-		</h2>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat lacus eu dolor dapibus sodales. Aenean venenatis metus id eleifend tincidunt. Nulla ut lacus et urna finibus bibendum sit amet et ante. Aliquam tristique, ex sed porttitor hendrerit, ex odio accumsan ex, eu maximus leo quam quis nulla. 
-		</p>
-		<p>
-			Cras tincidunt nisi non tempus suscipit. Nullam metus erat, ultrices vitae mauris commodo, placerat sollicitudin sem. In vitae dignissim eros. Phasellus porttitor orci nisl, vitae iaculis nulla pretium et. Fusce nec tortor erat. Vestibulum pretium nisl et ligula ultrices fringilla. 
-		</p>
-		<p>
-			Vivamus non finibus erat. Ut quis mi at felis aliquam rhoncus eu eget augue. Nunc convallis, dui et congue suscipit, nisl sapien malesuada ligula, vitae luctus justo ligula finibus diam. Quisque aliquam et lacus vitae venenatis. Duis id vulputate augue, vel posuere ex. Nam fermentum consequat dolor, ac finibus justo finibus sit amet. Nam suscipit egestas tellus, malesuada dignissim neque dignissim sed. 
-		</p>
-		<h3>
-			A subheading that is nice
-		</h3>
-		<p>
-			Cras tincidunt nisi non tempus suscipit. Nullam metus erat, ultrices vitae mauris commodo, placerat sollicitudin sem. In vitae dignissim eros. Phasellus porttitor orci nisl, vitae iaculis nulla pretium et. Fusce nec tortor erat. Vestibulum pretium nisl et ligula ultrices fringilla. 
-		</p>
-		<p>
-			Vivamus non finibus erat. Ut quis mi at felis aliquam rhoncus eu eget augue. Nunc convallis, dui et congue suscipit, nisl sapien malesuada ligula, vitae luctus justo ligula finibus diam. Quisque aliquam et lacus vitae venenatis. Duis id vulputate augue, vel posuere ex. Nam fermentum consequat dolor, ac finibus justo finibus sit amet. Nam suscipit egestas tellus, malesuada dignissim neque dignissim sed. 
-		</p>
-
-	</div>
-
-
-
-	<div class="text">
+			<p>	
+				Praesent placerat purus vitae rhoncus auctor. Aliquam faucibus porta scelerisque. In bibendum ornare sagittis. Nam accumsan turpis sit amet elementum sollicitudin. Mauris auctor nec velit id iaculis. Proin venenatis nisl a iaculis dignissim. Nunc volutpat nulla at dolor mollis eleifend. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam commodo purus in risus placerat, sed vehicula enim viverra. 
+			</p>
+			<h2>
+				A subheading that is nice
+			</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat lacus eu dolor dapibus sodales. Aenean venenatis metus id eleifend tincidunt. Nulla ut lacus et urna finibus bibendum sit amet et ante. Aliquam tristique, ex sed porttitor hendrerit, ex odio accumsan ex, eu maximus leo quam quis nulla. 
+			</p>
+			<p>
+				Cras tincidunt nisi non tempus suscipit. Nullam metus erat, ultrices vitae mauris commodo, placerat sollicitudin sem. In vitae dignissim eros. Phasellus porttitor orci nisl, vitae iaculis nulla pretium et. Fusce nec tortor erat. Vestibulum pretium nisl et ligula ultrices fringilla. 
+			</p>
+			<p>
+				Vivamus non finibus erat. Ut quis mi at felis aliquam rhoncus eu eget augue. Nunc convallis, dui et congue suscipit, nisl sapien malesuada ligula, vitae luctus justo ligula finibus diam. Quisque aliquam et lacus vitae venenatis. Duis id vulputate augue, vel posuere ex. Nam fermentum consequat dolor, ac finibus justo finibus sit amet. Nam suscipit egestas tellus, malesuada dignissim neque dignissim sed. 
+			</p>
+			<h3>
+				A subheading that is nice
+			</h3>
+			<p>
+				Cras tincidunt nisi non tempus suscipit. Nullam metus erat, ultrices vitae mauris commodo, placerat sollicitudin sem. In vitae dignissim eros. Phasellus porttitor orci nisl, vitae iaculis nulla pretium et. Fusce nec tortor erat. Vestibulum pretium nisl et ligula ultrices fringilla. 
+			</p>
+			<p>
+				Vivamus non finibus erat. Ut quis mi at felis aliquam rhoncus eu eget augue. Nunc convallis, dui et congue suscipit, nisl sapien malesuada ligula, vitae luctus justo ligula finibus diam. Quisque aliquam et lacus vitae venenatis. Duis id vulputate augue, vel posuere ex. Nam fermentum consequat dolor, ac finibus justo finibus sit amet. Nam suscipit egestas tellus, malesuada dignissim neque dignissim sed. 
+			</p>
+		</div>
 
 		<div class="details">
 
@@ -361,9 +241,6 @@
 
 		</div>
 
-	</div>
-
-	<div class="text">
 
 		<Footnotes footnotes={footnotes} />
 		
@@ -384,7 +261,7 @@
 		inset: 0;
 		height: 100vh;
 		width: 100%;
-		z-index: 2;
+		z-index: 25;
 		pointer-events: none; /* allows clicks to pass through if needed */
 		transition: opacity 0.1s linear;
 	}

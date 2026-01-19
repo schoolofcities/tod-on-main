@@ -9,17 +9,41 @@
 import Papa from 'papaparse';
 
 export async function load({ fetch }) {
-    //update fetch url to match correct file
-    const res = await fetch('/web-assets/case-study/cooksville/cooksville-content.csv');
-    const csvText = await res.text();
+    const contentFile = await fetch('/web-assets/case-study/cooksville/cooksville-content.csv');
+    const contentText = await contentFile.text();
 
-    const parsed = Papa.parse(csvText, {
-        header: true,      // CSV has column names
+    const parsedContent = Papa.parse(contentText, {
+        header: true,     
         encoding: "utf-8",
         skipEmptyLines: true
     });
 
-    return { rows: parsed.data };
+    function groupByAnimation(arr) { // chop big animation csv into individual parts
+        return arr.reduce((groups, item) => {
+            const lastGroup = groups[groups.length - 1];
+
+            if (!lastGroup || lastGroup.animation !== item.animation) {
+                groups.push({ animation: item.animation, items: [item] });
+            } else {
+                lastGroup.items.push(item);
+            }
+
+            return groups;
+        }, []);
+    }
+
+    const menuFile = await fetch('/web-assets/case-study/cooksville/cooksville-menuitems.csv');
+    const menuText = await menuFile.text();
+
+    const parsedMenu = Papa.parse(menuText, {
+        header: true,     
+        encoding: "utf-8",
+        skipEmptyLines: true
+    });
+
+    return { animations: groupByAnimation(parsedContent.data), menuItems: parsedMenu.data };
 }
 
-export const prerender = true;
+export const prerender = true; 
+
+

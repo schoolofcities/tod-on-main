@@ -5,6 +5,7 @@
 	import LogoII from '../assets/ii-logo-white.svg'
 
 	import AuthorDate from "./AuthorDate.svelte";
+    import ScrollArrow from '$lib/ScrollArrow.svelte';
 	import { onMount } from "svelte";
 
 	export let title = '';
@@ -16,15 +17,14 @@
 	export let tintColour = "black";
 	export let imageOpacity = 1;
 	export let imageAltText = '';
-	// export let imageCaption = '';
-	// export let imageSource = '';
-	export let imageFeature = '';
 	export let titleFontColour = 'var(--brandDarkBlue)';
 	export let subtitleFontColour = 'var(--brandDarkBlue)';
 	export let logoType = 'Black'; // 'Black', 'White', or 'None'
 	export let authorText = "";
 	export let dateText = "";
 	export let topOpacity = 1;
+	export let hasArrow = true;
+	export let arrowColour = "white";
 
 	let divWidth;
 	
@@ -72,46 +72,24 @@
 	</div>
 
 	<div class="title-text-container">
-
-		<!-- <img src={imageFeature} style="max-width: 90px; opacity: 1; border: solid 5px white; margin-bottom: -25px;"/> -->
+		<ScrollArrow 
+			clickable={true}
+			colour={arrowColour}
+			hidden={!hasArrow}
+			isDown={true}/>
 		
 		<h2 style="color: {subtitleFontColour}; margin-bottom: 20rem;">{topic.toUpperCase()}</h2>
 		
 		<h1 style="color: {titleFontColour}; margin-bottom: 8rem;">{title.toUpperCase()}</h1>
 		<h3 style="color: {subtitleFontColour}; margin-bottom: 40rem;">{location.toUpperCase()}</h3>
 
-		<!-- {#if divWidth > 600} -->
-
-
-		<!-- {/if} -->
-		
 		
 		<h4 style="color: {subtitleFontColour};">{subtitle}</h4>
 
-		<!-- <div class="author-date">
-
-			<p>
-				{@html authorText}
-				<br>
-				<span id="date">{dateText}</span>
-			</p>
-
-		</div> -->
 
 	</div>
 
 </div>
-
-<!-- <div class="subtitle-text-container">
-		
-	{#if divWidth <= 600}
-
-		<h2 style="color: black;">{subtitle}</h2>
-		
-	{/if}
-
-</div> -->
-
 
 
 <style>
