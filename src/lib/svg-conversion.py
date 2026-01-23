@@ -400,23 +400,23 @@ def process_svg(input_svg_path, output_svg_path, font_map):
 # 		process_svg(svg[0], svg[1], FONT_MAP)
 
 
-INPUT_SVG_PATH = "../routes/briefs/activity-participation/assets/activity-schematic-360.svg"
-OUTPUT_SVG_PATH = "../../static/briefs/activity-participation/activity-schematic-360-web.svg"
-
-if __name__ == "__main__":
-	process_svg(INPUT_SVG_PATH, OUTPUT_SVG_PATH, FONT_MAP)
-
-
-# from pathlib import Path
-
-# def main():
-# 	city = "halifax-ns"
-# 	input_dir = "../routes/" + city + "/assets"  
-# 	output_dir = "../../static/"  + city + "/web-svg"
-
-# 	for svg_file in Path(input_dir).glob("*.svg"):
-# 		output_path = Path(output_dir) / svg_file.name
-# 		process_svg(svg_file, output_path, FONT_MAP)
+# INPUT_SVG_PATH = "../routes/briefs/activity-participation/assets/activity-schematic-360.svg"
+# OUTPUT_SVG_PATH = "../../static/briefs/activity-participation/activity-schematic-360-web.svg"
 
 # if __name__ == "__main__":
-# 	main()
+# 	process_svg(INPUT_SVG_PATH, OUTPUT_SVG_PATH, FONT_MAP)
+
+
+from pathlib import Path
+
+def main():
+	folder = "case-study/cooksville"
+	input_dir = "../routes/" + folder + "/assets"  
+	output_dir = "../../static/web-assets/"  + folder
+
+	for svg_file in Path(input_dir).glob("*.svg"):
+		output_path = Path(output_dir) / svg_file.name
+		process_svg(svg_file, output_path, FONT_MAP)
+
+if __name__ == "__main__":
+	main()
