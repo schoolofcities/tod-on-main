@@ -1,8 +1,5 @@
-menu_entry,item_id
-Animation Title 1,animation_1
-Animation Title Two,animation_2
-Animation Title III,animation_3
-Animation Title 4,animation_4
-Animation Title Five,animation_5
-Animation Title VI,animation_6
-Text Section,text_1
+"menu_entry","item_id"
+"Neighbourhood overview","Menu_2"
+"Cooksville’s current trajectory","Menu_3"
+"Building for families, building for all","Menu_4"
+"Addressing rising flood risk","Menu_5"
