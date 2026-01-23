@@ -223,12 +223,17 @@
 	}
 
 	@media (max-width: 500px) {
+		.logo-container {
+			left: 10px;
+			top: 10px;
+		}
+
 		#ii-logo {
-			width: 30%
+			width: 28%
 		}
 
 		#sofc-logo {
-			width: 60%
+			width: 56%
 		}
 	}
 

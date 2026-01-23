@@ -41,7 +41,6 @@
 	import Footnote from '$lib/Footnote.svelte';
 	import Footnotes from '$lib/Footnotes.svelte';
 	import { createFootnoteStore } from '$lib/footnoteUtils';
-    import ScrollArrow from '$lib/ScrollArrow.svelte';
     import { resolveRoute } from '$app/paths';
     import HamburgerMenu from '$lib/HamburgerMenu.svelte';
 
@@ -62,9 +61,6 @@
 	let arrowColour = "white";
 	let scrollyContent = [];
 	let textSection;
-	let arrowHidden = false;
-	let hideDownArrow = true;
-	let hideUpArrow = true; 
 
 	// replace url with applicable content csv
 
@@ -152,18 +148,6 @@
 				topOpacity={topOpacity}
 			/>
 		</div>
-		
-		<ScrollArrow 
-		clickable={true}
-		colour={arrowColour}
-		hidden={hideUpArrow}
-		isDown={false}/>
-
-		<ScrollArrow 
-		clickable={true}
-		colour={arrowColour}
-		hidden={hideDownArrow}
-		isDown={true}/>
 
 		<HamburgerMenu
 		iconColour={arrowColour}
@@ -181,9 +165,8 @@
 				textSectionAlign={"left"}
 				fadeDuration={1500}
 				mobileTextAlign={"top"}
+				backgroundColour={"#FAFAFA"}
 				bind:arrowColour
-				bind:hideUpArrow
-				bind:hideDownArrow
 			/>
 		</div>
 
@@ -192,6 +175,7 @@
 
 	<div id="text_1" class="text">
 		<div id="top-text">
+			<h1>Cooksville Case Study</h1>
 			<p>
 				Fusce sed sem nulla. Praesent congue sapien pellentesque sodales fermentum. Pellentesque dapibus ultrices lacus consectetur laoreet. Integer imperdiet sed sapien sed pharetra. Praesent sodales nunc ut lorem venenatis laoreet vitae et neque. Etiam condimentum tincidunt dignissim. 
 			</p>
