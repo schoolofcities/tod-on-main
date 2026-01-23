@@ -4,7 +4,7 @@
 	import { fade } from "svelte/transition";
 	import { onMount, onDestroy } from "svelte";
     import { marked } from 'marked'
-    import ScrollArrow from '$lib/ScrollArrow.svelte';
+    import ScrollAnimate from '$lib/ScrollAnimate.svelte';
 
 	export let imageAlign = "center";
 	export let header = "";
@@ -27,16 +27,15 @@
 	];
 	export let mobileTextAlign = "top";
 	export let arrowColour = "white";
-	export let hideUpArrow = true;
-	export let hideDownArrow = false;
+	export let backgroundColour = "#FAFAFA";
 
 	let windowHeight = 0;
 	let imgDivHeight = 0;
 	let topImageMargin = "0px";
 	let isMobile = false;
-
 	let numSections = sections.length;
 	let mounted = false;
+	let showAnimation;
 
 
 	onMount(() => {
@@ -46,6 +45,8 @@
 
 		const resizeHandler = () => {
 			windowHeight = window.innerHeight;
+			hideDownArrow = isMobile && hideDownArrow;
+			hideUpArrow = isMobile && hideUpArrow;
 			isMobile = window.innerWidth <= 550 && window.innerWidth / window.innerHeight <= 0.8;
 		};
 		window.addEventListener('resize', resizeHandler);
@@ -91,9 +92,9 @@
 			}
 		}
 	}
-
 	let containerTop = 0;
 	let containerHeight = 0;
+	let hideProgressBar = true;
 
 	const measureContainer = () => {
 		const rect = container.getBoundingClientRect();
@@ -107,12 +108,13 @@
 		const sectionHeight = windowHeight;
 
 		if (localScroll < 0 || localScroll > containerHeight - sectionHeight) {
-			hideDownArrow = true;
-			hideUpArrow = true;
+			hideProgressBar = true;
 			return;
 		}
-
+		
 		const index = Math.floor(localScroll / sectionHeight);
+
+		hideProgressBar = index < 0 || index >= numSections;
 
 		currentIndex = Math.min(
 			Math.max(index, 0),
@@ -121,8 +123,6 @@
 
 
 		arrowColour = sections[currentIndex].arrowColour;
-		hideDownArrow = currentIndex === numSections - 1;
-		hideUpArrow = currentIndex === 0;
 	};
 
 
@@ -141,7 +141,22 @@
 
 
 
-<div class="scrolly-wrapper" bind:this={container}>
+<div class="scrolly-wrapper" bind:this={container} style:background-color={backgroundColour}>
+	<ScrollAnimate 
+		colour={arrowColour}></ScrollAnimate>
+
+	<div class="tracker" style:display={hideProgressBar ? "none" : "flex"}>
+		{#each sections as section, i}
+			{#if section.bg_fit == "contain"}
+				<div class="segment">
+					<div
+						class="fill"
+						style="width:{currentIndex >= i ? "100%": "0%"}">
+					</div>
+				</div>
+			{/if}
+		{/each}
+	</div>
 
 	<div class="sticky-image">
 		{#key currentIndex} 
@@ -230,28 +245,43 @@
 	</div>
 
 
-	<ScrollArrow 
-		clickable={true}
-		colour={arrowColour}
-		hidden={hideDownArrow}
-		isDown={true}/>
-
-	<ScrollArrow 
-		clickable={true}
-		colour={arrowColour}
-		hidden={hideUpArrow}
-		isDown={false}/>
 </div>
 
 
 
 <style>
+	.tracker {
+		position: fixed;
+		gap: 4rem;
+		right: 50%;
+		transform: translateX(20%);
+		bottom: 20rem;
+		z-index: 20;
+		width: fit-content;
+		height: fit-content;
+	}
+	
+	.segment {
+		flex: 1;
+		background: rgba(145, 145, 145, 0.26);
+		overflow: hidden;
+		border-radius: 100px;
+		height: 1.5rem;
+		width: 10rem;
+	}
+
+	.fill {
+		height: 100%;
+		background: rgb(100, 100, 100);
+		width: 0%;
+		transition: width 0.1s linear;
+		border-radius: 100px;
+	}
 	
 	.scrolly-wrapper {
 		display: flex;
 		flex-direction: column;
 		position: relative;
-		background-color: #f9f9f9;
 		margin-top: 0px;
 		margin-bottom: 50px;
 	}
@@ -353,6 +383,13 @@
 		width: 96vw;
 		left: 2vw;
 		position: relative;
+	}
+
+	#slide-count {
+		z-index: 10;
+		right: 15rem;
+		bottom: 15rem;
+        position: fixed;
 	}
 
 	@media (max-width: 1450px) {
@@ -457,9 +494,6 @@
 	}
 
 	@media (max-width: 400px) {
-		.sticky-image img {
-			padding-top: 4vw;
-		}
 
 		.fading-text-section {
     		width: 92vw;

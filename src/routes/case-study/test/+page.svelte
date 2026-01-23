@@ -135,6 +135,7 @@
 				textSectionAlign={"left"}
 				fadeDuration={1500}
 				mobileTextAlign={"top"}
+				backgroundColour={"#FAFAFA"}
 				bind:arrowColour
 			/>
 		</div>
@@ -210,6 +211,7 @@
 				textSectionAlign={"left"}
 				fadeDuration={1500}
 				mobileTextAlign={"top"}
+				backgroundColour={"#FAFAFA"}
 				bind:arrowColour
 			/>
 		</div>
