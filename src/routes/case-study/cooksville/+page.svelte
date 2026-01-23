@@ -172,10 +172,10 @@
 	</div>
 
 
-	<div id="text_1" class="text">
+	<div class="text">
 		
 
-			<h1>Why this matters </h1>
+			<h1 id="Menu_2">Why this matters </h1>
 			<p>
 				Adding density around transit stations requires planning for different kinds of households. Over 35% of Canadian households contain three or more people, but much of the existing and planned housing near transit stations is designed for individuals or couples.1 
 			</p>
@@ -217,7 +217,7 @@
 			</p>
 
 
-			<h1>
+			<h1 id="Menu_3">
 				Cooksville’s current trajectory 
 			</h1>
 
@@ -307,7 +307,7 @@
 
 		<div class="text">	
 
-			<h1>
+			<h1 id="Menu_4">
 				Building for families, building for all 
 			</h1>
 
@@ -378,7 +378,7 @@
 				Like many people, families enjoy the benefits of compact urban living: proximity to jobs and schools, a diversity of people and stores, and cultural amenities like swimming pools.12 Ensuring child care and school amenities keep pace with density is a core element of growth. A mix of retail is important for all communities, but children specifically want outdoor space to play, inexpensive shops, and libraries, as young people use libraries at high rates.13 
 			</p>
 
-			<h1>
+			<h1 id="Menu_5">
 				Addressing rising flood risk 
 			</h1>
 
