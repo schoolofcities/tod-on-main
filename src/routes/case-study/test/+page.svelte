@@ -13,7 +13,7 @@
 	import GraphicSingle from '$lib/GraphicSingle.svelte';
 	import GraphicsMultiples from '$lib/GraphicMultiples.svelte';
 	import Footer from '$lib/Footer.svelte';
-	import topImage from './assets/CC_Background_Frame_1.png' // TODO: MAKE THIS DARK
+	import topImage from './assets/cc_title2.png' // TODO: MAKE THIS DARK
 	import FadingImages from "$lib/FadingImages.svelte";
 	import Footnote from '$lib/Footnote.svelte';
 	import Footnotes from '$lib/Footnotes.svelte';
@@ -113,8 +113,6 @@
 				authorText="Author Name, Author Name, Author Name"
 				dateText="~ December, 2025"
 				topOpacity={topOpacity}
-				hasArrow={true}
-				arrowColour="white"
 			/>
 		</div>
 		

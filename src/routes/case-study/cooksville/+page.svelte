@@ -16,7 +16,7 @@
 	import Footer from '$lib/Footer.svelte';
 	import FadingImages from "$lib/FadingImages.svelte";
 
-	import topImage from './assets/CC_Background_Frame_1.png' 
+	import topImage from './assets/cc_title.png' 
 
 	export let data;
 
@@ -230,11 +230,11 @@
 		<ImageCompare
 			imageURL1="../web-assets/case-study/cooksville/cooksville-current-built.png"
 			caption1=""
-			source1="Infrasturcture Institute, School of Cities"
+			source1="Infrastructure Institute, School of Cities"
 			buttonLabel1="Current and future rapid transit"
 			imageURL2="../web-assets/case-study/cooksville/cooksville-current-dev.png"
 			caption2=""
-			source2="Infrasturcture Institute, School of Cities"
+			source2="Infrastructure Institute, School of Cities"
 			buttonLabel2="Planned development"
 			maxWidth="680px"
 			link='No'

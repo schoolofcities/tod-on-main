@@ -254,7 +254,7 @@
 		position: fixed;
 		gap: 4rem;
 		right: 50%;
-		transform: translateX(20%);
+		transform: translateX(50%);
 		bottom: 20rem;
 		z-index: 20;
 		width: fit-content;
@@ -312,12 +312,12 @@
 
 	.header-text {
 		position: absolute;
-		top: 15rem;
 		left: 15rem;
 		width: 18rem;
 		font-size: 8rem;
 		line-height: 6.5rem;
 		letter-spacing: -0.30rem;
+		margin-top: 15rem !important;
 	}
 
 	img.right {
@@ -411,12 +411,12 @@
 
 		.header-text {
 			position: absolute;
-			top: 10rem;
+			margin-top: 15rem !important;
 			left: 10rem;
 		}
 	}
 
-	@media (max-aspect-ratio: 5/6) {
+	@media (max-aspect-ratio: 3/4) {
 		.image-container {
 			z-index: 1;
 		}
@@ -437,7 +437,7 @@
 		.fading-text-section {
 			position: absolute;
 			z-index: 5;
-			margin-top: calc(94vw);
+			margin-top: calc(97vw);
     		width: 94vw;
 			height: calc(100vh - 94vw);
 		}
@@ -450,7 +450,7 @@
 		}
 
 		:global(.fading-text-wrapper p) {
-			font-size: 18px !important;
+			font-size: 4.75rem !important;
 			line-height: 28px;
 		}
 
@@ -459,10 +459,14 @@
 		}
 	}
 
-	@media (max-width: 650px) and (max-aspect-ratio: 5/6) {
-		:global(.fading-text-wrapper p) {
-			margin-top: -15vw;
+	@media (max-aspect-ratio: 5/6) {
+		.fading-text-wrapper {
+			margin-top: -10vw;
 		}
+		:global(p) {
+			font-size: 2rem;
+		}
+		
 	}
 
 	@media (max-width: 500px) {
@@ -480,6 +484,7 @@
 		.fading-text-section {
     		width: 92vw;
 			height: calc(100vh - 96vw - 10vw);
+			margin-top: calc(100vw + 8rem);
 		}
 		
 		.fading-text-top {
@@ -487,7 +492,7 @@
 		}
 
 		:global(.fading-text-wrapper p) {
-			font-size: 16px !important;
+			font-size: 6rem !important;
 			line-height: 28px;
 			margin-top: 0;
 		}
@@ -509,7 +514,7 @@
 		}
 
 		:global(.fading-text-wrapper p) {
-			font-size: 15px !important;
+			font-size: 5.5rem !important;
 			line-height: 24px;
 		}
 	}
