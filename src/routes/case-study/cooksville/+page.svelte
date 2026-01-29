@@ -15,44 +15,28 @@
 	import GraphicsMultiples from '$lib/GraphicMultiples.svelte';
 	import Footer from '$lib/Footer.svelte';
 	import FadingImages from "$lib/FadingImages.svelte";
+    import ScrollAnimate from '$lib/ScrollAnimate.svelte';
+	import Password from '$lib/Password.svelte';
 
-	import topImage from './assets/CC_Background_Frame_1.png' 
+	import topImage from './assets/cc_title.png' 
 
-	export let data;
-
-	// const scrollyContentSmall = [
-	// 	{
-	// 		image: "./examples/amroth-iso-lot.png",
-	// 		text: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
-	// 	},
-	// 	{
-	// 		image: "./examples/amroth-iso-bldg.png",
-	// 		text: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
-	// 	},
-	// 	{
-	// 		image: "./examples/wilson-iso-lot.svg",
-	// 		text:"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
-	// 	},
-	// 	{
-	// 		image: "./examples/wilson-iso-bldg.svg",
-	// 		text: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
-	// 	},
-	// ];
-	
-	import Footnote from '$lib/Footnote.svelte';
-	import Footnotes from '$lib/Footnotes.svelte';
 	import { createFootnoteStore } from '$lib/footnoteUtils';
     import { resolveRoute } from '$app/paths';
     import HamburgerMenu from '$lib/HamburgerMenu.svelte';
 
+	export let data;
+
+	import Footnote from '$lib/Footnote.svelte';
+	import Footnotes from '$lib/Footnotes.svelte';
 	const footnoteStore = createFootnoteStore();
 	const { footnotes, addFootnote } = footnoteStore;
 
 	const fns = [
-		'Hello I am a footnote',
-		'Hello I am a second <a href="https://example.com" target="_blank">footnote</a> with a link',
-		'Author (Year) Publication information etc this might be a citation or a reference to a source',
-		'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat lacus eu dolor dapibus sodales. Aenean venenatis metus id eleifend tincidunt. Nulla ut lacus et urna finibus bibendum sit amet et ante. Aliquam tristique, ex sed porttitor hendrerit, ex odio accumsan ex, eu maximus leo quam quis nulla.'
+		'<a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710015901" target="_blank">https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710015901</a>',
+		'<a href="https://climateinstitute.ca/wp-content/uploads/2024/09/Fact-sheet_-Floods_CanadianClimateInstitute.pdf " target="_blank">https://climateinstitute.ca/wp-content/uploads/2024/09/Fact-sheet_-Floods_CanadianClimateInstitute.pdf</a>',
+		'Link back to Prentiss',
+		'Young Families and High-Rise: Towards Inclusive Vertical Family Housing',
+		'<a href="" target="_blank"></a>'
 	];
 
 	let scrollY = 0;
@@ -125,7 +109,7 @@
 <!-- <svelte:window on:scroll={handleScroll} /> -->
 
 <main>
-
+	<Password correctPassword="CooksvilleCaseStudy"></Password>
 	<!-- Full page title example -->
 	<div class="wrapper">
 		<!-- Top stays visually on top -->
@@ -147,6 +131,8 @@
 				topOpacity={topOpacity}
 			/>
 		</div>
+		<ScrollAnimate 
+			colour={arrowColour}></ScrollAnimate>
 
 		<HamburgerMenu
 		iconColour={arrowColour}
@@ -177,10 +163,10 @@
 
 			<h1 id="Menu_2">Why this matters </h1>
 			<p>
-				Adding density around transit stations requires planning for different kinds of households. Over 35% of Canadian households contain three or more people, but much of the existing and planned housing near transit stations is designed for individuals or couples.1 
+				Adding density around transit stations requires planning for different kinds of households. Over 35% of Canadian households contain three or more people, but much of the existing and planned housing near transit stations is designed for individuals or couples.<Footnote id={addFootnote(fns[0])}/>
 			</p>
 			<p>	
-				Cities are also facing greater risks from a changing climate, with flooding the most frequent and costly impact across the country.2 This case explores strategies for more inclusive densification while managing flood risk. 
+				Cities are also facing greater risks from a changing climate, with flooding the most frequent and costly impact across the country.<Footnote id={addFootnote(fns[1])}/> This case explores strategies for more inclusive densification while managing flood risk. 
 			</p>
 			<h2>
 				Neighbourhood overview 
@@ -222,7 +208,7 @@
 			</h1>
 
 			<p>
-				A recent surge in investment and proposed development in the area as the Hazel McCallion line nears completion suggests developer confidence in Cooksville’s potential.3 Dozens of high-rise projects are in the pipeline, set to transform surface parking lots and aging retail plazas into mixed-use towers. 
+				A recent surge in investment and proposed development in the area as the Hazel McCallion line nears completion suggests developer confidence in Cooksville’s potential.<Footnote id={addFootnote(fns[2])}/> Dozens of high-rise projects are in the pipeline, set to transform surface parking lots and aging retail plazas into mixed-use towers. 
 			</p>
 
 		</div>
@@ -230,11 +216,11 @@
 		<ImageCompare
 			imageURL1="../web-assets/case-study/cooksville/cooksville-current-built.png"
 			caption1=""
-			source1="Infrasturcture Institute, School of Cities"
+			source1="Infrastructure Institute, School of Cities"
 			buttonLabel1="Current and future rapid transit"
 			imageURL2="../web-assets/case-study/cooksville/cooksville-current-dev.png"
 			caption2=""
-			source2="Infrasturcture Institute, School of Cities"
+			source2="Infrastructure Institute, School of Cities"
 			buttonLabel2="Planned development"
 			maxWidth="680px"
 			link='No'
@@ -312,7 +298,7 @@
 			</h1>
 
 			<p>
-				New mid- and high-rise construction is often oriented toward individuals or couples without children, even though families have always lived in these kinds of spaces.4 Improving the number and kind of family-oriented units, with targeted community improvements, can increase density around transit and benefit all residents. 
+				New mid- and high-rise construction is often oriented toward individuals or couples without children, even though families have always lived in these kinds of spaces.<Footnote id={addFootnote(fns[3])}/> Improving the number and kind of family-oriented units, with targeted community improvements, can increase density around transit and benefit all residents. 
 			</p>
 
 			<h3>

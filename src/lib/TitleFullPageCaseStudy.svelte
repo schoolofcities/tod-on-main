@@ -5,7 +5,6 @@
 	import LogoII from '../assets/ii-logo-white.svg'
 
 	import AuthorDate from "./AuthorDate.svelte";
-    import ScrollArrow from '$lib/ScrollArrow.svelte';
 	import { onMount } from "svelte";
 
 	export let title = '';
@@ -23,8 +22,6 @@
 	export let authorText = "";
 	export let dateText = "";
 	export let topOpacity = 1;
-	export let hasArrow = true;
-	export let arrowColour = "white";
 
 	let divWidth;
 	
@@ -72,11 +69,6 @@
 	</div>
 
 	<div class="title-text-container">
-		<ScrollArrow 
-			clickable={true}
-			colour={arrowColour}
-			hidden={!hasArrow}
-			isDown={true}/>
 		
 		<h2 style="color: {subtitleFontColour}; margin-bottom: 20rem;">{topic.toUpperCase()}</h2>
 		
@@ -136,7 +128,7 @@
 	.title-text-container {
 		max-width: 1080px;
 		position: absolute;
-		top: 30vh;
+		bottom: 24rem;
 		left: 20rem;
 		z-index: 6;
 	}
@@ -179,7 +171,7 @@
 
 	.title-text-container h4 {
 		max-width: 720px;
-		width: 55%;
+		width: 75%;
 		text-align: left;
 		font-family: PoppinsMedium;
 		font-weight: normal;

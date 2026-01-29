@@ -3,8 +3,7 @@
 	import "../assets/global-styles.css"	
 	import { fade } from "svelte/transition";
 	import { onMount, onDestroy } from "svelte";
-    import { marked } from 'marked'
-    import ScrollAnimate from '$lib/ScrollAnimate.svelte';
+    import { marked } from 'marked';
 
 	export let imageAlign = "center";
 	export let header = "";
@@ -45,8 +44,6 @@
 
 		const resizeHandler = () => {
 			windowHeight = window.innerHeight;
-			hideDownArrow = isMobile && hideDownArrow;
-			hideUpArrow = isMobile && hideUpArrow;
 			isMobile = window.innerWidth <= 550 && window.innerWidth / window.innerHeight <= 0.8;
 		};
 		window.addEventListener('resize', resizeHandler);
@@ -142,8 +139,6 @@
 
 
 <div class="scrolly-wrapper" bind:this={container} style:background-color={backgroundColour}>
-	<ScrollAnimate 
-		colour={arrowColour}></ScrollAnimate>
 
 	<div class="tracker" style:display={hideProgressBar ? "none" : "flex"}>
 		{#each sections as section, i}
@@ -168,7 +163,6 @@
 					transition:fade={{duration: sections[currentIndex].image.valueOf() != sections[currentIndex - 1]?.image.valueOf()
 								? fadeDuration : 0 }}
 					loading="eager"
-					style="max-height: {imageHeight}; max-width: {imageWidth}; top: {topImageMargin};"	
 				/>
 			</div>
 		{/key}
@@ -181,7 +175,7 @@
 		{/if}
 
 		{#key currentIndex} 
-			<div class="fading-text-section fading-text-{mobileTextAlign}"
+			<div class="fading-text-section fading-text-{mobileTextAlign} {isMobile ? "" : imageAlign}"
 					out:fade={{ duration: sections[currentIndex].text.valueOf() != sections[currentIndex - 1]?.text.valueOf() ? fadeDuration/2 : 0 }}
 					in:fade={{  delay: sections[currentIndex].text.valueOf() != sections[currentIndex - 1]?.text.valueOf() ? fadeDuration/2 : 0, 
 								duration: sections[currentIndex].text.valueOf() != sections[currentIndex - 1]?.text.valueOf() ? fadeDuration/2 : 0}}>
@@ -250,11 +244,12 @@
 
 
 <style>
+	/* progress bar */
 	.tracker {
 		position: fixed;
 		gap: 4rem;
 		right: 50%;
-		transform: translateX(20%);
+		transform: translateX(50%);
 		bottom: 20rem;
 		z-index: 20;
 		width: fit-content;
@@ -278,6 +273,8 @@
 		border-radius: 100px;
 	}
 	
+
+	/* scrolly setup */
 	.scrolly-wrapper {
 		display: flex;
 		flex-direction: column;
@@ -304,24 +301,27 @@
 		object-fit: cover; 
 		background-position: center;
 		background-repeat: no-repeat;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
 	.sticky-image img.contain {
 		object-fit: contain;
+		max-width: 70vw;
 	}
 
 	.header-text {
 		position: absolute;
-		top: 15rem;
 		left: 15rem;
 		width: 18rem;
 		font-size: 8rem;
 		line-height: 6.5rem;
 		letter-spacing: -0.30rem;
+		margin-top: 15rem !important;
 	}
 
 	img.right {
-		right: 0;
+		right: 7vw;
 	}
 
 	img.left {
@@ -336,7 +336,6 @@
 	.fading-text-section {
 		position: absolute;
 		z-index: 5;
-		width: 25vw;
 		height: 100vh;
 		display: flex;
 		align-items: center;   
@@ -366,7 +365,6 @@
 	.fading-overlay-section img {
 		position: relative;
 		object-fit: contain;
-		width: 100%;
 	}
 
 	.mobile-overlay-image {
@@ -385,14 +383,32 @@
 		position: relative;
 	}
 
-	#slide-count {
-		z-index: 10;
-		right: 15rem;
-		bottom: 15rem;
-        position: fixed;
-	}
+	@media (min-aspect-ratio: 7/4) {
+		.fading-text-section.right {
+			left: 7vw;
+			width: 30vw;
+		}
 
-	@media (max-width: 1450px) {
+		img.right {
+			right: 7vw;
+		}
+		
+		.fading-text-section.center {
+			width: 25vw;
+		}
+	}
+	
+	@media (min-aspect-ratio: 1) {
+
+		:global(.fading-text-wrapper p) {
+			font-size: 17px !important;
+			line-height: 28px;
+		}
+		
+		.fading-text-section.center {
+			width: 20vw;
+		}
+
 		.fading-text-section {
 			position: absolute;
 			z-index: 5;
@@ -404,21 +420,47 @@
 			box-sizing: border-box;
 		}
 
-		:global(.fading-text-wrapper p) {
-			font-size: 17px !important;
-			line-height: 28px;
-		}
-
 		.header-text {
 			position: absolute;
-			top: 10rem;
+			margin-top: 15rem !important;
 			left: 10rem;
 		}
 	}
 
-	@media (max-aspect-ratio: 5/6) {
+
+	@media (max-aspect-ratio: 1) {
+		.fading-text-section.right {
+			width: 94vw;
+		}
+
+		img.right {
+			right: 2vw;
+		}
+
+		.sticky-image img.contain.center {
+			top: -10vh;
+		}
+
+		.sticky-image img.contain.right {
+			top: -10vh;
+		}
+		
+		.fading-text-section {
+			position: absolute;
+			z-index: 5;
+			margin-top: calc(65vw);
+    		width: 94vw;
+			height: calc(100vh - 94vw);
+		}
+
+		img {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
 		.image-container {
 			z-index: 1;
+			width: fit-content;
 		}
 
 		.sticky-image img {
@@ -434,14 +476,6 @@
 			margin: auto;
 		}
 		
-		.fading-text-section {
-			position: absolute;
-			z-index: 5;
-			margin-top: calc(94vw);
-    		width: 94vw;
-			height: calc(100vh - 94vw);
-		}
-		
 		.fading-text-top {
 			display: flex;
 			align-items: flex-start;   
@@ -450,7 +484,7 @@
 		}
 
 		:global(.fading-text-wrapper p) {
-			font-size: 18px !important;
+			font-size: 4.75rem !important;
 			line-height: 28px;
 		}
 
@@ -459,9 +493,31 @@
 		}
 	}
 
-	@media (max-width: 650px) and (max-aspect-ratio: 5/6) {
-		:global(.fading-text-wrapper p) {
-			margin-top: -15vw;
+	@media (max-aspect-ratio: 5/6) {
+		.fading-text-wrapper {
+			margin-top: -10vw;
+		}
+
+		.fading-text-section {
+			margin-top: calc(97vw);
+		}
+
+		.sticky-image img.cover {
+			max-width: 100vw;
+		}
+		.sticky-image img.contain {
+			max-width: 100vw;
+		}
+
+		.fading-text-section.right {
+			width: 94vw;
+		}
+		
+		.sticky-image img.contain.center {
+			top: 0vh;
+		}
+		.sticky-image img.contain.right {
+			top: 0vh;
 		}
 	}
 
@@ -480,6 +536,7 @@
 		.fading-text-section {
     		width: 92vw;
 			height: calc(100vh - 96vw - 10vw);
+			margin-top: calc(100vw + 8rem);
 		}
 		
 		.fading-text-top {
@@ -487,7 +544,7 @@
 		}
 
 		:global(.fading-text-wrapper p) {
-			font-size: 16px !important;
+			font-size: 6rem !important;
 			line-height: 28px;
 			margin-top: 0;
 		}
@@ -509,7 +566,7 @@
 		}
 
 		:global(.fading-text-wrapper p) {
-			font-size: 15px !important;
+			font-size: 5.5rem !important;
 			line-height: 24px;
 		}
 	}

@@ -120,7 +120,7 @@
         border: none;
         background-color: rgb(0,0,0,0);
         position: fixed;
-		z-index: 20;
+		z-index: 50;
         right: 15rem;
         bottom: 15rem;
         display: flex;
