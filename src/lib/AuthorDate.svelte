@@ -44,12 +44,14 @@
 		padding-bottom: 0px;
 		border-bottom: solid 1px var(--brandGray);
 		margin-bottom: 25px;
+		
 	}
 
 	.author-date p {
 		font-size: 16px;
 		line-height: 24px;
 		color: var(--brandBlack);
+		font-family: GelasioRegular;
 	}
 
 	.author-date b {

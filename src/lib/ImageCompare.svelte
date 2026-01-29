@@ -99,12 +99,12 @@
 	}
 
 	button {
-		font-family: PoppinsSemiBold;
+		font-family: InterRegular;
 		background: none;
 		border: 1px solid #ccc;
 		padding: 6px 12px;
 		cursor: pointer;
-		font-size: 12px;
+		font-size: 14px;
 	}
 
 	button.active {

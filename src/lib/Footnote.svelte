@@ -42,16 +42,16 @@
 	.footnote-ref {
 		vertical-align: super;
 		font-size: 0.8em;
-		font-family: SourceSerifBold;
+		font-family: GelasioBold;
 		font-weight: normal;
 		margin-left: 1px;
 		margin-right: 1px;
 		text-decoration: none;
-		color: var(--brandMedGreen);
+		color: var(--brandMedBlue);
 		white-space: nowrap;
 	}
 	.footnote-ref:hover {
-		color: var(--brandMedBlue);
+		color: var(--brandDarkBlue);
 	}
 
 	.footnoteTooltip {
@@ -77,11 +77,11 @@
 	.footnoteTooltip p {
 		padding: 0px;
 		margin: 0px;
-		font-family: SourceSerif;
+		font-family: GelasioRegular;
 		color: var(--brandGray80);
 		font-weight: normal;
 		font-size: 15px;
-		line-height: 20px;
+		line-height: 22px;
 		white-space: normal;
     	word-wrap: break-word;
     	overflow-wrap: break-word;

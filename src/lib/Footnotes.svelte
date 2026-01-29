@@ -21,7 +21,7 @@
                         window.scrollTo({ top: y, behavior: 'auto' });
                     }
                 }}>
-                    <b>[{footnote.id}]</b>
+                    [{footnote.id}]
                 </a> </sup> 
 
             <p style="display:inline">{@html footnote.text}
@@ -58,12 +58,12 @@
         margin-bottom: 50px;
         padding-bottom: 20px;
         border: solid 1px var(--brandGray);
-        border-top-right-radius: 50px;
+        /* border-top-right-radius: 50px; */
     }
 
     .footnotes h2 {
         font-size: 22px;
-        font-family: TradeGothicBold, sans-serif;
+        font-family: PoppinsSemiBold, sans-serif;
         font-weight: normal;
         margin-bottom: 15px;
         color: var(--brandBlack);
@@ -78,14 +78,14 @@
     .footnote-item sup {
         position: absolute;
         font-size: 14px;
-        font-family: OpenSansBold, serif;
+        font-family: GelasioBold, serif;
         font-weight: normal;
         left: 0;
     }
 
     .footnote-item p {
         font-size: 17px;
-        font-family: SourceSerif, serif;
+        font-family: GelasioRegular, serif;
         font-weight: normal;
         line-height: 24px;
         color: var(--brandGray90);
@@ -93,10 +93,10 @@
 
     .backlink {
         margin-left: 5px;
-        font-family: SourceSerif, serif;
+        font-family: GelasioRegular, serif;
         font-weight: normal;
         text-decoration: none;
-        color: var(--brandMedGreen);
+        color: var(--brandMedBlue);
     }
 
     @media screen and (max-width: 600px) {
@@ -109,4 +109,5 @@
     a:hover {
         color: var(--brandLightBlue);
     }
+
 </style>

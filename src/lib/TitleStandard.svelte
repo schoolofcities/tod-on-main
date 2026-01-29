@@ -34,9 +34,10 @@
 	}
 
 	.title-text-container h1 {
-		font-family: TradeGothicBold;
+		font-family: PoppinsBold;
 		font-weight: normal;
 		font-size: 42px;
+		line-height: 50px;
 		color: var(--brandBlack);
 		text-decoration: none;
 		margin-bottom: 15px;

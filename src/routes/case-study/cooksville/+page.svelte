@@ -109,7 +109,9 @@
 <!-- <svelte:window on:scroll={handleScroll} /> -->
 
 <main>
-	<Password correctPassword="CooksvilleCaseStudy"></Password>
+
+	<!-- <Password correctPassword="CooksvilleCaseStudy"></Password> -->
+
 	<!-- Full page title example -->
 	<div class="wrapper">
 		<!-- Top stays visually on top -->
@@ -171,9 +173,9 @@
 			<h2>
 				Neighbourhood overview 
 			</h2>
-			<!-- <p>
+			<p>
 				Mississauga’s Cooksville neighbourhood is a future transit hub where the existing GO rail line will converge with the new Hazel McCallion light rail transit (LRT) and Dundas Bus Rapid Transit (BRT) lines, making it a focal point for growth.
-			</p> -->
+			</p>
 			<p>
 				With over 30,000 residents, Cooksville is dense, vibrant and diverse. Nearly 73% are visible minorities. A gateway for immigrants, two-thirds of Cooksville’s residents are foreign-born, and one in five is a recent arrival.  
 			</p>
@@ -213,15 +215,10 @@
 
 		</div>
 
-		<ImageCompare
-			imageURL1="../web-assets/case-study/cooksville/cooksville-current-built.png"
-			caption1=""
-			source1="Infrastructure Institute, School of Cities"
-			buttonLabel1="Current and future rapid transit"
-			imageURL2="../web-assets/case-study/cooksville/cooksville-current-dev.png"
-			caption2=""
-			source2="Infrastructure Institute, School of Cities"
-			buttonLabel2="Planned development"
+		<ImageSingle
+			imageURL="../web-assets/case-study/cooksville/cooksville-current-dev.png"
+			caption="Currently proposed or under construction development 800m from Cooksville station."
+			source="Infrastructure Institute (2025)"
 			maxWidth="680px"
 			link='No'
 		/>
@@ -281,13 +278,13 @@
 		<ImageCompare
 			imageURL1="../web-assets/case-study/cooksville/cooksville-scenario1.png"
 			caption1=""
-			source1="Infrasturcture Institute, School of Cities"
+			source1="Infrasturcture Institute, School of Cities (2025)."
 			buttonLabel1="Current trajectory"
 			imageURL2="../web-assets/case-study/cooksville/cooksville-scenario2.png"
 			caption2=""
-			source2="Infrasturcture Institute, School of Cities"
+			source2="Infrasturcture Institute, School of Cities (2025)."
 			buttonLabel2="Mixed-use scenario"
-			maxWidth="680px"
+			maxWidth="900px"
 			link='No'
 		/>
 
@@ -300,6 +297,7 @@
 			<p>
 				New mid- and high-rise construction is often oriented toward individuals or couples without children, even though families have always lived in these kinds of spaces.<Footnote id={addFootnote(fns[3])}/> Improving the number and kind of family-oriented units, with targeted community improvements, can increase density around transit and benefit all residents. 
 			</p>
+			
 
 			<h3>
 				Recommendation 1: Provide more 2- and 3- bedroom units

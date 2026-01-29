@@ -112,8 +112,6 @@
 		/>
 	</div>
 	
-
-	
 	<TitleStandard
 		title="Measuring the social inclusion benefits of transit oriented communities"
 		subtitle="Via mapping data on activity participation in the Toronto region"
@@ -128,18 +126,24 @@
 
 	</div>
 
-	<ImageSingle
+	<!-- <ImageSingle
 		imageURL={imageBus}
 		caption=""
 		source='Photo by <a href="https://unsplash.com/@json_pix?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason Ng</a> on <a href="https://unsplash.com/photos/a-red-and-white-bus-parked-on-the-side-of-a-street-bm5UpO1_y2w?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.'
 		altText=""
 		maxWidth="680px"
 		link="No"
-	/>
+	/> -->
 
 	<div class="text">
 		<p>
-			A core function of urban transportation is to help people take part in everyday life—such as getting to work, school, shopping, or socializing. Yet work in transportation planning, and particularly on assessing impacts of new public transit and transit-oriented development, has mostly focused on metrics like reduction in travel times, congestion, and emissions, as well as financial impacts, among others. While these are important, they often overlook or don't directly answer a key question: do these developments actually help everyone get to where they want to go? If there are limited transportation options, it can cause risks of social exclusion, which can broadly be defined as inability participate in society (link to a couple Steve papers here).
+			A core function of urban transportation is to help people take part in everyday life—such as getting to work, school, shopping, or socializing. Yet work in transportation planning, and particularly on assessing impacts of new public transit and transit-oriented development, has mostly focused on metrics like reduction in travel times, congestion, and emissions, as well as financial impacts, among others. 
+		</p>
+		<p>	
+			While these are important, they often overlook or don't directly answer a key question: do living next to transit, and in transit-oriented communities, actually help everyone get to where they want to go on a daily basis? 
+		</p>
+		<p>	
+			If there are limited transportation options, it can cause risks of social exclusion, which can broadly be defined as inability participate in society (link to a couple Steve papers here).
 		</p>
 	</div>
 
@@ -151,23 +155,29 @@
 		</p>
 		<p>
 			On this page, we update some of this analysis with more recent data and specifically look at the social inclusion benefits that specifically living near major rail transit stations can have.
-			This can be measured via <b>activity participation</b>, a metric which refers to how often people can take part in everyday activities, and can be directly quantified from travel survey data by simply counting of how many activities that someone visits per day. 
+		</p>
+		<p>
+			We do this via measuring <span style="color:var(--brandDarkBlue);"><b>activity participation</b></span>, a metric which refers to how often people can take part in everyday activities. It can be directly quantified from travel survey data by simply counting of how many activities, or destinations, that someone visits per day. 
 		</p>
 	</div>
 
 	<GraphicSingle
-		svg720={"./activity-participation/activity-schematic-720-web.svg"}
-		svg360={"./activity-participation/activity-schematic-360-web.svg"}
+		svg720={"./activity-participation/activity-schematic-720.svg"}
+		svg360={"./activity-participation/activity-schematic-360.svg"}
 	/>
-
-	<!-- IMAGE SCHEMATIC  -->
 
 	<div class="text">
 		<p>
-			For our analysis, we used the Transportation Tomorrow Survey (TTS) to estimate activity participation for residents Greater Toronto Area. (The survey is a 5% sample of all households). On average, we find that people travel to and partake in 1.15 activities per day. 
+			For our analysis, we used the Transportation Tomorrow Survey (TTS) to estimate activity participation for residents Greater Toronto Area. (The survey is a 5% sample of all households). 
 		</p>
 		<p>
-			Of course there will be idiosyncratic variations at an individual level, but by aggregating and looking at averages across different socio-economic groups or between neighbourhoords, it can reveal stark differences. For example, those in households with higher incomes, on average, participate in more activities. This is particularly residents who are low income and also do not have regular access to a car. People who are in households that do not own or lease a car, and are low-income (less than $60k per year), have an average daily activity participation rate 0.89, 22% less than the overall population.
+			On average, we find that people travel to and partake in 1.15 activities per day. 
+		</p>
+		<p>
+			Of course there will be idiosyncratic variations at an individual level, but by aggregating and looking at averages across different socio-economic groups or between neighbourhoords, it can reveal stark differences.
+		</p>
+		<p>	
+			For example, those in households with higher incomes, on average, participate in more activities. This is particularly residents who are low income and also do not have regular access to a car. People who are in households that do not own or lease a car, and are low-income (less than $60k per year), have an average daily activity participation rate 0.89, 22% less than the overall population.
 		</p>
 	</div>
 
@@ -177,11 +187,18 @@
 		</p>
 	</div>
 
-	<!-- MAP - ACTIVITY PARTICIPATION SURFACE + MAJOR TRANSIT -->
+	<GraphicSingle
+		svg1080={"./activity-participation/activity-participation-map-1080.svg"}
+		svg720={"./activity-participation/activity-participation-map-720.svg"}
+	/>
+
 
 	<div class="text">
 		<p>
-			But what role does living near a major transit station play? One notable pattern on the map is that central parts of Toronto have very few low participation neighbourhoods, even though a number of these are also home to many low-income residents who don't own cars. Let's take a deeper look at this, by estimating average participation rates near (within 800m) and not near GO and TTC Subway stations.
+			But what role does living near a major transit station play? One notable pattern on the map is that central parts of Toronto have very few low participation neighbourhoods, even though a number of these are also home to many low-income residents who don't own cars. 
+		</p>
+		<p>
+			Let's take a deeper look at this, by estimating average participation rates near (within 800m) and not near GO and TTC Subway stations.
 		</p>
 	</div>
 
