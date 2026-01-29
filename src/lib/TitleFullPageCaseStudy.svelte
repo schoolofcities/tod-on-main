@@ -128,7 +128,7 @@
 	.title-text-container {
 		max-width: 1080px;
 		position: absolute;
-		top: 30vh;
+		bottom: 24rem;
 		left: 20rem;
 		z-index: 6;
 	}
@@ -171,7 +171,7 @@
 
 	.title-text-container h4 {
 		max-width: 720px;
-		width: 55%;
+		width: 75%;
 		text-align: left;
 		font-family: PoppinsMedium;
 		font-weight: normal;

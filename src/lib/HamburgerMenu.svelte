@@ -127,7 +127,7 @@
 
     a {
         color: black;
-        font-size: 7rem;
+        font-size: 6rem;
         font-family: PoppinsSemiBold;
         display: block;
         padding-bottom: 7rem;

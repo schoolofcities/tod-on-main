@@ -9,7 +9,7 @@
 import Papa from 'papaparse';
 
 export async function load({ fetch }) {
-    const contentFile = await fetch('/web-assets/case-study/test/test-content.csv');
+    const contentFile = await fetch('/web-assets/case-study/cooksville/cooksville-content.csv');
     const contentText = await contentFile.text();
 
     const parsedContent = Papa.parse(contentText, {
@@ -32,7 +32,7 @@ export async function load({ fetch }) {
         }, []);
     }
 
-    const menuFile = await fetch('/web-assets/case-study/test/test-menuitems.csv');
+    const menuFile = await fetch('/web-assets/case-study/cooksville/cooksville-menuitems.csv');
     const menuText = await menuFile.text();
 
     const parsedMenu = Papa.parse(menuText, {

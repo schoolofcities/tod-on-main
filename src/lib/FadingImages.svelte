@@ -3,8 +3,7 @@
 	import "../assets/global-styles.css"	
 	import { fade } from "svelte/transition";
 	import { onMount, onDestroy } from "svelte";
-    import { marked } from 'marked'
-    import ScrollAnimate from '$lib/ScrollAnimate.svelte';
+    import { marked } from 'marked';
 
 	export let imageAlign = "center";
 	export let header = "";
@@ -45,8 +44,6 @@
 
 		const resizeHandler = () => {
 			windowHeight = window.innerHeight;
-			hideDownArrow = isMobile && hideDownArrow;
-			hideUpArrow = isMobile && hideUpArrow;
 			isMobile = window.innerWidth <= 550 && window.innerWidth / window.innerHeight <= 0.8;
 		};
 		window.addEventListener('resize', resizeHandler);
@@ -142,8 +139,6 @@
 
 
 <div class="scrolly-wrapper" bind:this={container} style:background-color={backgroundColour}>
-	<ScrollAnimate 
-		colour={arrowColour}></ScrollAnimate>
 
 	<div class="tracker" style:display={hideProgressBar ? "none" : "flex"}>
 		{#each sections as section, i}
@@ -168,7 +163,6 @@
 					transition:fade={{duration: sections[currentIndex].image.valueOf() != sections[currentIndex - 1]?.image.valueOf()
 								? fadeDuration : 0 }}
 					loading="eager"
-					style="max-height: {imageHeight}; max-width: {imageWidth}; top: {topImageMargin};"	
 				/>
 			</div>
 		{/key}
@@ -181,7 +175,7 @@
 		{/if}
 
 		{#key currentIndex} 
-			<div class="fading-text-section fading-text-{mobileTextAlign}"
+			<div class="fading-text-section fading-text-{mobileTextAlign} {isMobile ? "" : imageAlign}"
 					out:fade={{ duration: sections[currentIndex].text.valueOf() != sections[currentIndex - 1]?.text.valueOf() ? fadeDuration/2 : 0 }}
 					in:fade={{  delay: sections[currentIndex].text.valueOf() != sections[currentIndex - 1]?.text.valueOf() ? fadeDuration/2 : 0, 
 								duration: sections[currentIndex].text.valueOf() != sections[currentIndex - 1]?.text.valueOf() ? fadeDuration/2 : 0}}>
@@ -250,6 +244,7 @@
 
 
 <style>
+	/* progress bar */
 	.tracker {
 		position: fixed;
 		gap: 4rem;
@@ -278,6 +273,8 @@
 		border-radius: 100px;
 	}
 	
+
+	/* scrolly setup */
 	.scrolly-wrapper {
 		display: flex;
 		flex-direction: column;
@@ -304,10 +301,13 @@
 		object-fit: cover; 
 		background-position: center;
 		background-repeat: no-repeat;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
 	.sticky-image img.contain {
 		object-fit: contain;
+		max-width: 70vw;
 	}
 
 	.header-text {
@@ -321,7 +321,7 @@
 	}
 
 	img.right {
-		right: 0;
+		right: 7vw;
 	}
 
 	img.left {
@@ -336,7 +336,6 @@
 	.fading-text-section {
 		position: absolute;
 		z-index: 5;
-		width: 25vw;
 		height: 100vh;
 		display: flex;
 		align-items: center;   
@@ -366,7 +365,6 @@
 	.fading-overlay-section img {
 		position: relative;
 		object-fit: contain;
-		width: 100%;
 	}
 
 	.mobile-overlay-image {
@@ -385,14 +383,32 @@
 		position: relative;
 	}
 
-	#slide-count {
-		z-index: 10;
-		right: 15rem;
-		bottom: 15rem;
-        position: fixed;
-	}
+	@media (min-aspect-ratio: 7/4) {
+		.fading-text-section.right {
+			left: 7vw;
+			width: 30vw;
+		}
 
-	@media (max-width: 1450px) {
+		img.right {
+			right: 7vw;
+		}
+		
+		.fading-text-section.center {
+			width: 25vw;
+		}
+	}
+	
+	@media (min-aspect-ratio: 1) {
+
+		:global(.fading-text-wrapper p) {
+			font-size: 17px !important;
+			line-height: 28px;
+		}
+		
+		.fading-text-section.center {
+			width: 20vw;
+		}
+
 		.fading-text-section {
 			position: absolute;
 			z-index: 5;
@@ -404,11 +420,6 @@
 			box-sizing: border-box;
 		}
 
-		:global(.fading-text-wrapper p) {
-			font-size: 17px !important;
-			line-height: 28px;
-		}
-
 		.header-text {
 			position: absolute;
 			margin-top: 15rem !important;
@@ -416,9 +427,40 @@
 		}
 	}
 
-	@media (max-aspect-ratio: 3/4) {
+
+	@media (max-aspect-ratio: 1) {
+		.fading-text-section.right {
+			width: 94vw;
+		}
+
+		img.right {
+			right: 2vw;
+		}
+
+		.sticky-image img.contain.center {
+			top: -10vh;
+		}
+
+		.sticky-image img.contain.right {
+			top: -10vh;
+		}
+		
+		.fading-text-section {
+			position: absolute;
+			z-index: 5;
+			margin-top: calc(65vw);
+    		width: 94vw;
+			height: calc(100vh - 94vw);
+		}
+
+		img {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
 		.image-container {
 			z-index: 1;
+			width: fit-content;
 		}
 
 		.sticky-image img {
@@ -432,14 +474,6 @@
 			width: 96vw;
 			height: 96vw; 
 			margin: auto;
-		}
-		
-		.fading-text-section {
-			position: absolute;
-			z-index: 5;
-			margin-top: calc(97vw);
-    		width: 94vw;
-			height: calc(100vh - 94vw);
 		}
 		
 		.fading-text-top {
@@ -463,10 +497,28 @@
 		.fading-text-wrapper {
 			margin-top: -10vw;
 		}
-		:global(p) {
-			font-size: 2rem;
+
+		.fading-text-section {
+			margin-top: calc(97vw);
+		}
+
+		.sticky-image img.cover {
+			max-width: 100vw;
+		}
+		.sticky-image img.contain {
+			max-width: 100vw;
+		}
+
+		.fading-text-section.right {
+			width: 94vw;
 		}
 		
+		.sticky-image img.contain.center {
+			top: 0vh;
+		}
+		.sticky-image img.contain.right {
+			top: 0vh;
+		}
 	}
 
 	@media (max-width: 500px) {
