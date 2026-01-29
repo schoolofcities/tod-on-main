@@ -267,6 +267,16 @@ h4 {
 	color: var(--brandBlack);
 }
 
+a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: var(--brandRed);
+}
+
+
 p {
 	font-family: PoppinsMedium;
 	font-weight: normal;
@@ -279,24 +289,6 @@ p {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
-}
-
-.text p {
-	font-family: GelasioRegular;
-	font-weight: normal;
-	color: var(--brandGray90);
-	text-align: left;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	font-size: 19px;
-	line-height: 33px;
-}
-
-@media screen and (max-width: 600px) {
-	.text p {
-		font-size: 17px;
-		line-height: 26px;
-	}
 }
 
 b {
@@ -319,6 +311,24 @@ em {
 	font-weight: normal;
 }
 
+.text p {
+	font-family: GelasioRegular;
+	font-weight: normal;
+	color: var(--brandGray90);
+	text-align: left;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-size: 19px;
+	line-height: 33px;
+}
+
+@media screen and (max-width: 600px) {
+	.text p {
+		font-size: 17px;
+		line-height: 26px;
+	}
+}
+
 .text a {
 	color: var(--brandBlack);
 	text-decoration: underline;
@@ -326,9 +336,29 @@ em {
 	font-weight: normal;
 }
 
+.text b {
+	font-family: GelasioBold;
+	font-weight: normal;
+}
+
+.text strong {
+	font-family: GelasioBold;
+	font-weight: normal;
+}
+
+.text i {
+	font-family: GelasioItalic;
+	font-weight: normal;
+}
+
+.text em {
+	font-family: GelasioItalic;
+	font-weight: normal;
+}
 
 .text a:hover {
-	color: var(--brandMedGreen);
+	font-family: inherit;
+	color: var(--brandRed);
 }
 
 ul {
@@ -351,6 +381,55 @@ li {
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
 }
+
+
+
+.caption-container {
+	margin-top: 2px;
+	margin-bottom: 0px;
+	padding-top: 2px;
+	width: 100%;
+}
+
+.caption-container p {
+	font-family: InterBold;
+	font-weight: normal;
+	color: var(--brandGray80);
+	font-size: 12px;
+	line-height: 18px;
+	text-align: left;
+	padding-left: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.caption-text a  {
+	font-family: InterBold;
+	font-weight: normal;
+	color: var(--brandGray80);
+}
+.caption-text a:hover  {
+	color: var(--brandMedGreen);
+}
+
+.caption-source {
+	font-family: InterRegular;
+	font-weight: normal;
+	color: var(--brandGray60);
+}
+
+.caption-source a  {
+	font-family: InterRegular;
+	font-weight: normal;
+	color: var(--brandGray60);
+}
+.caption-source a:hover  {
+	color: var(--brandMedGreen);
+}
+
+
+
 
 .details {
 	background-color: none;
@@ -396,6 +475,7 @@ li {
 		line-height: 23px;
 	}
 }
+
 
 .callout {
 	background-color: var(--brandWhite);
@@ -454,49 +534,4 @@ li {
 		font-size: 15px;
 		line-height: 23px;
 	}
-}
-
-
-.caption-container {
-	margin-top: 2px;
-	margin-bottom: 0px;
-	padding-top: 2px;
-	width: 100%;
-}
-
-.caption-container p {
-	font-family: InterBold;
-	font-weight: normal;
-	color: var(--brandGray80);
-	font-size: 12px;
-	line-height: 18px;
-	text-align: left;
-	padding-left: 0px;
-	margin: 0px;
-	box-sizing: border-box;
-	width: 100%;
-}
-
-.caption-text a  {
-	font-family: InterBold;
-	font-weight: normal;
-	color: var(--brandGray80);
-}
-.caption-text a:hover  {
-	color: var(--brandMedGreen);
-}
-
-.caption-source {
-	font-family: InterRegular;
-	font-weight: normal;
-	color: var(--brandGray60);
-}
-
-.caption-source a  {
-	font-family: InterRegular;
-	font-weight: normal;
-	color: var(--brandGray60);
-}
-.caption-source a:hover  {
-	color: var(--brandMedGreen);
 }

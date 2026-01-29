@@ -163,220 +163,35 @@
 
 			<h1 id="Menu_2">Why this matters </h1>
 			<p>
-				Adding density around transit stations requires planning for different kinds of households. Over 35% of Canadian households contain three or more people, but much of the existing and planned housing near transit stations is designed for individuals or couples.<Footnote id={addFootnote(fns[0])}/>
+				When it opens in 2027, Arbutus Station at the end of the Broadway Line will be a prominent example of ambitious transit-oriented development in a well-established neighborhood. The station is intended to support seamless multimodal travel and enhance connections to the Arbutus Greenway. This area is in many ways already a complete community, and the challenge will be ensuring the area’s affordable housing stock and many amenities keep pace with densification, so it can continue to be a home for people of all income levels.  
 			</p>
 			<p>	
-				Cities are also facing greater risks from a changing climate, with flooding the most frequent and costly impact across the country.<Footnote id={addFootnote(fns[1])}/> This case explores strategies for more inclusive densification while managing flood risk. 
+				A core strategy must tackle valid concerns around social disruption: the threat of displacement, perceived incompatibility of uses, and risks of delayed housing and amenity delivery. 
 			</p>
 			<h2>
 				Neighbourhood overview 
 			</h2>
-			<!-- <p>
-				Mississauga’s Cooksville neighbourhood is a future transit hub where the existing GO rail line will converge with the new Hazel McCallion light rail transit (LRT) and Dundas Bus Rapid Transit (BRT) lines, making it a focal point for growth.
-			</p> -->
 			<p>
-				With over 30,000 residents, Cooksville is dense, vibrant and diverse. Nearly 73% are visible minorities. A gateway for immigrants, two-thirds of Cooksville’s residents are foreign-born, and one in five is a recent arrival.  
+				Located in Vancouver’s Kitsilano neighbourhood, Arbutus Station is an established area with more than 30,000 residents. The community is diverse: one-third are immigrants and another quarter come from outside the province. This diversity contributes to a wide range of housing needs and service demands. 
 			</p>
 			<p>
-				Cooksville is young, with an average age of 37.4 and many families, alongside a growing number of seniors, of whom many live alone. Many people – especially renters -- live in high-rise apartments along the major corridors of Hurontario and Dundas Streets, but there are also established, lower-density neighbourhoods further from the station. 
+				This area is largely built out, with over 80% of its structures built more than 25 years ago.  
 			</p>
 			<p>
-				Household incomes average about $92,000 per year, far below the city average.  
+				Low-rise apartment units make up 775% of the households within an 800-metre radius of the station, forming the backbone of the neighbourhood’s rental stock. These older rental apartments provide naturally occurring affordable housing (NOAH), but are increasingly vulnerable to redevelopment pressures as the area densifies.4 
 			</p>
 			<p>
-				Seeing Cooksville as a high-potential node for growth, the City has set an ambitious future density target of 300 people and jobs per hectare for the station area. 
+				This vulnerability is reinforced by the area’s tenure profile: 57.1% of households rent, well above the national average of 46.8%. Most residents in these units are young to middle-aged professionals living alone. Houses, while very expensive due to the area’s prime location, make up just 8% of households.  
 			</p>
 			<p>
-				Yet planning for inclusive growth here will require prioritizing the needs of current and future residents, particularly families. Many elements of successful complete communities are present, mainly centred on the “Four Corners” of Hurontario and Dundas -- schools, health care, and retail – but access to child care is limited, and the area has a critical gap in community centres
+				Arbutus has a vibrant main street with a wide variety of retail and services, supporting a strong local economy and steady foot traffic. 
 			</p>
 			<p>
-				There is also little existing green space. With few formal civic amenities, residents rely on commercial plazas and small parks for daily needs. And like many suburban areas, the neighbourhood itself is built for the car: wide arterials and fragmented sidewalks make walking and cycling a challenge.  
+				However, there are gaps in community-serving amenities such as community centres, convenience stores, and particularly libraries. Residents are also concerned that essential public services, including parks and schools, may not keep pace to serve the rapid population growth. 
 			</p>
 			<p>
-				Another challenge comes from the site itself. Cooksville has over 300 buildings sitting on the Cooksville Creek floodplain, and the area has been deemed a flood risk. 
+				Supporting equitable growth here involves balancing redevelopment with the needs of current residents and the broader community. 
 			</p>
-
-			<!-- MAP OF FLOOD PLAIN -->
-
-			<p>
-				Creating a thriving community here will require creative approaches to managing risk while increasing access to critical amenities.  
-			</p>
-
-
-			<h1 id="Menu_3">
-				Cooksville’s current trajectory 
-			</h1>
-
-			<p>
-				A recent surge in investment and proposed development in the area as the Hazel McCallion line nears completion suggests developer confidence in Cooksville’s potential.<Footnote id={addFootnote(fns[2])}/> Dozens of high-rise projects are in the pipeline, set to transform surface parking lots and aging retail plazas into mixed-use towers. 
-			</p>
-
-		</div>
-
-		<ImageCompare
-			imageURL1="../web-assets/case-study/cooksville/cooksville-current-built.png"
-			caption1=""
-			source1="Infrastructure Institute, School of Cities"
-			buttonLabel1="Current and future rapid transit"
-			imageURL2="../web-assets/case-study/cooksville/cooksville-current-dev.png"
-			caption2=""
-			source2="Infrastructure Institute, School of Cities"
-			buttonLabel2="Planned development"
-			maxWidth="680px"
-			link='No'
-		/>
-
-		<div class="text">	
-
-			<p>
-				If growth continues this way, it will be concentrated on a handful of underused commercial and industrial lots. The default is towers on podiums – a built form tried and tested for effectively increasing density. 
-			</p>
-
-			<p>
-				New towers are clustered on fragmented lots, with density in the form of height to offset costly flood mitigation measures in basements and ground floors. 
-			</p>
-
-		<!-- </div>
-
-		<ImageSingle
-			imageURL="../web-assets/case-study/cooksville/cooksville-current-trajectory.png"
-			caption="Current trajectory for development around Cooksville Station."
-			source="Infrastructure Institute"
-			maxWidth="680px"
-			link='No'
-		/>
-
-		<div class="text"> -->
-
-			<p>
-				But this does not necessarily create a livable neighbourhood, and without early investment in civic infrastructure, Cooksville risks becoming just a collection of towers: dense but socially thin.    
-			</p>
-
-			<p>
-				Crucial infrastructure is not keeping pace. The Cooksville Community Hub, co-located with the Thomas L. Kennedy Secondary School, is planned but needs funding. Other cultural amenities are virtually non-existent.  
-			</p>
-
-		</div>
-
-		<ImageSingle
-			imageURL="../web-assets/case-study/cooksville/cooksville-community-hub.jpg"
-			caption="Rendering of the Cooksville Community Hub."
-			source="SOURCE??? This was just in the project folder"
-			maxWidth="680px"
-			link='No'
-		/>
-		
-		<div class="text">
-
-			<p>
-				Local parks are small and discontinuous, and few institutional sites exist to anchor future population growth.  
-			</p>
-
-			<p>
-				Building a more complete community here requires more intentional planning – for families, and for floods. Here’s how we it could be done. 
-			</p>
-
-		</div>
-
-		<ImageCompare
-			imageURL1="../web-assets/case-study/cooksville/cooksville-scenario1.png"
-			caption1=""
-			source1="Infrasturcture Institute, School of Cities"
-			buttonLabel1="Current trajectory"
-			imageURL2="../web-assets/case-study/cooksville/cooksville-scenario2.png"
-			caption2=""
-			source2="Infrasturcture Institute, School of Cities"
-			buttonLabel2="Mixed-use scenario"
-			maxWidth="680px"
-			link='No'
-		/>
-
-		<div class="text">	
-
-			<h1 id="Menu_4">
-				Building for families, building for all 
-			</h1>
-
-			<p>
-				New mid- and high-rise construction is often oriented toward individuals or couples without children, even though families have always lived in these kinds of spaces.<Footnote id={addFootnote(fns[3])}/> Improving the number and kind of family-oriented units, with targeted community improvements, can increase density around transit and benefit all residents. 
-			</p>
-
-			<h3>
-				Recommendation 1: Provide more 2- and 3- bedroom units
-			</h3>
-
-			<p>
-				The best way to include families in growth is to give them the space they need. Cramped spaces and an insufficient number of bedrooms are the most common issues cited by both children and adults in high-rise dwellings.5 Units with two or more bedrooms allow more flexible space for families and multi-generational households.6 
-			</p>
-
-			<p>
-				In Mississauga, two-thirds of households are families, but most proposed new buildings allocate 70% of units as studios or 1-bedrooms.  
-			</p>
-
-		</div>
-
-		<GraphicSingle
-			svg720={"../web-assets/case-study/cooksville/cooksville-scenario-comparison-720.svg"}
-			svg360={"../web-assets/case-study/cooksville/cooksville-scenario-comparison-360.svg"}
-		/>
-
-		<div class="text">	
-
-			<p>
-				The market shows an appetite for more bedrooms: demand for 1-bedrooms is low, with supply outpacing demand. Meanwhile, even in the current slow condo market, many larger units are selling above asking price, with 2.5 times the sales volume.  
-			</p>
-
-			<p>
-				Our research has shown that this is also a more efficient way to build because kitchens and bathrooms are shared by more people. This allows for a reduction in extreme height. Towers can be shorter, and more mid-rise buildings can be introduced to create active, human-scaled street fronts.  
-			</p>
-
-			<!-- CHART SHOWING % of GHG emission differences in 2 scenarios -->
-
-			<p>
-				Mississauga has already taken steps to incentivize this kind of unit mix by eliminating municipal development charges for units with 3 or bedrooms in purpose-built rental apartments.7 This incentive could be expanded by similarly eliminating these charges at the regional level, or for all new buildings. Other countries, such as Ireland, go further and prescribe a mix of apartment sizes and bedroom numbers before new developments are approved.8 
-			</p>
-
-			<h3>
-				Recommendation 2: Adopt Canadian and global good practices at the site level 
-			</h3>
-
-			<p>
-				In addition to the number of bedrooms, spaces within units must be flexible. Some cities, including Toronto in its Growing Up guidelines for vertical communities, suggest having a recommended play space of 2 by 3 metres within units. Guidelines such as these make planning for larger households more concrete. 
-			</p>
-
-			<p>
-				Safety and connection are also essential, with many studies citing windows and balconies as areas that can often be improved with required safety mechanisms to make units more family friendly.9 Within buildings, ensuring that there are shared spaces, courtyards with play areas, and facilities that children can access – including elevator buttons at child level – encourages connection and independence. 
-			</p>
-
-			<p>
-				Easy interaction with the street can mitigate a lack of private outdoor space, making density more appealing. In their design guidelines, cities can also ensure buildings are surrounded and green spaces with places to play (not solely planted gardens or inaccessible hardscape) away from busy roads.10 
-			</p>
-
-			<h3>
-				Recommendation 3: Prioritize family-friendly retail and amenities in the surrounding area 
-			</h3>
-
-			<p>
-				At the neighbourhood level, Canadian cities have long been leaders in setting guidelines for what services should be available nearby, from schools to transit stops to grocery stores.11 The optimized plan builds on this, integrating community theatres, youth centres, and libraries directly into new mixed-use blocks.   
-			</p>
-
-			<p>
-				Like many people, families enjoy the benefits of compact urban living: proximity to jobs and schools, a diversity of people and stores, and cultural amenities like swimming pools.12 Ensuring child care and school amenities keep pace with density is a core element of growth. A mix of retail is important for all communities, but children specifically want outdoor space to play, inexpensive shops, and libraries, as young people use libraries at high rates.13 
-			</p>
-
-			<h1 id="Menu_5">
-				Addressing rising flood risk 
-			</h1>
-
-			<p>
-				The past 20 years have seen significant urban floods across Canada, including in Calgary, Winnipeg, Toronto -- and Mississauga, including one in 2024 that caused $$ of damage across the city.14 Southern Ontario in particular has been a site of increasing urbanization in areas of increasing flood exposure since 1985.15 As in many Canadian neighbourhoods, future growth in Cooksville will need to balance density with minimizing risk and flood exposure.  
-			</p>
-
-			<h3>
-				Recommendation 1: Minimize impermeable surfaces and costly engineering through parcel selection 
-			</h3>
-
-			<p>etc etc</p>
 
 	</div>
 
