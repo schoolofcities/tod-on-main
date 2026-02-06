@@ -39,6 +39,14 @@
 		'<a href="" target="_blank"></a>'
 	];
 
+	const credits = [
+		{ role:"Research and writing", names:"Sarah Chan, Kathryn Exon Smith"},
+		{ role:"Renderings", names:"Daniel Lam, Phat Le"},
+		{ role:"Data visualizations", names:"Jeff Allen"},
+		{ role:"Web development", names:"Mieko Yao"},
+		{ role:"Additional contributors", names:"Anika Reisha Taboy, Carrie Zeng"}
+	]
+
 	let scrollY = 0;
 	let innerHeight = 1;
 	let arrowColour = "white";
@@ -170,6 +178,7 @@
 			<p>	
 				Cities are also facing greater risks from a changing climate, with flooding the most frequent and costly impact across the country.<Footnote id={addFootnote(fns[1])}/> This case explores strategies for more inclusive densification while managing flood risk. 
 			</p>
+			<!-- INSERT: creek image -->
 			<h2>
 				Neighbourhood overview 
 			</h2>
@@ -179,18 +188,21 @@
 			<p>
 				With over 30,000 residents, Cooksville is dense, vibrant and diverse. Nearly 73% are visible minorities. A gateway for immigrants, two-thirds of Cooksville’s residents are foreign-born, and one in five is a recent arrival.  
 			</p>
+			<!-- INSERT: diversity visual -->
 			<p>
 				Cooksville is young, with an average age of 37.4 and many families, alongside a growing number of seniors, of whom many live alone. Many people – especially renters -- live in high-rise apartments along the major corridors of Hurontario and Dundas Streets, but there are also established, lower-density neighbourhoods further from the station. 
 			</p>
 			<p>
 				Household incomes average about $92,000 per year, far below the city average.  
 			</p>
+			<!-- INSERT: population visual -->
 			<p>
 				Seeing Cooksville as a high-potential node for growth, the City has set an ambitious future density target of 300 people and jobs per hectare for the station area. 
 			</p>
 			<p>
 				Yet planning for inclusive growth here will require prioritizing the needs of current and future residents, particularly families. Many elements of successful complete communities are present, mainly centred on the “Four Corners” of Hurontario and Dundas -- schools, health care, and retail – but access to child care is limited, and the area has a critical gap in community centres
 			</p>
+			<!-- INSERT: visual -->
 			<p>
 				There is also little existing green space. With few formal civic amenities, residents rely on commercial plazas and small parks for daily needs. And like many suburban areas, the neighbourhood itself is built for the car: wide arterials and fragmented sidewalks make walking and cycling a challenge.  
 			</p>
@@ -198,7 +210,7 @@
 				Another challenge comes from the site itself. Cooksville has over 300 buildings sitting on the Cooksville Creek floodplain, and the area has been deemed a flood risk. 
 			</p>
 
-			<!-- MAP OF FLOOD PLAIN -->
+			<!-- INSERT:MAP OF FLOOD PLAIN -->
 
 			<p>
 				Creating a thriving community here will require creative approaches to managing risk while increasing access to critical amenities.  
@@ -374,11 +386,98 @@
 				Recommendation 1: Minimize impermeable surfaces and costly engineering through parcel selection 
 			</h3>
 
-			<p>etc etc</p>
+			<p>
+				The “tall and sprawl” model of urban growth – which features high-rise towers surrounded by lower-density, often single-family, homes – is often criticized, but in flood zones it can make sense. 
+			</p>
 
+			<p>
+				Many properties east of Hurontario Street are regulated by the Credit Valley Conservation Authority, meaning that any development in this area must undergo strict flood mitigation to proceed. These guidelines incentivize taller growth on smaller footprints. 
+			</p>
+			<!-- INSERT: image -->
+			<p>
+				In part, this is because urbanization increases the area of impermeable surfaces, such as parking lots, roads, and buildings, where water cannot soak into the ground.16 Choosing sites that limit additional impermeable surface area decreases this risk. 
+			</p>
+
+			<p>
+				Our optimized approach starts by adopting the current city strategy for where to build: on underused parcels, like aging plazas and surface parking lots. This leaves stable residential neighbourhoods mostly untouched.
+			</p>
+
+			<p>
+				Accounting for floodplain considerations and preserving existing neighbourhoods, these are the parcels most eligible for development. 
+			</p>
+
+			<h3>
+				Recommendation 2: Invest in multi-benefit green infrastructure 
+			</h3>
+
+			<p>
+				Today, developers are engineering their way around the floodplain with elevated podiums, underground storage tanks, and on-site water detention systems. These “grey infrastructure” strategies are expensive and, buried below grade, invisible to the public eye.
+			</p>
+
+			<!-- INSERT: SIDE BY SIDE IMAGE -->
+
+			<p>
+				But what if we approached floodplain mitigation as an opportunity to improve public space? This moves beyond simply burying water tanks underground to lower flood risk through natural, “green” infrastructure such as parks and pathways, and design features that are a feature of development.17 
+			</p>
+
+			<p>
+				By weaving this green infrastructure across sites, we create daily spaces for social connection: new pathways, parks, and adaptive landscapes that guide future development.  
+			</p>
+
+			<p>
+				And the more developers who adopt this strategy, the larger the greenspace network, amplifying benefits for the entire community. 
+			</p>
+
+			<p>
+				This multi-benefit infrastructure like this can be more expensive upfront because it often features layered built and landscape improvements, and therefore involves the time expertise of many people (such as engineers, ecologists, and architects).18  
+			</p>
+
+			<p>
+				But it can increase the appeal of the area, and neighbouring property values.19 Cheonggyecheon Urban Park in South Korea combines public space with flood mitigation when needed, and has contributed significantly to the 30-50% increase in neighbouring land value.20 Green stormwater improvements in Philadelphia have increased nearby home values by 10%, which also contributes to the city’s tax base.21 
+			</p>
+
+			<h3>
+				Recommendation 3: Maintain and improve current stormwater infrastructure, while prioritizing infill over sprawl 
+			</h3>
+
+			<p>
+				Continued investment in stormwater infrastructure by all orders of government will be critical for Cooksville. Previous municipal efforts including an upstream stormwater pond helped to protect the neighbourhood from severe flooding in 2024,22 and the City has approved a $308-million stormwater management plan for the next decade.
+			</p>
+
+			<p>
+				City-wide, more features like this, as well as increasing soil and vegetation that can absorb and filter water, will decrease the risk of overwhelming aging infrastructure, with the added benefit of decreasing contamination from fertilizers, pesticides, and roads that runs off into drains.23 
+			</p>
+			<!-- INSERT: IMAGE -->
+			<p>
+				Also critical will be minimizing new construction. Continuing to build in dense, TOD areas instead of in patterns of sprawl will slow new infrastructure build-out, and the costs associated with maintaining thousands of kilometres of pipes.24 
+			</p>
+
+			<h3>
+				Recommendation 4: Develop more nuanced understanding of flood risk in TOD areas 
+			</h3>
+
+			<p>
+				It is not just proximity to water that carries a flood risk, but how vulnerable people and assets are to exposure.25 Cooksville is considered a high-risk area in part because of social factors, including large populations of seniors and young children, high numbers of renters, lower incomes, and language barriers.26 
+			</p>
+
+			<p>
+				The area also has more older building stock (built before 1980) than many neighbourhoods in Mississauga. These homes can have weaker foundations and less flood protection than newer construction. 
+			</p>
+
+			<p>
+				In Cooksville, as in many neighbourhoods across the country, developing a comprehensive understanding of how built form and social vulnerability interact with flood risk geography can shape planning interventions such as building code changes, targeted incentives to repair, or zoning that incentivizes more concentrated development. 
+			</p>
+
+			<p>
+				Social infrastructure, from the community hub to vibrant local shops, is woven into a landscape where green corridors double as flood protection and public parks.  
+			</p>
+
+			<p>
+				By treating housing, amenities, and water as one integrated system, the plan shifts from managing constraints to building a complete, resilient, and connected Cooksville.  
+			</p>
+	<AuthorDate credits={credits} date="PLACEHOLDER DATE"></AuthorDate>
 	</div>
-
-	<!-- <Footer /> -->
+	<Footer />
 
 	<!-- <Footnotes footnotes={footnotes} /> -->
 

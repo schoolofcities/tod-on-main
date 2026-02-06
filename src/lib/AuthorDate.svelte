@@ -7,6 +7,7 @@
 	export let research = "";
 	export let writing = "";
 	export let date = "";
+	export let credits = [];
 
 </script>
 
@@ -29,7 +30,14 @@
 			<br>
 			Writing: {@html writing}
 		{/if}
-
+		{#if credits.length > 0}
+			{#each credits as credit, i}
+				{#if i > 0}
+					<br>
+				{/if}
+				{credit.role}: {credit.names}
+			{/each}
+		{/if}
 		<br>
 		<span id="date">~ {date}</span>
 	</p>
