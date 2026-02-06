@@ -28,6 +28,7 @@
 
 	import Footnote from '$lib/Footnote.svelte';
 	import Footnotes from '$lib/Footnotes.svelte';
+    import GraphicMultiples from '$lib/GraphicMultiples.svelte';
 	const footnoteStore = createFootnoteStore();
 	const { footnotes, addFootnote } = footnoteStore;
 
@@ -118,7 +119,7 @@
 
 <main>
 
-	<!-- <Password correctPassword="CooksvilleCaseStudy"></Password> -->
+	<Password correctPassword=""></Password>
 
 	<!-- Full page title example -->
 	<div class="wrapper">
@@ -171,31 +172,63 @@
 	<div class="text">
 		
 
-			<h1 id="Menu_2">Why this matters </h1>
+			<!-- <h1 id="Menu_2">Why this matters </h1>
 			<p>
 				Adding density around transit stations requires planning for different kinds of households. Over 35% of Canadian households contain three or more people, but much of the existing and planned housing near transit stations is designed for individuals or couples.<Footnote id={addFootnote(fns[0])}/>
 			</p>
 			<p>	
 				Cities are also facing greater risks from a changing climate, with flooding the most frequent and costly impact across the country.<Footnote id={addFootnote(fns[1])}/> This case explores strategies for more inclusive densification while managing flood risk. 
-			</p>
+			</p> -->
 			<!-- INSERT: creek image -->
+			 <p>
+				<i>
+					The School of Cities has created five case studies of different kinds of transit-oriented development across Canada to explore the opportunities and trade-offs involved in creating thriving communities near transit. In each case, we explore current patterns of growth and project what that community might look like in 20-30 years if development continues in this way (the current trajectory). We then explore an alternative, “optimized” scenario that imagines policy and design changes that could address key challenges.
+				</i>
+			</p>
+
 			<h2>
 				Neighbourhood overview 
 			</h2>
 			<p>
-				Mississauga’s Cooksville neighbourhood is a future transit hub where the existing GO rail line will converge with the new Hazel McCallion light rail transit (LRT) and Dundas Bus Rapid Transit (BRT) lines, making it a focal point for growth.
+				The Cooksville neighbourhood in Mississauga is a future transit hub where the existing GO rail network will converge with the new Hazel McCallion light rail transit (LRT) and Dundas Bus Rapid Transit (BRT) lines, making it a focal point for growth.  
 			</p>
+
+		</div>
+
+		
+
+		<GraphicSingle
+			svg720={"../web-assets/case-study/cooksville/cooksville-station-map-720.svg"}
+		/>
+
+		
+		<div class="text">
+
+			<p>
+				The Cooksville station area also sits within the Cooksville Creek watershed, which is at risk of flooding in the event of significant storms. The City of Mississauga has undertaken significant stormwater management work in the area, including creating an upstream water storage pond, but high levels of development make this area – like many urban areas on floodplains – vulnerable to inundation.<Footnote id={addFootnote(fns[0])}/>
+			</p>
+
 			<p>
 				With over 30,000 residents, Cooksville is dense, vibrant and diverse. Nearly 73% are visible minorities. A gateway for immigrants, two-thirds of Cooksville’s residents are foreign-born, and one in five is a recent arrival.  
 			</p>
-			<!-- INSERT: diversity visual -->
+
+		</div>
+
+		<GraphicMultiples
+			svgPaths={[
+				"../web-assets/case-study/cooksville/cooksville-population.svg",
+				"../web-assets/case-study/cooksville/cooksville-income.svg"
+			]}
+		/>
+
+		<div class="text">
+
 			<p>
 				Cooksville is young, with an average age of 37.4 and many families, alongside a growing number of seniors, of whom many live alone. Many people – especially renters -- live in high-rise apartments along the major corridors of Hurontario and Dundas Streets, but there are also established, lower-density neighbourhoods further from the station. 
 			</p>
 			<p>
 				Household incomes average about $92,000 per year, far below the city average.  
 			</p>
-			<!-- INSERT: population visual -->
 			<p>
 				Seeing Cooksville as a high-potential node for growth, the City has set an ambitious future density target of 300 people and jobs per hectare for the station area. 
 			</p>
@@ -216,6 +249,7 @@
 				Creating a thriving community here will require creative approaches to managing risk while increasing access to critical amenities.  
 			</p>
 
+			
 
 			<h1 id="Menu_3">
 				Cooksville’s current trajectory 
