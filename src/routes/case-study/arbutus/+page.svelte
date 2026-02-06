@@ -117,7 +117,7 @@
 			<TitleFullPage
 				title="Arbutus Station"
 				topic="Case Study"
-				location="Vancouver, ON"
+				location="Vancouver, BC"
 				subtitle="How can we preserve the best features of established neighbourhoods while increasing density around transit?"
 				image={topImage}
 				imageOpacity=1

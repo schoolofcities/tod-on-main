@@ -1,0 +1,8 @@
+animation,image,text,arrowColour,overlay1,overlay2,menu_id,bg_fit
+1,../web-assets/case-study/northfield/nf_frame_3.png,,black,,,Menu_1,contain
+1,../web-assets/case-study/northfield/nf_frame_3.png,,black,,,,contain
+1,../web-assets/case-study/northfield/nf_frame_4.png,,black,,,,contain
+1,../web-assets/case-study/northfield/nf_frame_6.png,,black,,,,contain
+1,../web-assets/case-study/northfield/nf_frame_8.png,,black,,,,contain
+1,../web-assets/case-study/northfield/nf_frame_10.png,,black,,,,contain
+1,../web-assets/case-study/northfield/nf_frame_13.png,,black,,,,contain
