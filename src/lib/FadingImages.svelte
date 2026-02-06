@@ -142,7 +142,7 @@
 
 	<div class="tracker" style:display={hideProgressBar ? "none" : "flex"}>
 		{#each sections as section, i}
-			{#if section.bg_fit == "contain"}
+			{#if section.bg_fit == "contain" && i != 0}
 				<div class="segment">
 					<div
 						class="fill"
@@ -398,7 +398,7 @@
 		}
 	}
 	
-	@media (min-aspect-ratio: 1) {
+	@media (min-aspect-ratio: 6/5) {
 
 		:global(.fading-text-wrapper p) {
 			font-size: 17px !important;
@@ -425,10 +425,16 @@
 			margin-top: 15rem !important;
 			left: 10rem;
 		}
+
+		:global(.fading-text-wrapper p) {
+			font-size: max(6rem, 14.5px) !important;
+			line-height: 28px;
+			margin-top: 0;
+		}
 	}
 
 
-	@media (max-aspect-ratio: 1) {
+	@media (max-aspect-ratio: 6/5) {
 		.fading-text-section.right {
 			width: 94vw;
 		}
@@ -437,20 +443,16 @@
 			right: 2vw;
 		}
 
-		.sticky-image img.contain.center {
-			top: -10vh;
-		}
-
-		.sticky-image img.contain.right {
-			top: -10vh;
-		}
-		
 		.fading-text-section {
 			position: absolute;
 			z-index: 5;
-			margin-top: calc(65vw);
+			margin-top: calc(67vw);
     		width: 94vw;
 			height: calc(100vh - 94vw);
+			max-width: 680px;
+			left: 50%;
+			transform: translateX(-50%);
+			padding: 0;
 		}
 
 		img {
@@ -470,26 +472,55 @@
 		.sticky-image img.contain {
 			object-fit: contain;
 			object-position: 45% center;
-			padding-top: 2vw;
 			width: 96vw;
 			height: 96vw; 
-			margin: auto;
+			margin-top: -10vw;
 		}
 		
 		.fading-text-top {
 			display: flex;
 			align-items: flex-start;   
-			padding: 1vw 0 0 6vw;
 			box-sizing: border-box;
 		}
 
 		:global(.fading-text-wrapper p) {
-			font-size: 4.75rem !important;
+			font-size: min(4.75rem, 16px) !important;
 			line-height: 28px;
 		}
 
 		.header-text {
 			font-size: 7rem;
+		}
+	}
+
+	@media (max-aspect-ratio: 1) {
+		.sticky-image img.contain.center {
+			top: -5vh;
+		}
+
+		.sticky-image img.contain.right {
+			top: -5vh;
+		}
+		.fading-text-section {
+			position: absolute;
+			z-index: 5;
+			margin-top: calc(70vw + 5vh);
+    		width: 94vw;
+			height: calc(100vh - 94vw);
+			max-width: 680px;
+			left: 50%;
+			transform: translateX(-50%);
+			padding: 0;
+		}
+
+
+		.sticky-image img.contain {
+			object-fit: contain;
+			object-position: 45% center;
+			margin-top: 5vw;
+			width: 96vw;
+			height: 96vw; 
+			margin: auto;
 		}
 	}
 
@@ -507,6 +538,8 @@
 		}
 		.sticky-image img.contain {
 			max-width: 100vw;
+			padding-top: 5vh;
+    		width: 92vw;
 		}
 
 		.fading-text-section.right {
@@ -521,7 +554,46 @@
 		}
 	}
 
-	@media (max-width: 500px) {
+	/* @media (max-width: 675px) { */
+	@media (max-aspect-ratio: 4/5) {
+		.sticky-image img.contain {
+			padding-top: 5vw;
+		}
+
+		.fading-text-section {
+    		width: 92vw;
+			height: calc(100vh - 96vw - 30vw);
+			margin-top: calc(100vw);
+		}
+
+		:global(.fading-text-wrapper p) {
+			font-size: max(4.75rem, 14px) !important;
+			line-height: 28px;
+			margin-top: 0;
+		}
+	}
+
+	/* @media (max-width: 600px) { */
+	@media (max-aspect-ratio: 3/4) {
+		.sticky-image img.contain {
+			padding-top: 12vw;
+		}
+
+		.fading-text-section {
+    		width: 92vw;
+			height: calc(100vh - 96vw - 30vw);
+			margin-top: calc(100vw + 12vw);
+		}
+
+		:global(.fading-text-wrapper p) {
+			font-size: min(5rem, 14px) !important;
+			line-height: 28px;
+			margin-top: 0;
+		}
+	}
+
+	/* @media (max-width: 500px) { */
+	@media (max-aspect-ratio: 2/3) {
 		.image-container {
 			z-index: 1;
 		}
@@ -531,42 +603,36 @@
 		}
 
 		.sticky-image img.contain {
-			padding-top: 10vw;
+			padding-top: 15vw;
 		}
 		.fading-text-section {
     		width: 92vw;
-			height: calc(100vh - 96vw - 10vw);
-			margin-top: calc(100vw + 8rem);
-		}
-		
-		.fading-text-top {
-			padding: 4vw 0 0 8vw;
+			height: calc(100vh - 96vw - 30vw);
+			margin-top: calc(100vw + 15vw);
 		}
 
 		:global(.fading-text-wrapper p) {
-			font-size: 6rem !important;
+			font-size: min(8rem, 14px) !important;
 			line-height: 28px;
 			margin-top: 0;
 		}
 	}
 
-	@media (max-width: 400px) {
+	/* @media (max-width: 400px) { */
+	@media (max-aspect-ratio: 1/2) {
 
+		.sticky-image img.contain {
+			padding-top: 40vw;
+		}
 		.fading-text-section {
     		width: 92vw;
 			height: calc(100vh - 96vw - 4vw);
+			margin-top: calc(100vw + 40vw);
 		}
 
-		.fading-text-top {
-			padding: 4vw 0 0 6vw;
-		}
-
-		.fading-text-center {  
-			padding: 0 0 0 6vw;
-		}
 
 		:global(.fading-text-wrapper p) {
-			font-size: 5.5rem !important;
+			font-size: min(5.5rem, 14px) !important;
 			line-height: 24px;
 		}
 	}
