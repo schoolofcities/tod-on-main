@@ -215,7 +215,7 @@ for station in ["Cooksville", "Panama",	"McKernan-Belgravia", "Arbutus", "Northf
 		summaries = []
 
 		i = 0
-		while i < 10:
+		while i < 100:
 
 			results = []
 			j = 0
