@@ -170,13 +170,13 @@
 				This case demonstrates that density alone does not guarantee ridership or community benefit: transit-oriented outcomes depend on strategic infill development that is supported by active transportation, reliable transit, and essential infrastructure. 
 			</p>
 
-			<h2>
+			<h2 id="Menu_3">
 				Neighbourhood overview 
 			</h2>
-			<p>
+			<p id="Menu_4">
 				<a href="https://measuringmainstreets.ca/transit-map/" target="_blank">McKernan-Belgravia Station</a> is located on the Capital Line, Edmonton’s oldest LRT line and its busiest corridor.1 The line plays a central role in the city’s transit network, connecting major destinations including the University of Alberta and downtown, and is supported by a high-frequency transit network in the core of the city.2 
 			</p>
-			<p>
+			<p id="Menu_5">
 				Edmonton Transit Service (ETS) has seen strong post-pandemic recovery, with 61.6 million riders in 2024 – a 15.2% increase from the previous year.3 Ridership reached 52.3 rides per capita,4 and 75% of riders report satisfaction with ETS.5 
 			</p>
 			<p>

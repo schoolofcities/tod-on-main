@@ -187,7 +187,7 @@
 				</i>
 			</p>
 
-			<h2>
+			<h2 id="Menu_2">
 				Neighbourhood overview 
 			</h2>
 			<p>
@@ -527,7 +527,7 @@
 	</div>
 	<Footer />
 
-	<!-- <Footnotes footnotes={footnotes} /> -->
+	<Footnotes footnotes={footnotes} />
 
 </main>
 
