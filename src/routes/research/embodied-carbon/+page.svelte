@@ -6,6 +6,7 @@
 	import TitleFullPage from '$lib/TitleFullPageCaseStudy.svelte';
 	import TitleHalfSplit from '$lib/TitleHalfSplit.svelte';
 	import TitleStandard from '$lib/TitleStandard.svelte';
+	import TitleVideo from '$lib/TitleVideo.svelte';
 	import AuthorDate from '$lib/AuthorDate.svelte';
 	import ImageSingle from '$lib/ImageSingle.svelte';
 	import GraphicSingle from '$lib/GraphicSingle.svelte';
@@ -13,6 +14,7 @@
 	import Footer from '$lib/Footer.svelte';
 	import ScrollyImages from "$lib/ScrollyImages.svelte";
 	import LineBreakMiniTransitMap from '$lib/LineBreakMiniTransitMap.svelte';
+	import Password from '$lib/Password.svelte';
 	
 	import Footnote from '$lib/Footnote.svelte';
 	import Footnotes from '$lib/Footnotes.svelte';
@@ -34,7 +36,7 @@
 
 <svelte:head>
 
-	<title>Activity participation | School of Cities</title>
+	<title>Embodied Carbon | School of Cities</title>
 
 	<!-- <meta name="description" content="Repository of design and web components for building data stories, visualizations, maps, and other custom web projects" />
 	<meta name="author" content="School of Cities">
@@ -68,57 +70,26 @@
 
 <main>
 
-	<!-- Full page title example -->
+	<Password correctPassword=""></Password>
 
-	<!-- <TitleFullPage
-		title="Fun Captivating Project Title"
-		subtitle="Maybe a slightly longer more detailed wordier project subtitle"
-		image="https://jamaps.github.io/photos/picimgs/halifax2_2024.jpg"
-		imageOpacity=0.9
-		imageAltText="A photo"
+	<TitleVideo
+		title="EMBODIED CARBON"
+		subtitle="How different built forms near TOD impact embodied carbon GHG"
+		titletype="RESEARCH"
+		video="/tod-on-main/research/embodied-carbon/skylineVideo.mp4"
+		videoSpeed={0.67}
+		videoOpacity={0.8}
 		titleFontColour="var(--brandWhite)"
 		subtitleFontColour="var(--brandWhite)"
-		logoType="White"
-	/> -->
-
-
-	<!-- Here is a half split title example: -->
-
-	<!-- <TitleHalfSplit
-		title="Fun Captivating Project Title"
-		subtitle="Maybe a slightly longer more detailed wordier project subtitle that explains the project"
-		image="https://schoolofcities.github.io/eddit/_app/immutable/assets/wood-buffalo-title-img-2.CpYjt7SE.jpg"
-		imageAltText="A photo"
-		imageCaption="Wood Buffalo skyline."
-		imageSource="Wikimedia Commons."
-		titleFontColour="var(--brandWhite)"
-		titleBorderColour="var(--brandYellow)"
-		subtitleFontColour="var(--brandWhite)"
-		backgroundColour="var(--brandDarkBlue)"
-		logoStyle="Dark"
-	/> -->
-
-	
-	<!-- Simple title example with logo and subtitle: -->
-
-	<div class="text" style="margin-top: 150px; margin-bottom: 20px;">
-		<Logo/>
-		<LineBreakMiniTransitMap
-			lineColour="var(--brandYellow)"
-			dotFill="var(--brandYellow)"
-			dotStoke="var(--brandWhite)"
-		/>
-	</div>
-	
-	<TitleStandard
-		title="Embodied Carbon in Different Built Forms "
+		logoType = 'White';
 	/>
+
 
 	<div class="text">
 
 		<AuthorDate
 			authors="<a href='' target='_blank'>Author Name</a> <a href='' target='_blank'>Author Name</a> & <a href='' target='_blank'>Author Name</a>"
-			date="November 2025"
+			date="April 2026 (do we include a date?)"
 		/>
 
 	</div>
@@ -147,6 +118,7 @@
 		</p>
 		<GraphicSingle
 			svg720={"../research/embodied-carbon/embodied-carbon-summary-720.svg"}
+			svg360={"../research/embodied-carbon/embodied-carbon-summary-720.svg"}
 		/>
 		<h2>
 			Methodology

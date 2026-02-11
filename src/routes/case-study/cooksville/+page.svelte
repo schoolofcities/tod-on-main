@@ -243,15 +243,20 @@
 			<p>
 				Another challenge comes from the site itself. Cooksville has over 300 buildings sitting on the Cooksville Creek floodplain, and the area has been deemed a flood risk. 
 			</p>
+	
+		</div>
 
-			<!-- INSERT:MAP OF FLOOD PLAIN -->
+		<GraphicSingle
+			svg1080={"../web-assets/case-study/cooksville/cooksville-flood-map-1080.svg"}
+			svg720={"../web-assets/case-study/cooksville/cooksville-flood-map-720.svg"}
+		/>
+
+		<div class="text">
 
 			<p>
 				Creating a thriving community here will require creative approaches to managing risk while increasing access to critical amenities.  
 			</p>
-
 			
-
 			<h1 id="Menu_3">
 				Cooksville’s current trajectory 
 			</h1>
