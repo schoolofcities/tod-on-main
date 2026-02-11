@@ -122,6 +122,10 @@
 		arrowColour = sections[currentIndex].arrowColour;
 	};
 
+	const progressClick = (index) => {
+		console.log(index);
+	}
+
 
 	onMount(() => {
 		window.addEventListener("scroll", handleScroll);
@@ -143,12 +147,15 @@
 	<div class="tracker" style:display={hideProgressBar ? "none" : "flex"}>
 		{#each sections as section, i}
 			{#if section.bg_fit == "contain" && i != 0}
-				<div class="segment">
-					<div
-						class="fill"
-						style="width:{currentIndex >= i ? "100%": "0%"}">
+				<!-- <button on:click={progressClick(i)}
+					aria-label="Jump to slide "{i}
+					class="segment-button"> -->
+					<div class="segment">
+						<div class="fill"
+							style="width:{currentIndex >= i ? "100%": "0%"}">
+						</div>
 					</div>
-				</div>
+				<!-- </button> -->
 			{/if}
 		{/each}
 	</div>
@@ -264,6 +271,11 @@
 		height: 1.5rem;
 		width: 10rem;
 	}
+
+	/* .segment-button {
+		padding: 0px;
+		border: none;
+	} */
 
 	.fill {
 		height: 100%;
