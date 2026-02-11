@@ -28,6 +28,7 @@
 
 	import Footnote from '$lib/Footnote.svelte';
 	import Footnotes from '$lib/Footnotes.svelte';
+    import ImageMultiples from '$lib/ImageMultiples.svelte';
     import GraphicMultiples from '$lib/GraphicMultiples.svelte';
 	const footnoteStore = createFootnoteStore();
 	const { footnotes, addFootnote } = footnoteStore;
@@ -362,6 +363,14 @@
 		<GraphicSingle
 			svg720={"../web-assets/case-study/cooksville/cooksville-scenario-comparison-720.svg"}
 			svg360={"../web-assets/case-study/cooksville/cooksville-scenario-comparison-360.svg"}
+		/>
+
+		<ImageMultiples
+			images={[{url:"../web-assets/case-study/cooksville/CC_Overlay Frame_1.png", alt:"", caption:"asdf"},
+						{url:"../web-assets/case-study/cooksville/CC_Overlay Frame_1_2.png", alt:"", caption:"asdf"}
+			]}
+			matchWidth={true}
+			matchHeight={true}
 		/>
 
 		<div class="text">	

@@ -19,6 +19,7 @@
 	// Shared
 	export let maxWidth = '';
 	export let link = 'Yes'; // Yes or No
+	export let maxCaptionWidth = '680px';
 
 	let active = 1;
 
