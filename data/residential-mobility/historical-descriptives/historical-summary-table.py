@@ -5,7 +5,7 @@ import numpy as np
 # Load data
 # -----------------------------
 station_info = pd.read_excel("station-info.xlsx")
-in_movers = pd.read_csv("out-movers-station-summary.csv").dropna()
+in_movers = pd.read_csv("in-movers-station-summary.csv").dropna()
 
 df = in_movers.merge(
     station_info,
@@ -22,11 +22,11 @@ def summarize(group, label):
         "Group": label,
         "n_stations": group["station_fid"].nunique(),
         "Avg % low-income in-movers (station areas)": np.average(
-            group["out_movers_lowinc_station"],
-            weights=group["n_movers_out"]
+            group["in_movers_lowinc_station"],
+            weights=group["n_movers_in"]
         ),
         "Avg % low-income in-movers (CMA)": np.average(
-            group["out_movers_lowinc_cma"],
+            group["in_movers_lowinc_cma"],
             weights=group["weights_cma"]
         )
     })
@@ -76,4 +76,4 @@ summary_table["Avg % low-income in-movers (CMA)"] = (
 
 print(summary_table)
 
-summary_table.to_csv("temp.csv")
+summary_table.to_csv("temp_inmovers.csv")
