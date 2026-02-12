@@ -143,12 +143,14 @@
 				topOpacity={topOpacity}
 			/>
 		</div>
-		<ScrollAnimate 
-			colour={arrowColour}></ScrollAnimate>
 
 		<HamburgerMenu
 		iconColour={arrowColour}
 		contents={data.menuItems}/>
+
+		<ScrollAnimate 
+			colour={arrowColour}></ScrollAnimate>
+
 
 		<!-- Bottom is underneath, scrolls normally -->
 		<div class="bottom" id="before-text">
@@ -281,6 +283,14 @@
 				If growth continues this way, it will be concentrated on a handful of underused commercial and industrial lots. The default is towers on podiums – a built form tried and tested for effectively increasing density. 
 			</p>
 
+			<ImageMultiples
+				images={[{url:"../web-assets/case-study/cooksville/Growth1.png", alt:"", caption:"asdf"},
+							{url:"../web-assets/case-study/cooksville/Growth2.png", alt:"", caption:"asdf"}
+				]}
+				matchWidth={false}
+				matchHeight={true}
+			/>
+
 			<p>
 				New towers are clustered on fragmented lots, with density in the form of height to offset costly flood mitigation measures in basements and ground floors. 
 			</p>
@@ -330,11 +340,11 @@
 		<ImageCompare
 			imageURL1="../web-assets/case-study/cooksville/cooksville-scenario1.png"
 			caption1=""
-			source1="Infrasturcture Institute, School of Cities (2025)."
+			source1="Infrastructure Institute, School of Cities (2025)."
 			buttonLabel1="Current trajectory"
 			imageURL2="../web-assets/case-study/cooksville/cooksville-scenario2.png"
 			caption2=""
-			source2="Infrasturcture Institute, School of Cities (2025)."
+			source2="Infrastructure Institute, School of Cities (2025)."
 			buttonLabel2="Mixed-use scenario"
 			maxWidth="900px"
 			link='No'
@@ -368,14 +378,6 @@
 		<GraphicSingle
 			svg720={"../web-assets/case-study/cooksville/cooksville-scenario-comparison-720.svg"}
 			svg360={"../web-assets/case-study/cooksville/cooksville-scenario-comparison-360.svg"}
-		/>
-
-		<ImageMultiples
-			images={[{url:"../web-assets/case-study/cooksville/CC_Overlay Frame_1.png", alt:"", caption:"asdf"},
-						{url:"../web-assets/case-study/cooksville/CC_Overlay Frame_1_2.png", alt:"", caption:"asdf"}
-			]}
-			matchWidth={true}
-			matchHeight={true}
 		/>
 
 		<div class="text">	

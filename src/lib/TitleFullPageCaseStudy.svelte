@@ -40,7 +40,7 @@
 </script>
 
 
-<div class="title-container" bind:clientWidth={divWidth} >
+<div class="title-container" bind:clientWidth={divWidth} inert={topOpacity < 0.02}>
 
 	<div class="tint-overlay"
 		style:opacity={tintOpacity}

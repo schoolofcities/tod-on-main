@@ -2,6 +2,7 @@
 
 	import "../assets/global-styles.css";  
 	import { onMount } from "svelte";
+    // import { tick } from 'svelte';
 
 	export let iconColour = "black";
     export let contents = [];
@@ -13,11 +14,24 @@
 
     let xColour = iconColour;
 
-    let triggerMenu = () => {
-        opened = !opened;
-    };
-
     $: xColour = opened ? "black" : iconColour;
+    
+    function handleKeydown(e) {
+        if (e.key === 'Escape') {
+            opened = false;
+            document.querySelector('.hamburger-container')?.focus();
+        }
+    }
+
+    function triggerMenu() {
+        opened = !opened;
+
+        // if (opened) {
+        //     await tick();
+        //     const firstLink = document.querySelector('#menu-content a');
+        //     firstLink?.focus();
+        // }
+    }
 
     onMount(() => {
         menu = document.getElementById("menu");
@@ -27,27 +41,14 @@
 
 
 <div>
-        <div class="menu" 
-            style:height="100vh"
-            style:background-color={menuColour}
-            class:opened
-            aria-hidden={opened ? false : true}
-            >
-            <div id="menu-content">
-                <a href="#top" style:color={textColour}>Title</a>
-
-                {#each contents as content}
-                    <a href={`#${content.item_id}`} style:color={textColour} on:click={() => {opened = false;}}>{content.menu_entry}</a>
-                {/each}
-            </div>
-        </div>
-
-
     <button
         class="hamburger-container"
         class:opened
         on:click={triggerMenu}
-        aria-label="Expand Navigation Menu">
+        aria-label="Navigation Menu"
+        aria-expanded={opened}
+        aria-controls="menu-content"
+        on:keydown={handleKeydown}>
         <svg 
             class="icon"
             height="5.3rem"
@@ -64,6 +65,24 @@
         
         </svg>
     </button>
+
+    <div class="menu" 
+        style:height="100vh"
+        style:background-color={menuColour}
+        class:opened
+        >
+        {#if opened}
+            <nav id="menu-content">
+                <a href="#top" style:color={textColour}>Title</a>
+
+                {#each contents as content}
+                    <a href={`#${content.item_id}`} 
+                    style:color={textColour} 
+                    on:click={() => {opened = false;}}>{content.menu_entry}</a>
+                {/each}
+            </nav>
+        {/if}
+    </div>
 
 </div>
 
