@@ -27,28 +27,6 @@
 		}
 	};
 
-	console.log(matchHeight ? "yes" : "no", matchHeight)
-
-	// async function loadImage(path) {
-	// 	try {
-	// 		const response = await fetch(path);
-	// 		if (!response.ok) throw new Error(`Failed to load SVG from ${path}`);
-	// 		return await response.text(); // Return the SVG content as a string
-	// 	} catch (e) {
-	// 		console.error(`Error loading SVG from ${path}:`, e);
-	// 		return '';
-	// 	}
-	// }
-
-	// async function loadAllImages() {
-	// 	const loadedImages = [];
-	// 	for (const path of imgPaths) {
-	// 		const imgContent = await loadImage(path);
-	// 		loadedImages.push(imgContent);
-	// 	}
-	// 	imgs = loadedImages;
-	// }
-
 	import { onMount, onDestroy } from 'svelte';
 
 	onMount(() => {
@@ -57,14 +35,14 @@
 				// await loadAllImages();
 				updateLayout();
 				
-				// Setup resize listener after loading
-				window.addEventListener('resize', updateLayout);
-				
 				observer.disconnect();
 			}
 		}, {
 			rootMargin: '200px' // Start loading when within 200px of viewport
 		});
+				
+		// Setup resize listener after loading
+		window.addEventListener('resize', updateLayout);
 
 		if (container) observer.observe(container);
 
@@ -92,7 +70,7 @@
 <style>
 	.img-grid {
 		display: flex;
-		flex-wrap: wrap;
+		/* flex-wrap: wrap; */
 		justify-content: center;
 		gap: 10px;
 		height: fit-content;
@@ -120,9 +98,17 @@
 	}
 
 	img {
-		max-width: 100%;
+		max-width: 40dvw;
 		max-height: 40dvh;
 	}
+
+	@media (max-width: 700px) {
+		img {
+			max-width: 90dvw;
+			max-height: 40dvh;
+		}
+	}
+
 
 	/* Layout classes */
 	.row-2, .row-3 {

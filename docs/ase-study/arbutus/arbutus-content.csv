@@ -1,5 +1,5 @@
-"animation","image","text","arrowColour","overlay1","overlay2","menu_id","bg_fit"
-1,"../web-assets/case-study/arbutus/ab_frame_4.png",,"black",,,"Menu_1","contain"
-1,"../web-assets/case-study/arbutus/ab_frame_4.png","Arbutus Station is a case study for ambitious transit-oriented development in well-established neighbourhoods. ","black",,,,"contain"
-1,"../web-assets/case-study/arbutus/ab_frame_7.png","This area has ample naturally occurring affordable housing and a strong City plan, but implementation risks uneven change, ","black",,,,"contain"
-1,"../web-assets/case-study/arbutus/ab_frame_9.png","Our optimized scenario focuses growth along major corridors, protecting existing contexts while supporting transit and growth. ","black",,,,"contain"
+animation,image,text,arrowColour,overlay1,overlay2,menu_id,bg_fit,alt_text
+1,../web-assets/case-study/arbutus/ab_frame_4.png,,black,,,Menu_1,contain,
+1,../web-assets/case-study/arbutus/ab_frame_4.png,Arbutus Station is a case study for ambitious transit-oriented development in well-established neighbourhoods. ,black,,,,contain,alt alt
+1,../web-assets/case-study/arbutus/ab_frame_7.png,"This area has ample naturally occurring affordable housing and a strong City plan, but implementation risks uneven change, ",black,,,,contain,alt alt
+1,../web-assets/case-study/arbutus/ab_frame_9.png,"Our optimized scenario focuses growth along major corridors, protecting existing contexts while supporting transit and growth. ",black,,,,contain,alt alt

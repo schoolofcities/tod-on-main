@@ -166,19 +166,21 @@
 				<img
 					class={`${imageAlign} ${sections[currentIndex].bg_fit}`}
 					src={sections[currentIndex].image}
-					alt={sections[currentIndex].heading}
+					alt={`${sections[currentIndex].alt_text} Description:${sections[currentIndex].text}`}
 					transition:fade={{duration: sections[currentIndex].image.valueOf() != sections[currentIndex - 1]?.image.valueOf()
 								? fadeDuration : 0 }}
 					loading="eager"
+					aria-hidden=true
 				/>
 			</div>
 		{/key}
 		
 		{#if header != ""}
-			<h1 class="header-text"
-				style="color: {arrowColour}">
+			<p class="header-text"
+				style="color: {arrowColour}"
+				aria-hidden=true>
 				{header}
-			</h1>
+			</p>
 		{/if}
 
 		{#key currentIndex} 
@@ -221,28 +223,33 @@
 		</div>
 	</div>
 
-	<div class="mobile-overlay text-scroll"
-		style="visibility: {isMobile ? "visible" : "hidden"}">
-			{#each sections as section, i}
-				<div id={section.menu_id !== "" ? section.menu_id : null}>
-					{#if section.overlay2 == ""}
-						<div class="mobile-overlay-1 mobile-overlay-image">
-							<img
-							src={section.overlay1}
-							alt={section.overlay1}
-							/>
-						</div>
-					{/if}
-					{#if section.overlay2 !== ""}
-						<div class="mobile-overlay-2 mobile-overlay-image">
-							<img
-							src={section.overlay2}
-							alt={section.overlay2}
-							/>
-						</div>
-					{/if}
-				</div>
-			{/each}
+	<div>
+		<div class="mobile-overlay text-scroll {isMobile ? "is-mobile" : "not-mobile"}">
+				{#each sections as section, i}
+					<div id={section.menu_id !== "" ? section.menu_id : null}>
+						{#if section.alt_text != ""}
+							<span class="sr-only">{`Animation Frame ${i}: ${section.alt_text}
+									Description: ${section.text.replaceAll(/(?:\r\n|\r|\n)/g, '\n')}`}</span>
+						{/if}
+						{#if section.overlay2 == ""}
+							<div class="mobile-overlay-1 mobile-overlay-image">
+								<img
+								src={section.overlay1}
+								alt={section.overlay1}
+								/>
+							</div>
+						{/if}
+						{#if section.overlay2 !== ""}
+							<div class="mobile-overlay-2 mobile-overlay-image">
+								<img
+								src={section.overlay2}
+								alt={section.overlay2}
+								/>
+							</div>
+						{/if}
+					</div>
+				{/each}
+		</div>
 	</div>
 
 
@@ -251,6 +258,17 @@
 
 
 <style>
+	.sr-only {
+		border: 0;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+	}
+
 	/* progress bar */
 	.tracker {
 		position: fixed;
@@ -323,6 +341,7 @@
 	}
 
 	.header-text {
+		font-family: PoppinsBold;
 		position: absolute;
 		left: 15rem;
 		width: 18rem;
@@ -330,6 +349,7 @@
 		line-height: 6.5rem;
 		letter-spacing: -0.30rem;
 		margin-top: 15rem !important;
+		
 	}
 
 	img.right {
@@ -393,6 +413,14 @@
 		width: 96vw;
 		left: 2vw;
 		position: relative;
+	}
+
+	.is-mobile img {
+		visibility: hidden;
+	}
+
+	.not-mobile img {
+		visibility: visible;
 	}
 
 	@media (min-aspect-ratio: 7/4) {
