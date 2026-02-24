@@ -1,8 +1,5 @@
-animation,image,text,arrowColour,overlay1,overlay2,menu_id,bg_fit,alt_text
-1,../web-assets/case-study/cooksville/crop_frame_4.png,,white,,,Menu_1,contain,
-1,../web-assets/case-study/cooksville/crop_frame_4.png,"Adding density around transit stations requires planning for different kinds of households. 
-
-Many families want to live near transit because they can spend less time and money on driving and benefit from better access to education and culture in well-planned developments.  ",black,,,,contain,"3D rendering of Cooksville Station in Mississauga, Ontario. "
-1,../web-assets/case-study/cooksville/crop_frame_13.png,But the housing and amenities planned around station areas are often aimed at individuals or couples.,black,,,,contain, 
-1,../web-assets/case-study/cooksville/crop_frame_13.png,"Cities are also facing greater risks from a changing climate, with flooding the most frequent and costly impact across the country. Densification also needs to manage the growing risk of flooding in urban areas. ",black,,,,contain,3D rendering of the current development trajectory in the area surrounding Cooksville Station. 
-1,../web-assets/case-study/cooksville/crop_frame_16.png,How can we plan our infrastructure in a way that creates communities for everyone and keeps a changing climate in mind? This case explores strategies for more inclusive densification while managing flood risk.,black,,,,contain,3D rendering of School of Cities' proposed scenario for development surrounding Cooksville Station.
+"animation","image","text","arrowColour","overlay1","overlay2","menu_id","bg_fit","alt_text"
+1,"../web-assets/case-study/cooksville/crop_frame_4.png",,"white",,,"Menu_1","contain",
+1,"../web-assets/case-study/cooksville/crop_frame_4.png","The Cooksville neighbourhood in Mississauga is a future transit hub where the existing GO rail network will converge with the new Hazel McCallion light rail transit (LRT) and Dundas bus rapid transit (BRT) lines, making it a focal point for growth. ","black",,,,"contain","3D rendering of Cooksville Station in Mississauga, Ontario. "
+1,"../web-assets/case-study/cooksville/crop_frame_13.png","Adding density around transit stations requires planning for different kinds of households. But the housing and amenities around station areas are often aimed solely at individuals or couples.  ","black",,,,"contain"," "
+1,"../web-assets/case-study/cooksville/crop_frame_16.png","Cities are also facing greater risks from a changing climate, with flooding the most frequent and costly impact across the country.","black",,,,"contain","3D rendering of School of Cities' proposed scenario for development surrounding Cooksville Station."

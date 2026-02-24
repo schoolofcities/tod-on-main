@@ -32,6 +32,7 @@
     import GraphicMultiples from '$lib/GraphicMultiples.svelte';
     import CaseStudyNote from '$lib/CaseStudyNote.svelte';
     import Recommendation from '$lib/Recommendation.svelte';
+    import LogoBody from '$lib/LogoBody.svelte';
 	const footnoteStore = createFootnoteStore();
 	const { footnotes, addFootnote } = footnoteStore;
 
@@ -72,9 +73,9 @@
 
 	const credits = [
 		{ role:"Research and writing", names:"Sarah Chan, Kathryn Exon Smith, Anika Reisha Taboy"},
-		{ role:"Renderings", names:"Daniel Lam, Phat Le"},
-		{ role:"Data visualizations", names:"Jeff Allen"},
-		{ role:"Web development", names:"Mieko Yao"},
+		{ role:"Architectural renderings", names:"Daniel Lam, Phat Le"},
+		{ role:"Maps and data visualization", names:"Jeff Allen, Polina Gorn, Isabeaux Graham"},
+		{ role:"Web development", names:"Mieko Yao, Jeff Allen"},
 		{ role:"Additional contributors", names:"An Pham, Carrie Zeng"}
 	]
 
@@ -149,7 +150,7 @@
 
 <main>
 
-	<Password correctPassword=""></Password>
+	<Password correctPassword="catcatmeow"></Password>
 
 	<!-- Full page title example -->
 	<div class="wrapper">
@@ -203,6 +204,10 @@
 
 
 	<div class="text">
+
+		<p>
+			Densification near transit means managing the growing risk of flooding while creating communities for everyone. Our Cooksville case explores strategies for more inclusive densification while designing around urban floods.  
+		</p>
 		
 			<CaseStudyNote style=3/>
 
@@ -219,6 +224,7 @@
 
 		<GraphicSingle
 			svg720={"../web-assets/case-study/cooksville/cooksville-station-map-720.svg"}
+			svg360={"../web-assets/case-study/cooksville/cooksville-station-map-360z.svg"}
 		/>
 
 		
@@ -228,13 +234,17 @@
 				The Cooksville station area also sits within the Cooksville Creek watershed, which is at risk of flooding in the event of significant storms. The City of Mississauga has undertaken significant stormwater management work in the area, including creating an upstream water storage pond, but high levels of development make this area – like many urban areas on floodplains – vulnerable to inundation.<Footnote id={addFootnote(fns[1])}/>
 			</p>
 
+		</div>
+
 		<ImageSingle
-			imageURL={"../web-assets/case-study/cooksville/cooksville-creek.png"}
+			imageURL={"../web-assets/case-study/cooksville/cooksville-creek-mississauga-photo.jpg"}
 			source={"<a href='https://www.mississauga.ca/projects-and-strategies/environmental-assessments/cooksville-creek-erosion-control-from-mississauga-valley-boulevard-to-the-cp-railway/' target='_blank'>Cooksville Creek Erosion Control from Mississauga Valley Boulevard to the CP Railway</a>."}
 			caption={"Cooksville Creek experiencing significant bank erosion, highlighting the need for rehabilitation."}
-			maxWidth="680px"
+			maxWidth="1080px"
 			link='No'
 		/>
+
+		<div class="text">
 
 			<p>
 				With nearly 20,000 residents, the station area is dense, vibrant and diverse. Nearly 73% are visible minorities. A gateway for immigrants, two-thirds of Cooksville’s residents are foreign-born, and one in five is a recent arrival.  
@@ -245,7 +255,9 @@
 		<GraphicMultiples
 			svgPaths={[
 				"../web-assets/case-study/cooksville/cooksville-population.svg",
-				"../web-assets/case-study/cooksville/cooksville-income.svg"
+				"../web-assets/case-study/cooksville/cooksville-income.svg",
+				"../web-assets/case-study/cooksville/cooksville-age.svg",
+				"../web-assets/case-study/cooksville/cooksville-housing.svg"
 			]}
 		/>
 
@@ -261,13 +273,7 @@
 				Yet planning for inclusive growth here will require prioritizing the needs of current and future residents, particularly families. Many elements of successful complete communities are present, mainly centred on the “Four Corners” of Hurontario and Dundas -- schools, health care, and retail – but access to child care is limited, and the area has a critical gap in community centres. 
 			</p>
 			<!-- INSERT: visual -->
-			<p>
-				There is also little existing green space. With few formal civic amenities, residents rely on commercial plazas and small parks for daily needs. And like many suburban areas, the neighbourhood itself is built for the car: wide arterials and fragmented sidewalks make walking and cycling a challenge. Another challenge comes from the site itself. Cooksville has a number of buildings sitting on the Cooksville Creek floodplain, and the area has been deemed a flood risk.
-			</p>
-			<p>
-				Creating a vibrant community here will require creative approaches to managing risk while increasing access to critical amenities. 
-			</p>
-	
+			
 		</div>
 
 		<GraphicSingle
@@ -276,7 +282,16 @@
 		/>
 
 		<div class="text">
-			
+
+			<p>
+				There is also little existing green space. With few formal civic amenities, residents rely on commercial plazas and small parks for daily needs. And like many suburban areas, the neighbourhood itself is built for the car: wide arterials and fragmented sidewalks make walking and cycling a challenge. Another challenge comes from the site itself. Cooksville has a number of buildings sitting on the Cooksville Creek floodplain, and the area has been deemed a flood risk.
+			</p>
+		
+
+			<p>
+				Creating a vibrant community here will require creative approaches to managing risk while increasing access to critical amenities. 
+			</p>
+	
 			<h1 id="Menu_3">
 				Cooksville’s current trajectory 
 			</h1>
@@ -285,45 +300,25 @@
 				A recent surge in investment and proposed development in the area as the Hazel McCallion line nears completion suggests developer confidence in Cooksville’s potential.<Footnote id={addFootnote(fns[2])}/>  Dozens of high-rise projects are in the pipeline, set to transform surface parking lots and aging retail plazas into mixed-use towers.
 			</p>
 
-			<ImageSingle
-				imageURL="../web-assets/case-study/cooksville/cooksville-current-dev.png"
-				caption="Currently proposed or under construction development 800m from Cooksville station."
-				source="Infrastructure Institute (2025)."
-				maxWidth="680px"
-				link='No'
-			/>
-
 			<p>
 				If growth continues this way, it will be concentrated on a handful of underused commercial and industrial lots. The default is towers on podiums – a built form tried and tested for effectively increasing density.
 			</p>
 
 		</div>
 
-		<div class="text">	
-
-			<ImageMultiples
-				images={[{url:"../web-assets/case-study/cooksville/Growth1.png", alt:"", caption:"asdf"},
-							{url:"../web-assets/case-study/cooksville/Growth2.png", alt:"", caption:"asdf"}
-				]}
-				matchWidth={false}
-				matchHeight={true}
-			/>
-
-			<p>
-				New towers are clustered on lots in a fragmented pattern, with density in the form of height to offset costly flood mitigation measures in basements and ground floors.
-			</p>
-
-		<!-- </div>
-
 		<ImageSingle
-			imageURL="../web-assets/case-study/cooksville/cooksville-current-trajectory.png"
-			caption="Current trajectory for development around Cooksville Station."
-			source="Infrastructure Institute"
+			imageURL="../web-assets/case-study/cooksville/cooksville-current-dev.png"
+			caption="Currently proposed or under construction development 800m from Cooksville station."
+			source="Infrastructure Institute (2025)."
 			maxWidth="680px"
 			link='No'
 		/>
 
-		<div class="text"> -->
+		<div class="text">	
+
+			<p>
+				New towers are clustered on lots in a fragmented pattern, with density in the form of height to offset costly flood mitigation measures in basements and ground floors.
+			</p>
 
 			<p>
 				But this does not necessarily create a livable neighbourhood, and without early investment in civic infrastructure, Cooksville risks becoming just a collection of towers: dense but socially thin.
@@ -358,20 +353,25 @@
 		<ImageCompare
 			imageURL1="../web-assets/case-study/cooksville/cooksville-scenario1.png"
 			caption1=""
-			source1="Infrastructure Institute, School of Cities (2025)."
+			source1=""
 			buttonLabel1="Current trajectory"
 			imageURL2="../web-assets/case-study/cooksville/cooksville-scenario2.png"
 			caption2=""
-			source2="Infrastructure Institute, School of Cities (2025)."
-			buttonLabel2="Mixed-use scenario"
+			source2=""
+			buttonLabel2="Optimized scenario"
 			maxWidth="900px"
 			link='No'
+		/>
+
+		<GraphicSingle
+			svg720={"../web-assets/case-study/cooksville/render-legend-720.svg"}
+			svg360={"../web-assets/case-study/cooksville/cooksville-scenario-comparison-360.svg"}
 		/>
 
 		<div class="text">	
 
 			<h1 id="Menu_4">
-				Building for families, building for all 
+				Optimized scenario: Building for families, building for all 
 			</h1>
 
 			<p>
@@ -425,11 +425,16 @@
 				In their design guidelines, cities can also ensure buildings are surrounded and green spaces with places to play (not solely planted gardens or inaccessible hardscape) away from busy roads.<Footnote id={addFootnote(fns[11])}/> 
 			</p>
 
-			<ImageSingle imageURL="../web-assets/case-study/cooksville/copenhagen-playground.jpg" 
-				maxWidth="340px"
-				caption={"Playground and green space designed for safe, accessible play"}
-				source={"<a href='https://www.pexels.com/photo/modern-playground-in-copenhagen-urban-area-34770471/' target='_blank'>Photo by Hari Hofer</a>"}
-				/>
+		</div>
+
+		<ImageSingle 
+			imageURL="../web-assets/case-study/cooksville/copenhagen-playground.jpg" 
+			maxWidth="680px"
+			caption={"Playground and green space designed for safe, accessible play"}
+			source={"<a href='https://www.pexels.com/photo/modern-playground-in-copenhagen-urban-area-34770471/' target='_blank'>Photo by Hari Hofer</a>"}
+		/>
+
+		<div class="text">
 
 			<Recommendation style=1 count=3
 							title="Prioritize family-friendly retail and amenities in the surrounding area "/>
@@ -441,14 +446,15 @@
 				Like many people, families enjoy the benefits of compact urban living: proximity to jobs and schools, a diversity of people and stores, and recreational amenities like swimming pools.<Footnote id={addFootnote(fns[13])}/>  Ensuring child care and school amenities keep pace with density is a core element of growth. A mix of retail is important for all communities, but children specifically want outdoor space to play, inexpensive shops, and libraries, as young people use libraries at high rates.<Footnote id={addFootnote(fns[14])}/> 
 			</p>
 
-			<ImageSingle imageURL="../web-assets/case-study/cooksville/mixed-use-space.png"
-				caption="Mixed use public space, designed for all ages."
-				maxWidth="340px"
-				source="Infrastructure Institute (2025)."
-			/>
+		</div>
 
-			<!-- <ImageSingle imageURL="../web-assets/case-study/cooksville/family-friendly.png" maxWidth="340px"
-				source="????"/> -->
+		<ImageSingle imageURL="../web-assets/case-study/cooksville/mixed-use-space.png"
+			caption="Mixed use public space, designed for all ages."
+			maxWidth="680px"
+			source="Infrastructure Institute (2025)."
+		/>
+
+		<div class="text">
 
 			<h1 id="Menu_5">
 				Addressing rising flood risk 
@@ -481,6 +487,16 @@
 				Accounting for floodplain considerations and preserving existing neighbourhoods, these are the parcels most eligible for development.
 			</p>
 
+		</div>
+
+		<!-- <ImageSingle imageURL="../web-assets/case-study/cooksville/palmerston.jpg"
+			caption="Example of a green buffer on Palmerston Ave., Toronto"
+			maxWidth="680px"
+			source="Photo by Jeff Allen (2025)."
+		/> -->
+
+		<div class="text">
+
 			<Recommendation style=1 count=2
 							title="Invest in multi-benefit green infrastructure"/>
 
@@ -512,21 +528,25 @@
 				Cheonggyecheon Urban Park in South Korea combines public space with flood mitigation when needed, and has contributed significantly to the 30-50% increase in neighbouring land value.<Footnote id={addFootnote(fns[21])}/>  Green stormwater improvements in Philadelphia have increased nearby home values by 10%, which also contributes to the city’s tax base.<Footnote id={addFootnote(fns[22])}/>
 			</p>
 
-			<ImageSingle
-				imageURL={"../web-assets/case-study/cooksville/seoul-river.jpg"}
-				caption="When Cheonggeyechon River is low, pedestrians can enjoy walking through the flood infrastructure in-between busier main streets."
-				source="<a href='https://commons.wikimedia.org/wiki/File:Cheonggeyechon_River_in_Seoul.jpg' target='_blank'>Photo by Ken Eckert</a>"
-				maxWidth="680px"
-				link='No'
-			/>
+		</div>
 
-			<ImageSingle
-				imageURL={"../web-assets/case-study/cooksville/cheonggyecheon.jpg"}
-				caption="When Cheonggeyechon River is low, pedestrians can enjoy walking through the flood infrastructure in-between busier main streets."
-				source="<a href='https://commons.wikimedia.org/wiki/File:20240602_175752_Cheonggyecheon_06.jpg' target='_blank'>Photo by Dwxn</a>"
-				maxWidth="680px"
-				link='No'
-			/>
+		<ImageSingle
+			imageURL={"../web-assets/case-study/cooksville/seoul-river.jpg"}
+			caption="When Cheonggeyechon River is low, pedestrians can enjoy walking through the flood infrastructure in-between busier main streets."
+			source="<a href='https://commons.wikimedia.org/wiki/File:Cheonggeyechon_River_in_Seoul.jpg' target='_blank'>Photo by Ken Eckert</a>"
+			maxWidth="680px"
+			link='No'
+		/>
+
+		<ImageSingle
+			imageURL={"../web-assets/case-study/cooksville/cheonggyecheon.jpg"}
+			caption="When Cheonggeyechon River is low, pedestrians can enjoy walking through the flood infrastructure in-between busier main streets."
+			source="<a href='https://commons.wikimedia.org/wiki/File:20240602_175752_Cheonggyecheon_06.jpg' target='_blank'>Photo by Dwxn</a>"
+			maxWidth="680px"
+			link='No'
+		/>
+
+		<div class="text">
 
 			<Recommendation style=1 count=3
 							title="Maintain and improve current stormwater infrastructure, while prioritizing infill over sprawl "/>
@@ -543,13 +563,17 @@
 				Also critical will be minimizing new construction. Continuing to build in dense, TOD areas instead of in patterns of sprawl will slow new infrastructure build-out, and the costs associated with maintaining thousands of kilometres of pipes.<Footnote id={addFootnote(fns[25])}/> 
 			</p>
 
-			<ImageSingle
-				imageURL={"../web-assets/case-study/cooksville/saigon-park.jpg"}
-				caption="Lake Saigon stormwater management pond."
-				source="<a href='https://www.mississauga.ca/wp-content/uploads/2024/08/19124804/Siagon-Park-Social-Post-1-scaled.jpg' target='_blank'>City of Mississauga.</a>"
-				maxWidth="680px"
-				link='No'
-			/>
+		</div>
+
+		<ImageSingle
+			imageURL={"../web-assets/case-study/cooksville/saigon-park.jpg"}
+			caption="Lake Saigon stormwater management pond."
+			source="<a href='https://www.mississauga.ca/wp-content/uploads/2024/08/19124804/Siagon-Park-Social-Post-1-scaled.jpg' target='_blank'>City of Mississauga.</a>"
+			maxWidth="680px"
+			link='No'
+		/>
+
+		<div class="text">
 
 			<Recommendation style=1 count=4
 							title="Develop more nuanced understanding of flood risk in TOD areas"/>
@@ -566,14 +590,17 @@
 				In Cooksville, as in many neighbourhoods across the country, developing a comprehensive understanding of how built form and social vulnerability interact with flood risk geography can shape planning interventions such as building code changes, targeted incentives to repair, or zoning that incentivizes more concentrated development.
 			</p>
 
-			<ImageSingle
-				imageURL={"../web-assets/case-study/cooksville/cooksville-aerial.jpg"}
-				caption="Aerial view of Cooksville showing family homes."
-				source="<a href='https://commons.wikimedia.org/wiki/File:Aerial_view_of_Cooksville_2022.jpg' target='_blank'>Photo by Canmenwalker.</a>"
-				maxWidth="680px"
-				link='No'
-			/>
+		</div>
 
+		<ImageSingle
+			imageURL={"../web-assets/case-study/cooksville/cooksville-aerial.jpg"}
+			caption="Aerial view of Cooksville showing family homes."
+			source="<a href='https://commons.wikimedia.org/wiki/File:Aerial_view_of_Cooksville_2022.jpg' target='_blank'>Photo by Canmenwalker.</a>"
+			maxWidth="680px"
+			link='No'
+		/>
+
+		<div class="text">
 			<p>
 				Green and social infrastructure can come together here in a win-win for the community, with vibrant local shops and public facilities woven into a landscape where green corridors double as flood protection and public parks. 
 			</p>
@@ -582,21 +609,33 @@
 				By treating housing, amenities, and water as one integrated system, the plan shifts from managing constraints to building a complete, resilient, and connected Cooksville. 
 			</p>
 
-
+		</div>
 
 			<ImageSingle imageURL="../web-assets/case-study/cooksville/green-infrastructure.png"
 				caption="Green infrastructure with art gallery in the back."
-				maxWidth="340px"
+				maxWidth="680px"
 				source="Infrastructure Institute (2025)."
 				link='No'
 			/>
 
-	<AuthorDate credits={credits} date="PLACEHOLDER DATE"></AuthorDate>
-	</div>
+		<div class="text">
+
+			<div class="line-break"></div>
+
+			<AuthorDate credits={credits} date="March 2026"></AuthorDate>
+
+			<div class="line-break"></div>
+
+		</div>
 
 	<Footnotes footnotes={footnotes} />
-	<Footer />
 
+	<div class="text">
+		<div class="line-break"></div>
+		<LogoBody/>
+		<div class="line-break"></div>
+	</div>
+	
 </main>
 
 

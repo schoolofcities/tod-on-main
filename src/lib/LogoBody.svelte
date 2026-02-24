@@ -10,23 +10,30 @@
 
 </script>
 
-<a href="https://schoolofcities.utoronto.ca/" target="_blank">
-	<img
-		class="svg-logo"
-		src={logo}
-		alt="School of City logo"
-		loading="lazy"
-		draggable="false"
-		tabindex="0"
-	/>
-</a>
+<div class="logo-wrapper">
+	<a href="https://schoolofcities.utoronto.ca/" target="_blank">
+		<img
+			class="svg-logo"
+			src={logo}
+			alt="School of City logo"
+			loading="lazy"
+			draggable="false"
+			tabindex="0"
+		/>
+	</a>
+</div>
 
 <style>
+
+.logo-wrapper {
+	width: 100%;
+	/* background-color: black; */
+}
 
 .svg-logo {
     width: min(270px, 50%);
     max-width: 100%;
-	margin-left: -7px;
+	margin: 0 auto;
     height: auto;
     display: block;
 }

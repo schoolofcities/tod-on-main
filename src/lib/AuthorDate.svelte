@@ -49,8 +49,8 @@
 
 	.author-date {
 		margin-top: 0px;
-		
         border: solid 1px var(--brandGray);
+		background-color: var(--brandWhite);
 		/* border-bottom: solid 1px var(--brandGray); */
 		margin-bottom: 0px;
 		padding: 0px 20px 0px 20px;
@@ -59,26 +59,26 @@
 	}
 
 	.author-date p {
-		font-size: 16px;
+		font-size: 14px;
 		line-height: 24px;
-		color: var(--brandBlack);
+		color: var(--brandGray90);
 		font-family: PoppinsRegular;
 	}
 
 	.author-date b {
 		color: var(--brandGray80);
 		font-family: PoppinsBold;
-		font-weight: normal;
+		/* font-weight: normal; */
 	}
 
-	.author-date strong {
-		color: var(--brandGray80);
+	.author-date .role {
+		color: var(--brandGray100);
 		font-family: PoppinsBold;
 		font-weight: normal;
 	}
 
 	.author-date #date {
-		font-family: PoppinsBold;
+		font-family: PoppinsRegular;
 		font-size: 13px;
 		font-weight: normal;
 	}

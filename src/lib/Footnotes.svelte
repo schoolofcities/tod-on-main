@@ -55,9 +55,10 @@
         padding-right: 20px;
         padding-top: 0px;
         margin-top: 40px;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
         padding-bottom: 20px;
-        border: solid 1px var(--brandGray);
+        /* border-bottom: solid 1px var(--brandGray); */
+        /* border: solid 1px var(--brandGray); */
         /* border-top-right-radius: 50px; */
     }
 

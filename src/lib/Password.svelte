@@ -17,7 +17,7 @@
 {#if !isAuthenticated}
 	<div class="overlay">
 		<div class="password-box">
-			<h3>This page is under development :)</h3>
+			<h3>This page is under development :) <br> Please do not share without permission</h3>
 		<input
 			type="password"
 			bind:value={password}
@@ -48,7 +48,7 @@
 
 	.password-box {
 		background: white;
-		padding: 2rem;
+		padding: 20px;
 		border-radius: 8px;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 		text-align: center;
@@ -75,7 +75,7 @@
 	}
 
 	h3 {
-		font-family: TradeGothicBold;
+		font-family: PoppinsRegular;
 		font-weight: normal;
 		font-size: 20px;
 		color: var(--brandDarkBlue);

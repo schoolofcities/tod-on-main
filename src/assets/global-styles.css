@@ -231,7 +231,15 @@ main {
 	position: relative;
 	padding-left: 20px;
 	padding-right: 20px;
-	padding-top: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.line-break {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	height: 1px;
+	background-color: var(--brandBlack);
 }
 
 h1 {
@@ -240,7 +248,9 @@ h1 {
 	font-size: 35px;
 	color: var(--brandBlack);
 	text-decoration: none;
-	margin-top: 100px;
+	margin-top: 70px;
+	background-color: ;
+	/* border-bottom: solid 1px black; */
 	margin-bottom: 0px;
 	padding: 0px;
 }

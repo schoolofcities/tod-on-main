@@ -73,7 +73,7 @@
         >
         {#if opened}
             <nav id="menu-content">
-                <a href="#top" style:color={textColour}>Title</a>
+                <a href="#top" style:color={textColour}>Background</a>
 
                 {#each contents as content}
                     <a href={`#${content.item_id}`} 

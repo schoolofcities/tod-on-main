@@ -70,7 +70,7 @@
 
 <main>
 
-	<Password correctPassword=""></Password>
+	<Password correctPassword="catcatmeow"></Password>
 
 	<TitleVideo
 		title="EMBODIED CARBON"

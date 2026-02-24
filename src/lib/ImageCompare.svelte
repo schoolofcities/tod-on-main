@@ -137,7 +137,7 @@
 	img {
 		width: 100%;
 		height: auto;
-		max-height: 80dvh;
+		max-height: 95dvh;
 		min-height: 200px;
 		display: block;
 		object-fit: cover;
