@@ -128,6 +128,7 @@
 				subtitleFontColour="var(--brandWhite)"
 				authorText="Author Name, Author Name, Author Name"
 				dateText="~ December, 2025"
+				secondLogo="II"
 				topOpacity={topOpacity}
 			/>
 		</div>
@@ -201,9 +202,8 @@
 			</p>
 	</div>
 
-	<!-- <Footer /> -->
-
 	<!-- <Footnotes footnotes={footnotes} /> -->
+	<Footer />
 
 </main>
 

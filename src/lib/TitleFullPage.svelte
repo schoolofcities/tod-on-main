@@ -111,7 +111,7 @@
 	.title-text-container h1 {
 		font-family: TradeGothicBold;
 		font-weight: normal;
-		font-size: 64px;
+		font-size: 60px;
 		text-decoration: none;
 		margin-bottom: 10px;
 		padding: 0px;

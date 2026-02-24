@@ -37,7 +37,7 @@
 
 	const fns = [
 		'The Center for Transit-Oriented Development, Families and Transit-Oriented Development: Creating Complete Communities for All, TOD 205 (2012), <a href="https://escholarship.org/content/qt618338f0/qt618338f0_noSplash_a6174b2b36ec310cc0b89794f4c8a77f.pdf" target="_blank">URL</a>',
-		'Aquafor Beech Ltd., Cooksville Creek Flood Evaluation: Master Plan EA (2012), <a href="https://www.mississauga.ca/wp-content/uploads/2025/04/23135431/2012-Cooksville-Creek-Flood-Evaluation-Study.pdf" target="_blank">URL</a>',
+		'Aquafor Beech Ltd., <i>Cooksville Creek Flood Evaluation: Master Plan</i> (2012), <a href="https://www.mississauga.ca/wp-content/uploads/2025/04/23135431/2012-Cooksville-Creek-Flood-Evaluation-Study.pdf" target="_blank">URL</a>',
 		'Link back to Prentiss <a href="" target="_blank"></a>',
 		'Lia Karsten, “Young Families and High-Rise: Towards Inclusive Vertical Family Housing,” Urban Planning 7, no. 4 (2022): 245–52, <a href="https://doi.org/10.17645/up.v7i4.5624" target="_blank">DOI</a>',
 		'Karsten, “Young Families and High-Rise." ',
