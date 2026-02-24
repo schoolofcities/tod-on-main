@@ -365,7 +365,7 @@
 
 		<GraphicSingle
 			svg720={"../web-assets/case-study/cooksville/render-legend-720.svg"}
-			svg360={"../web-assets/case-study/cooksville/cooksville-scenario-comparison-360.svg"}
+			svg360={"../web-assets/case-study/cooksville/render-legend-360.svg"}
 		/>
 
 		<div class="text">	
