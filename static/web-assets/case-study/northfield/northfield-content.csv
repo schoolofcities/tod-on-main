@@ -1,8 +1,5 @@
 animation,image,text,arrowColour,overlay1,overlay2,menu_id,bg_fit,alt_text
-1,../web-assets/case-study/northfield/nf_frame_3.png,,black,,,Menu_1,contain,
-1,../web-assets/case-study/northfield/nf_frame_3.png,,black,,,,contain,alt
-1,../web-assets/case-study/northfield/nf_frame_4.png,,black,,,,contain,alt
-1,../web-assets/case-study/northfield/nf_frame_6.png,,black,,,,contain,alt
-1,../web-assets/case-study/northfield/nf_frame_8.png,,black,,,,contain,alt
-1,../web-assets/case-study/northfield/nf_frame_10.png,,black,,,,contain,alt
-1,../web-assets/case-study/northfield/nf_frame_13.png,,black,,,,contain,alt
+1,../web-assets/case-study/northfield/nf_frame_4.png,,black,,,Menu_1,contain,
+1,../web-assets/case-study/northfield/nf_frame_4.png,"Employment uses are an important part of complete communities, and locating jobs near transit drives ridership.",black,,,,contain,alt
+1,../web-assets/case-study/northfield/nf_frame_10.png,"In Kitchener-Waterloo, a successful light rail transit (LRT) project has spurred significant development in a region with strong employment growth.",black,,,,contain,alt
+1,../web-assets/case-study/northfield/nf_frame_13.png,"Northfield Station offers an opportunity to grow ridership by building on large, formerly industrial parcels and planning for a connected community with a mix of forms and uses.",black,,,,contain,alt
