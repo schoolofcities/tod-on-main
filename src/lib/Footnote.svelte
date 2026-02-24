@@ -89,6 +89,10 @@
     	overflow-wrap: break-word;
 	}
 
+	:global(.footnoteTooltip i) {
+		font-family: GelasioItalic;
+	}
+
 	@media (max-width: 980px) {
 		.footnoteTooltip {
 			display: none !important;

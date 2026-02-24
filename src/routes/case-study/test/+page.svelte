@@ -25,6 +25,8 @@
 	import { createFootnoteStore } from '$lib/footnoteUtils';
     import { resolveRoute } from '$app/paths';
     import HamburgerMenu from '$lib/HamburgerMenu.svelte';
+    import CaseStudyNote from '$lib/CaseStudyNote.svelte';
+    import Recommendation from '$lib/Recommendation.svelte';
 
 	export let data;
 
@@ -38,6 +40,14 @@
 		'Author (Year) Publication information etc this might be a citation or a reference to a source',
 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat lacus eu dolor dapibus sodales. Aenean venenatis metus id eleifend tincidunt. Nulla ut lacus et urna finibus bibendum sit amet et ante. Aliquam tristique, ex sed porttitor hendrerit, ex odio accumsan ex, eu maximus leo quam quis nulla.'
 	];
+
+	const credits = [
+		{ role:"Research and writing", names:"Sarah Chan, Kathryn Exon Smith, Anika Reisha Taboy"},
+		{ role:"Renderings", names:"Daniel Lam, Phat Le"},
+		{ role:"Data visualizations", names:"Jeff Allen"},
+		{ role:"Web development", names:"Mieko Yao"},
+		{ role:"Additional contributors", names:"An Pham, Carrie Zeng"}
+	]
 
 	let scrollY = 0;
 	let innerHeight = 1;
@@ -159,6 +169,7 @@
 
 
 	<div class="text">
+			<CaseStudyNote style="3"></CaseStudyNote>
 		
 
 			<h1 id="Menu_2">Why this matters </h1>
@@ -301,9 +312,9 @@
 				New mid- and high-rise construction is often oriented toward individuals or couples without children, even though families have always lived in these kinds of spaces.4 Improving the number and kind of family-oriented units, with targeted community improvements, can increase density around transit and benefit all residents. 
 			</p>
 
-			<h3>
-				Recommendation 1: Provide more 2- and 3- bedroom units
-			</h3>
+			<Recommendation count=1 style=1
+			title="Provide more 2- and 3- bedroom units"
+			/>
 
 			<p>
 				The best way to include families in growth is to give them the space they need. Cramped spaces and an insufficient number of bedrooms are the most common issues cited by both children and adults in high-rise dwellings.5 Units with two or more bedrooms allow more flexible space for families and multi-generational households.6 
@@ -322,6 +333,10 @@
 
 		<div class="text">	
 
+
+			<Recommendation count=1 style=2
+			title="Adopt Canadian and global good practices at the site level "
+			/>
 			<p>
 				The market shows an appetite for more bedrooms: demand for 1-bedrooms is low, with supply outpacing demand. Meanwhile, even in the current slow condo market, many larger units are selling above asking price, with 2.5 times the sales volume.  
 			</p>
@@ -332,17 +347,20 @@
 
 			<!-- CHART SHOWING % of GHG emission differences in 2 scenarios -->
 
+
 			<p>
 				Mississauga has already taken steps to incentivize this kind of unit mix by eliminating municipal development charges for units with 3 or bedrooms in purpose-built rental apartments.7 This incentive could be expanded by similarly eliminating these charges at the regional level, or for all new buildings. Other countries, such as Ireland, go further and prescribe a mix of apartment sizes and bedroom numbers before new developments are approved.8 
 			</p>
 
-			<h3>
-				Recommendation 2: Adopt Canadian and global good practices at the site level 
-			</h3>
+
+			<Recommendation count=2 style=2
+			title="Adopt Canadian and global good practices at the site level "
+			/>
 
 			<p>
 				In addition to the number of bedrooms, spaces within units must be flexible. Some cities, including Toronto in its Growing Up guidelines for vertical communities, suggest having a recommended play space of 2 by 3 metres within units. Guidelines such as these make planning for larger households more concrete. 
 			</p>
+
 
 			<p>
 				Safety and connection are also essential, with many studies citing windows and balconies as areas that can often be improved with required safety mechanisms to make units more family friendly.9 Within buildings, ensuring that there are shared spaces, courtyards with play areas, and facilities that children can access – including elevator buttons at child level – encourages connection and independence. 
@@ -378,7 +396,10 @@
 
 			<p>etc etc</p>
 
+		<AuthorDate credits={credits} date="PLACEHOLDER DATE"></AuthorDate>
+
 	</div>
+
 
 	<!-- <Footer /> -->
 

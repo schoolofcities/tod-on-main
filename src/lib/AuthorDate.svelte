@@ -62,23 +62,23 @@
 		font-size: 16px;
 		line-height: 24px;
 		color: var(--brandBlack);
-		font-family: GelasioRegular;
+		font-family: PoppinsRegular;
 	}
 
 	.author-date b {
 		color: var(--brandGray80);
-		font-family: GelasioBold;
+		font-family: PoppinsBold;
 		font-weight: normal;
 	}
 
 	.author-date strong {
 		color: var(--brandGray80);
-		font-family: GelasioBold;
+		font-family: PoppinsBold;
 		font-weight: normal;
 	}
 
 	.author-date #date {
-		font-family: GelasioBold;
+		font-family: PoppinsBold;
 		font-size: 13px;
 		font-weight: normal;
 	}

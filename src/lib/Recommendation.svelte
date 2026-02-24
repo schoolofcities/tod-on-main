@@ -1,7 +1,7 @@
 <script>
 	// import '../assets/global-styles.css';
 
-	export let style = 3;
+	export let style = 1;
 	export let title = "Title";
 	export let count;
 
@@ -40,7 +40,7 @@
 	}
 
 	
-	.style-1.container {
+	.style-1.container, .style-2.container {
 		align-items: start;
 	}
 
@@ -54,19 +54,26 @@
 
 	.style-2 .box, .style-3 .box {
 		width: fit-content;
-		background-color: rgb(0, 0, 0, 0.1);
+		background-color: var(--brandGray80);
 	}
 
-	.style-1 .title, .style-2 .title,.style-3 .title {
+	.style-2 .box h3 {
+		color: var(--brandWhite);
+	}
+
+	.style-1 .title {
 		border-top: 5px solid rgb(0, 0, 0, 0.1);
 	}
 
-	.style-2.container,.style-3.container {
+	.style-2 .title,.style-3 .title {
+		border-top: 5px solid var(--brandGray80);
+	}
+
+	/* .style-2.container,.style-3.container {
 		align-items: stretch;
 	}
 
 	.style-3 .box {
-		/* border-radius: 25px; */
 		display: flex;
 		align-items: center; 
 	}
@@ -79,7 +86,7 @@
   		margin-left: calc(-50% + 5px);
 		border-radius: 25px;
 		background-color: rgb(0, 0, 0, 0.1);
-	}
+	} */
 
 
 	@media (max-width: 1300px) {
@@ -98,8 +105,13 @@
 			font-size: 20px;
 		}
 		
-		.style-1 .title, .style-2 .title,.style-3 .title {
+		.style-1 .title {
 			border-left: 5px solid rgb(0, 0, 0, 0.1);
+			border-top: none;
+		}
+
+		.style-2 .title,.style-3 .title {
+			border-left: 5px solid var(--brandGray80);
 			border-top: none;
 		}
 
