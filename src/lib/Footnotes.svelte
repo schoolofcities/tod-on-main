@@ -91,6 +91,10 @@
         color: var(--brandGray90);
     }
 
+    :global(.footnote-item i) {
+        font-family: GelasioItalic, serif;
+    }
+
     .backlink {
         margin-left: 5px;
         font-family: GelasioRegular, serif;

@@ -1,13 +1,8 @@
 animation,image,text,arrowColour,overlay1,overlay2,menu_id,bg_fit,alt_text
 1,../web-assets/case-study/cooksville/crop_frame_4.png,,white,,,Menu_1,contain,
-1,../web-assets/case-study/cooksville/crop_frame_4.png,"Mississauga’s Cooksville neighbourhood is a future transit hub where the existing GO rail line will converge with the new Hazel McCallion light rail transit (LRT) and Dundas Bus Rapid Transit (BRT) lines, making it a focal point for growth. ",black,,,,contain,"3D rendering of Cooksville Station in Mississauga, Ontario. "
-1,../web-assets/case-study/cooksville/crop_frame_13.png,"Dozens of high-rise projects are in the pipeline, set to transform surface parking lots and aging retail plazas into mixed-use towers. 
+1,../web-assets/case-study/cooksville/crop_frame_4.png,"Adding density around transit stations requires planning for different kinds of households. 
 
-A new skyline is coming to fruition, driven by transit investment and the city’s growth targets.
-
-What happens if we continue this way? ",black,,,,contain,3D rendering of the current development trajectory in the area surrounding Cooksville Station. 
-1,../web-assets/case-study/cooksville/crop_frame_16.png,"Density can achieved through a connected urban fabric - a mix of housing forms for how people actually live. 
-
-Social infrastructure, from the community hub to vibrant local shops, is woven into a landscape where green corridors double as flood protection and public parks. 
-
-By treating housing, amenities, and water as one integrated system, the plan shifts from managing constraints to building a complete, resilient, and connected Cooksville. ",black,,,,contain,3D rendering of School of Cities' proposed scenario for development surrounding Cooksville Station.
+Many families want to live near transit because they can spend less time and money on driving and benefit from better access to education and culture in well-planned developments.  ",black,,,,contain,"3D rendering of Cooksville Station in Mississauga, Ontario. "
+1,../web-assets/case-study/cooksville/crop_frame_13.png,But the housing and amenities planned around station areas are often aimed at individuals or couples.,black,,,,contain, 
+1,../web-assets/case-study/cooksville/crop_frame_13.png,"Cities are also facing greater risks from a changing climate, with flooding the most frequent and costly impact across the country. Densification also needs to manage the growing risk of flooding in urban areas. ",black,,,,contain,3D rendering of the current development trajectory in the area surrounding Cooksville Station. 
+1,../web-assets/case-study/cooksville/crop_frame_16.png,How can we plan our infrastructure in a way that creates communities for everyone and keeps a changing climate in mind? This case explores strategies for more inclusive densification while managing flood risk.,black,,,,contain,3D rendering of School of Cities' proposed scenario for development surrounding Cooksville Station.

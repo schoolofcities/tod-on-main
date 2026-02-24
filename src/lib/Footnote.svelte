@@ -22,7 +22,8 @@
 	</a>
 
 	{#if isHovered}
-		<div class="footnoteTooltip" on:mouseenter={() => isHovered = true} on:mouseleave={() => isHovered = false}>
+		<div class="footnoteTooltip"
+			on:mouseenter={() => isHovered = true} on:mouseleave={() => isHovered = false}>
 			<p>
 				[{id[0]}] {@html footnoteText}
 			</p>
@@ -52,6 +53,7 @@
 	}
 	.footnote-ref:hover {
 		color: var(--brandDarkBlue);
+		font-family: GelasioBold;
 	}
 
 	.footnoteTooltip {
@@ -85,6 +87,10 @@
 		white-space: normal;
     	word-wrap: break-word;
     	overflow-wrap: break-word;
+	}
+
+	:global(.footnoteTooltip i) {
+		font-family: GelasioItalic;
 	}
 
 	@media (max-width: 980px) {

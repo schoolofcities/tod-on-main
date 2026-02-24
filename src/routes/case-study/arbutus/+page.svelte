@@ -129,6 +129,7 @@
 				authorText="Author Name, Author Name, Author Name"
 				dateText="~ December, 2025"
 				topOpacity={topOpacity}
+				secondLogo="II"
 			/>
 		</div>
 		<ScrollAnimate 
@@ -150,7 +151,7 @@
 				textSectionAlign={"left"}
 				fadeDuration={1200}
 				mobileTextAlign={"top"}
-				backgroundColour={"#F9F9F9"}
+				backgroundColour={"#F8F8F8"}
 				bind:arrowColour
 			/>
 		</div>
@@ -341,9 +342,10 @@
 
 	</div>
 
-	<!-- <Footer /> -->
-
 	<!-- <Footnotes footnotes={footnotes} /> -->
+
+	<Footer />
+
 
 </main>
 

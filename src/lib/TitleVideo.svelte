@@ -105,7 +105,11 @@
 		z-index: 2;
 	}
 
-	.logo-container:hover {
+	.logo-link {
+		filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.6))
+	}
+
+	.logo-link:hover {
 		opacity: 0.8;
 	}
 
@@ -120,7 +124,7 @@
 	.title-text-container h1 {
 		font-family: PoppinsBold;
 		font-weight: normal;
-		font-size: 60px;
+		font-size: 64px;
 		margin-bottom: 10px;
 		text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6); 
 	}

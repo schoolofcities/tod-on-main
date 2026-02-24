@@ -19,6 +19,7 @@
 	export let titleFontColour = 'var(--brandDarkBlue)';
 	export let subtitleFontColour = 'var(--brandDarkBlue)';
 	export let logoType = 'Black'; // 'Black', 'White', or 'None'
+	export let secondLogo = 'None'; // 'II' or 'None'
 	export let authorText = "";
 	export let dateText = "";
 	export let topOpacity = 1;
@@ -61,9 +62,11 @@
 			<a href="https://schoolofcities.utoronto.ca/" target="_blank" class="logo-link">
 				<img src={LogoSofC} alt="UofT and School of Cities logos" class="logo-top" id="sofc-logo"/>
 			</a>
-			<a href="https://infrastructureinstitute.ca/" target="_blank" class="logo-link">
-				<img src={LogoII} alt="Infrastructure Institute logo" class="logo-top" id="ii-logo"/>
-			</a>
+			{#if secondLogo == "II"}
+				<a href="https://infrastructureinstitute.ca/" target="_blank" class="logo-link">
+					<img src={LogoII} alt="Infrastructure Institute logo" class="logo-top" id="ii-logo"/>
+				</a>
+			{/if}
 		{/if}
 		
 	</div>
@@ -121,7 +124,11 @@
 		z-index: 6;
 	}
 
-	.logo-container:hover {
+	.logo-link {
+		filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.6))
+	}
+
+	.logo-link:hover {
 		opacity: 0.8;
 	}
 
