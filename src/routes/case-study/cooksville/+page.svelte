@@ -209,7 +209,7 @@
 			Densification near transit means managing the growing risk of flooding while creating communities for everyone. Our Cooksville case explores strategies for more inclusive densification while designing around urban floods.  
 		</p>
 		
-			<CaseStudyNote style=3/>
+			<CaseStudyNote/>
 
 			<h2 id="Menu_2">
 				Neighbourhood overview 
