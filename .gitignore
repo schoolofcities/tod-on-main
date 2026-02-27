@@ -1,5 +1,6 @@
 node_modules
 data/residential-mobility/drafts
+local_data
 
 # Output
 .output

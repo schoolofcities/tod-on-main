@@ -594,10 +594,11 @@
 		/>
 
 		<div class="text">
+
 			<p>
 				Green and social infrastructure can come together here in a win-win for the community, with vibrant local shops and public facilities woven into a landscape where green corridors double as flood protection and public parks. 
 			</p>
-			<!-- <IMAGE></IMAGE> -->
+			
 			<p>
 				By treating housing, amenities, and water as one integrated system, the plan shifts from managing constraints to building a complete, resilient, and connected Cooksville. 
 			</p>
