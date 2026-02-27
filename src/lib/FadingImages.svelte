@@ -4,6 +4,10 @@
 	import { fade } from "svelte/transition";
 	import { onMount, onDestroy } from "svelte";
     import { marked } from 'marked';
+	import { createEventDispatcher } from 'svelte';
+	
+	const dispatch = createEventDispatcher();
+
 
 	export let imageAlign = "center";
 	export let header = "";
@@ -118,8 +122,7 @@
 			numSections - 1
 		);
 
-
-		arrowColour = sections[currentIndex].arrowColour;
+		dispatch('colourChange', sections[currentIndex].arrowColour);
 	};
 
 	const progressClick = (index) => {
@@ -368,7 +371,7 @@
 	.fading-text-section {
 		position: absolute;
 		z-index: 5;
-		height: 100vh;
+		height: 100dvh;
 		display: flex;
 		align-items: center;   
 		padding: 0 0 0 15rem;
@@ -384,7 +387,7 @@
 		position: absolute;
 		z-index: 5;
 		width: 25vw;
-		height: 100vh;
+		height: 100dvh;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -400,7 +403,7 @@
 	}
 
 	.mobile-overlay-image {
-		height: 100vh;
+		height: 100dvh;
 		width: 100%;
 	}
 
@@ -453,7 +456,7 @@
 			position: absolute;
 			z-index: 5;
 			width: 23vw;
-			height: 100vh;
+			height: 100dvh;
 			display: flex;
 			align-items: center;   
 			padding: 0 0 0 10rem;
@@ -488,7 +491,7 @@
 			z-index: 5;
 			margin-top: calc(67vw);
     		width: 94vw;
-			height: calc(100vh - 94vw);
+			height: calc(100dvh - 94vw);
 			max-width: 680px;
 			left: 50%;
 			transform: translateX(-50%);
@@ -535,18 +538,18 @@
 
 	@media (max-aspect-ratio: 1) {
 		.sticky-image img.contain.center {
-			top: -5vh;
+			top: -5dvh;
 		}
 
 		.sticky-image img.contain.right {
-			top: -5vh;
+			top: -5dvh;
 		}
 		.fading-text-section {
 			position: absolute;
 			z-index: 5;
-			margin-top: calc(70vw + 5vh);
+			margin-top: calc(70vw + 5dvh);
     		width: 94vw;
-			height: calc(100vh - 94vw);
+			height: calc(100dvh - 94vw);
 			max-width: 680px;
 			left: 50%;
 			transform: translateX(-50%);
@@ -578,7 +581,7 @@
 		}
 		.sticky-image img.contain {
 			max-width: 100vw;
-			padding-top: 5vh;
+			padding-top: 5dvh;
     		width: 92vw;
 		}
 
@@ -602,7 +605,7 @@
 
 		.fading-text-section {
     		width: 92vw;
-			height: calc(100vh - 96vw - 30vw);
+			height: calc(100dvh - 96vw - 30vw);
 			margin-top: calc(100vw);
 		}
 
@@ -621,7 +624,7 @@
 
 		.fading-text-section {
     		width: 92vw;
-			height: calc(100vh - 96vw - 30vw);
+			height: calc(100dvh - 96vw - 30vw);
 			margin-top: calc(100vw + 12vw);
 		}
 
@@ -647,7 +650,7 @@
 		}
 		.fading-text-section {
     		width: 92vw;
-			height: calc(100vh - 96vw - 30vw);
+			height: calc(100dvh - 96vw - 30vw);
 			margin-top: calc(100vw + 15vw);
 		}
 
@@ -666,7 +669,7 @@
 		}
 		.fading-text-section {
     		width: 92vw;
-			height: calc(100vh - 96vw - 4vw);
+			height: calc(100dvh - 96vw - 4vw);
 			margin-top: calc(100vw + 40vw);
 		}
 

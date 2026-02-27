@@ -196,7 +196,8 @@
 				fadeDuration={1200}
 				mobileTextAlign={"top"}
 				backgroundColour={"#F9F9F9"}
-				bind:arrowColour
+				arrowColour={arrowColour}
+				on:colourChange={(e) => arrowColour = e.detail}
 			/>
 		</div>
 
@@ -209,7 +210,7 @@
 			Densification near transit means managing the growing risk of flooding while creating communities for everyone. Our Cooksville case explores strategies for more inclusive densification while designing around urban floods.  
 		</p>
 		
-			<CaseStudyNote style=3/>
+			<CaseStudyNote/>
 
 			<h2 id="Menu_2">
 				Neighbourhood overview 
@@ -224,7 +225,7 @@
 
 		<GraphicSingle
 			svg720={"../web-assets/case-study/cooksville/cooksville-station-map-720.svg"}
-			svg360={"../web-assets/case-study/cooksville/cooksville-station-map-360z.svg"}
+			svg360={"../web-assets/case-study/cooksville/cooksville-station-map-360.svg"}
 		/>
 
 		
@@ -280,6 +281,7 @@
 			svg1080={"../web-assets/case-study/cooksville/cooksville-flood-map-1080.svg"}
 			svg720={"../web-assets/case-study/cooksville/cooksville-flood-map-720.svg"}
 		/>
+		<!-- // Needs a 360 version!! -->
 
 		<div class="text">
 

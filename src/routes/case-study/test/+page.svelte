@@ -169,7 +169,7 @@
 
 
 	<div class="text">
-			<CaseStudyNote style="3"></CaseStudyNote>
+			<CaseStudyNote/>
 		
 
 			<h1 id="Menu_2">Why this matters </h1>
