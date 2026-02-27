@@ -60,4 +60,16 @@
 		font-family: inherit;
 	}
 
+	@media (max-width: 500px) {
+		.style-3 {
+			padding: 18px; 
+			border-radius: 18px;
+		}
+
+		.style-3 p {
+			font-size: 14px;
+			line-height: 23px;
+		}
+	}
+
 </style>

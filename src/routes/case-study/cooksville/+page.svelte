@@ -150,7 +150,7 @@
 
 <main>
 
-	<Password correctPassword="catcatmeow"></Password>
+	<!-- <Password correctPassword="catcatmeow"></Password> -->
 
 	<!-- Full page title example -->
 	<div class="wrapper">
@@ -224,7 +224,7 @@
 
 		<GraphicSingle
 			svg720={"../web-assets/case-study/cooksville/cooksville-station-map-720.svg"}
-			svg360={"../web-assets/case-study/cooksville/cooksville-station-map-360z.svg"}
+			svg360={"../web-assets/case-study/cooksville/cooksville-station-map-360.svg"}
 		/>
 
 		
@@ -235,6 +235,12 @@
 			</p>
 
 		</div>
+
+		<GraphicSingle
+			svg1080={"../web-assets/case-study/cooksville/cooksville-flood-map-1080.svg"}
+			svg720={"../web-assets/case-study/cooksville/cooksville-flood-map-720.svg"}
+			svg360={"../web-assets/case-study/cooksville/cooksville-flood-map-360.svg"}
+		/>
 
 		<ImageSingle
 			imageURL={"../web-assets/case-study/cooksville/cooksville-creek-mississauga-photo.jpg"}
@@ -272,22 +278,9 @@
 			<p>
 				Yet planning for inclusive growth here will require prioritizing the needs of current and future residents, particularly families. Many elements of successful complete communities are present, mainly centred on the “Four Corners” of Hurontario and Dundas -- schools, health care, and retail – but access to child care is limited, and the area has a critical gap in community centres. 
 			</p>
-			<!-- INSERT: visual -->
-			
-		</div>
-
-		<GraphicSingle
-			svg1080={"../web-assets/case-study/cooksville/cooksville-flood-map-1080.svg"}
-			svg720={"../web-assets/case-study/cooksville/cooksville-flood-map-720.svg"}
-		/>
-
-		<div class="text">
-
 			<p>
 				There is also little existing green space. With few formal civic amenities, residents rely on commercial plazas and small parks for daily needs. And like many suburban areas, the neighbourhood itself is built for the car: wide arterials and fragmented sidewalks make walking and cycling a challenge. Another challenge comes from the site itself. Cooksville has a number of buildings sitting on the Cooksville Creek floodplain, and the area has been deemed a flood risk.
 			</p>
-		
-
 			<p>
 				Creating a vibrant community here will require creative approaches to managing risk while increasing access to critical amenities. 
 			</p>

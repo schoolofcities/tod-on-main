@@ -25,8 +25,8 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="1.4841108"
-     inkscape:cx="142.17268"
-     inkscape:cy="243.9171"
+     inkscape:cx="319.38316"
+     inkscape:cy="462.56654"
      inkscape:window-width="2560"
      inkscape:window-height="1403"
      inkscape:window-x="0"
@@ -61,6 +61,16 @@
        height="190.5"
        x="-2.8610229e-06"
        y="0" />
+    <rect
+       id="rect2-08"
+       x="0"
+       y="0"
+       width="95.25"
+       height="190.5"
+       rx="5.503571"
+       ry="5.503571"
+       fill="#f3f2f3"
+       style="stroke-width:0.264583" />
     <rect
        style="fill:#ffa466;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round"
        id="rect2"

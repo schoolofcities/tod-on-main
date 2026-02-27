@@ -8,6 +8,8 @@ FONT_MAP = {
 	# Base fonts
 	"Inter 24pt": "InterRegular",
 	"Inter": "InterRegular",
+	"Inter-Regular, Inter": "InterRegular",
+	"Inter-Regular": "InterRegular",
 	
 	# Bold variants
 	"Bold": "InterBold",  # Catch-all for any font with bold weight
