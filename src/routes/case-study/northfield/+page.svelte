@@ -193,6 +193,16 @@
 			<p>
 				Kitchener-Waterloo is the smallest municipality in North America to have higher-level rail transit. The ION LRT line, which opened in 2019, is part of a long-standing regional strategy of re-urbanization to limit sprawl and preserve surrounding agricultural lands.  
 			</p>
+
+		</div>
+
+		<GraphicSingle
+			svg720={"../web-assets/case-study/northfield/Northfield-720map.svg"}
+			svg360={"../web-assets/case-study/northfield/Northfield-360map.svg"}
+		/>
+
+		<div class="text">
+
 			<p>
 				Since the announcement of the ION, significant development has occurred along the corridor. This growth has been supported in part by reductions or eliminations in development charges at both the regional and municipal levels.<Footnote id={addFootnote(fns[0])}/> The assessed value of properties in the corridor doubled through 2024 and grew faster than in the surrounding region, indicating that both renovations and new developments are adding value to the area. 
 			</p>
