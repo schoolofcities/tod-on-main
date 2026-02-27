@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Layer_1"
+   data-name="Layer 1"
+   width="360"
+   height="240"
+   viewBox="0 0 360 240"
+   version="1.1"
+   sodipodi:docname="Northfield-population.svg"
+   inkscape:version="1.4.2 (1:1.4.2+202505120738+ebf0e940d0)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs9" />
+  <sodipodi:namedview
+     id="namedview9"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.50625"
+     inkscape:cx="184.73815"
+     inkscape:cy="144.4389"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1"
+     showgrid="false">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="false" />
+  </sodipodi:namedview>
+  <rect
+     id="rect2"
+     x="20"
+     y="20"
+     width="320"
+     height="200"
+     rx="20.8009"
+     ry="20.8009"
+     fill="#f3f2f3" />
+  <text
+     fill="#87a49e"
+     font-family="Inter-Bold, Inter"
+     font-variation-settings="'opsz' 14, 'wght' 700"
+     font-weight="700"
+     id="text4"
+     x="39.002899"
+     y="120.92725"><tspan
+       font-size="37px"
+       id="tspan2"><tspan
+         x="39.002899"
+         y="120.92725"
+         id="tspan1">2,723</tspan></tspan><tspan
+       font-size="21px"
+       id="tspan4"><tspan
+         x="39.002899"
+         y="146.12746"
+         id="tspan3">Residents</tspan></tspan></text>
+  <text
+     fill="#87a49e"
+     font-family="Inter-Bold, Inter"
+     font-variation-settings="'opsz' 14, 'wght' 700"
+     font-weight="700"
+     id="text8"
+     x="171.66983"
+     y="120.92725"
+     style="fill:#b07ebc;fill-opacity:1.0"><tspan
+       font-size="37px"
+       id="tspan6"
+       style="fill:#b07ebc;fill-opacity:1.0"><tspan
+         x="171.66983"
+         y="120.92725"
+         id="tspan5"
+         style="fill:#b07ebc;fill-opacity:1.0">317</tspan></tspan><tspan
+       font-size="21px"
+       id="tspan8"
+       style="fill:#b07ebc;fill-opacity:1.0"><tspan
+         x="171.66983"
+         y="146.12744"
+         id="tspan7"
+         style="fill:#b07ebc;fill-opacity:1.0">Businesses</tspan></tspan></text>
+  <g
+     id="text2"
+     isolation="isolate"
+     transform="translate(0,-0.0878625)">
+    <text
+       transform="translate(39.004,53.7988)"
+       fill="#3e3847"
+       font-family="Inter-Regular, Inter"
+       font-size="18px"
+       font-variation-settings="'opsz' 14, 'wght' 400"
+       isolation="isolate"
+       id="text9"><tspan
+         x="0"
+         y="0"
+         id="tspan9">800m from Northfield Station</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" width="360" height="240" viewBox="0 0 360 240" version="1.1" id="svg35" sodipodi:docname="Arbutus-apartments.svg" inkscape:version="1.4.2 (1:1.4.2+202505120738+ebf0e940d0)">
+  <g id="background">
+    <image x="0.0" y="0.0" width="360.0" height="240.0" preserveAspectRatio="xMidYMid meet" href="data:image/png;base64,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AQ0AAAkCGgAAEgQ0AAAkCGgAAEgQ0AAAkCCgAQAgQUADAECCgAYAgAQBDQAACQIaAAASBDQAACQIaAAASBDQAACQIKABACBBQAMAQIKABgCABAENAAAJAhoAABIENAAAJAhoAABIENAAAJAgoAEAIEFAAwBAgoAGAIAEAQ0AAAkCGgAAEgQ0AAAkCGgAAEgQ0AAAkCCgAQAgQUADAECCgAYAgAQBDQAACQIaAAASBDQAACQIaAAASBDQAACQIKABACBBQAMAQIKABgCABAENAAAJAhoAABIENAAAJAhoAABIENAAAJAgoAEAIEFAAwBAgoAGAIAEAQ0AAAkCGgAAEgQ0AAAkCGgAAEgQ0AAAkCCgAQAgQUADAECCgAYAgAQBDQAACQIaAAASBDQAACQIaAAASBDQAACQIKABACBBQAMAQIKABgCABAENAAAJAhoAABIENAAAJAhoAABIENAAAJAgoAEAIEFAAwBAgoAGAIAEAQ0AAAkCGgAAEgQ0AAAkCGgAAEgQ0AAAkCCgAQAgQUADAECCgAYAgAQBDQAACQIaAAASBDQAACQIaAAASBDQAACQIKABACBBQAMAQIKABgCABAENAAAJAhoAABIENAAAJAhoAABIENAAAJAgoAEAIEFAAwBAgoAGAIAEAQ0AAAkCGgAAEgQ0AAAkCGgAAEgQ0AAAkCCgAQAgQUADAECCgAYAgAQBDQAACQIaAAASBDQAACQIaAAASBDQAACQIKABACBBQAMAQIKABgCABAENAAAJAhoAABIENAAAJAhoAABIENAAAJAgoAEAIEFAAwBAgoAGAIAEAQ0AAAkCGgAAEgQ0AAAkCGgAAEgQ0AAAkCCgAQAgQUADAECCgAYAgAQBDQAACQIaAAASBDQAACQIaAAASBDQAACQIKABACBBQAMAQIKABgCABAENAAAJAhoAABIENAAAJAhoAABIENAAAJAgoAEAIEFAAwBAgoAGAIAEAQ0AAAkCGgAAEgQ0AAAkCGgAAEgQ0AAAkCCgAQAgQUADAECCgAYAgAQBDQAACQIaAAASBDQAACQIaAAASBDQAACQIKABACBBQAMAQIKABgCABAENAAAJAhoAABIENAAAJAhoAABIENAAAJAgoAEAIEFAAwBAgoAGAIAEAQ0AAAkCGgAAEgQ0AAAkCGgAAEgQ0AAAkCCgAQAgQUADAECCgAYA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"/>
+  </g>
+  <g id="foreground">
+    <g id="Layer_1" data-name="Layer 1">
+      <text fill="#231f20" font-variation-settings="'opsz' 14, 'wght' 400" id="text14" x="55.576099" y="149.50357" style="font-family: InterRegular; font-weight: normal; font-style: normal;">
+        <text fill="#231f20" font-variation-settings="'opsz' 14, 'wght' 400" id="text14" x="55.576099" y="149.50357" style="font-family: InterRegular; font-weight: normal; font-style: normal;"/>
+        <tspan font-size="18px" id="tspan10" style="font-weight: normal; font-style: normal;">
+          <tspan font-size="18px" id="tspan10" style="font-weight: normal; font-style: normal;"/>
+          <tspan x="55.576099" y="149.50357" id="tspan9" style="font-weight: normal; font-style: normal;">
+            <tspan x="55.576099" y="149.50357" id="tspan9" style="font-weight: normal; font-style: normal;">14.9%</tspan>
+          </tspan>
+        </tspan>
+        <tspan font-size="10px" id="tspan12" style="font-weight: normal; font-style: normal;">
+          <tspan font-size="10px" id="tspan12" style="font-weight: normal; font-style: normal;"/>
+          <tspan x="60.923801" y="161.50357" id="tspan11" style="font-weight: normal; font-style: normal;">
+            <tspan x="60.923801" y="161.50357" id="tspan11" style="font-weight: normal; font-style: normal;">high-rise</tspan>
+          </tspan>
+        </tspan>
+        <tspan font-size="10px" id="tspan14" style="font-weight: normal; font-style: normal;">
+          <tspan font-size="10px" id="tspan14" style="font-weight: normal; font-style: normal;"/>
+          <tspan x="55.342701" y="173.50357" id="tspan13" style="font-weight: normal; font-style: normal;">
+            <tspan x="55.342701" y="173.50357" id="tspan13" style="font-weight: normal; font-style: normal;">apartments</tspan>
+          </tspan>
+        </tspan>
+      </text>
+      <text fill="#231f20" font-variation-settings="'opsz' 14, 'wght' 400" id="text20" x="179.2756" y="149.50357" style="font-family: InterRegular; font-weight: normal; font-style: normal;">
+        <text fill="#231f20" font-variation-settings="'opsz' 14, 'wght' 400" id="text20" x="179.2756" y="149.50357" style="font-family: InterRegular; font-weight: normal; font-style: normal;"/>
+        <tspan font-size="18px" id="tspan16" style="font-weight: normal; font-style: normal;">
+          <tspan font-size="18px" id="tspan16" style="font-weight: normal; font-style: normal;"/>
+          <tspan x="179.2756" y="149.50357" id="tspan15" style="font-weight: normal; font-style: normal;">
+            <tspan x="179.2756" y="149.50357" id="tspan15" style="font-weight: normal; font-style: normal;">73.7%</tspan>
+          </tspan>
+        </tspan>
+        <tspan font-size="10px" id="tspan18" style="font-weight: normal; font-style: normal;">
+          <tspan font-size="10px" id="tspan18" style="font-weight: normal; font-style: normal;"/>
+          <tspan x="184.56419" y="161.50357" id="tspan17" style="font-weight: normal; font-style: normal;">
+            <tspan x="184.56419" y="161.50357" id="tspan17" style="font-weight: normal; font-style: normal;">low-rises</tspan>
+          </tspan>
+        </tspan>
+        <tspan font-size="10px" id="tspan20" style="font-weight: normal; font-style: normal;">
+          <tspan font-size="10px" id="tspan20" style="font-weight: normal; font-style: normal;"/>
+          <tspan x="179.7326" y="173.50357" id="tspan19" style="font-weight: normal; font-style: normal;">
+            <tspan x="179.7326" y="173.50357" id="tspan19" style="font-weight: normal; font-style: normal;">apartments</tspan>
+          </tspan>
+        </tspan>
+      </text>
+      <text fill="#231f20" font-size="10px" font-variation-settings="'opsz' 14, 'wght' 400" id="text23" x="42.130798" y="202.35327" style="font-family: InterRegular; font-weight: normal; font-style: normal;">
+        <text fill="#231f20" font-size="10px" font-variation-settings="'opsz' 14, 'wght' 400" id="text23" x="42.130798" y="202.35327" style="font-family: InterRegular; font-weight: normal; font-style: normal;"/>
+        <tspan x="42.130798" y="202.35327" id="tspan23" style="font-weight: normal; font-style: normal;">
+          <tspan x="42.130798" y="202.35327" id="tspan23" style="font-weight: normal; font-style: normal;">houses</tspan>
+        </tspan>
+      </text>
+      <text transform="translate(39.0039 64.595)" fill="#53c2da" font-variation-settings="'opsz' 14, 'wght' 700" id="text29" style="font-family: InterBold; font-style: normal;">
+        <text transform="translate(39.0039 64.595)" fill="#53c2da" font-variation-settings="'opsz' 14, 'wght' 700" id="text29" style="font-family: InterBold; font-style: normal;"/>
+        <tspan font-size="37" id="tspan25" style="font-weight: normal; font-style: normal;">
+          <tspan font-size="37" id="tspan25" style="font-weight: normal; font-style: normal;"/>
+          <tspan x="0" y="0" id="tspan24" style="font-weight: normal; font-style: normal;">
+            <tspan x="0" y="0" id="tspan24" style="font-weight: normal; font-style: normal;">92%</tspan>
+          </tspan>
+        </tspan>
+        <tspan font-size="21" id="tspan27" style="font-weight: normal; font-style: normal;">
+          <tspan font-size="21" id="tspan27" style="font-weight: normal; font-style: normal;"/>
+          <tspan x="0" y="25.2002" id="tspan26" style="font-weight: normal; font-style: normal;">
+            <tspan x="0" y="25.2002" id="tspan26" style="font-weight: normal; font-style: normal;">of housing units are </tspan>
+          </tspan>
+        </tspan>
+        <tspan font-size="21" id="tspan29" style="font-weight: normal; font-style: normal;">
+          <tspan font-size="21" id="tspan29" style="font-weight: normal; font-style: normal;"/>
+          <tspan x="0" y="50.3999" id="tspan28" style="font-weight: normal; font-style: normal;">
+            <tspan x="0" y="50.3999" id="tspan28" style="font-weight: normal; font-style: normal;">apartments</tspan>
+          </tspan>
+        </tspan>
+      </text>
+      <text fill="#231f20" font-variation-settings="'opsz' 14, 'wght' 400" id="text35" x="292.36661" y="148.97476" style="font-family: InterRegular; font-weight: normal; font-style: normal;">
+        <text fill="#231f20" font-variation-settings="'opsz' 14, 'wght' 400" id="text35" x="292.36661" y="148.97476" style="font-family: InterRegular; font-weight: normal; font-style: normal;"/>
+        <tspan font-size="18px" id="tspan31" style="font-weight: normal; font-style: normal;">
+          <tspan font-size="18px" id="tspan31" style="font-weight: normal; font-style: normal;"/>
+          <tspan x="292.36661" y="148.97476" id="tspan30" style="font-weight: normal; font-style: normal;">
+            <tspan x="292.36661" y="148.97476" id="tspan30" style="font-weight: normal; font-style: normal;">3.6%</tspan>
+          </tspan>
+        </tspan>
+        <tspan font-size="10px" id="tspan33" style="font-weight: normal; font-style: normal;">
+          <tspan font-size="10px" id="tspan33" style="font-weight: normal; font-style: normal;"/>
+          <tspan x="293.08829" y="160.97476" id="tspan32" style="font-weight: normal; font-style: normal;">
+            <tspan x="293.08829" y="160.97476" id="tspan32" style="font-weight: normal; font-style: normal;">detached</tspan>
+          </tspan>
+        </tspan>
+        <tspan font-size="10px" id="tspan35" style="font-weight: normal; font-style: normal;">
+          <tspan font-size="10px" id="tspan35" style="font-weight: normal; font-style: normal;"/>
+          <tspan x="294.52869" y="172.97476" id="tspan34" style="font-weight: normal; font-style: normal;">
+            <tspan x="294.52869" y="172.97476" id="tspan34" style="font-weight: normal; font-style: normal;">duplexes</tspan>
+          </tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+</svg>

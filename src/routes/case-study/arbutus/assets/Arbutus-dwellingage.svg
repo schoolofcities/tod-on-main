@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="360" height="240" viewBox="0 0 360 240">
+  <rect id="rect2" x="20" y="20" width="320" height="200" rx="20.8009" ry="20.8009" fill="#f3f2f3"/>
+  <text transform="translate(39.9994 179.9481)" fill="#231f20" font-family="Inter-Regular, Inter" font-size="18" font-variation-settings="&apos;opsz&apos; 14, &apos;wght&apos; 400"><tspan x="0" y="0">Vancouver</tspan></text>
+  <text transform="translate(39.9994 129.9485)" fill="#231f20" font-family="Inter-Regular, Inter" font-size="18" font-variation-settings="&apos;opsz&apos; 14, &apos;wght&apos; 400"><tspan x="0" y="0">Arbutus</tspan></text>
+  <rect x="40" y="190" width="191.072" height="10" fill="#e2ac83" stroke="#f3f3f4" stroke-miterlimit="10"/>
+  <rect x="231.072" y="190" width="88.928" height="10" fill="#98c6e6" stroke="#f3f3f4" stroke-miterlimit="10"/>
+  <rect x="40" y="140" width="221.564" height="10" fill="#e2ac83" stroke="#f3f3f4" stroke-miterlimit="10"/>
+  <rect x="261.564" y="140" width="58.436" height="10" fill="#98c6e6" stroke="#f3f3f4" stroke-miterlimit="10"/>
+  <text transform="translate(239.0719 214.5547)" fill="#231f20" font-family="Inter-Italic, Inter" font-size="12" font-style="italic" font-variation-settings="&apos;opsz&apos; 14, &apos;wght&apos; 400"><tspan x="0" y="0">2001 and after</tspan></text>
+  <text transform="translate(151.3357 214.5547)" fill="#231f20" font-family="Inter-Italic, Inter" font-size="12" font-style="italic" font-variation-settings="&apos;opsz&apos; 14, &apos;wght&apos; 400"><tspan x="0" y="0">prior to 2001</tspan></text>
+  <g>
+    <line x1="301.0676" y1="202.4509" x2="239.0718" y2="202.4509" fill="none" stroke="#231f20" stroke-miterlimit="10"/>
+    <polygon points="299.0758 200.7556 300.7721 202.4509 299.0758 204.1462 300.5153 204.1462 302.2106 202.4509 300.5153 200.7556 299.0758 200.7556" fill="#231f20"/>
+  </g>
+  <g>
+    <line x1="161.0159" y1="202.4509" x2="223.0718" y2="202.4509" fill="none" stroke="#231f20" stroke-miterlimit="10"/>
+    <polygon points="163.0077 204.1462 161.3114 202.4509 163.0077 200.7556 161.5682 200.7556 159.8729 202.4509 161.5682 204.1462 163.0077 204.1462" fill="#231f20"/>
+  </g>
+  <text transform="translate(39.0039 64.595)" fill="#e2ac83" font-family="Inter-Bold, Inter" font-variation-settings="&apos;opsz&apos; 14, &apos;wght&apos; 700" font-weight="700"><tspan font-size="37"><tspan x="0" y="0">79%</tspan></tspan><tspan font-size="21"><tspan x="0" y="25.2002">of housing built prior to 2001</tspan></tspan></text>
+  <line x1="231.072" y1="187.5" x2="231.072" y2="202.5" fill="#fff" stroke="#231f20" stroke-miterlimit="10"/>
+  <line x1="261.564" y1="137.9915" x2="261.564" y2="152.9915" fill="#fff" stroke="#231f20" stroke-miterlimit="10"/>
+</svg>

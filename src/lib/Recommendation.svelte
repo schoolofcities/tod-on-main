@@ -49,7 +49,7 @@
 	}
 
 	.style-1 .box {
-		background-color: rgb(0, 0, 0, 0.1);
+		background-color: #f3f2f3;
 	}
 
 	.style-2 .box, .style-3 .box {
@@ -62,11 +62,11 @@
 	}
 
 	.style-1 .title {
-		border-top: 5px solid rgb(0, 0, 0, 0.1);
+		border-top: 5px solid #f3f2f3;
 	}
 
 	.style-2 .title,.style-3 .title {
-		border-top: 5px solid var(--brandGray80);
+		border-top: 5px solid #f3f2f3;
 	}
 
 	/* .style-2.container,.style-3.container {
@@ -106,12 +106,12 @@
 		}
 		
 		.style-1 .title {
-			border-left: 5px solid rgb(0, 0, 0, 0.1);
+			border-left: 5px solid #f3f2f3;
 			border-top: none;
 		}
 
 		.style-2 .title,.style-3 .title {
-			border-left: 5px solid var(--brandGray80);
+			border-left: 5px solid #f3f2f3;
 			border-top: none;
 		}
 

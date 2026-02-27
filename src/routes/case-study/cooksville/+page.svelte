@@ -237,6 +237,12 @@
 
 		</div>
 
+		<GraphicSingle
+			svg1080={"../web-assets/case-study/cooksville/cooksville-flood-map-1080.svg"}
+			svg720={"../web-assets/case-study/cooksville/cooksville-flood-map-720.svg"}
+			svg360={"../web-assets/case-study/cooksville/cooksville-flood-map-360.svg"}
+		/>
+
 		<ImageSingle
 			imageURL={"../web-assets/case-study/cooksville/cooksville-creek-mississauga-photo.jpg"}
 			source={"<a href='https://www.mississauga.ca/projects-and-strategies/environmental-assessments/cooksville-creek-erosion-control-from-mississauga-valley-boulevard-to-the-cp-railway/' target='_blank'>Cooksville Creek Erosion Control from Mississauga Valley Boulevard to the CP Railway</a>."}
@@ -273,23 +279,10 @@
 			<p>
 				Yet planning for inclusive growth here will require prioritizing the needs of current and future residents, particularly families. Many elements of successful complete communities are present, mainly centred on the “Four Corners” of Hurontario and Dundas -- schools, health care, and retail – but access to child care is limited, and the area has a critical gap in community centres. 
 			</p>
-			<!-- INSERT: visual -->
-			
-		</div>
-
-		<GraphicSingle
-			svg1080={"../web-assets/case-study/cooksville/cooksville-flood-map-1080.svg"}
-			svg720={"../web-assets/case-study/cooksville/cooksville-flood-map-720.svg"}
-		/>
-		<!-- // Needs a 360 version!! -->
-
-		<div class="text">
 
 			<p>
 				There is also little existing green space. With few formal civic amenities, residents rely on commercial plazas and small parks for daily needs. And like many suburban areas, the neighbourhood itself is built for the car: wide arterials and fragmented sidewalks make walking and cycling a challenge. Another challenge comes from the site itself. Cooksville has a number of buildings sitting on the Cooksville Creek floodplain, and the area has been deemed a flood risk.
 			</p>
-		
-
 			<p>
 				Creating a vibrant community here will require creative approaches to managing risk while increasing access to critical amenities. 
 			</p>
@@ -603,10 +596,11 @@
 		/>
 
 		<div class="text">
+
 			<p>
 				Green and social infrastructure can come together here in a win-win for the community, with vibrant local shops and public facilities woven into a landscape where green corridors double as flood protection and public parks. 
 			</p>
-			<!-- <IMAGE></IMAGE> -->
+			
 			<p>
 				By treating housing, amenities, and water as one integrated system, the plan shifts from managing constraints to building a complete, resilient, and connected Cooksville. 
 			</p>

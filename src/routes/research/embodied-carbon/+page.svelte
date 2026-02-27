@@ -73,8 +73,8 @@
 	<Password correctPassword="catcatmeow"></Password>
 
 	<TitleVideo
-		title="EMBODIED CARBON"
-		subtitle="How different built forms near TOD impact embodied carbon GHG"
+		title="Embodied Carbon in Different Development Patterns and Built Forms "
+		subtitle=""
 		titletype="RESEARCH"
 		video="/tod-on-main/research/embodied-carbon/skylineVideo.mp4"
 		videoSpeed={0.67}

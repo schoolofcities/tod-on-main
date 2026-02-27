@@ -255,6 +255,10 @@ h1 {
 	padding: 0px;
 }
 
+.text h1 {
+	border-bottom: solid 2px var(--brandGray90)
+}
+
 h2 {
 	text-align: left;
 	font-family: PoppinsSemiBold;
@@ -494,7 +498,7 @@ li {
 
 
 .callout {
-	background-color: var(--brandWhite);
+	background-color: #f8f8f8;
 	max-width: 680px;
 	margin: 0 auto;
 	position: relative;
@@ -504,27 +508,9 @@ li {
 	padding-bottom: 10px;
 	margin-top: 40px;
 	margin-bottom: 40px;
-	border: solid 2px var(--brandMedBlue);
-	border-radius: 10px;
-	border-top-right-radius: 50px;
-}
-
-.callout h2 {
-	text-align: left;
-	font-family: TradeGothicBold;
-	background-color: var(--brandMedGreen);
-	color: var(--brandWhite);
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-bottom: 5px;
-	padding-top: 5px;
-	padding-left: 10px;
-	padding-right: 20px;
-	border-radius: 2px;
-	border-top-right-radius: 25px;
-	border-bottom: solid 2px var(--brandMedBlue);
-	font-weight: normal;
-	font-size: 26px;
+	border: solid 1px #ffdcc4;
+	border-radius: 20px;
+	/* border-top-right-radius: 50px; */
 }
 
 .callout p {
@@ -534,11 +520,18 @@ li {
 	text-align: left;
 	padding-top: 2px;
 	padding-bottom: 2px;
-	font-size: 17px;
+	font-size: 18px;
 	line-height: 28px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
+}
+
+.callout .highlight {
+	background-color: #ffdcc4; 
+	padding-left: 3px; 
+	padding-right: 3px;
+	font-family: GelasioBold;
 }
 
 @media screen and (max-width: 600px) {

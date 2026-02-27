@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="360" height="240" viewBox="0 0 360 240">
+  <rect id="rect2" x="20" y="20" width="320" height="200" rx="20.8009" ry="20.8009" fill="#f3f2f3"/>
+  <rect x="40" y="140" width="140.018" height="10" rx="1.7723" ry="1.7723" fill="#668ebd"/>
+  <rect x="40" y="190" width="230" height="10" rx="1.7723" ry="1.7723" fill="#668ebd"/>
+  <text transform="translate(39.0033 64.595)" fill="#668ebd" font-family="Inter-Bold, Inter" font-variation-settings="&apos;opsz&apos; 14, &apos;wght&apos; 700" font-weight="700"><tspan font-size="37"><tspan x="0" y="0">$84,218</tspan></tspan><tspan font-size="21"><tspan x="0" y="25.2002">Average household income</tspan></tspan></text>
+  <text transform="translate(39.9994 179.9491)" fill="#231f20" font-family="Inter-Regular, Inter" font-size="18" font-variation-settings="&apos;opsz&apos; 14, &apos;wght&apos; 400"><tspan x="0" y="0">Waterloo</tspan></text>
+  <text transform="translate(39.9994 129.9495)" fill="#231f20" font-family="Inter-Regular, Inter" font-size="18" font-variation-settings="&apos;opsz&apos; 14, &apos;wght&apos; 400"><tspan x="0" y="0">Northfield</tspan></text>
+  <text transform="translate(184.9997 150.95)" fill="#231f20" font-family="Inter-Regular, Inter" font-size="18" font-variation-settings="&apos;opsz&apos; 14, &apos;wght&apos; 400"><tspan x="0" y="0">$84K</tspan></text>
+  <text transform="translate(274.9997 200.9496)" fill="#231f20" font-family="Inter-Regular, Inter" font-size="18" font-variation-settings="&apos;opsz&apos; 14, &apos;wght&apos; 400"><tspan x="0" y="0">$138K</tspan></text>
+</svg>

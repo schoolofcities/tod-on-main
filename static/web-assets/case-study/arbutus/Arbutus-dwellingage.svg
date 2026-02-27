@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="360" height="240" viewBox="0 0 360 240">
+  <g id="background">
+    <image x="0.0" y="0.0" width="360.0" height="240.0" preserveAspectRatio="xMidYMid meet" href="data:image/png;base64,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"/>
+  </g>
+  <g id="foreground">
+    <text transform="translate(39.9994 179.9481)" fill="#231f20" font-size="18" font-variation-settings="'opsz' 14, 'wght' 400" style="font-family: InterRegular; font-weight: normal; font-style: normal;">
+      <text transform="translate(39.9994 179.9481)" fill="#231f20" font-size="18" font-variation-settings="'opsz' 14, 'wght' 400" style="font-family: InterRegular; font-weight: normal; font-style: normal;"/>
+    </text>
+    <text transform="translate(39.9994 179.9481)" fill="#231f20" font-size="18" font-variation-settings="'opsz' 14, 'wght' 400" style="font-family: InterRegular; font-weight: normal; font-style: normal;">
+      <tspan x="0" y="0" style="font-weight: normal; font-style: normal;">
+        <tspan x="0" y="0" style="font-weight: normal; font-style: normal;">Vancouver</tspan>
+      </tspan>
+    </text>
+    <text transform="translate(39.9994 129.9485)" fill="#231f20" font-size="18" font-variation-settings="'opsz' 14, 'wght' 400" style="font-family: InterRegular; font-weight: normal; font-style: normal;">
+      <text transform="translate(39.9994 129.9485)" fill="#231f20" font-size="18" font-variation-settings="'opsz' 14, 'wght' 400" style="font-family: InterRegular; font-weight: normal; font-style: normal;"/>
+    </text>
+    <text transform="translate(39.9994 129.9485)" fill="#231f20" font-size="18" font-variation-settings="'opsz' 14, 'wght' 400" style="font-family: InterRegular; font-weight: normal; font-style: normal;">
+      <tspan x="0" y="0" style="font-weight: normal; font-style: normal;">
+        <tspan x="0" y="0" style="font-weight: normal; font-style: normal;">Arbutus</tspan>
+      </tspan>
+    </text>
+    <text transform="translate(239.0719 214.5547)" fill="#231f20" font-size="12" font-variation-settings="'opsz' 14, 'wght' 400" style="font-family: InterItalic; font-weight: normal;">
+      <text transform="translate(239.0719 214.5547)" fill="#231f20" font-size="12" font-variation-settings="'opsz' 14, 'wght' 400" style="font-family: InterItalic; font-weight: normal;"/>
+    </text>
+    <text transform="translate(239.0719 214.5547)" fill="#231f20" font-size="12" font-variation-settings="'opsz' 14, 'wght' 400" style="font-family: InterItalic; font-weight: normal;">
+      <tspan x="0" y="0" style="font-weight: normal; font-style: normal;">
+        <tspan x="0" y="0" style="font-weight: normal; font-style: normal;">2001 and after</tspan>
+      </tspan>
+    </text>
+    <text transform="translate(151.3357 214.5547)" fill="#231f20" font-size="12" font-variation-settings="'opsz' 14, 'wght' 400" style="font-family: InterItalic; font-weight: normal;">
+      <text transform="translate(151.3357 214.5547)" fill="#231f20" font-size="12" font-variation-settings="'opsz' 14, 'wght' 400" style="font-family: InterItalic; font-weight: normal;"/>
+    </text>
+    <text transform="translate(151.3357 214.5547)" fill="#231f20" font-size="12" font-variation-settings="'opsz' 14, 'wght' 400" style="font-family: InterItalic; font-weight: normal;">
+      <tspan x="0" y="0" style="font-weight: normal; font-style: normal;">
+        <tspan x="0" y="0" style="font-weight: normal; font-style: normal;">prior to 2001</tspan>
+      </tspan>
+    </text>
+    <text transform="translate(39.0039 64.595)" fill="#e2ac83" font-variation-settings="'opsz' 14, 'wght' 700" style="font-family: InterBold; font-style: normal;">
+      <text transform="translate(39.0039 64.595)" fill="#e2ac83" font-variation-settings="'opsz' 14, 'wght' 700" style="font-family: InterBold; font-style: normal;"/>
+    </text>
+    <text transform="translate(39.0039 64.595)" fill="#e2ac83" font-variation-settings="'opsz' 14, 'wght' 700" style="font-family: InterBold; font-style: normal;">
+      <tspan font-size="37" style="font-weight: normal; font-style: normal;">
+        <tspan font-size="37" style="font-weight: normal; font-style: normal;"/>
+      </tspan>
+    </text>
+    <text transform="translate(39.0039 64.595)" fill="#e2ac83" font-variation-settings="'opsz' 14, 'wght' 700" style="font-family: InterBold; font-style: normal;">
+      <tspan font-size="37" style="font-weight: normal; font-style: normal;">
+        <tspan x="0" y="0" style="font-weight: normal; font-style: normal;">
+          <tspan x="0" y="0" style="font-weight: normal; font-style: normal;">79%</tspan>
+        </tspan>
+      </tspan>
+    </text>
+    <text transform="translate(39.0039 64.595)" fill="#e2ac83" font-variation-settings="'opsz' 14, 'wght' 700" style="font-family: InterBold; font-style: normal;">
+      <tspan font-size="21" style="font-weight: normal; font-style: normal;">
+        <tspan font-size="21" style="font-weight: normal; font-style: normal;"/>
+      </tspan>
+    </text>
+    <text transform="translate(39.0039 64.595)" fill="#e2ac83" font-variation-settings="'opsz' 14, 'wght' 700" style="font-family: InterBold; font-style: normal;">
+      <tspan font-size="21" style="font-weight: normal; font-style: normal;">
+        <tspan x="0" y="25.2002" style="font-weight: normal; font-style: normal;">
+          <tspan x="0" y="25.2002" style="font-weight: normal; font-style: normal;">of housing built prior to 2001</tspan>
+        </tspan>
+      </tspan>
+    </text>
+  </g>
+</svg>
