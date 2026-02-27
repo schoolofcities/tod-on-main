@@ -1,9 +1,9 @@
 <script>
-	export let svg1080 = '';
-	export let svg720 = '';
-	export let svg360 = '';
+	export let svg1080;
+	export let svg720;
+	export let svg360;
 
-	let inputSVG = '';
+	let inputSVG;
 	let svgWidth = 0;
 	let container;
 	let resizeHandler;
@@ -12,7 +12,9 @@
 	function pickSVGPath(width) {
 		if (width >= 1080 && svg1080) return [svg1080, 1080];
 		if (width >= 720 && svg720) return [svg720, 720];
-		return [svg360, 360];
+		if (svg360) return [svg360, 360];
+
+		return [svg720 ?? svg1080 ?? null, svg720 ? 720 : 1080];
 	}
   
 	// Fetch SVG content as text
@@ -29,6 +31,7 @@
   
 	async function handleVisibility(width) {
 		const [path, widthValue] = pickSVGPath(width);
+		if (!path) return;
 		svgWidth = widthValue;
 	
 		inputSVG = await loadSVG(path);
@@ -76,6 +79,7 @@
 		margin-bottom: 10px;
 		padding-left: 0px;
 		padding-right: 0px;
+		max-width: 100%;
 	}
 	
 	.svg-container {
