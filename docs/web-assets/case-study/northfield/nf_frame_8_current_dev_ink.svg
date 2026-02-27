@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="720"
+   height="590"
+   viewBox="0 0 720 590"
+   sodipodi:docname="nf_frame_8_current_dev_ink.svg"
+   inkscape:version="1.4.2 (1:1.4.2+202505120738+ebf0e940d0)"
+   inkscape:export-filename="nf_frame_8_current_dev_ink_edit.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.78763839"
+     inkscape:cx="144.73647"
+     inkscape:cy="448.81002"
+     inkscape:window-width="2560"
+     inkscape:window-height="1403"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g1">
+    <image
+       width="773.03491"
+       height="719.10223"
+       preserveAspectRatio="none"
+       xlink:href="nf_frame_8_current_dev_edit.png"
+       id="image1"
+       x="-33.216957"
+       y="-59.062065"
+       style="stroke-width:1.50187" />
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#ffffff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1"
+       width="25.709768"
+       height="13.330991"
+       x="386.59872"
+       y="291.73444"
+       rx="14.314734"
+       ry="0.18589462" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:0.95;font-family:'Inter 24pt';-inkscape-font-specification:'Inter 24pt, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#2b83bf;fill-opacity:1;stroke-width:1"
+       x="363.66586"
+       y="303.1651"
+       id="text4442"><tspan
+         sodipodi:role="line"
+         id="tspan4442"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15px;font-family:'Inter 24pt';-inkscape-font-specification:'Inter 24pt, Bold';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#2b83bf;fill-opacity:1;stroke-width:1"
+         x="363.66586"
+         y="303.1651">Northfield Station</tspan></text>
+    <path
+       style="fill:none;stroke:#2b83bf;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-dasharray:none"
+       d="m 337.89277,290.53616 28.72818,22.55611"
+       id="path1" />
+    <ellipse
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#2b83bf;stroke-width:3.77952;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="path4442"
+       cx="351.80969"
+       cy="301.40897"
+       rx="6.5348287"
+       ry="6.4832692" />
+  </g>
+</svg>

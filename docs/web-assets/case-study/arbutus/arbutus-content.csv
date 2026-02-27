@@ -1,5 +1,5 @@
-animation,image,text,arrowColour,overlay1,overlay2,menu_id,bg_fit,alt_text
-1,../web-assets/case-study/arbutus/ab_frame_4.png,,black,,,Menu_1,contain,
-1,../web-assets/case-study/arbutus/ab_frame_4.png,Arbutus Station is a case study for ambitious transit-oriented development in well-established neighbourhoods. ,black,,,,contain,alt alt
-1,../web-assets/case-study/arbutus/ab_frame_7.png,"This area has ample naturally occurring affordable housing and a strong City plan, but implementation risks uneven change, ",black,,,,contain,alt alt
-1,../web-assets/case-study/arbutus/ab_frame_9.png,"Our optimized scenario focuses growth along major corridors, protecting existing contexts while supporting transit and growth. ",black,,,,contain,alt alt
+"animation","image","text","arrowColour","overlay1","overlay2","menu_id","bg_fit","alt_text"
+1,"../web-assets/case-study/arbutus/ab_frame_4.png",,"black",,,"Menu_1","contain",
+1,"../web-assets/case-study/arbutus/ab_frame_4.png","When Vancouver’s Arbutus Station opens in 2027, it will anchor the Millenium Line’s new western terminus as a prominent example of ambitious transit-oriented development (TOD) in a mature neighborhood. ","black",,,,"contain","alt alt"
+1,"../web-assets/case-study/arbutus/ab_frame_7.png","Arbutus Station is in many ways already a complete community, characterized by an active commercial corridor along Broadway, strong pedestrian activity, and a station that enables multimodal travel. ","black",,,,"contain","alt alt"
+1,"../web-assets/case-study/arbutus/ab_frame_9.png","The challenge will be ensuring that the area’s affordable housing stock and many amenities remain despite densification, so it can continue to be a home for people of all income levels.  ","black",,,,"contain","alt alt"

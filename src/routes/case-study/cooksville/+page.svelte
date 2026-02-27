@@ -150,7 +150,7 @@
 
 <main>
 
-	<!-- <Password correctPassword="catcatmeow"></Password> -->
+	<Password correctPassword="catcatmeow"></Password>
 
 	<!-- Full page title example -->
 	<div class="wrapper">
