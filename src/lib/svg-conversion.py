@@ -10,6 +10,7 @@ FONT_MAP = {
 	"Inter": "InterRegular",
 	"Inter-Regular, Inter": "InterRegular",
 	"Inter-Regular": "InterRegular",
+	"Inter-Light": "InterRegular",
 	
 	# Bold variants
 	"Bold": "InterBold",  # Catch-all for any font with bold weight
@@ -412,7 +413,7 @@ def process_svg(input_svg_path, output_svg_path, font_map):
 from pathlib import Path
 
 def main():
-	folder = "case-study/northfield"
+	folder = "case-study/arbutus"
 	input_dir = "../routes/" + folder + "/assets"  
 	output_dir = "../../static/web-assets/"  + folder
 
