@@ -187,7 +187,7 @@
 
 			<!-- <h1 id="Menu_2">Why this matters </h1> -->
 			
-			<h2>
+			<h2 id="Menu_2">
 				Neighbourhood overview 
 			</h2>
 			<p>
@@ -237,7 +237,8 @@
 				Building on the city’s major transit investment, Northfield can become a thriving community with a mix of employment uses to drive transit ridership and social infrastructure – schools, parks, and retail – that will sustain a community of residents.   
 			</p>
 
-			<h2>Northfield’s current trajectory </h2>
+			<h1 id="Menu_3">Northfield’s current trajectory</h1>
+
 			<p>
 				The Northfield Station area was initially envisioned as one of three key employment nodes on the line with a “Business Employment” land use designation and little change anticipated in the amount of residential.<Footnote id={addFootnote(fns[1])}/> However, the region has experienced explosive growth in recent years, and the province has issued a directive to focus housing growth near transit, with a target for Northfield of 160 people and jobs per hectare – three times its current density.  
 			</p>
@@ -275,9 +276,9 @@
 				Because successful TOD depends on locating a mix of <i>both</i> residential and employment destinations near transit,<Footnote id={addFootnote(fns[2])}/> there is also a risk that removing valuable employment uses near the ION could reduce system-wide transit ridership. 
 			</p>
 
-			<h2>
+			<h1 id="Menu_4">
 				Optimized scenario: Creating a complete community 
-			</h2>
+			</h1>
 			<p>
 				The central challenge is this: How can cities build vibrant communities centred on a major employment hub? What kind of community attracts top talent to work and live – and makes them want to stay?  
 			</p>
