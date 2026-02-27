@@ -2,7 +2,6 @@
 	export let correctPassword = 'catcatmeow';
 	let password = '';
 	let isAuthenticated = false;
-	// const correctPassword = 'catcatmeow'; 
 
 	function checkPassword() {
 		if (password === correctPassword) {
