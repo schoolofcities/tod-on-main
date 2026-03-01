@@ -27,6 +27,7 @@
     import HamburgerMenu from '$lib/HamburgerMenu.svelte';
     import CaseStudyNote from '$lib/CaseStudyNote.svelte';
     import Recommendation from '$lib/Recommendation.svelte';
+    import TitlePage from '$lib/TitlePage.svelte';
 
 	export let data;
 
@@ -124,20 +125,20 @@
 	<div class="wrapper">
 		<!-- Top stays visually on top -->
 		<div class="top" style="opacity: {topOpacity}; pointer-events: {topPointer};">
-			<TitleFullPage
-				title="Cooksville Station"
-				topic="Case Study"
-				location="Mississauga, ON"
-				subtitle="How can we build complete, family-friendly communities while managing flood risk? "
-				image={topImage}
+			<TitlePage
+				textProps={{
+					title: "Building Intensification and Equity in TOD Zones: Trends across five station areas",
+					type: "Research",
+					titleFontColour:"var(--brandWhite)",
+					subtitleFontColour:"var(--brandWhite)",
+					secondLogo: "II"
+				}}
+				url={topImage}
+				type="Image"
 				imageOpacity=1
 				imageAltText="A photo"
 				tintColour="black"
 				tintOpacity=0.5
-				titleFontColour="var(--brandWhite)"
-				subtitleFontColour="var(--brandWhite)"
-				authorText="Author Name, Author Name, Author Name"
-				dateText="~ December, 2025"
 				topOpacity={topOpacity}
 			/>
 		</div>

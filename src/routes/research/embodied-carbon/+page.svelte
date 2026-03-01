@@ -3,10 +3,8 @@
 	import '../../../assets/global-styles.css';
 
 	import Logo from '$lib/LogoBody.svelte';
-	import TitleFullPage from '$lib/TitleFullPageCaseStudy.svelte';
-	import TitleHalfSplit from '$lib/TitleHalfSplit.svelte';
-	import TitleStandard from '$lib/TitleStandard.svelte';
 	import TitleVideo from '$lib/TitleVideo.svelte';
+    import TitlePage from '$lib/TitlePage.svelte';
 	import AuthorDate from '$lib/AuthorDate.svelte';
 	import ImageSingle from '$lib/ImageSingle.svelte';
 	import GraphicSingle from '$lib/GraphicSingle.svelte';
@@ -72,11 +70,22 @@
 
 	<Password correctPassword="catcatmeow"></Password>
 
-	<TitleVideo
+	<!-- <TitleVideo
 		title="Embodied Carbon in Different Development Patterns and Built Forms "
 		subtitle=""
 		titletype="RESEARCH"
 		video="/tod-on-main/research/embodied-carbon/skylineVideo.mp4"
+		videoSpeed={0.67}
+		videoOpacity={0.8}
+		titleFontColour="var(--brandWhite)"
+		subtitleFontColour="var(--brandWhite)"
+		logoType = 'White';
+	/> -->
+	<TitlePage
+		title="Embodied Carbon in Different Development Patterns and Built Forms "
+		type="Research"
+		bgType="Video"
+		url="/tod-on-main/research/embodied-carbon/skylineVideo.mp4"
 		videoSpeed={0.67}
 		videoOpacity={0.8}
 		titleFontColour="var(--brandWhite)"

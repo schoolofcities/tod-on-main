@@ -5,9 +5,6 @@
 	import { onMount, onDestroy } from "svelte";
 
 	import Logo from '$lib/LogoTop.svelte';
-	import TitleFullPage from '$lib/TitleFullPageCaseStudy.svelte';
-	import TitleHalfSplit from '$lib/TitleHalfSplit.svelte';
-	import TitleStandard from '$lib/TitleStandard.svelte';
 	import AuthorDate from '$lib/AuthorDate.svelte';
 	import ImageSingle from '$lib/ImageSingle.svelte';
 	import ImageCompare from '$lib/ImageCompare.svelte';
@@ -28,6 +25,7 @@
 
 	import Footnote from '$lib/Footnote.svelte';
 	import Footnotes from '$lib/Footnotes.svelte';
+    import TitlePage from '$lib/TitlePage.svelte';
 	const footnoteStore = createFootnoteStore();
 	const { footnotes, addFootnote } = footnoteStore;
 
@@ -114,12 +112,13 @@
 	<div class="wrapper">
 		<!-- Top stays visually on top -->
 		<div class="top" style="opacity: {topOpacity}; pointer-events: {topPointer};">
-			<TitleFullPage
+			<TitlePage
 				title="McKernan-Belgravia Station"
-				topic="Case Study"
+				type="Case Study"
 				location="Edmonton, AB"
 				subtitle="How can we build infill in a diverse community with strategic infrastructure investments to support high-capacity transit ridership?"
-				image={topImage}
+				bgType="Image"
+				url={topImage}
 				imageOpacity=1
 				imageAltText="A photo"
 				tintColour="black"
