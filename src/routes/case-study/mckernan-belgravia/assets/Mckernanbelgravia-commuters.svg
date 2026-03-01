@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="360"
+   height="240"
+   viewBox="0 0 360 240"
+   version="1.1"
+   id="svg25"
+   sodipodi:docname="Mckernanbelgravia-commuters.svg"
+   inkscape:version="1.4.2 (1:1.4.2+202505120738+ebf0e940d0)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs25" />
+  <sodipodi:namedview
+     id="namedview25"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.7"
+     inkscape:cx="231.47059"
+     inkscape:cy="87.058823"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1" />
+  <g
+     id="bases">
+    <rect
+       id="rect2"
+       x="20"
+       y="20"
+       width="320"
+       height="200"
+       rx="20.8009"
+       ry="20.8009"
+       fill="#f3f2f3" />
+  </g>
+  <g
+     id="Layer_1"
+     data-name="Layer 1">
+    <text
+       transform="translate(39.0039 64.595)"
+       fill="#eca673"
+       font-family="Inter-Bold, Inter"
+       font-variation-settings="'opsz' 14, 'wght' 700"
+       font-weight="700"
+       id="text4"><tspan
+         x="0"
+         y="0"
+         font-size="37"
+         id="tspan1">14% </tspan><tspan
+         x="87.3149"
+         y="0"
+         font-size="21"
+         id="tspan2">of commuters </tspan><tspan
+         font-size="21"
+         id="tspan4"><tspan
+           x="0"
+           y="25.2002"
+           id="tspan3">use public transit </tspan></tspan></text>
+    <g
+       id="g6">
+      <circle
+         cx="321.7854"
+         cy="163.1874"
+         r="2.4706"
+         fill="none"
+         stroke="#010101"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="circle4" />
+      <circle
+         cx="312.609"
+         cy="163.1874"
+         r="2.4706"
+         fill="none"
+         stroke="#010101"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="circle5" />
+      <circle
+         cx="319.3148"
+         cy="154.3638"
+         r=".7059"
+         fill="none"
+         stroke="#010101"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="circle6" />
+      <path
+         d="M317.1972,163.1874v-2.4706l-2.1176-2.1176,2.8235-2.1176,1.4118,2.1176h1.4118"
+         fill="none"
+         stroke="#010101"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path6" />
+    </g>
+    <g
+       id="g12">
+      <path
+         d="M223.8862,152.9738v2.3889c0,1.3532,1.097,2.4502,2.4502,2.4502s2.4502-1.097,2.4502-2.4502v-2.3889"
+         fill="none"
+         stroke="#eda772"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path7" />
+      <path
+         d="M224.4987,160.2631l-.6125-.6125"
+         fill="none"
+         stroke="#eda772"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path8" />
+      <path
+         d="M228.174,160.2631l.6125-.6125"
+         fill="none"
+         stroke="#eda772"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path9" />
+      <path
+         d="M224.4987,162.7132c-1.7151,0-3.0627-1.3476-3.0627-3.0627v-2.4502c0-2.7064,2.194-4.9003,4.9003-4.9003s4.9003,2.194,4.9003,4.9003v2.4502c0,1.7151-1.3476,3.0627-3.0627,3.0627h-3.6753Z"
+         fill="none"
+         stroke="#eda772"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path10" />
+      <path
+         d="M223.8862,162.7132l-1.2251,1.8376"
+         fill="none"
+         stroke="#eda772"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path11" />
+      <path
+         d="M228.7865,162.7132l1.2251,1.8376"
+         fill="none"
+         stroke="#eda772"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path12" />
+    </g>
+    <g
+       id="g16">
+      <circle
+         cx="279.7442"
+         cy="155.574"
+         r=".7059"
+         fill="none"
+         stroke="#010101"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="circle12" />
+      <path
+         d="M282.6818,165.658l-.82-2.0696-2.1176-2.1176v-3.8445l1.0905,2.1176,1.2929.6542"
+         fill="none"
+         stroke="#010101"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path13" />
+      <path
+         d="M277.6184,165.658l1.891-1.3258.2348-2.8614"
+         fill="none"
+         stroke="#010101"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path14" />
+      <path
+         d="M282.6818,165.658l-.82-2.0696-2.1176-2.1176v-3.8445l1.0905,2.1176,1.2929.6542"
+         fill="none"
+         stroke="#010101"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path15" />
+      <path
+         d="M279.7442,157.6262l-1.5681,1.7929-.1329,1.4429"
+         fill="none"
+         stroke="#010101"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path16" />
+    </g>
+    <text
+       transform="translate(39.9999 186.3665)"
+       fill="#221f20"
+       font-family="Inter-Regular, Inter"
+       font-size="18"
+       font-variation-settings="'opsz' 14, 'wght' 400"
+       id="text16"><tspan
+         x="0"
+         y="0"
+         id="tspan16">Edmonton</tspan></text>
+    <g
+       id="g18">
+      <path
+         d="M130.7537,162.5508h2c.6,0,1-.4,1-1v-3c0-.9-.7-1.7-1.5-1.9-1.8-.5-4.5-1.1-4.5-1.1,0,0-1.3-1.4-2.2-2.3-.5-.4-1.1-.7-1.8-.7h-7c-.6,0-1.1.4-1.4.9l-1.4,2.9c-.1324.3862-.2.7917-.2,1.2v4c0,.6.4,1,1,1h2"
+         fill="none"
+         stroke="#010101"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path17" />
+      <circle
+         cx="118.7537"
+         cy="162.5508"
+         r="2"
+         fill="none"
+         stroke="#010101"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="circle17" />
+      <path
+         d="M120.7537,162.5508h6"
+         fill="none"
+         stroke="#010101"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path18" />
+      <circle
+         cx="128.7537"
+         cy="162.5508"
+         r="2"
+         fill="none"
+         stroke="#010101"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="circle18" />
+    </g>
+    <text
+       fill="#221f20"
+       font-family="Inter-Regular, Inter"
+       font-size="18px"
+       font-variation-settings="'opsz' 14, 'wght' 400"
+       id="text18"
+       x="39.999901"
+       y="134.06444"><tspan
+         x="39.999901"
+         y="134.06444"
+         id="tspan18">McKernan-Belgravia</tspan></text>
+    <rect
+       x="40"
+       y="140"
+       width="166.7668"
+       height="10"
+       rx="1.4014"
+       ry="1.4014"
+       fill="#d2d2d0"
+       stroke="#f2f2f3"
+       stroke-miterlimit="10"
+       id="rect18" />
+    <rect
+       x="206.7668"
+       y="140"
+       width="38.3984"
+       height="10"
+       rx="1.4014"
+       ry="1.4014"
+       fill="#eda772"
+       stroke="#f2f2f3"
+       stroke-miterlimit="10"
+       id="rect19" />
+    <rect
+       x="245.1652"
+       y="140"
+       width="69.2292"
+       height="10"
+       rx="1.4014"
+       ry="1.4014"
+       fill="#d2d2d0"
+       stroke="#f2f2f3"
+       stroke-miterlimit="10"
+       id="rect20" />
+    <rect
+       x="314.3944"
+       y="140"
+       width="5.6056"
+       height="10"
+       rx="1.4014"
+       ry="1.4014"
+       fill="#d2d2d0"
+       stroke="#f2f2f3"
+       stroke-miterlimit="10"
+       id="rect21" />
+    <rect
+       x="40"
+       y="190"
+       width="242.7227"
+       height="10"
+       rx="1.4014"
+       ry="1.4014"
+       fill="#d2d2d0"
+       stroke="#f2f2f3"
+       stroke-miterlimit="10"
+       id="rect22" />
+    <rect
+       x="282.7227"
+       y="190"
+       width="23.5435"
+       height="10"
+       rx="1.4014"
+       ry="1.4014"
+       fill="#eda772"
+       stroke="#f2f2f3"
+       stroke-miterlimit="10"
+       id="rect23" />
+    <rect
+       x="306.2663"
+       y="190"
+       width="10.9309"
+       height="10"
+       rx="1.4014"
+       ry="1.4014"
+       fill="#d2d2d0"
+       stroke="#f2f2f3"
+       stroke-miterlimit="10"
+       id="rect24" />
+    <rect
+       x="317.1972"
+       y="190"
+       width="2.8028"
+       height="10"
+       rx="1.4014"
+       ry="1.4014"
+       fill="#d2d2d0"
+       stroke="#f2f2f3"
+       stroke-miterlimit="10"
+       id="rect25" />
+  </g>
+</svg>

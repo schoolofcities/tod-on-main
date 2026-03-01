@@ -118,7 +118,7 @@
 <!-- <svelte:window on:scroll={handleScroll} /> -->
 
 <main>
-	<Password correctPassword="catcatmeow"></Password>
+	<!-- <Password correctPassword="catcatmeow"></Password> -->
 	<!-- Full page title example -->
 	<div class="wrapper">
 		<!-- Top stays visually on top -->
@@ -186,7 +186,7 @@
 			Located in Vancouver’s Kitsilano neighbourhood, the area around Arbutus Station is established, with more than 30,000 residents. The community is diverse: one-third are immigrants and another quarter come from outside the province. This diversity contributes to a wide range of housing needs and service demands. 
 		</p>
 
-	<div class="text">
+	</div>
 
 	<GraphicSingle
 		svg720={"../web-assets/case-study/arbutus/Arbutus-720map.svg"}
@@ -202,7 +202,13 @@
 		]}
 	/>
 
-	</div>
+	<div class="text">
+
+		<div class="caption-container" style="margin-top: 0px; margin-bottom: 60px;">
+			<p>
+				<span class="caption-source">Data sources: Statistics Canada, Environics Analytics (2024).</span>
+			</p>
+		</div>
 
 		<p>
 			The area is largely built out, with 79% of its structures built more than 25 years ago.
@@ -359,11 +365,6 @@
 			To offer a contrast to the current trajectory, we created an “optimized” scenario that refines the City’s existing vision for the area by strengthening its spatial logic: where growth should be concentrated and how it should transition into surrounding neighbourhoods. The optimized scenario reinforces Broadway and Arbutus Street as active, mixed-use corridors and key destinations.  
 		</p>
 
-		<p>
-			Density is strategically layered outward from these corridors, aligning height and intensity with transit access and surrounding residential areas. This approach supports active modes of travel and transit use while directing growth more effectively. Delivering equitable TOD requires balancing housing growth with social equity. To structure this approach, our recommendations are organizedhe ￼3Ps framework – production, preservation, and p10￼￼ This framework recognizes that no single policy lever is sufficient on its own, and achieving equitable outcomes require expanding supply, safeguarding existing affordable housing, and protecting current residents simultaneously. 
-		</p>
-
-
 	</div>
 
 	<ImageCompare
@@ -385,6 +386,11 @@
 	/>
 
 	<div class="text">	
+
+		<p>
+			Density is strategically layered outward from these corridors, aligning height and intensity with transit access and surrounding residential areas. This approach supports active modes of travel and transit use while directing growth more effectively. Delivering equitable TOD requires balancing housing growth with social equity. To structure this approach, our recommendations are organizedhe ￼3Ps framework – production, preservation, and p10￼￼ This framework recognizes that no single policy lever is sufficient on its own, and achieving equitable outcomes require expanding supply, safeguarding existing affordable housing, and protecting current residents simultaneously. 
+		</p>
+
 
 		<Recommendation style=1 count=1
 			title="Continue production of new housing"/>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="240" viewBox="0 0 360 240">
+  <g id="bases">
+    <rect id="rect2" x="20" y="20" width="320" height="200" rx="20.8009" ry="20.8009" fill="#f3f2f3"/>
+  </g>
+  <g id="Layer_1" data-name="Layer 1">
+    <text transform="translate(39.0033 64.595)" fill="#668ebd" font-family="Inter-Bold, Inter" font-variation-settings="&apos;opsz&apos; 14, &apos;wght&apos; 700" font-weight="700"><tspan font-size="37"><tspan x="0" y="0">$102,513</tspan></tspan><tspan font-size="21"><tspan x="0" y="25.2002">Average household income</tspan></tspan></text>
+    <text transform="translate(39.9994 186.3657)" fill="#231f20" font-family="Inter-Regular, Inter" font-size="18" font-variation-settings="&apos;opsz&apos; 14, &apos;wght&apos; 400"><tspan x="0" y="0">Brossard</tspan></text>
+    <text transform="translate(39.9994 136.366)" fill="#231f20" font-family="Inter-Regular, Inter" font-size="18" font-variation-settings="&apos;opsz&apos; 14, &apos;wght&apos; 400"><tspan x="0" y="0">Panama</tspan></text>
+    <text transform="translate(235.0002 151.6919)" fill="#231f20" font-family="Inter-Regular, Inter" font-size="18" font-variation-settings="&apos;opsz&apos; 14, &apos;wght&apos; 400"><tspan x="0" y="0">$103K</tspan></text>
+    <text transform="translate(274.9997 200.8774)" fill="#231f20" font-family="Inter-Regular, Inter" font-size="18" font-variation-settings="&apos;opsz&apos; 14, &apos;wght&apos; 400"><tspan x="0" y="0">$124K</tspan></text>
+    <rect x="40" y="140" width="190.7941" height="10" rx="1.7723" ry="1.7723" fill="#668ebd"/>
+    <rect x="40" y="190" width="230" height="10" rx="1.7723" ry="1.7723" fill="#668ebd"/>
+  </g>
+</svg>

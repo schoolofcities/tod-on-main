@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="240" viewBox="0 0 360 240">
+  <g id="bases">
+    <rect id="rect2" x="20" y="20" width="320" height="200" rx="20.8009" ry="20.8009" fill="#f3f2f3"/>
+  </g>
+  <g id="Layer_1" data-name="Layer 1">
+    <text transform="translate(39.0039 64.595)" fill="#f9a26a" font-family="Inter-Bold, Inter" font-variation-settings="&apos;opsz&apos; 14, &apos;wght&apos; 700" font-weight="700"><tspan x="0" y="0" font-size="37">21% </tspan><tspan x="85.5986" y="0" font-size="21">of commuters </tspan><tspan font-size="21"><tspan x="0" y="25.2002">use public transit </tspan></tspan></text>
+    <g>
+      <circle cx="311.6471" cy="169.8167" r="2.4706" fill="none" stroke="#010101" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="302.4706" cy="169.8167" r="2.4706" fill="none" stroke="#010101" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="309.1765" cy="160.9932" r=".7059" fill="none" stroke="#010101" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M307.0588,169.8167v-2.4706l-2.1176-2.1176,2.8235-2.1176,1.4118,2.1176h1.4118" fill="none" stroke="#010101" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g>
+      <path d="M266.2585,124.9611v2.3889c0,1.3532,1.097,2.4502,2.4502,2.4502s2.4502-1.097,2.4502-2.4502v-2.3889" fill="none" stroke="#f9a368" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M266.8711,132.2504l-.6125-.6125" fill="none" stroke="#f9a368" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M270.5463,132.2504l.6125-.6125" fill="none" stroke="#f9a368" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M266.8711,134.7005c-1.7151,0-3.0627-1.3476-3.0627-3.0627v-2.4502c0-2.7064,2.194-4.9003,4.9003-4.9003s4.9003,2.194,4.9003,4.9003v2.4502c0,1.7151-1.3476,3.0627-3.0627,3.0627h-3.6753Z" fill="none" stroke="#f9a368" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M266.2585,134.7005l-1.2251,1.8376" fill="none" stroke="#f9a368" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M271.1589,134.7005l1.2251,1.8376" fill="none" stroke="#f9a368" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g>
+      <circle cx="307.8223" cy="126.4542" r=".7059" fill="none" stroke="#010101" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M310.7599,136.5382l-.82-2.0696-2.1176-2.1176v-3.8445l1.0905,2.1176,1.2929.6542" fill="none" stroke="#010101" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M305.6965,136.5382l1.891-1.3258.2348-2.8614" fill="none" stroke="#010101" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M310.7599,136.5382l-.82-2.0696-2.1176-2.1176v-3.8445l1.0905,2.1176,1.2929.6542" fill="none" stroke="#010101" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M307.8223,128.5064l-1.5681,1.7929-.1329,1.4429" fill="none" stroke="#010101" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <polyline points="319.1592 150.7182 319.1592 172.2873 316.1093 172.2873" fill="none" stroke="#bdbec1" stroke-miterlimit="10" stroke-width=".25"/>
+    <text transform="translate(39.9994 186.3655)" fill="#231f20" font-family="Inter-Regular, Inter" font-size="18" font-variation-settings="&apos;opsz&apos; 14, &apos;wght&apos; 400"><tspan x="0" y="0">Brossard</tspan></text>
+    <text transform="translate(39.9994 136.3657)" fill="#231f20" font-family="Inter-Regular, Inter" font-size="18" font-variation-settings="&apos;opsz&apos; 14, &apos;wght&apos; 400"><tspan x="0" y="0">Panama</tspan></text>
+    <g>
+      <path d="M146.6396,134.2873h2c.6,0,1-.4,1-1v-3c0-.9-.7-1.7-1.5-1.9-1.8-.5-4.5-1.1-4.5-1.1,0,0-1.3-1.4-2.2-2.3-.5-.4-1.1-.7-1.8-.7h-7c-.6,0-1.1.4-1.4.9l-1.4,2.9c-.1324.3862-.2.7917-.2,1.2v4c0,.6.4,1,1,1h2" fill="none" stroke="#010101" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="134.6396" cy="134.2873" r="2" fill="none" stroke="#010101" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M136.6396,134.2873h6" fill="none" stroke="#010101" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="144.6396" cy="134.2873" r="2" fill="none" stroke="#010101" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <rect x="40" y="139.7873" width="199.2793" height="10" rx=".8408" ry=".8408" fill="#d2d2cf" stroke="#f2f2f3" stroke-miterlimit="10"/>
+    <rect x="239.2793" y="139.7873" width="58.8589" height="10" rx=".8408" ry=".8408" fill="#f9a368" stroke="#f2f2f3" stroke-miterlimit="10"/>
+    <rect x="298.1381" y="139.7873" width="20.1802" height="10" rx=".8408" ry=".8408" fill="#d2d2cf" stroke="#f2f2f3" stroke-miterlimit="10"/>
+    <rect x="318.3183" y="139.7873" width="1.6817" height="10" rx=".8408" ry=".8408" fill="#d2d2cf" stroke="#f2f2f3" stroke-miterlimit="10"/>
+    <rect x="40" y="190" width="229.04" height="10" rx="1.54" ry="1.54" fill="#d2d2cf" stroke="#f2f2f3" stroke-miterlimit="10"/>
+    <rect x="269.04" y="190" width="38.64" height="10" rx="1.54" ry="1.54" fill="#f9a368" stroke="#f2f2f3" stroke-miterlimit="10"/>
+    <rect x="307.68" y="190" width="9.24" height="10" rx="1.54" ry="1.54" fill="#d2d2cf" stroke="#f2f2f3" stroke-miterlimit="10"/>
+    <rect x="316.92" y="190" width="3.08" height="10" rx="1.54" ry="1.54" fill="#d2d2cf" stroke="#f2f2f3" stroke-miterlimit="10"/>
+  </g>
+</svg>

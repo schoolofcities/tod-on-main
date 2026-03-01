@@ -148,7 +148,7 @@
 
 <main>
 
-	<Password correctPassword="catcatmeow"></Password>
+	<!-- <Password correctPassword="catcatmeow"></Password> -->
 
 	<!-- Full page title example -->
 	<div class="wrapper">
@@ -221,8 +221,8 @@
 		
 
 		<GraphicSingle
-			svg720={"../web-assets/case-study/cooksville/cooksville-station-map-720.svg"}
-			svg360={"../web-assets/case-study/cooksville/cooksville-station-map-360.svg"}
+			svg720={"../web-assets/case-study/cooksville/Cooksville-720map.svg"}
+			svg360={"../web-assets/case-study/cooksville/Cooksville-360map.svg"}
 		/>
 
 		
@@ -259,13 +259,19 @@
 		<GraphicMultiples
 			svgPaths={[
 				"../web-assets/case-study/cooksville/cooksville-population.svg",
-				"../web-assets/case-study/cooksville/cooksville-income.svg",
 				"../web-assets/case-study/cooksville/cooksville-age.svg",
+				"../web-assets/case-study/cooksville/cooksville-income.svg",
 				"../web-assets/case-study/cooksville/cooksville-housing.svg"
 			]}
 		/>
 
 		<div class="text">
+
+			<div class="caption-container" style="margin-top: 0px; margin-bottom: 60px;">
+				<p>
+					<span class="caption-source">Data sources: Statistics Canada, Environics Analytics (2024).</span>
+				</p>
+			</div>
 
 			<p>
 				Cooksville, though with a median age of 54, hosts a diversity of households. This includes families, alongside a growing number of seniors, of whom many live alone. Many people – especially renters – live in high-rise apartments along the major corridors of Hurontario and Dundas Streets, but there are also established, lower-density neighbourhoods further from the station. Household incomes average about $92,000 per year, far below the city average.  

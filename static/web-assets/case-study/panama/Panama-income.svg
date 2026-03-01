@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="240" viewBox="0 0 360 240">
+  <g id="background">
+    <image x="0.0" y="0.0" width="360.0" height="240.0" preserveAspectRatio="xMidYMid meet" href="data:image/png;base64,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"/>
+  </g>
+  <g id="foreground">
+    <g id="Layer_1" data-name="Layer 1">
+      <text transform="translate(39.0033 64.595)" fill="#668ebd" font-variation-settings="'opsz' 14, 'wght' 700" style="font-family: InterBold; font-style: normal;">
+        <text transform="translate(39.0033 64.595)" fill="#668ebd" font-variation-settings="'opsz' 14, 'wght' 700" style="font-family: InterBold; font-style: normal;"/>
+      </text>
+      <text transform="translate(39.0033 64.595)" fill="#668ebd" font-variation-settings="'opsz' 14, 'wght' 700" style="font-family: InterBold; font-style: normal;">
+        <tspan font-size="37" style="font-weight: normal; font-style: normal;">
+          <tspan font-size="37" style="font-weight: normal; font-style: normal;"/>
+        </tspan>
+      </text>
+      <text transform="translate(39.0033 64.595)" fill="#668ebd" font-variation-settings="'opsz' 14, 'wght' 700" style="font-family: InterBold; font-style: normal;">
+        <tspan font-size="37" style="font-weight: normal; font-style: normal;">
+          <tspan x="0" y="0" style="font-weight: normal; font-style: normal;">
+            <tspan x="0" y="0" style="font-weight: normal; font-style: normal;">$102,513</tspan>
+          </tspan>
+        </tspan>
+      </text>
+      <text transform="translate(39.0033 64.595)" fill="#668ebd" font-variation-settings="'opsz' 14, 'wght' 700" style="font-family: InterBold; font-style: normal;">
+        <tspan font-size="21" style="font-weight: normal; font-style: normal;">
+          <tspan font-size="21" style="font-weight: normal; font-style: normal;"/>
+        </tspan>
+      </text>
+      <text transform="translate(39.0033 64.595)" fill="#668ebd" font-variation-settings="'opsz' 14, 'wght' 700" style="font-family: InterBold; font-style: normal;">
+        <tspan font-size="21" style="font-weight: normal; font-style: normal;">
+          <tspan x="0" y="25.2002" style="font-weight: normal; font-style: normal;">
+            <tspan x="0" y="25.2002" style="font-weight: normal; font-style: normal;">Average household income</tspan>
+          </tspan>
+        </tspan>
+      </text>
+      <text transform="translate(39.9994 186.3657)" fill="#231f20" font-size="18" font-variation-settings="'opsz' 14, 'wght' 400" style="font-family: InterRegular; font-weight: normal; font-style: normal;">
+        <text transform="translate(39.9994 186.3657)" fill="#231f20" font-size="18" font-variation-settings="'opsz' 14, 'wght' 400" style="font-family: InterRegular; font-weight: normal; font-style: normal;"/>
+      </text>
+      <text transform="translate(39.9994 186.3657)" fill="#231f20" font-size="18" font-variation-settings="'opsz' 14, 'wght' 400" style="font-family: InterRegular; font-weight: normal; font-style: normal;">
+        <tspan x="0" y="0" style="font-weight: normal; font-style: normal;">
+          <tspan x="0" y="0" style="font-weight: normal; font-style: normal;">Brossard</tspan>
+        </tspan>
+      </text>
+      <text transform="translate(39.9994 136.366)" fill="#231f20" font-size="18" font-variation-settings="'opsz' 14, 'wght' 400" style="font-family: InterRegular; font-weight: normal; font-style: normal;">
+        <text transform="translate(39.9994 136.366)" fill="#231f20" font-size="18" font-variation-settings="'opsz' 14, 'wght' 400" style="font-family: InterRegular; font-weight: normal; font-style: normal;"/>
+      </text>
+      <text transform="translate(39.9994 136.366)" fill="#231f20" font-size="18" font-variation-settings="'opsz' 14, 'wght' 400" style="font-family: InterRegular; font-weight: normal; font-style: normal;">
+        <tspan x="0" y="0" style="font-weight: normal; font-style: normal;">
+          <tspan x="0" y="0" style="font-weight: normal; font-style: normal;">Panama</tspan>
+        </tspan>
+      </text>
+      <text transform="translate(235.0002 151.6919)" fill="#231f20" font-size="18" font-variation-settings="'opsz' 14, 'wght' 400" style="font-family: InterRegular; font-weight: normal; font-style: normal;">
+        <text transform="translate(235.0002 151.6919)" fill="#231f20" font-size="18" font-variation-settings="'opsz' 14, 'wght' 400" style="font-family: InterRegular; font-weight: normal; font-style: normal;"/>
+      </text>
+      <text transform="translate(235.0002 151.6919)" fill="#231f20" font-size="18" font-variation-settings="'opsz' 14, 'wght' 400" style="font-family: InterRegular; font-weight: normal; font-style: normal;">
+        <tspan x="0" y="0" style="font-weight: normal; font-style: normal;">
+          <tspan x="0" y="0" style="font-weight: normal; font-style: normal;">$103K</tspan>
+        </tspan>
+      </text>
+      <text transform="translate(274.9997 200.8774)" fill="#231f20" font-size="18" font-variation-settings="'opsz' 14, 'wght' 400" style="font-family: InterRegular; font-weight: normal; font-style: normal;">
+        <text transform="translate(274.9997 200.8774)" fill="#231f20" font-size="18" font-variation-settings="'opsz' 14, 'wght' 400" style="font-family: InterRegular; font-weight: normal; font-style: normal;"/>
+      </text>
+      <text transform="translate(274.9997 200.8774)" fill="#231f20" font-size="18" font-variation-settings="'opsz' 14, 'wght' 400" style="font-family: InterRegular; font-weight: normal; font-style: normal;">
+        <tspan x="0" y="0" style="font-weight: normal; font-style: normal;">
+          <tspan x="0" y="0" style="font-weight: normal; font-style: normal;">$124K</tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+</svg>

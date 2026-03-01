@@ -125,7 +125,7 @@
 <!-- <svelte:window on:scroll={handleScroll} /> -->
 
 <main>
-	<Password correctPassword="catcatmeow"></Password>
+	<!-- <Password correctPassword="catcatmeow"></Password> -->
 	<!-- Full page title example -->
 	<div class="wrapper">
 		<!-- Top stays visually on top -->
@@ -238,6 +238,12 @@
 		/>
 
 		<div class="text">
+
+			<div class="caption-container" style="margin-top: 0px; margin-bottom: 60px;">
+				<p>
+					<span class="caption-source">Data sources: Statistics Canada, Environics Analytics (2024).</span>
+				</p>
+			</div>
 
 			<p>
 				Transit ridership on the LRT and in the region has risen faster than population growth since the system opened in 2019, reflecting planning decisions that encourage dense development in the core to build up a base of potential riders. But Northfield is still a car-oriented district: nearly 80% of commuters here drive. 
