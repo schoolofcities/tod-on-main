@@ -5,9 +5,6 @@
 	import { onMount, onDestroy } from "svelte";
 
 	import Logo from '$lib/LogoTop.svelte';
-	import TitleFullPage from '$lib/TitleFullPageCaseStudy.svelte';
-	import TitleHalfSplit from '$lib/TitleHalfSplit.svelte';
-	import TitleStandard from '$lib/TitleStandard.svelte';
 	import AuthorDate from '$lib/AuthorDate.svelte';
 	import ImageSingle from '$lib/ImageSingle.svelte';
 	import ImageCompare from '$lib/ImageCompare.svelte';
@@ -33,6 +30,7 @@
     import CaseStudyNote from '$lib/CaseStudyNote.svelte';
     import Recommendation from '$lib/Recommendation.svelte';
     import LogoBody from '$lib/LogoBody.svelte';
+    import TitlePage from '$lib/TitlePage.svelte';
 	const footnoteStore = createFootnoteStore();
 	const { footnotes, addFootnote } = footnoteStore;
 
@@ -156,20 +154,19 @@
 	<div class="wrapper">
 		<!-- Top stays visually on top -->
 		<div class="top" style="opacity: {topOpacity}; pointer-events: {topPointer};">
-			<TitleFullPage
+			<TitlePage
 				title="Cooksville Station"
-				topic="Case Study"
+				type="Case Study"
 				location="Mississauga, ON"
 				subtitle="How can we build complete, family-friendly communities while managing flood risk? "
-				image={topImage}
+				bgType="Image"
+				url={topImage}
 				imageOpacity=1
 				imageAltText="A photo"
 				tintColour="black"
 				tintOpacity=0.5
 				titleFontColour="var(--brandWhite)"
 				subtitleFontColour="var(--brandWhite)"
-				authorText="Author Name, Author Name, Author Name"
-				dateText="~ December, 2025"
 				secondLogo="II"
 				topOpacity={topOpacity}
 			/>
