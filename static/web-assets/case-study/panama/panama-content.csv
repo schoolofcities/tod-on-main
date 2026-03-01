@@ -1,7 +1,5 @@
-animation,image,text,arrowColour,overlay1,overlay2,menu_id,bg_fit,alt_text
-1,../web-assets/case-study/panama/ps_frame_3.png,,black,,,Menu_1,contain,
-1,../web-assets/case-study/panama/ps_frame_3.png,,black,,,,contain,alt
-1,../web-assets/case-study/panama/ps_frame_5.png,,black,,,,contain,alt
-1,../web-assets/case-study/panama/ps_frame_6.png,,black,,,,contain,alt
-1,../web-assets/case-study/panama/ps_frame_10.png,,black,,,,contain,alt
-1,../web-assets/case-study/panama/ps_frame_12.png,,black,,,,contain,alt
+"animation","image","text","arrowColour","overlay1","overlay2","menu_id","bg_fit","alt_text"
+1,"../web-assets/case-study/panama/ps_frame_3.png",,"white",,,"Menu_1","contain",
+1,"../web-assets/case-study/panama/ps_frame_3.png","The recently opened Panama Station, in the City of Brossard, is poised to be a catalyst for development in Greater Montreal.  ","black",,,,"contain","alt"
+1,"../web-assets/case-study/panama/ps_frame_7.png","It is at the centre of a master-planned transit-oriented development (TOD), unique in Canada, which calls for mid-rise density, abundant green space, and a focus on liveability in an area that is likely to experience strong market demand for residential growth in the coming decades.  ","black",,,,"contain","alt"
+1,"../web-assets/case-study/panama/ps_frame_8.png","But experience in other North American TODs shows that it is very difficult to densify suburban areas without significant attention to implementation.  ","black",,,,"contain","alt"

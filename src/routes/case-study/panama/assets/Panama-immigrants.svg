@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="240" viewBox="0 0 360 240">
+  <g id="bases">
+    <rect id="rect2" x="20" y="20" width="320" height="200" rx="20.8009" ry="20.8009" fill="#f3f2f3"/>
+  </g>
+  <g id="Layer_1" data-name="Layer 1">
+    <text transform="translate(39.0029 87.7815)" fill="#87a49e" font-family="Inter-Bold, Inter" font-variation-settings="&apos;opsz&apos; 14, &apos;wght&apos; 700" font-weight="700"><tspan font-size="37"><tspan x="0" y="0">5,279</tspan></tspan><tspan font-size="21"><tspan x="0" y="25.2002">Residents</tspan></tspan></text>
+    <g>
+      <path d="M40.928,174.2212c-1.1572,0-2.0688-1.0207-1.905-2.1662.9294-6.4969,5.9712-11.4616,12.0515-11.4616s11.1221,4.9647,12.0515,11.4616c.1639,1.1455-.7478,2.1662-1.905,2.1662h-20.293Z" fill="#87a49e" stroke="#231f20" stroke-miterlimit="10" stroke-width=".25"/>
+      <circle cx="51.0745" cy="153.5522" r="5.5553" fill="#87a49e" stroke="#231f20" stroke-miterlimit="10" stroke-width=".25"/>
+      <path d="M69.3901,174.2212c-1.1572,0-2.0688-1.0207-1.905-2.1662.9294-6.4969,5.9712-11.4616,12.0515-11.4616s11.1221,4.9647,12.0515,11.4616c.1639,1.1455-.7478,2.1662-1.905,2.1662h-20.293Z" fill="#87a49e" stroke="#231f20" stroke-miterlimit="10" stroke-width=".25"/>
+      <circle cx="79.5366" cy="153.5522" r="5.5553" fill="#87a49e" stroke="#231f20" stroke-miterlimit="10" stroke-width=".25"/>
+      <path d="M97.8523,174.2212c-1.1572,0-2.0688-1.0207-1.905-2.1662.9294-6.4969,5.9712-11.4616,12.0515-11.4616s11.1221,4.9647,12.0515,11.4616c.1639,1.1455-.7478,2.1662-1.905,2.1662h-20.293Z" fill="#87a49e" stroke="#231f20" stroke-miterlimit="10" stroke-width=".25"/>
+      <circle cx="107.9988" cy="153.5522" r="5.5553" fill="#87a49e" stroke="#231f20" stroke-miterlimit="10" stroke-width=".25"/>
+      <path d="M126.3144,174.2212c-1.1572,0-2.0688-1.0207-1.905-2.1662.9294-6.4969,5.9712-11.4616,12.0515-11.4616s11.1221,4.9647,12.0515,11.4616c.1639,1.1455-.7478,2.1662-1.905,2.1662h-20.293Z" fill="#87a49e" stroke="#231f20" stroke-miterlimit="10" stroke-width=".25"/>
+      <circle cx="136.4609" cy="153.5522" r="5.5553" fill="#87a49e" stroke="#231f20" stroke-miterlimit="10" stroke-width=".25"/>
+      <path d="M154.7765,174.2212c-1.1572,0-2.0688-1.0207-1.905-2.1662.9294-6.4969,5.9712-11.4616,12.0515-11.4616s11.1221,4.9647,12.0515,11.4616c.1639,1.1455-.7478,2.1662-1.905,2.1662h-20.293Z" fill="#87a49e" stroke="#231f20" stroke-miterlimit="10" stroke-width=".25"/>
+      <circle cx="164.923" cy="153.5522" r="5.5553" fill="#87a49e" stroke="#231f20" stroke-miterlimit="10" stroke-width=".25"/>
+      <path d="M268.6251,174.2212c-1.1572,0-2.0688-1.0207-1.905-2.1662.9294-6.4969,5.9712-11.4616,12.0515-11.4616s11.1221,4.9647,12.0515,11.4616c.1639,1.1455-.7478,2.1662-1.905,2.1662h-20.293Z" fill="#fff" stroke="#231f20" stroke-miterlimit="10" stroke-width=".25"/>
+      <circle cx="278.7716" cy="153.5522" r="5.5553" fill="#fff" stroke="#231f20" stroke-miterlimit="10" stroke-width=".25"/>
+      <g>
+        <path d="M240.1629,174.2212c-1.1572,0-2.0688-1.0207-1.905-2.1662.9294-6.4969,5.9712-11.4616,12.0515-11.4616s11.1221,4.9647,12.0515,11.4616c.1639,1.1455-.7478,2.1662-1.905,2.1662h-20.293Z" fill="#fff" stroke="#231f20" stroke-miterlimit="10" stroke-width=".25"/>
+        <circle cx="250.3094" cy="153.5522" r="5.5553" fill="#fff" stroke="#231f20" stroke-miterlimit="10" stroke-width=".25"/>
+      </g>
+      <g>
+        <path d="M211.7008,174.2212c-1.1572,0-2.0688-1.0207-1.905-2.1662.9294-6.4969,5.9712-11.4616,12.0515-11.4616s11.1221,4.9647,12.0515,11.4616c.1639,1.1455-.7478,2.1662-1.905,2.1662h-20.293Z" fill="#fff" stroke="#231f20" stroke-miterlimit="10" stroke-width=".25"/>
+        <circle cx="221.8473" cy="153.5522" r="5.5553" fill="#fff" stroke="#231f20" stroke-miterlimit="10" stroke-width=".25"/>
+      </g>
+      <g>
+        <path d="M183.2387,174.2212c-1.1572,0-2.0688-1.0207-1.905-2.1662.9294-6.4969,5.9712-11.4616,12.0515-11.4616s11.1221,4.9647,12.0515,11.4616c.1639,1.1455-.7478,2.1662-1.905,2.1662h-20.293Z" fill="#fff" stroke="#231f20" stroke-miterlimit="10" stroke-width=".25"/>
+        <circle cx="193.3852" cy="153.5522" r="5.5553" fill="#fff" stroke="#231f20" stroke-miterlimit="10" stroke-width=".25"/>
+      </g>
+      <path d="M297.0872,174.2212c-1.1572,0-2.0688-1.0207-1.905-2.1662.9294-6.4969,5.9712-11.4616,12.0515-11.4616s11.1221,4.9647,12.0515,11.4616c.1639,1.1455-.7478,2.1662-1.905,2.1662h-20.293Z" fill="#fff" stroke="#231f20" stroke-miterlimit="10" stroke-width=".25"/>
+      <circle cx="307.2337" cy="153.5522" r="5.5553" fill="#fff" stroke="#231f20" stroke-miterlimit="10" stroke-width=".25"/>
+    </g>
+    <text transform="translate(39.0035 194.6687)" fill="#87a49e" font-family="Inter-Regular, Inter" font-size="18" font-variation-settings="&apos;opsz&apos; 14, &apos;wght&apos; 400"><tspan x="0" y="0">50% are immigrants</tspan></text>
+    <text transform="translate(39.0039 53.7988)" fill="#3e3847" font-family="Inter-Regular, Inter" font-size="18" font-variation-settings="&apos;opsz&apos; 14, &apos;wght&apos; 400"><tspan x="0" y="0">800m from Panama Station</tspan></text>
+  </g>
+</svg>

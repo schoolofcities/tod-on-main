@@ -9,7 +9,7 @@
 	import ImageSingle from '$lib/ImageSingle.svelte';
 	import ImageCompare from '$lib/ImageCompare.svelte';
 	import GraphicSingle from '$lib/GraphicSingle.svelte';
-	import GraphicsMultiples from '$lib/GraphicMultiples.svelte';
+	import GraphicMultiples from '$lib/GraphicMultiples.svelte';
 	import Footer from '$lib/Footer.svelte';
 	import FadingImages from "$lib/FadingImages.svelte";
     import ScrollAnimate from '$lib/ScrollAnimate.svelte';
@@ -23,6 +23,9 @@
 
 	export let data;
 
+	import LogoBody from '$lib/LogoBody.svelte';
+	import Recommendation from '$lib/Recommendation.svelte';
+	import CaseStudyNote from '$lib/CaseStudyNote.svelte';
 	import Footnote from '$lib/Footnote.svelte';
 	import Footnotes from '$lib/Footnotes.svelte';
     import TitlePage from '$lib/TitlePage.svelte';
@@ -39,7 +42,7 @@
 
 	let scrollY = 0;
 	let innerHeight = 1;
-	let arrowColour = "white";
+	let arrowColour = "black";
 	let scrollyContent = [];
 	let textSection;
 
@@ -159,46 +162,125 @@
 
 
 	<div class="text">
-			<h1 id="Menu_2">Why this matters </h1>
-			<p>
-				McKernan-Belgravia Station illustrates how even with a forward-thinking plan, growth near high-capacity transit can underperform when land use, density, and infrastructure are not strategically aligned. 
-			</p>
-			<p>
-				Despite good transit access and a population inclined toward active, urban lifestyles, intensification has largely occurred through dispersed, low-intensity infill that has generated ongoing concerns about compatibility with the surrounding neighbourhood. 
-			</p>
-			<p>
-				This case demonstrates that density alone does not guarantee ridership or community benefit: transit-oriented outcomes depend on strategic infill development that is supported by active transportation, reliable transit, and essential infrastructure. 
-			</p>
 
-			<h2 id="Menu_3">
-				Neighbourhood overview 
-			</h2>
-			<p id="Menu_4">
-				<a href="https://measuringmainstreets.ca/transit-map/" target="_blank">McKernan-Belgravia Station</a> is located on the Capital Line, Edmonton’s oldest LRT line and its busiest corridor.1 The line plays a central role in the city’s transit network, connecting major destinations including the University of Alberta and downtown, and is supported by a high-frequency transit network in the core of the city.2 
-			</p>
-			<p id="Menu_5">
-				Edmonton Transit Service (ETS) has seen strong post-pandemic recovery, with 61.6 million riders in 2024 – a 15.2% increase from the previous year.3 Ridership reached 52.3 rides per capita,4 and 75% of riders report satisfaction with ETS.5 
-			</p>
+		<p>
+			This case demonstrates that permissive zoning and the presence of a transit station alone does not guarantee density – or the ridership and community benefits that density enables. Those outcomes depend on deliberate infill and the elements that make transit-oriented living work: active transportation, reliable transit, and essential infrastructure. 
+		</p>
+		
+		<CaseStudyNote/>
+
+		<h2 id="Menu_2">
+			Neighbourhood overview 
+		</h2>
+		<p>
+			McKernan-Belgravia Station is located on the busiest corridor of Capital Line, Edmonton’s oldest light rail transit (LRT) line and its busiest corridor.1 The line plays a central role in the city’s transit network, connecting major destinations including the University of Alberta and downtown, and is supported by a high-frequency transit network in the city’s core.2 Edmonton Transit Service (ETS) has seen strong post-pandemic recovery, with 61.6 million riders in 2024 – a 15.2% increase from the previous year.3  
+		</p>
+		<p>
+			Within this transit-rich context, McKernan-Belgravia is a compact and diverse central neighbourhood shaped by its proximity tolocation between two University of Alberta campuses. As a mature residential neighbourhooddistrict, the area requires a strategic, sensitive approach to density – one that layers varied housing forms and essential community amenities within walking distance of the station while preserving the established residential core.   
+		</p>
+
+	</div>
+
+	<GraphicSingle
+		svg720={"../web-assets/case-study/mckernan-belgravia/McKernanBelgravia-720map.svg"}
+		svg360={"../web-assets/case-study/mckernan-belgravia/McKernanBelgravia-360map.svg"}
+	/>
+
+	<GraphicMultiples
+		svgPaths={[
+			"../web-assets/case-study/mckernan-belgravia/Mckernanbelgravia-residents.svg",
+			"../web-assets/case-study/mckernan-belgravia/Mckernanbelgravia-housing.svg",
+			"../web-assets/case-study/mckernan-belgravia/Mckernanbelgravia-income.svg",
+			"../web-assets/case-study/mckernan-belgravia/Mckernanbelgravia-commuters.svg"
+		]}
+	/>
+
+	<div class="text">
+
+		<div class="caption-container" style="margin-top: 0px; margin-bottom: 60px;">
 			<p>
-				Within this transit-rich context, McKernan-Belgravia is a compact and diverse central neighbourhood shaped by its proximity to two University of Alberta campuses. As a mature residential neighbourhood, the area requires a strategic, sensitive approach to density – one that layers varied housing forms and essential community amenities within walking distance of the station while preserving the established residential core.    
+				<span class="caption-source">Data sources: Statistics Canada, Environics Analytics (2024).</span>
 			</p>
-			<p>
-				The neighbourhood’s residents are highly educated and relatively affluent. More than 60% hold a university degree, contributing to an average household income of approximately $105,000. The population is markedly youthful, with 44% of residents between the ages of 15-34, reflecting the area’s strong connection to the nearby university.  
-			</p>
-			<p>
-				Household composition is an almost even split between family and non-family households.  While single-detached homes account for 41% of all dwellings and visually define much of the streetscape, apartment dwellings and duplexes form the majority of the housing stock at 56%. Over half of all dwellings are rented, and 70% of households are made up of one or two people. Although driving remains the largest commuter mode at 24%, well below the national average of 80.9%.,6 this community demonstrates high transit potential: the rate of walking to work is nearly six times the city average, reflecting a preference for active, urban lifestyles.  
-			</p>
-			<p>
-				Despite these strengths, gaps in local services remain. CUI’s Complete Communities tool shows that the station area lacks key community-serving amenities, including community centres, libraries, and convenience stores. Access to supermarkets, pharmacies, and restaurants also lag behind projected demand, increasing pressure on the public realm to keep pace with density that has recently appeared.  
-			</p>
-			<p>
-				Realizing the potential of the station area will require strategic infill and carefully planned supportive infrastructure to boost ridership and foster a destination-focused, complete community. 
-			</p>
+		</div>
+
+		<p>
+			The neighbourhood’s residents are highly educated and relatively affluent. More than 60% hold a university degree, contributing to an average household income of approximately $16005,000. The population is markedly young, with 44% of residents aged 15-34, reflecting the area’s strong connection to the nearby university.  
+		</p>
+		<p>
+			Household composition is an almost even split between family and non-family households. While single-detached homes account for 41% of all dwellings and visually define much of the streetscape, apartment dwellings and duplexes form the majority of the housing stock, at 56%. Over half of all dwellings are rented, and 70% of households are made up of one or two people. Although driving remains the largest commuter mode at 24% – well belowabove the national average of 810.9%4 – this community demonstrates high transit potential: the rate of walking to work is nearly six times the city average, reflecting a preference for active, urban lifestyles.  
+		</p>
+		<p>
+			Despite these strengths, gaps in local services remain. The station area lacks key community-serving amenities, including community centres, libraries, and convenience stores. Access to supermarkets, pharmacies, and restaurants also lags behind projected demand, increasing pressure on the public realm to keep pace with the gentle density that has recently appeared. Realizing the potential of the station area will require strategic infill and carefully planned supportive infrastructure to boost ridership and foster a destination-focused, complete community.   
+		</p>
+
+		<h1 id="Menu_3">
+			McKernan-Belgravia's current trajectory
+		</h1>
+
+		<p>
+			text
+		</p>
+
+
+		<h1 id="Menu_4">
+			Optimized scenario: Aligning growth and infrastructure to incentivize transit use 
+		</h1>
+
+		<p>
+			Our optimized scenario responds to a core challenge in McKernan-Belgravia: growth has not been sufficiently integrated or aligned with the intent of the predevelopmentCity’s plan. Recent development has raised concerns that housing quantity is being prioritized over quality. Small-scale infill – such as eight-plexes on standard lots – has prompted questions about compatibility and tree canopy loss.  
+		</p>
+
+		<p>
+			In an optimized scenario, deliberate attention to building scale, setbacks, and massing near existing homes could improve social acceptance. Supporting measures include addressing common resident concerns such as tree canopy preservation, enhanced public amenities, and traffic and waste management improvements. 
+		</p>
+
+	</div>
+
+	<ImageCompare
+		imageURL1="../web-assets/case-study/mckernan-belgravia/current-trajectory.png"
+		caption1=""
+		source1=""
+		buttonLabel1="Current trajectory"
+		imageURL2="../web-assets/case-study/mckernan-belgravia/optimized-scenario.png"
+		caption2=""
+		source2=""
+		buttonLabel2="Optimized scenario"
+		maxWidth="900px"
+		link='No'
+	/>
+
+	<GraphicSingle
+		svg720={"../web-assets/case-study/cooksville/render-legend-720.svg"}
+		svg360={"../web-assets/case-study/cooksville/render-legend-360.svg"}
+	/>
+
+	<div class="text">	
+
+		<p>
+			Central to the optimized scenario is the creation of a destination-focused station area. Concentrating development where transit access is strongest allows density to function as a catalyst for amenities, activity, and daily destinations. This approach also addresses the local reality that 114 Street still functions as a high-volume vehicular corridor, often used as a bypass route by non-residents.  
+		</p>
+
 	</div>
 
 	<!-- <Footnotes footnotes={footnotes} /> -->
 
-	<Footer />
+	<div class="text">
+	
+			<div class="line-break"></div>
+
+			<!-- <AuthorDate credits={credits} date="March 2026"></AuthorDate> -->
+
+			<div class="line-break"></div>
+	
+		</div>
+
+	<!-- <Footnotes footnotes={footnotes} /> -->
+
+	<div class="text">
+		<div class="line-break"></div>
+		<LogoBody/>
+		<div class="line-break"></div>
+	</div>
 
 </main>
 

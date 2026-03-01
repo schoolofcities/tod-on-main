@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="240" viewBox="0 0 360 240">
+  <g id="bases">
+    <rect id="rect2" x="20" y="20" width="320" height="200" rx="20.8009" ry="20.8009" fill="#f3f2f3"/>
+    <rect id="rect2-2" data-name="rect2" x="20" y="20" width="320" height="200" rx="20.8009" ry="20.8009" fill="#f3f2f3"/>
+  </g>
+  <g id="Layer_1" data-name="Layer 1">
+    <g>
+      <path d="M249.7912,157.8716c-.0003-1.3154.5791-2.5642,1.5838-3.4133l15.6367-13.4029c1.6651-1.4072,4.1027-1.4072,5.7677,0l15.6367,13.4029c1.0047.8491,1.5841,2.0978,1.5838,3.4133v20.1044c0,2.4674-2.0002,4.4676-4.4676,4.4676h-31.2735c-2.4674,0-4.4676-2.0002-4.4676-4.4676v-20.1044Z" fill="none" stroke="#010101" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      <path d="M276.5971,182.4437v-17.8706c0-1.2337-1.0001-2.2338-2.2338-2.2338h-8.9353c-1.2337,0-2.2338,1.0001-2.2338,2.2338v17.8706" fill="none" stroke="#010101" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+    </g>
+    <g>
+      <path d="M40,157.8716c-.0003-1.3154.5791-2.5642,1.5838-3.4133l15.6367-13.4029c1.6651-1.4072,4.1027-1.4072,5.7677,0l15.6367,13.4029c1.0047.8491,1.5841,2.0978,1.5838,3.4133v20.1044c0,2.4674-2.0002,4.4676-4.4676,4.4676h-31.2735c-2.4674,0-4.4676-2.0002-4.4676-4.4676v-20.1044Z" fill="#b17eb7" stroke="#010101" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      <path d="M66.8058,182.4437v-17.8706c0-1.2337-1.0001-2.2338-2.2338-2.2338h-8.9353c-1.2337,0-2.2338,1.0001-2.2338,2.2338v17.8706" fill="#f2f2f3" stroke="#231f20" stroke-miterlimit="10" stroke-width=".5"/>
+    </g>
+    <g>
+      <path d="M92.4478,157.8716c-.0003-1.3154.5791-2.5642,1.5838-3.4133l15.6367-13.4029c1.6651-1.4072,4.1027-1.4072,5.7677,0l15.6367,13.4029c1.0047.8491,1.5841,2.0978,1.5838,3.4133v20.1044c0,2.4674-2.0002,4.4676-4.4676,4.4676h-31.2735c-2.4674,0-4.4676-2.0002-4.4676-4.4676v-20.1044Z" fill="#b17eb7" stroke="#010101" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      <path d="M119.2537,182.4437v-17.8706c0-1.2337-1.0001-2.2338-2.2338-2.2338h-8.9353c-1.2337,0-2.2338,1.0001-2.2338,2.2338v17.8706" fill="#f2f2f3" stroke="#231f20" stroke-miterlimit="10" stroke-width=".5"/>
+    </g>
+    <g>
+      <path d="M144.8956,157.8716c-.0003-1.3154.5791-2.5642,1.5838-3.4133l15.6367-13.4029c1.6651-1.4072,4.1027-1.4072,5.7677,0l15.6367,13.4029c1.0047.8491,1.5841,2.0978,1.5838,3.4133v20.1044c0,2.4674-2.0002,4.4676-4.4676,4.4676h-31.2735c-2.4674,0-4.4676-2.0002-4.4676-4.4676v-20.1044Z" fill="#b17eb7" stroke="#010101" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      <path d="M171.7015,182.4437v-17.8706c0-1.2337-1.0001-2.2338-2.2338-2.2338h-8.9353c-1.2337,0-2.2338,1.0001-2.2338,2.2338v17.8706" fill="#f2f2f3" stroke="#231f20" stroke-miterlimit="10" stroke-width=".5"/>
+    </g>
+    <line x1="225.4886" y1="187.5645" x2="225.4886" y2="194.4455" fill="none" stroke="#bb90c2" stroke-miterlimit="10" stroke-width="2.5"/>
+    <text transform="translate(39.0039 64.593)" fill="#b27fb8" font-family="Inter-Bold, Inter" font-variation-settings="&apos;opsz&apos; 14, &apos;wght&apos; 700" font-weight="700"><tspan font-size="37"><tspan x="0" y="0">60.5%</tspan></tspan><tspan font-size="21"><tspan x="0" y="25.2002">of households own</tspan></tspan></text>
+    <text transform="translate(40 207.6534)" fill="#bb90c2" font-family="InterItalic-MediumItalic, Inter" font-size="14" font-style="italic" font-variation-settings="&apos;opsz&apos; 14, &apos;wght&apos; 500" font-weight="500"><tspan x="0" y="0">67% own in Brossard</tspan></text>
+    <g>
+      <path d="M199.3501,181.7072c-1.2101-.7998-2.01-2.1699-2.01-3.73v-20.1099c0-1.3101.58-2.5601,1.5898-3.4102l.4202-.3599" fill="#b17eb7" stroke="#010101" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      <path d="M224.15,164.5773v17.8699h-13.4v-17.8699c0-1.24,1-2.24,2.23-2.24h8.9401c1.23,0,2.23,1,2.23,2.24Z" fill="none" stroke="#010101" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      <path d="M199.3501,154.0974l15.21-13.04c1.6699-1.4102,4.11-1.4102,5.77,0l15.6399,13.3999c1,.8501,1.5801,2.1001,1.5801,3.4102v20.1099c0,2.47-2,4.47-4.47,4.47h-8.9301v-17.8699c0-1.24-1-2.24-2.23-2.24h-8.9401c-1.23,0-2.23,1-2.23,2.24v17.8699h-8.9399c-.91,0-1.75-.2698-2.46-.74" fill="none" stroke="#010101" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+    </g>
+    <line x1="40" y1="191.005" x2="225.4886" y2="191.005" fill="none" stroke="#bb90c2" stroke-miterlimit="10" stroke-width="2.5"/>
+  </g>
+</svg>

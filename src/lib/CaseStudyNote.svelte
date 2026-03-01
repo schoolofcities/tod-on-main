@@ -17,7 +17,7 @@
 		padding: 0px;
 		margin: 0px;
 		font-family: PoppinsRegular;
-		line-height: 28px;;
+		line-height: 27px;;
 		font-size: 16px;
 	}
 
@@ -26,14 +26,12 @@
 	}
 
 	@media (max-width: 500px) {
-		.style-3 {
-			padding: 18px; 
-			border-radius: 18px;
+		div {
+			padding: 20px;
 		}
-
-		.style-3 p {
-			font-size: 14px;
-			line-height: 23px;
+		p {
+			font-size: 12px;
+			line-height: 21px;
 		}
 	}
 

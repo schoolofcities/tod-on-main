@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="360"
+   height="240"
+   viewBox="0 0 360 240"
+   version="1.1"
+   id="svg9"
+   sodipodi:docname="Mckernanbelgravia-income.svg"
+   inkscape:version="1.4.2 (1:1.4.2+202505120738+ebf0e940d0)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs9" />
+  <sodipodi:namedview
+     id="namedview9"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.7"
+     inkscape:cx="135.88235"
+     inkscape:cy="155.88235"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1" />
+  <g
+     id="bases">
+    <rect
+       id="rect2"
+       x="20"
+       y="20"
+       width="320"
+       height="200"
+       rx="20.8009"
+       ry="20.8009"
+       fill="#f3f2f3" />
+  </g>
+  <g
+     id="Layer_1"
+     data-name="Layer 1">
+    <text
+       transform="translate(39.0033 64.595)"
+       fill="#6f8db9"
+       font-family="Inter-Bold, Inter"
+       font-variation-settings="'opsz' 14, 'wght' 700"
+       font-weight="700"
+       id="text4"><tspan
+         font-size="37"
+         id="tspan2"><tspan
+           x="0"
+           y="0"
+           id="tspan1">$158,740</tspan></tspan><tspan
+         font-size="21"
+         id="tspan4"><tspan
+           x="0"
+           y="25.2002"
+           id="tspan3">Average household income</tspan></tspan></text>
+    <text
+       transform="translate(39.9994 186.3657)"
+       fill="#221f20"
+       font-family="Inter-Regular, Inter"
+       font-size="18"
+       font-variation-settings="'opsz' 14, 'wght' 400"
+       id="text5"><tspan
+         x="0"
+         y="0"
+         id="tspan5">Edmonton</tspan></text>
+    <text
+       transform="translate(39.9999,136.366)"
+       fill="#221f20"
+       font-family="Inter-Regular, Inter"
+       font-size="18px"
+       font-variation-settings="'opsz' 14, 'wght' 400"
+       id="text6"><tspan
+         x="0"
+         y="0"
+         id="tspan6">McKernan-Belgravia</tspan></text>
+    <text
+       transform="translate(275.0002 151.6919)"
+       fill="#221f20"
+       font-family="Inter-Regular, Inter"
+       font-size="18"
+       font-variation-settings="'opsz' 14, 'wght' 400"
+       id="text7"><tspan
+         x="0"
+         y="0"
+         id="tspan7">$159K</tspan></text>
+    <text
+       transform="translate(223.8528 200.8774)"
+       fill="#221f20"
+       font-family="Inter-Regular, Inter"
+       font-size="18"
+       font-variation-settings="'opsz' 14, 'wght' 400"
+       id="text8"><tspan
+         x="0"
+         y="0"
+         id="tspan8">$123K</tspan></text>
+    <rect
+       x="40"
+       y="140"
+       width="230"
+       height="10"
+       rx="1.7723"
+       ry="1.7723"
+       fill="#6f8db9"
+       id="rect8" />
+    <rect
+       x="40"
+       y="190"
+       width="178.8532"
+       height="10"
+       rx="1.7723"
+       ry="1.7723"
+       fill="#6f8db9"
+       id="rect9" />
+  </g>
+</svg>
