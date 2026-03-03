@@ -256,14 +256,15 @@ h1 {
 }
 
 .text h1 {
-	border-bottom: solid 2px var(--brandGray90)
+	border-bottom: solid 2px var(--brandGray90);
+	font-size: 37px;
 }
 
 h2 {
 	text-align: left;
 	font-family: PoppinsSemiBold;
 	font-weight: normal;
-	font-size: 30px;
+	font-size: 29px;
 	margin-top: 50px;
 	margin-bottom: 0px;
 	color: var(--brandBlack);
@@ -395,8 +396,8 @@ li {
 	text-align: left;
 	padding-top: 2px;
 	padding-bottom: 2px;
-	font-size: 17px;
-	line-height: 22px;
+	font-size: 19px;
+	line-height: 33px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
@@ -527,7 +528,7 @@ li {
 	text-rendering: optimizeLegibility;
 }
 
-.callout .highlight {
+.highlight {
 	background-color: #ffdcc4; 
 	padding-left: 3px; 
 	padding-right: 3px;

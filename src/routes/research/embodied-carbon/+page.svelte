@@ -34,7 +34,7 @@
 
 <svelte:head>
 
-	<title>Embodied Carbon | School of Cities</title>
+	<title>TOD Research - Embodied Carbon | School of Cities</title>
 
 	<!-- <meta name="description" content="Repository of design and web components for building data stories, visualizations, maps, and other custom web projects" />
 	<meta name="author" content="School of Cities">
@@ -68,7 +68,7 @@
 
 <main>
 
-	<Password correctPassword="catcatmeow"></Password>
+	<!-- <Password correctPassword="catcatmeow"></Password> -->
 
 	<!-- <TitleVideo
 		title="Embodied Carbon in Different Development Patterns and Built Forms "
@@ -81,17 +81,17 @@
 		subtitleFontColour="var(--brandWhite)"
 		logoType = 'White';
 	/> -->
-	<TitlePage
+	<!-- <TitlePage
 		title="Embodied Carbon in Different Development Patterns and Built Forms "
 		type="Research"
 		bgType="Video"
-		url="/tod-on-main/research/embodied-carbon/skylineVideo.mp4"
+		url="/tod-on-main/web-assets/research/embodied-carbon/skylineVideo.mp4"
 		videoSpeed={0.67}
 		videoOpacity={0.8}
 		titleFontColour="var(--brandWhite)"
 		subtitleFontColour="var(--brandWhite)"
 		logoType = 'White';
-	/>
+	/> -->
 
 
 	<div class="text">
@@ -103,44 +103,35 @@
 
 	</div>
 
-	<!-- <ImageSingle
-		imageURL={imageBus}
-		caption=""
-		source='Photo by <a href="https://unsplash.com/@json_pix?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason Ng</a> on <a href="https://unsplash.com/photos/a-red-and-white-bus-parked-on-the-side-of-a-street-bm5UpO1_y2w?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.'
-		altText=""
-		maxWidth="680px"
-		link="No"
-	/> -->
+	
 
 	<div class="text">
 		<h2>
 			Why does this matter?
 		</h2>
 		<p>
-			The concept of embodied carbon considers the greenhouse gas (GHG) impacts of development throughout its life cycle, including the emissions generated through upstream processes such as raw material extraction, manufacturing, transportation to site, and onsite energy use during construction.1 
+			The concept of embodied carbon considers the greenhouse gas (GHG) impacts of development throughout its life cycle, including the emissions generated through upstream processes such as raw material extraction, manufacturing, transportation to site, and onsite energy use during construction. 
 		</p>
 		<p>	
-			This research evaluates the embodied GHG emissions from proposed buildings in five case study scenarios of optimized, transit-oriented development (“optimized”), and compares these emissions to a scenario that reflects current development patterns (the “current trajectory”).  
+			This research evaluates the embodied GHG emissions from proposed buildings in five case study scenarios of optimized, transit-oriented development (“optimized”), and compares these emissions to a scenario that reflects current development patterns (the “current trajectory”).
 		</p>
 		<p>	
-			Because embodied GHG emissions occur before buildings are operational, they have immediate climate impacts. The following examples demonstrate how planning decisions shape the carbon impacts of urban growth. They also highlight opportunities to increase density while reducing emissions to help address both the climate and housing crises.   
+			Because embodied GHG emissions occur before buildings are operational, they have immediate climate impacts. The following examples demonstrate how planning decisions shape the carbon impacts of urban growth. They also highlight opportunities to increase density while reducing emissions to help address both the climate and housing crises.      
 		</p>
 		<GraphicSingle
-			svg720={"../research/embodied-carbon/embodied-carbon-summary-720.svg"}
-			svg360={"../research/embodied-carbon/embodied-carbon-summary-720.svg"}
+			svg720={"../web-assets/research/embodied-carbon/embodied-carbon-graphic-720.svg"}
+			svg360={"../web-assets/research/embodied-carbon/embodied-carbon-graphic-360.svg"}
 		/>
 		<h2>
 			Methodology
 		</h2>
 		<p>
-			This study draws on a <a href="https://zenodo.org/records/7850125" target="_blank">University of Toronto database</a> that tracks the materials used in residential buildings and their associated embodied GHG emissions.2 We used it to simulate the embodied GHG emissions of new buildings under both the current trajectory and optimized scenarios, capturing variation across individual buildings and development patterns
+			This study draws on a <a href="https://zenodo.org/records/7850125" target="_blank">University of Toronto database</a> that tracks the materials used in residential buildings and their associated embodied GHG emissions.2 We used it to simulate the embodied GHG emissions of new buildings under both the current trajectory and optimized scenarios, capturing variation across individual buildings and development patterns. 
 		</p>
 	</div>
 
-	<!-- IMAGE SCHEMATIC Transport Social Exclusion -->
 
-	
 
-	<!-- <Footer /> -->
+
 
 </main>
