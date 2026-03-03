@@ -413,7 +413,7 @@ def process_svg(input_svg_path, output_svg_path, font_map):
 from pathlib import Path
 
 def main():
-	folder = "case-study/mckernan-belgravia"
+	folder = "research/transportation-equity"
 	input_dir = "../routes/" + folder + "/assets"  
 	output_dir = "../../static/web-assets/"  + folder
 
