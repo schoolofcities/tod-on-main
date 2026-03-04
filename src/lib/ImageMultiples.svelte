@@ -1,6 +1,8 @@
 <script>
+	import "../assets/global-styles.css"
 	export let images = []; // Array of objects containing image urls, caption text in markdown, alt text
 	export let mainCaption = null;
+	export let mainSource = null;
 	export let matchWidth = true;
 	export let matchHeight = true;
 	export let imageFit = "cover"; // object-fit properties for images
@@ -52,25 +54,52 @@
 	});
 </script>
 
-<div class="img-grid {layoutClass}" bind:this={container}>
-	{#each images as image}
-		<div>
-			<div class="img-box {matchWidth ? "match-width" : ""} {matchHeight ? "match-height" : ""}">
-				<img src={image.url} alt={image.alt} style:object-fit={imageFit}/>
+<div class="img-container">
+	<div class="img-grid {layoutClass}" bind:this={container}>
+		{#each images as image}
+			<div>
+				<div class="img-box {matchWidth ? "match-width" : ""} {matchHeight ? "match-height" : ""}">
+					<img src={image.url} alt={image.alt} style:object-fit={imageFit}/>
+				</div>
+				{#if image.caption}
+					<p>
+						<span class="caption-text">{image.caption}</span>
+					</p>
+				{/if}
 			</div>
-			<p>{image.caption}</p>
-		</div>
-	{/each}
+		{/each}
+
+	</div>
 	
-	{#if mainCaption}
-		<p>{@html marked(mainCaption)}</p>
+	{#if mainCaption || mainSource}
+		<div class="caption-container">
+			<p>
+				{#if mainCaption}
+					<span class="caption-text">{@html mainCaption}</span>
+				{/if}
+				{#if mainSource}
+					<span class="caption-source">{@html mainSource}</span>
+				{/if}
+			</p>
+		</div>
 	{/if}
 </div>
 
 <style>
+	.img-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 auto;
+		padding-top: 10px;
+		padding-bottom: 0px;
+		margin-bottom: 30px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
 	.img-grid {
 		display: flex;
-		/* flex-wrap: wrap; */
 		justify-content: center;
 		gap: 10px;
 		height: fit-content;

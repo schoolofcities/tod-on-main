@@ -83,12 +83,6 @@
 	let scrollyContent = [];
 	let textSection;
 
-	// replace url with applicable content csv
-
-	let checkTextShown = () => {
-
-	}
-
 	onMount(() => {
 		textSection = document.getElementById("top-text")
 		innerHeight = window.innerHeight;
