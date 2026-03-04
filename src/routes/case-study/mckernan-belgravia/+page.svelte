@@ -62,7 +62,7 @@
 	const credits = [
 		{ role:"Research and writing", names:"Sarah Chan, Kathryn Exon Smith, Anika Reisha Taboy"},
 		{ role:"Architectural renderings", names:"Daniel Lam, Phat Le"},
-		{ role:"Maps and data visualization", names:"Jeff Allen, Polina Gorn, Isabeaux Graham"},
+		{ role:"Maps and data visualization", names:"Isabeaux Graham, Jeff Allen"},
 		{ role:"Web development", names:"Mieko Yao, Jeff Allen"},
 		{ role:"Additional contributors", names:"An Pham, Carrie Zeng"}
 	]
@@ -222,7 +222,7 @@
 			The neighbourhood’s residents are highly educated and relatively affluent. More than 60% hold a university degree, contributing to an average household income of approximately $160,000. The population is markedly young, with 44% of residents aged 15-34, reflecting the area’s strong connection to the nearby university. 
 		</p>
 		<p>
-			Household composition is an almost even split between family and non-family households. While single-detached homes account for 41% of all dwellings and visually define much of the streetscape, apartment dwellings and duplexes form the majority of the housing stock, at 56%. Over half of all dwellings are rented, and 70% of households are made up of one or two people. Although driving remains the largest commuter mode at about 56% – well below the national average of 8<Footnote id={addFootnote(fns[2])}/>% – this community demonstrates high transit potential: the rate of walking to work is nearly si times the city average, reflecting a preference for active, urban lifestyles. 
+			Household composition is an almost even split between family and non-family households. While single-detached homes account for 41% of all dwellings and visually define much of the streetscape, apartment dwellings and duplexes form the majority of the housing stock, at 56%. Over half of all dwellings are rented, and 70% of households are made up of one or two people. Although driving remains the largest commuter mode at about 56% – well below the national average of 8%<Footnote id={addFootnote(fns[2])}/> – this community demonstrates high transit potential: the rate of walking to work is nearly si times the city average, reflecting a preference for active, urban lifestyles. 
 		</p>
 		<p>
 			Despite these strengths, gaps in local services remain. The station area <a href="https://measuringmainstreets.ca/tools/complete-communities" target="_blank">lacks key community-serving amenities</a>, including community centres, libraries, and convenience stores. Access to supermarkets, pharmacies, and restaurants also lags behind projected demand, increasing pressure on the public realm to keep pace with the gentle density that has recently appeared. Realizing the potential of the station area will require strategic infill and carefully planned supportive infrastructure to boost ridership and foster a destination-focused, complete community. 
@@ -245,7 +245,7 @@
 		imageURL="../web-assets/case-study/mckernan-belgravia/redevelopment_plan.jpg"
 		source={"<a href='https://webdocs.edmonton.ca/infraplan/plans_in_effect/McKernan-Belgravia_Station_ARP_Consolidation.pdf' target='_blank'>City of Edmonton, 2024</a>."}
 		caption={"The City's vision for growth in the McKernan-Belgravia Station Area, shown here in their Redevelopment Plan, envisions medium-scale density along major corridors."}
-		maxWidth="1080px"
+		maxWidth="680px"
 		link='No'
 	/>
 
@@ -306,7 +306,7 @@
 		imageURL={"../web-assets/case-study/mckernan-belgravia/lrt_station.jpg"}
 		source={"<a href='https://commons.wikimedia.org/wiki/File:McKernan_Belgravia_LRT_Station_(3474530058).jpg' target='_blank'>Mack Male, 2009</a>."}
 		caption={"McKernan-Belgravia Station in 2009, the year it opened as part of Edmonton's Capital Line extension."}
-		maxWidth="1080px"
+		maxWidth="680px"
 		link='No'
 	/>		
 
@@ -332,7 +332,7 @@
 		imageURL={"../web-assets/case-study/mckernan-belgravia/housing_accelerator.jpg"}
 		source={"<a href='https://www.edmonton.ca/programs_services/housing/housing-accelerator-fund' target='_blank'>City of Edmonton, 2024</a>."}
 		caption={"Medium-density rowhouses on large corner lots, like those pictured here, can help to increase density around transit and support amenities and infrastructure."}
-		maxWidth="1080px"
+		maxWidth="680px"
 		link='No'
 	/>
 
@@ -341,7 +341,7 @@
 		imageURL={"../web-assets/case-study/mckernan-belgravia/grovenor.jpg"}
 		source={"<a href='https://www.edmonton.ca/sites/default/files/public-files/assets/Neighbourhoods/NeighbourhoodProfile_Grovenor.pdf' target='_blank'>City of Edmonton, 2021</a>."}
 		caption={"The Grovenor neighbourhood in Edmonton provides examples of duplex and low-rise development in a mature setting."}
-		maxWidth="1080px"
+		maxWidth="680px"
 		link='No'
 	/>
 
