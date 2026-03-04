@@ -33,10 +33,19 @@
 	const { footnotes, addFootnote } = footnoteStore;
 
 	const fns = [
-		'<a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710015901" target="_blank">https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710015901</a>',
-		'<a href="https://climateinstitute.ca/wp-content/uploads/2024/09/Fact-sheet_-Floods_CanadianClimateInstitute.pdf " target="_blank">https://climateinstitute.ca/wp-content/uploads/2024/09/Fact-sheet_-Floods_CanadianClimateInstitute.pdf</a>',
-		'Link back to Prentiss',
-		'Young Families and High-Rise: Towards Inclusive Vertical Family Housing',
+		'<a href="" target="_blank"></a>',
+		'<a href="" target="_blank"></a>',
+		'<a href="" target="_blank"></a>',
+		'<a href="" target="_blank"></a>',
+		'<a href="" target="_blank"></a>',
+		'<a href="" target="_blank"></a>',
+		'<a href="" target="_blank"></a>',
+		'<a href="" target="_blank"></a>',
+		'<a href="" target="_blank"></a>',
+		'<a href="" target="_blank"></a>',
+		'<a href="" target="_blank"></a>',
+		'<a href="" target="_blank"></a>',
+		'<a href="" target="_blank"></a>',
 		'<a href="" target="_blank"></a>'
 	];
 
@@ -119,7 +128,7 @@
 				title="McKernan-Belgravia Station"
 				type="Case Study"
 				location="Edmonton, AB"
-				subtitle="How can we build infill in a diverse community with strategic infrastructure investments to support high-capacity transit ridership?"
+				subtitle="How can we build infill in a mature community with strategic infrastructure investments to support high-capacity transit ridership?"
 				bgType="Image"
 				url={topImage}
 				imageOpacity=1
@@ -164,7 +173,7 @@
 	<div class="text">
 
 		<p>
-			This case demonstrates that permissive zoning and the presence of a transit station alone does not guarantee density – or the ridership and community benefits that density enables. Those outcomes depend on deliberate infill and the elements that make transit-oriented living work: active transportation, reliable transit, and essential infrastructure. 
+			This case demonstrates that permissive zoning and the presence of a transit station alone do not guarantee density – or the ridership and community benefits that density enables. Those outcomes depend on deliberate infill and the elements that make transit-oriented living work: active transportation, reliable transit, and essential infrastructure
 		</p>
 		
 		<CaseStudyNote/>
@@ -173,7 +182,7 @@
 			Neighbourhood overview 
 		</h2>
 		<p>
-			McKernan-Belgravia Station is located on the busiest corridor of Capital Line, Edmonton’s oldest light rail transit (LRT) line and its busiest corridor.1 The line plays a central role in the city’s transit network, connecting major destinations including the University of Alberta and downtown, and is supported by a high-frequency transit network in the city’s core.2 Edmonton Transit Service (ETS) has seen strong post-pandemic recovery, with 61.6 million riders in 2024 – a 15.2% increase from the previous year.3  
+			<a href="https://measuringmainstreets.ca/transit-map/" target="_blank">McKernan-Belgravia Station</a> is located on the busiest corridor of Capital Line, Edmonton’s oldest light rail transit (LRT) line.  The line plays a central role in the city’s transit network, connecting major destinations including the University of Alberta and downtown, and is supported by a high-frequency transit network in the city’s core.  Edmonton Transit Service (ETS)  has seen strong post-pandemic recovery, with 61.6 million riders in 2024 – a 15.2% increase from the previous year.  
 		</p>
 		<p>
 			Within this transit-rich context, McKernan-Belgravia is a compact and diverse central neighbourhood shaped by its proximity tolocation between two University of Alberta campuses. As a mature residential neighbourhooddistrict, the area requires a strategic, sensitive approach to density – one that layers varied housing forms and essential community amenities within walking distance of the station while preserving the established residential core.   

@@ -1,6 +1,5 @@
 animation,image,text,arrowColour,overlay1,overlay2,menu_id,bg_fit,alt_text
 1,../web-assets/case-study/mckernan-belgravia/mb_frame_3.png,,black,,,Menu_1,contain,
-1,../web-assets/case-study/mckernan-belgravia/mb_frame_3.png,Arbutus Station is a case study for ambitious transit-oriented development in well-established neighbourhoods. ,black,,,,contain,alt
-1,../web-assets/case-study/mckernan-belgravia/mb_frame_4.png,"This area has ample naturally occurring affordable housing and a strong City plan, but implementation risks uneven change, ",black,,,,contain,alt
-1,../web-assets/case-study/mckernan-belgravia/mb_frame_5.png,"Our optimized scenario focuses growth along major corridors, protecting existing contexts while supporting transit and growth. ",black,,,,contain,alt
-1,../web-assets/case-study/mckernan-belgravia/mb_frame_7.png,"Our optimized scenario focuses growth along major corridors, protecting existing contexts while supporting transit and growth. ",black,,,,contain,alt
+1,../web-assets/case-study/mckernan-belgravia/mb_frame_3.png,"McKernan-Belgravia Station illustrates how even with a forward-thinking municipal plan, growth near high-capacity transit can underperform when land use, density, and infrastructure are not strategically aligned.�",black,,,,contain,alt
+1,../web-assets/case-study/mckernan-belgravia/mb_frame_7.png,"The station area has good transit access and a population inclined toward active, urban lifestyles.",black,,,,contain,alt
+1,../web-assets/case-study/mckernan-belgravia/mb_frame_9.png,"However, recent development has largely been dispersed, low-intensity infill that has generated ongoing concerns about compatibility with the surrounding neighbourhood.�",black,,,,contain,alt
