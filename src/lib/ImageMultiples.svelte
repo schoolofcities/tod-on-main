@@ -73,7 +73,7 @@
 	
 	{#if mainCaption || mainSource}
 		<div class="caption-container">
-			<p>
+			<p class="caption">
 				{#if mainCaption}
 					<span class="caption-text">{@html mainCaption}</span>
 				{/if}
@@ -96,6 +96,7 @@
 		margin-bottom: 30px;
 		padding-left: 20px;
 		padding-right: 20px;
+		width: fit-content;
 	}
 
 	.img-grid {
