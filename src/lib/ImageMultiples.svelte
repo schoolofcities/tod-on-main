@@ -5,7 +5,10 @@
 	export let mainSource = null;
 	export let matchWidth = true;
 	export let matchHeight = true;
+	export let maxWidth = "1080px";
 	export let imageFit = "cover"; // object-fit properties for images
+
+	let gridWidth;
 
     import { marked } from 'marked';
 
@@ -54,8 +57,8 @@
 	});
 </script>
 
-<div class="img-container">
-	<div class="img-grid {layoutClass}" bind:this={container}>
+<div class="img-container" style:maxWidth={maxWidth}> 
+	<div class="img-grid {layoutClass}" bind:this={container} bind:clientWidth={gridWidth}>
 		{#each images as image}
 			<div>
 				<div class="img-box {matchWidth ? "match-width" : ""} {matchHeight ? "match-height" : ""}">
@@ -72,7 +75,7 @@
 	</div>
 	
 	{#if mainCaption || mainSource}
-		<div class="caption-container">
+		<div class="caption-container" style:width="{gridWidth}px">
 			<p class="caption">
 				{#if mainCaption}
 					<span class="caption-text">{@html mainCaption}</span>
@@ -130,6 +133,11 @@
 	img {
 		max-width: 40dvw;
 		max-height: 40dvh;
+	}
+
+	.caption-container {
+		width: 100%; 
+		box-sizing: border-box;
 	}
 
 	@media (max-width: 700px) {

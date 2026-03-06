@@ -46,7 +46,7 @@
 		'João F. Bigotte and António P. Antunes, “Social Infrastructure Planning: A Location Model and Solution Methods,” <i>Computer-Aided Civil and Infrastructure Engineering</i> 22 (2007): 570–83, <a href="https://doi.org/10.1111/j.1467-8667.2007.00511.x" target="_blank">DOI</a>',
 		'Leah Brooks and Rachel Meltzer, “Retail on the Ground and on the Books: Vacancies and the (Mis)Match Between Retail Activity and Regulated Land Uses,” <i>Journal of the American Planning Association</i> 91, no. 2 (2025): 192–206, <a href="https://doi.org/10.1080/01944363.2024.2373900" target="_blank">DOI</a>',
 		'Ian Carlton and William Fleissig, <i>Steps to Avoid Stalled Equitable TOD Projects: Case Studies</i> (Living Cities, 2014), <a href="http://staging.community-wealth.org/sites/clone.community-wealth.org/files/downloads/report-carlton-fleissig-cases_0.pdf" target="_blank">URL</a>',
-		'Carlton and Fleissig, <i>Steps to Avoid Stalled Equitable TOD Projects',
+		'Carlton and Fleissig, <i>Steps to Avoid Stalled Equitable TOD Projects</i>',
 		'Fleurent, <i>Recension et analyse des stratégies et des instruments municipaux</i>',
 		'Miguel Padeiro et al., “Transit-Oriented Development and Gentrification: A Systematic Review,” <i>Transport Reviews</i> 39, no. 6 (2019): 733–54, <a href="https://doi.org/10.1080/01441647.2019.1649316" target="_blank">DOI</a>',
 		'Soliz et al., “Getting into the Zone.”',
@@ -172,7 +172,8 @@
 				fadeDuration={1200}
 				mobileTextAlign={"top"}
 				backgroundColour={"#F9F9F9"}
-				bind:arrowColour
+				arrowColour={arrowColour}
+				on:colourChange={(e) => arrowColour = e.detail}
 			/>
 		</div>
 

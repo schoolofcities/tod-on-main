@@ -169,7 +169,8 @@
 				fadeDuration={1200}
 				mobileTextAlign={"top"}
 				backgroundColour={"#F9F9F9"}
-				bind:arrowColour
+				arrowColour={arrowColour}
+				on:colourChange={(e) => arrowColour = e.detail}
 			/>
 		</div>
 
@@ -243,7 +244,7 @@
 
 	<ImageSingle
 		imageURL="../web-assets/case-study/mckernan-belgravia/redevelopment_plan.jpg"
-		source={"<a href='https://webdocs.edmonton.ca/infraplan/plans_in_effect/McKernan-Belgravia_Station_ARP_Consolidation.pdf' target='_blank'>City of Edmonton, 2024</a>."}
+		source={"<a href='https://webdocs.edmonton.ca/infraplan/plans_in_effect/McKernan-Belgravia_Station_ARP_Consolidation.pdf' target='_blank'>Photo by the City of Edmonton, 2024</a>."}
 		caption={"The City's vision for growth in the McKernan-Belgravia Station Area, shown here in their Redevelopment Plan, envisions medium-scale density along major corridors."}
 		maxWidth="680px"
 		link='No'
@@ -304,7 +305,7 @@
 
 	<ImageSingle
 		imageURL={"../web-assets/case-study/mckernan-belgravia/lrt_station.jpg"}
-		source={"<a href='https://commons.wikimedia.org/wiki/File:McKernan_Belgravia_LRT_Station_(3474530058).jpg' target='_blank'>Mack Male, 2009</a>."}
+		source={"<a href='https://commons.wikimedia.org/wiki/File:McKernan_Belgravia_LRT_Station_(3474530058).jpg' target='_blank'>Photo by Mack Male, 2009</a>."}
 		caption={"McKernan-Belgravia Station in 2009, the year it opened as part of Edmonton's Capital Line extension."}
 		maxWidth="680px"
 		link='No'
@@ -330,7 +331,7 @@
 	
 	<ImageSingle
 		imageURL={"../web-assets/case-study/mckernan-belgravia/housing_accelerator.jpg"}
-		source={"<a href='https://www.edmonton.ca/programs_services/housing/housing-accelerator-fund' target='_blank'>City of Edmonton, 2024</a>."}
+		source={"<a href='https://www.edmonton.ca/programs_services/housing/housing-accelerator-fund' target='_blank'>Photo by the City of Edmonton, 2024</a>."}
 		caption={"Medium-density rowhouses on large corner lots, like those pictured here, can help to increase density around transit and support amenities and infrastructure."}
 		maxWidth="680px"
 		link='No'
@@ -339,7 +340,7 @@
 	
 	<ImageSingle
 		imageURL={"../web-assets/case-study/mckernan-belgravia/grovenor.jpg"}
-		source={"<a href='https://www.edmonton.ca/sites/default/files/public-files/assets/Neighbourhoods/NeighbourhoodProfile_Grovenor.pdf' target='_blank'>City of Edmonton, 2021</a>."}
+		source={"<a href='https://www.edmonton.ca/sites/default/files/public-files/assets/Neighbourhoods/NeighbourhoodProfile_Grovenor.pdf' target='_blank'>Photo by the City of Edmonton, 2021</a>."}
 		caption={"The Grovenor neighbourhood in Edmonton provides examples of duplex and low-rise development in a mature setting."}
 		maxWidth="680px"
 		link='No'
@@ -362,8 +363,9 @@
 	<ImageMultiples
 		images={[{url: "../web-assets/case-study/mckernan-belgravia/ualberta1.jpg"},
 		 		{url: "../web-assets/case-study/mckernan-belgravia/ualberta2.jpg"}]}
-		mainSource={"University of Alberta."}
+		mainSource={"Photo by the University of Alberta."}
 		mainCaption={"McKernan-Belgravia sits between the University of Alberta's North and South Campuses on the LRT. They anchor significant employment hubs for healthcare and education."}
+		maxWidth="1080px"
 	/>
 
 	<div class="text">
@@ -403,8 +405,9 @@
 	<ImageMultiples
 		images={[{url: "../web-assets/case-study/mckernan-belgravia/vision2050_adults.jpg"},
 		 		{url: "../web-assets/case-study/mckernan-belgravia/vision2050_kids.jpg"}]}
-		mainSource={"City of Edmonton, 2018."}
+		mainSource={"Photos by the City of Edmonton, 2018."}
 		mainCaption={"The City of Edmonton conducted extensive public engagement for the Vision 2050 Plan."}
+		maxWidth="1080px"
 	/>
 
 	<div class="text">
@@ -421,7 +424,7 @@
 
 	<ImageSingle
 		imageURL={"../web-assets/case-study/mckernan-belgravia/edmonton_skyline.jpg"}
-		source={"<a href='https://commons.wikimedia.org/wiki/File:Edmonton,_AB.jpg' target='_blank'>Quintin Soloviev, 2024</a>."}
+		source={"<a href='https://commons.wikimedia.org/wiki/File:Edmonton,_AB.jpg' target='_blank'>Photo by Quintin Soloviev, 2024</a>."}
 		caption={"Edmonton's skyline."}
 		maxWidth="1080px"
 		link='No'

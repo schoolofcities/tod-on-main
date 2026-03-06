@@ -41,11 +41,24 @@
 	]
 
 	const fns = [
-		'<a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710015901" target="_blank">https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710015901</a>',
-		'<a href="https://climateinstitute.ca/wp-content/uploads/2024/09/Fact-sheet_-Floods_CanadianClimateInstitute.pdf " target="_blank">https://climateinstitute.ca/wp-content/uploads/2024/09/Fact-sheet_-Floods_CanadianClimateInstitute.pdf</a>',
-		'Link back to Prentiss',
-		'Young Families and High-Rise: Towards Inclusive Vertical Family Housing',
-		'<a href="" target="_blank"></a>'
+		'Steve Kling et al., <i>Preserving the largest and most at-risk supply of affordable housing</i> (McKinsey & Company, 2021), <a href="https://view.ckcest.cn/AllFiles/ZKBG/Pages/169/d51c82253c953b45ade45b3ef95c8e52e7480d0e.pdf" target="_blank">URL</a>',
+		'City of Vancouver, <i>Tenant Relocation and Protection Policy (TRPP)</i> (2025), <a href="https://vancouver.ca/people-programs/protecting-tenants.aspx" target="_blank">URL</a>; City of Vancouver, <i>Do you know what your renters’ rights are?</i> (2022), <a href="https://vancouver.ca/files/cov/renters-rights-info-sheet.pdf" target="_blank">URL</a>',
+		'City of Vancouver, <i>Tenant Relocation and Protection Policy (TRPP)</i> (2025), <a href="https://vancouver.ca/people-programs/protecting-tenants.aspx" target="_blank">URL</a>',
+		'City of Vancouver, <i>What you need to know about updates to the Broadway Plan</i> (2024), <a href="https://vancouver.ca/files/cov/broadway-plan-2024-factsheet.pdf" target="_blank">URL</a>;',
+		'Broadway Subway Project, “Businesses,” accessed February 23, 2026, <a href="https://www.broadwaysubway.ca/construction/businesses/" target="_blank">URL</a>; City of Vancouver, “Support Broadway Businesses,” accessed February 23, 2026, <a href="https://vancouver.ca/streets-transportation/support-broadway.aspx" target="_blank">URL</a>',
+		'Kling et al., <i>Preserving the largest and most at-risk supply of affordable housing</i>',
+		'Miriam Zuk et al., “Gentrification, Displacement, and the Role of Public Investment,” <i>Journal of Planning Literature</i> 33, no. 1 (2018): 31-44, <a href="https://doi.org/10.1177/0885412217716439" target="_blank">DOI</a>',
+		'Zuk et al., “Gentrification, Displacement, and the Role of Public Investment.”',
+		'H. Jacob Carlson, “Measuring Displacement: Assessing Proxies for Involuntary Residential Mobility,” <i>City & Community</i> 19, no. 3 (2020): 557-78,<a href="https://doi.org/10.1111/cico.12482" target="_blank">DOI</a>',
+		'BART, <i>Strategies for Addressing Potential Residential Displacement Due to Transit-Oriented Development</i> (2026), <a href="https://www.bart.gov/sites/default/files/2026-01/2026%20Sys%20AB2923%20ResDisplaceStrategy.pdf" target="_blank">URL</a>',
+		'BART, <i>Strategies for Addressing Potential Residential Displacement Due to Transit-Oriented Development</i> (2026), <a href="https://www.bart.gov/sites/default/files/2026-01/2026%20Sys%20AB2923%20ResDisplaceStrategy.pdf" target="_blank">URL</a>',
+		'Seifel Consulting, <i>Supplemental Analysis of 469 Stevenson Street Regarding Potential Gentrification and Displacement Impacts</i> (2022).',
+		'Steffen Lehmann, “Sustainable Urbanism: Towards a Framework for Quality and Optimal Density?” <i>Future Cities and Environment</i> 2, no. 8 (2016), <a href="https://doi.org/10.1186/s40984-016-0021-3" target="_blank">DOI</a>',
+		'Kling et al., <i>Preserving the largest and most at-risk supply of affordable housing.</i>',
+		'Kling et al., <i>Preserving the largest and most at-risk supply of affordable housing.</i>',
+		'Kling et al., <i>Preserving the largest and most at-risk supply of affordable housing.</i>',
+		'Elizabeth Macdonald, “Urban Design for Sustainable and Livable Communities: The Case of Vancouver,” <i>ransportation, Land Use, and Environmental Planning</i> (2020): 83-104, <a href="https://doi.org/10.1016/B978-0-12-815167-9.00005-0" target="_blank">DOI</a>',
+		'Karen Chapple et al., “The Role of Local Housing Policies in Preventing Displacement: A Literature Review,” <i>Journal of Planning Literature</i> 38, no. 2 (2022): 200-214, <a href="https://doi.org/10.1177/08854122221137859" target="_blank">DOI</a>'
 	];
 
 	let scrollY = 0;
@@ -162,7 +175,8 @@
 				fadeDuration={1200}
 				mobileTextAlign={"top"}
 				backgroundColour={"#F8F8F8"}
-				bind:arrowColour
+				arrowColour={arrowColour}
+				on:colourChange={(e) => arrowColour = e.detail}
 			/>
 		</div>
 
@@ -183,7 +197,7 @@
 
 
 		<p>
-			Located in Vancouver’s Kitsilano neighbourhood, the area around Arbutus Station is established, with more than 30,000 residents. The community is diverse: one-third are immigrants and another quarter come from outside the province. This diversity contributes to a wide range of housing needs and service demands. 
+			Located in Vancouver’s Kitsilano neighbourhood, the area around <a href="https://measuringmainstreets.ca/transit-map/" target="_blank">Arbutus Station</a> is established, with about 25,000 residents. The community is diverse: one-third are immigrants and another quarter come from outside the province. This diversity contributes to a wide range of housing needs and service demands. 
 		</p>
 
 	</div>
@@ -211,10 +225,10 @@
 		</div>
 
 		<p>
-			The area is largely built out, with 79% of its structures built more than 25 years ago.
+			The area is largely built out, with nearly 80% of its structures built more than 25 years ago.  
 		</p>
 		<p>
-			Low-rise apartment units make up 77% of the households within an 800-metre radius of the station, forming the backbone of the neighbourhood’s rental stock. These older rental apartments provide unsubsidized affordable housing, sometimes known as “naturally occurring affordable housing” (NOAH), but are increasingly vulnerable to redevelopment pressures as the area densifies.1  
+			Low-rise apartment units make up 74% of the households within an 800-metre radius of the station, forming the backbone of the neighbourhood’s rental stock. These older rental apartments provide unsubsidized affordable housing, sometimes known as “naturally occurring affordable housing” (NOAH), but are increasingly vulnerable to redevelopment pressures as the area densifies.<Footnote id={addFootnote(fns[0])}/>
 		</p>
 
 	</div>
@@ -230,10 +244,10 @@
 	<div class="text">	
 
 		<p>
-			This vulnerability shows up in the area’s tenure profile: 57.1% of households rent, well above the national average of 46.8%. Most residents in these units are young to middle-aged professionals living alone. Detached, semi-detached, and row houses, very expensive because of the area’s prime location, make up just 8% of households.
+			This vulnerability shows up in the area’s tenure profile: 60% of households rent, well above the City average of 55%. Most residents in these units are young to middle-aged professionals living alone. Detached, semi-detached, and row houses, very expensive because of the area’s prime location, make up just 8% of households.  
 		</p>
 		<p>
-			Arbutus has a vibrant main street with a wide variety of retail and services, supporting a strong local economy and steady foot traffic. 
+			Arbutus has a <a href="https://measuringmainstreets.ca/tools/complete-communities" target="_blank">vibrant main street with a wide variety of retail and services</a>, supporting a strong local economy and steady foot traffic. 
 		</p>
 		<p>
 			However, there are gaps in community-serving amenities such as community centres, convenience stores, and particularly libraries. Residents are also concerned that essential public services, including parks and schools, may not keep pace to serve the rapid population growth. Supporting equitable growth here involves balancing redevelopment with the needs of current residents and the broader community. 
@@ -274,15 +288,15 @@
 		</p>
 
 		<p>
-			The Broadway Plan also includes robust anti-displacement measures, created after extensive community engagement and with tenant dislocation a core concern. In 2022, City Council approved enhanced tenant protections under the Broadway Plan, in addition to the City-wide Tenant Relocation and Protection Policy (TRPP). For tenants who relocate as a result of redevelopment in the Broadway Plan area, these enhanced policies provide rent top-ups for up to 33 months’ rent (or financial compensation), moving cost coverage, relocation support, additional assistance for low-income tenants, and the right to return at protected rents.2 The City has also published a Tenant Relocation and Protection Policy Best Practices Guide for developers or property owners of existing rental buildings.3 
+			The Broadway Plan also includes robust anti-displacement measures, created after extensive community engagement and with tenant dislocation a core concern. In 2022, City Council approved enhanced tenant protections under the Broadway Plan, in addition to the City-wide Tenant Relocation and Protection Policy (TRPP). For tenants who relocate as a result of redevelopment in the Broadway Plan area, these enhanced policies provide rent top-ups for up to 33 months’ rent (or financial compensation), moving cost coverage, relocation support, additional assistance for low-income tenants, and the right to return at protected rents.<Footnote id={addFootnote(fns[1])}/> The City has also published a Tenant Relocation and Protection Policy Best Practices Guide for developers or property owners of existing rental buildings.<Footnote id={addFootnote(fns[2])}/> 
 		</p>
 
 		<p>
-			To support the implementation and oversight of these requirements, the City has committed to quarterly monitoring and reporting on tenant impacts.4 There are also planned 5-year checkpoints to revisit and adjust the plan’s policies as redevelopment progresses. This provides an opportunity to respond to emerging issues while providing planning certainty and avoiding potential political interference.  
+			To support the implementation and oversight of these requirements, the City has committed to quarterly monitoring and reporting on tenant impacts.<Footnote id={addFootnote(fns[3])}/> There are also planned 5-year checkpoints to revisit and adjust the plan’s policies as redevelopment progresses. This provides an opportunity to respond to emerging issues while providing planning certainty and avoiding potential political interference.  
 		</p>
 
 		<p>
-			Recognizing that redevelopment can also disrupt commercial activity, the City has introduced measures to support local businesses. These include a Mitigation Team, wayfinding programs, public art initiatives, and business awareness campaigns.5 
+			Recognizing that redevelopment can also disrupt commercial activity, the City has introduced measures to support local businesses. These include a Mitigation Team, wayfinding programs, public art initiatives, and business awareness campaigns.<Footnote id={addFootnote(fns[4])}/> 
 		</p>
 
 	</div>
@@ -302,7 +316,7 @@
 		</p>
 
 		<p>
-			Long-term renters are especially vulnerable. Those in existing unsubsidized affordable housing – predominantly low-income people of colour – often live in older, low-rise buildings that are the primary targets for redevelopment.6 Delays between tenant evictions and the completion of replacement units, combined with inconsistent enforcement of tenant protection policies, have heightened fears of displacement.
+			Long-term renters are especially vulnerable. Those in existing unsubsidized affordable housing – predominantly low-income people of colour – often live in older, low-rise buildings that are the primary targets for redevelopment.<Footnote id={addFootnote(fns[5])}/> Delays between tenant evictions and the completion of replacement units, combined with inconsistent enforcement of tenant protection policies, have heightened fears of displacement.
 		</p>
 
 		<p>
@@ -318,7 +332,7 @@
 				Gentrification can lead to <span class="highlight">displacement</span>, which is when people are forced to leave their homes or neighbourhoods due to external pressures.  
 			</p>
 			<p>
-				Displacement can take several forms:7 
+				Displacement can take several forms:<Footnote id={addFootnote(fns[6])}/> 
 			</p>
 			<p style="padding-left: 20px;">
 				<span class="highlight">Direct displacement</span> occurs when residents are forced to vacate a property due to direct forces such as eviction, expropriation, or disinvestment.
@@ -328,6 +342,9 @@
 			</p>
 			<p style="padding-left: 20px;">
 				<span class="highlight">Exclusionary displacement</span> refers to conditions where people are unable to move into a neighbourhood due to external conditions such as unaffordable housing, restrictive zoning, and cultural dissonance 
+			</p>
+			<p>
+				While displacement is often linked to gentrification, it can also occur in the absence of gentrification.<Footnote id={addFootnote(fns[7])}/> Further, changes in neighbourhood composition or the presence of gentrification do not necessarily indicate that displacement is occurring.<Footnote id={addFootnote(fns[8])}/>
 			</p>
 
 		</div>
@@ -388,19 +405,19 @@
 	<div class="text">	
 
 		<p>
-			Density is strategically layered outward from these corridors, aligning height and intensity with transit access and surrounding residential areas. This approach supports active modes of travel and transit use while directing growth more effectively. Delivering equitable TOD requires balancing housing growth with social equity. To structure this approach, our recommendations are organizedhe ￼3Ps framework – production, preservation, and p10￼￼ This framework recognizes that no single policy lever is sufficient on its own, and achieving equitable outcomes require expanding supply, safeguarding existing affordable housing, and protecting current residents simultaneously. 
+			Density is strategically layered outward from these corridors, aligning height and intensity with transit access and surrounding residential areas. This approach supports active modes of travel and transit use while directing growth more effectively. Delivering equitable TOD requires balancing housing growth with social equity. To structure this approach, our recommendations are organized using the 3Ps framework – production, preservation, and protection.<Footnote id={addFootnote(fns[9])}/> This framework recognizes that no single policy lever is sufficient on its own, and achieving equitable outcomes require expanding supply, safeguarding existing affordable housing, and protecting current residents simultaneously. 
 		</p>
 
 
 		<Recommendation style=1 count=1
-			title="Continue production of new housing"/>
+			title="Continue production of new housing along main streets and near transit stations"/>
 
 		<p>
-			The Broadway Plan provides a strong foundation for transit-oriented growth, combining streamlined approvals with clear affordability and tenant protection requirements. The primary concerns are less about what is being built and more about how it is being delivered. Rather than reworking the Plan’s approach, the focus here is on targeted refinements that strengthen equity outcomes as implementation advances.  
+			Increasing housing supply remains essential to meeting housing targets and advancing affordability. Research shows that adding new housing – both market rate and affordable – can reduce rent pressure over time by increasing overall supply, while creating opportunities to deliver affordable units on- or off-site.<Footnote id={addFootnote(fns[10])}/> In many cases, the number of new affordable units produced through redevelopment can exceed and offset displacement associated with the new developments.<Footnote id={addFootnote(fns[11])}/> 
 		</p>
 
 		<p>
-			Carefully designed density has been shown to coexist with liveable, sustainable neighbourhoods, supporting both housing supply and overall quality of life. Vancouver already has a long track record of delivering successful medium-density communities.13 
+			Carefully designed density has been shown to coexist with liveable, sustainable neighbourhoods, supporting both housing supply and overall quality of life. Vancouver already has a long track record of delivering successful medium-density communities.<Footnote id={addFootnote(fns[12])}/> 
 		</p>
 
 		<p>
@@ -419,7 +436,7 @@
 			title="Preserve existing affordable housing and neighbourhood stability "/>
 
 		<p>
-			Preserving existing unsubsidized affordable housing is critical to advancing equitable TOD, particularly in the early stages of redevelopment. Losing these homes through disrepair or redevelopment not only accelerates displacement, but also represents a missed opportunity for long-term wealth creation in marginalized communities, where landlords are often community members.14 
+			Preserving existing unsubsidized affordable housing is critical to advancing equitable TOD, particularly in the early stages of redevelopment. Losing these homes through disrepair or redevelopment not only accelerates displacement, but also represents a missed opportunity for long-term wealth creation in marginalized communities, where landlords are often community members.<Footnote id={addFootnote(fns[13])}/>
 		</p>
 
 		<p>
@@ -427,11 +444,11 @@
 		</p>
 
 		<p>
-			As redevelopment accelerates, preservation should be treated as a core component of the City’s housing strategy rather than a secondary outcome. One opportunity is to explicitly recognize and track the supply of existing unsubsidized affordable housing in affordable housing targets, ensuring that the retention of existing affordable units is considered alongside the production of new ones.15 
+			As redevelopment accelerates, preservation should be treated as a core component of the City’s housing strategy rather than a secondary outcome. One opportunity is to explicitly recognize and track the supply of existing unsubsidized affordable housing in affordable housing targets, ensuring that the retention of existing affordable units is considered alongside the production of new ones.<Footnote id={addFootnote(fns[14])}/>
 		</p>
 
 		<p>
-			By supplementing the province’s Rental Protection Fund, the City can also support reinvestment in existing rental buildings. Offering grants and low-interest loans for upgrades and repairs would help address a key driver of affordable housing loss: deferred maintenance and limited access to capital. Preventative reinvestment can extend the life of existing buildings, improve living conditions for tenants, and reduce pressures to sell or redevelop prematurely.16   
+			By supplementing the province’s <a href="https://www.rentalprotectionfund.ca/" target="_blank">Rental Protection Fund</a>, the City can also support reinvestment in existing rental buildings. Offering grants and low-interest loans for upgrades and repairs would help address a key driver of affordable housing loss: deferred maintenance and limited access to capital. Preventative reinvestment can extend the life of existing buildings, improve living conditions for tenants, and reduce pressures to sell or redevelop prematurely.<Footnote id={addFootnote(fns[15])}/>
 		</p>
 
 	</div>
@@ -457,7 +474,7 @@
 		</p>
 
 		<p>
-			Best practices in sustainable urban development emphasize that context-sensitive design and participatory planning are key to balancing growth with place-making and equity objectives. Vancouver’s experience shows that achieving this requires collaboration between politicians, developers, city planners, and local community members to craft locally responsive solutions.17  
+			Best practices in sustainable urban development emphasize that context-sensitive design and participatory planning are key to balancing growth with place-making and equity objectives. Vancouver’s experience shows that achieving this requires collaboration between politicians, developers, city planners, and local community members to craft locally responsive solutions.<Footnote id={addFootnote(fns[16])}/>
 		</p>
 
 		<p>
@@ -477,10 +494,10 @@
 	<div class="text">	
 
 		<Recommendation style=1 count=3
-			title="Protect current residents"/>
+			title="Protect existing affordable housing through policy, education and enforcement "/>
 
 		<p>
-			Government policies can help ensure that residents stay in place as neighbourhoods densify. Research shows that neighbourhood stabilization strategies are more effective at preventing direct displacement than housing production and preservation, which primarily address indirect or exclusionary displacement.18  
+			Government policies can help ensure that residents stay in place as neighbourhoods densify. Research shows that neighbourhood stabilization strategies are more effective at preventing direct displacement than housing production and preservation, which primarily address indirect or exclusionary displacement.<Footnote id={addFootnote(fns[17])}/>
 		</p>
 
 		<p>
@@ -524,7 +541,7 @@
 
 	</div>
 
-	<!-- <Footnotes footnotes={footnotes} /> -->
+	<Footnotes footnotes={footnotes} />
 
 	<div class="text">
 		<div class="line-break"></div>
