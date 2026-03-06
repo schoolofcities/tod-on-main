@@ -1,9 +1,14 @@
 <script>
+	import "../assets/global-styles.css"
 	export let images = []; // Array of objects containing image urls, caption text in markdown, alt text
 	export let mainCaption = null;
+	export let mainSource = null;
 	export let matchWidth = true;
 	export let matchHeight = true;
+	export let maxWidth = "1080px";
 	export let imageFit = "cover"; // object-fit properties for images
+
+	let gridWidth;
 
     import { marked } from 'marked';
 
@@ -52,25 +57,53 @@
 	});
 </script>
 
-<div class="img-grid {layoutClass}" bind:this={container}>
-	{#each images as image}
-		<div>
-			<div class="img-box {matchWidth ? "match-width" : ""} {matchHeight ? "match-height" : ""}">
-				<img src={image.url} alt={image.alt} style:object-fit={imageFit}/>
+<div class="img-container" style:maxWidth={maxWidth}> 
+	<div class="img-grid {layoutClass}" bind:this={container} bind:clientWidth={gridWidth}>
+		{#each images as image}
+			<div>
+				<div class="img-box {matchWidth ? "match-width" : ""} {matchHeight ? "match-height" : ""}">
+					<img src={image.url} alt={image.alt} style:object-fit={imageFit}/>
+				</div>
+				{#if image.caption}
+					<p>
+						<span class="caption-text">{image.caption}</span>
+					</p>
+				{/if}
 			</div>
-			<p>{image.caption}</p>
-		</div>
-	{/each}
+		{/each}
+
+	</div>
 	
-	{#if mainCaption}
-		<p>{@html marked(mainCaption)}</p>
+	{#if mainCaption || mainSource}
+		<div class="caption-container" style:width="{gridWidth}px">
+			<p class="caption">
+				{#if mainCaption}
+					<span class="caption-text">{@html mainCaption}</span>
+				{/if}
+				{#if mainSource}
+					<span class="caption-source">{@html mainSource}</span>
+				{/if}
+			</p>
+		</div>
 	{/if}
 </div>
 
 <style>
+	.img-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 auto;
+		padding-top: 10px;
+		padding-bottom: 0px;
+		margin-bottom: 30px;
+		padding-left: 20px;
+		padding-right: 20px;
+		width: fit-content;
+	}
+
 	.img-grid {
 		display: flex;
-		/* flex-wrap: wrap; */
 		justify-content: center;
 		gap: 10px;
 		height: fit-content;
@@ -100,6 +133,11 @@
 	img {
 		max-width: 40dvw;
 		max-height: 40dvh;
+	}
+
+	.caption-container {
+		width: 100%; 
+		box-sizing: border-box;
 	}
 
 	@media (max-width: 700px) {

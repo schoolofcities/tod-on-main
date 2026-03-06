@@ -68,7 +68,7 @@
 
 <main>
 
-	<!-- <Password correctPassword="catcatmeow"></Password> -->
+	<Password correctPassword="meowmeowcat"></Password>
 
 	<!-- <TitleVideo
 		title="Transportation equity and sustainable mobility from mixed-use development"
@@ -81,7 +81,7 @@
 		subtitleFontColour="var(--brandWhite)"
 		logoType = 'White';
 	/> -->
-	<!-- <TitlePage
+	<TitlePage
 		title="Transportation equity and sustainable mobility from mixed-use development"
 		type="Research"
 		bgType="Video"
@@ -91,7 +91,7 @@
 		titleFontColour="var(--brandWhite)"
 		subtitleFontColour="var(--brandWhite)"
 		logoType = 'White';
-	/> -->
+	/>
 
 
 	<div class="text">

@@ -125,7 +125,7 @@
 <!-- <svelte:window on:scroll={handleScroll} /> -->
 
 <main>
-	<Password correctPassword="catcatmeow"></Password>
+	<Password correctPassword="meowmeowcat"></Password>
 	<!-- Full page title example -->
 	<div class="wrapper">
 		<!-- Top stays visually on top -->
@@ -169,7 +169,8 @@
 				fadeDuration={1200}
 				mobileTextAlign={"top"}
 				backgroundColour={"#F9F9F9"}
-				bind:arrowColour
+				arrowColour={arrowColour}
+				on:colourChange={(e) => arrowColour = e.detail}
 			/>
 		</div>
 
@@ -267,7 +268,7 @@
 			imageURL='../web-assets/case-study/northfield/nf_frame_8_current_dev_ink_edit.png'
 			link='No'
 			caption="Currently proposed or under construction development 800m from Northfield station."
-			source="Infrastructure Institute (2025)."
+			source="Photo by Infrastructure Institute (2025)."
 			maxWidth="680px"
 		/>
 
@@ -275,7 +276,7 @@
 			imageURL='../web-assets/case-study/northfield/nf_frame_7_samu_ink_edit.png'
 			link='No'
 			caption="Land zoned as Station Area Mixed Use (SAMU) near Northfield station."
-			source="Infrastructure Institute (2025)."
+			source="Photo by Infrastructure Institute (2025)."
 			maxWidth="680px"
 		/>
 
@@ -409,7 +410,7 @@
 			link='No'
 			maxWidth="680px"
 			caption="A mix of uses, like the employment and retail shown here along King Street, will contribute to the success of transit investments like the ION in Waterloo Region."
-			source="Photo source: <a href='https://www.waterlooedc.ca/' target='_blank'>Waterloo EDC.</a>"
+			source="<a href='https://www.waterlooedc.ca/' target='_blank'>Photo by Waterloo EDC.</a>"
 		/>
 
 		<div class="text">

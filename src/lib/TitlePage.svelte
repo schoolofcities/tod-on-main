@@ -112,9 +112,9 @@
 	}
 
 	.tint-overlay {
-		position: fixed;
-		width: 100%;
+		position: absolute;
 		height: 100%;
+		width: 100%;
 		z-index: 5;
 	}
 

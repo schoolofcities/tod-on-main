@@ -1,6 +1,5 @@
 animation,image,text,arrowColour,overlay1,overlay2,menu_id,bg_fit,alt_text
 1,../web-assets/case-study/mckernan-belgravia/mb_frame_3.png,,black,,,Menu_1,contain,
-1,../web-assets/case-study/mckernan-belgravia/mb_frame_3.png,Arbutus Station is a case study for ambitious transit-oriented development in well-established neighbourhoods. ,black,,,,contain,alt
-1,../web-assets/case-study/mckernan-belgravia/mb_frame_4.png,"This area has ample naturally occurring affordable housing and a strong City plan, but implementation risks uneven change, ",black,,,,contain,alt
-1,../web-assets/case-study/mckernan-belgravia/mb_frame_5.png,"Our optimized scenario focuses growth along major corridors, protecting existing contexts while supporting transit and growth. ",black,,,,contain,alt
-1,../web-assets/case-study/mckernan-belgravia/mb_frame_7.png,"Our optimized scenario focuses growth along major corridors, protecting existing contexts while supporting transit and growth. ",black,,,,contain,alt
+1,../web-assets/case-study/mckernan-belgravia/mb_frame_3.png,"Transit-oriented development (TOD) can take many forms, from gradual increases in population to master planned, high-density communities.  ",black,,,,contain,alt
+1,../web-assets/case-study/mckernan-belgravia/mb_frame_7.png,"In Edmonton, the mature residential neighbourhood of McKernan-Belgravia is centrally located but has not experienced significant infill development.",black,,,,contain,alt
+1,../web-assets/case-study/mckernan-belgravia/mb_frame_9.png,"The City has zoned for density around transit, but most of the growth in this area to date has been low-intensity redevelopment of single lots in the middle of blocks that has generated resident concerns about compatibility with the surrounding neighbourhood while doing little to increase density.",black,,,,contain,alt
