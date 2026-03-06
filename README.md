@@ -1,4 +1,4 @@
-# TOD-on-main
+# TOD-Canada
 
 animation content files should be CSVs with headers
 image, text, arrowColour, overlay1, overlay2

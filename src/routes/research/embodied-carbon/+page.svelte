@@ -74,7 +74,7 @@
 		title="Embodied Carbon in Different Development Patterns and Built Forms "
 		subtitle=""
 		titletype="RESEARCH"
-		video="/tod-on-main/research/embodied-carbon/skylineVideo.mp4"
+		video="/tod-canada/research/embodied-carbon/skylineVideo.mp4"
 		videoSpeed={0.67}
 		videoOpacity={0.8}
 		titleFontColour="var(--brandWhite)"
@@ -85,7 +85,7 @@
 		title="Embodied Carbon in Different Development Patterns and Built Forms "
 		type="Research"
 		bgType="Video"
-		url="/tod-on-main/web-assets/research/embodied-carbon/skylineVideo.mp4"
+		url="/tod-canada/web-assets/research/embodied-carbon/skylineVideo.mp4"
 		videoSpeed={0.67}
 		videoOpacity={0.8}
 		titleFontColour="var(--brandWhite)"

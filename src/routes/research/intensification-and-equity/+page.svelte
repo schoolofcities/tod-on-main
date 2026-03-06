@@ -73,7 +73,7 @@
 		title="Building Intensification and Equity in TOD Zones: Trends across five station areas"
 		type="RESEARCH"
 		bgType="Video"
-		url="/tod-on-main/web-assets/research/embodied-carbon/skylineVideo.mp4"
+		url="/tod-canada/web-assets/research/embodied-carbon/skylineVideo.mp4"
 		videoSpeed={0.67}
 		videoOpacity={0.8}
 		titleFontColour="var(--brandWhite)"
