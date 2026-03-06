@@ -59,7 +59,7 @@
 	const credits = [
 		{ role:"Research and writing", names:"Sarah Chan, Kathryn Exon Smith, Anika Reisha Taboy"},
 		{ role:"Architectural renderings", names:"Daniel Lam, Phat Le"},
-		{ role:"Maps and data visualization", names:"Jeff Allen, Polina Gorn, Isabeaux Graham"},
+		{ role:"Maps and data visualization", names:"Isabeaux Graham, Jeff Allen"},
 		{ role:"Web development", names:"Mieko Yao, Jeff Allen"},
 		{ role:"Additional contributors", names:"An Pham, Carrie Zeng"}
 	]
@@ -128,7 +128,7 @@
 <!-- <svelte:window on:scroll={handleScroll} /> -->
 
 <main>
-	<Password correctPassword="catcatmeow"></Password>
+	<Password correctPassword="meowmeowcat"></Password>
 	<!-- Full page title example -->
 	<div class="wrapper">
 		<!-- Top stays visually on top -->
@@ -299,7 +299,15 @@
 		</p>
 	</div>
 
-	<ImageCompare
+	<ImageSingle
+		imageURL={"../web-assets/case-study/panama/optimized-scenario.png"}
+		source={""}
+		caption={""}
+		maxWidth="1080px"
+		link='No'
+	/>
+
+	<!-- <ImageCompare
 		imageURL1="../web-assets/case-study/panama/current-trajectory.png"
 		caption1=""
 		source1=""
@@ -310,6 +318,11 @@
 		buttonLabel2="Optimized scenario"
 		maxWidth="900px"
 		link='No'
+	/> -->
+
+	<GraphicSingle
+		svg720={"../web-assets/case-study/cooksville/render-legend-720.svg"}
+		svg360={"../web-assets/case-study/cooksville/render-legend-360.svg"}
 	/>
 
 	<div class="text">
@@ -328,7 +341,7 @@
 		imageURL={"../web-assets/case-study/panama/barcelona.jpg"}
 		source={"<a href='https://www.pexels.com/photo/an-aerial-view-of-barcelona-city-18602895/' target='_blank'>Archie McNicol, 2023</a>."}
 		caption={"Compact mid-rise blocks, like these in Barcelona, provide sufficient density for vibrant local retail and services."}
-		maxWidth="1080px"
+		maxWidth="680px"
 		link='No'
 	/>	
 	

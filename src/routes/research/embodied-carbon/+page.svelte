@@ -68,7 +68,7 @@
 
 <main>
 
-	<!-- <Password correctPassword="catcatmeow"></Password> -->
+	<Password correctPassword="meowmeowcat"></Password>
 
 	<!-- <TitleVideo
 		title="Embodied Carbon in Different Development Patterns and Built Forms "
@@ -81,7 +81,7 @@
 		subtitleFontColour="var(--brandWhite)"
 		logoType = 'White';
 	/> -->
-	<!-- <TitlePage
+	<TitlePage
 		title="Embodied Carbon in Different Development Patterns and Built Forms "
 		type="Research"
 		bgType="Video"
@@ -91,7 +91,7 @@
 		titleFontColour="var(--brandWhite)"
 		subtitleFontColour="var(--brandWhite)"
 		logoType = 'White';
-	/> -->
+	/>
 
 
 	<div class="text">

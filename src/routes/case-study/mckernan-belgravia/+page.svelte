@@ -125,7 +125,7 @@
 <!-- <svelte:window on:scroll={handleScroll} /> -->
 
 <main>
-	<Password correctPassword="catcatmeow"></Password>
+	<Password correctPassword="meowmeowcat"></Password>
 	<!-- Full page title example -->
 	<div class="wrapper">
 		<!-- Top stays visually on top -->
@@ -365,7 +365,7 @@
 		 		{url: "../web-assets/case-study/mckernan-belgravia/ualberta2.jpg"}]}
 		mainSource={"Photo by the University of Alberta."}
 		mainCaption={"McKernan-Belgravia sits between the University of Alberta's North and South Campuses on the LRT. They anchor significant employment hubs for healthcare and education."}
-		maxWidth="1080px"
+		maxWidth="360px"
 	/>
 
 	<div class="text">
