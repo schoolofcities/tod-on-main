@@ -85,7 +85,7 @@
 		title="Transportation equity and sustainable mobility from mixed-use development"
 		type="Research"
 		bgType="Video"
-		url="/tod-on-main/web-assets/research/embodied-carbon/skylineVideo.mp4"
+		url="/tod-canada/web-assets/research/embodied-carbon/skylineVideo.mp4"
 		videoSpeed={0.67}
 		videoOpacity={0.8}
 		titleFontColour="var(--brandWhite)"

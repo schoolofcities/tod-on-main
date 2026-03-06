@@ -14,7 +14,7 @@ const config = {
 		    assets: "docs"
 		}),
 		paths: {
-		    base: dev ? "" : "/tod-on-main",
+		    base: dev ? "" : "/tod-canada",
 		}
 	}
 };
