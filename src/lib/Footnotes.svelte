@@ -102,6 +102,7 @@
         font-weight: normal;
         text-decoration: none;
         color: var(--brandMedBlue);
+        font-size: 14px;
     }
 
     @media screen and (max-width: 600px) {

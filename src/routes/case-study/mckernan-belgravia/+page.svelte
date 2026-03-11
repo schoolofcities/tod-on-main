@@ -25,7 +25,7 @@
 
 	import LogoBody from '$lib/LogoBody.svelte';
 	import Recommendation from '$lib/Recommendation.svelte';
-	import CaseStudyNote from '$lib/CaseStudyNote.svelte';
+	import CaseStudyNote from '$lib/BoilerPlate.svelte';
 	import Footnote from '$lib/Footnote.svelte';
 	import Footnotes from '$lib/Footnotes.svelte';
     import TitlePage from '$lib/TitlePage.svelte';

@@ -427,8 +427,8 @@ def process_svg(input_svg_path, output_svg_path, font_map):
 from pathlib import Path
 
 def main():
-	folder = "research/embodied-carbon"
-	input_dir = "../routes/" + folder + "/assets/drafts"
+	folder = "research/transportation-equity"
+	input_dir = "../routes/" + folder + "/assets/"
 	output_dir = "../../static/web-assets/"  + folder
 
 	for svg_file in Path(input_dir).glob("*.svg"):
