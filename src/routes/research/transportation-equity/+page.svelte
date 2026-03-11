@@ -78,7 +78,7 @@
 
 <main>
 
-	<!-- <Password correctPassword="meowmeowcat"></Password> -->
+	<Password correctPassword="meowmeowcat"></Password>
 
 	<!-- <TitleVideo
 		title="Transportation equity and sustainable mobility from mixed-use development"
