@@ -157,7 +157,7 @@
 		</ul>
 
 		<p>
-			To evaluate sustainable mode shift, we used trip generation analysis to estimate the number and types of trips associated with the current trajectory and optimized development scenarios above, compared to existing conditions. Here we apply the <a href="https://envisiontomorrow.org/site-mxd/" target="_blank">Mixed-Use District Travel Model</a> from Envision Tomorrow because the industry standard model for measuring trip generation uses estimates that are largely based on suburban locations with limited pedestrian or transit infrastructure, making it less suitable for mixed-use and transit-oriented developments.3 From this model, we selected the variables most affected by TOD, namely population, employment, land use, and residential dwelling mix<Footnote id={addFootnote(fns[3])}/> as well as outcome variables for each scenario:   
+			To evaluate sustainable mode shift, we used trip generation analysis to estimate the number and types of trips associated with the current trajectory and optimized development scenarios above, compared to existing conditions. Here we apply the <a href="https://envisiontomorrow.org/site-mxd/" target="_blank">Mixed-Use District Travel Model</a> from Envision Tomorrow because the industry standard model for measuring trip generation uses estimates that are largely based on suburban locations with limited pedestrian or transit infrastructure, making it less suitable for mixed-use and transit-oriented developments.<Footnote id={addFootnote(fns[2])}/> From this model, we selected the variables most affected by TOD, namely population, employment, land use, and residential dwelling mix<Footnote id={addFootnote(fns[3])}/> as well as outcome variables for each scenario:   
 		</p>
 
 		<ul>
