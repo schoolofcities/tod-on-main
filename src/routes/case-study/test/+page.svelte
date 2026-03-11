@@ -25,7 +25,7 @@
 	import { createFootnoteStore } from '$lib/footnoteUtils';
     import { resolveRoute } from '$app/paths';
     import HamburgerMenu from '$lib/HamburgerMenu.svelte';
-    import CaseStudyNote from '$lib/CaseStudyNote.svelte';
+    import CaseStudyNote from '$lib/BoilerPlate.svelte';
     import Recommendation from '$lib/Recommendation.svelte';
     import TitlePage from '$lib/TitlePage.svelte';
 
