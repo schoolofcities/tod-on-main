@@ -35,7 +35,8 @@
 		{ role:"Research", names:"Brenn Anderson-Gregson, Steve Farber"},
 		{ role:"Additional writing", names:"Anika Reisha Taboy, Kathryn Exon Smith"},
 		{ role:"Data visualization", names:"Jeff Allen"},
-		{ role:"Web development", names:"Mieko Yao, Jeff Allen"}
+		{ role:"Web development", names:"Jeff Allen, Mieko Yao"},
+		{ role:"Video", names: "Konstantine Diochnos"}
 	]
 
 </script>
@@ -44,7 +45,7 @@
 
 <svelte:head>
 
-	<title>TOD Research - Transportation Equity | School of Cities</title>
+	<title>TOD - Transportation Equity | School of Cities</title>
 
 	<!-- <meta name="description" content="Repository of design and web components for building data stories, visualizations, maps, and other custom web projects" />
 	<meta name="author" content="School of Cities">
@@ -152,7 +153,7 @@
 				A <span class="highlight" style="background-color: #00A189; color: white;opacity: 0.8;">optimized scenario</span>, which uses more optimal land use changes within the TOD 
 			</li>
 			<li>	
-				A <span class="highlight" style="background-color: #6D247A; color: white;opacity: 0.8;">general growth scenario</span> which assumes the same population and job growth as in the current trajectory but distributes it across the municipalities3 rather than concentrating it in the station area, in proportion to their existing values 
+				A <span class="highlight" style="background-color: #6D247A; color: white;opacity: 0.8;">general growth scenario</span> which assumes the same population and job growth as in the current trajectory but distributes it across the municipalities rather than concentrating it in the station area, in proportion to their existing values 
 			</li>
 		</ul>
 
