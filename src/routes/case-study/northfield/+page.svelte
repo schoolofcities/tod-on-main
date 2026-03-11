@@ -24,7 +24,7 @@
 	export let data;
 
 	import LogoBody from '$lib/LogoBody.svelte';
-	import CaseStudyNote from '$lib/CaseStudyNote.svelte';
+	import CaseStudyNote from '$lib/BoilerPlate.svelte';
 	import Footnote from '$lib/Footnote.svelte';
 	import Footnotes from '$lib/Footnotes.svelte';
     import Recommendation from '$lib/Recommendation.svelte';

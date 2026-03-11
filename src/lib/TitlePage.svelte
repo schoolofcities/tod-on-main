@@ -16,6 +16,7 @@
 	export let titleFontColour = 'var(--brandDarkBlue)';
 	export let subtitleFontColour = 'var(--brandDarkBlue)';
 	export let logoType = 'White';
+	export let backgroundColour = 'white';
 	export let secondLogo;
 
 	let textProps = {
@@ -62,7 +63,7 @@
 </script>
 
 
-<div class="title-container" class:video={bgType == "Video"} bind:clientWidth={divWidth} inert={topOpacity < 0.02}>
+<div class="title-container" style="background-color: {backgroundColour}" class:video={bgType == "Video"} bind:clientWidth={divWidth} inert={topOpacity < 0.02}>
 
 	<TitleText {...textProps}
 	/>
@@ -103,7 +104,7 @@
 	.title-container {
 		height: 100dvh;
 		width: 100%;
-		background-color: white;
+		/* background-color: white; */
 		position: relative;
 		margin-bottom: 0px;
 		border-bottom: solid 3px white;

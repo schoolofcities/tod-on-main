@@ -404,6 +404,13 @@ li {
 }
 
 
+.quote p {
+	font-family: PoppinsBoldItalic;
+	font-size: 20px;
+	border: solid 2px black;
+	padding: 20px;
+}
+
 
 .caption-container {
 	margin-top: 2px;
