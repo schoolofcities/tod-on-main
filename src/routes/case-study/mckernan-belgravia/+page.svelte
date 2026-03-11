@@ -365,7 +365,7 @@
 		 		{url: "../web-assets/case-study/mckernan-belgravia/ualberta2.jpg"}]}
 		mainSource={"Photo by the University of Alberta."}
 		mainCaption={"McKernan-Belgravia sits between the University of Alberta's North and South Campuses on the LRT. They anchor significant employment hubs for healthcare and education."}
-		maxWidth="360px"
+		maxWidth=1080
 	/>
 
 	<div class="text">
@@ -407,7 +407,7 @@
 		 		{url: "../web-assets/case-study/mckernan-belgravia/vision2050_kids.jpg"}]}
 		mainSource={"Photos by the City of Edmonton, 2018."}
 		mainCaption={"The City of Edmonton conducted extensive public engagement for the Vision 2050 Plan."}
-		maxWidth="1080px"
+		maxWidth=1080
 	/>
 
 	<div class="text">
