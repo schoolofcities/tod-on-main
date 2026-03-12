@@ -405,7 +405,7 @@ li {
 	color: var(--brandGray90);
 	text-align: left;
 	padding-top: 2px;
-	padding-bottom: 2px;
+	padding-bottom: 14px;
 	font-size: 19px;
 	line-height: 33px;
 	-webkit-font-smoothing: antialiased;
