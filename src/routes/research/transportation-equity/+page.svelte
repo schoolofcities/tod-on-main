@@ -35,7 +35,7 @@
 		{ role:"Research", names:"Brenn Anderson-Gregson, Steve Farber"},
 		{ role:"Additional writing", names:"Anika Reisha Taboy, Kathryn Exon Smith"},
 		{ role:"Data visualization", names:"Jeff Allen"},
-		{ role:"Web development", names:"Jeff Allen, Mieko Yao"},
+		{ role:"Web development", names:"Mieko Yao, Jeff Allen"},
 		{ role:"Video", names: "Konstantine Diochnos"}
 	]
 
