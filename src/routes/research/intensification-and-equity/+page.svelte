@@ -75,7 +75,7 @@
 
 <main>
 
-	<!-- <Password correctPassword="meowmeowcat"></Password> -->
+	<Password correctPassword="meowmeowcat"></Password>
 
 	<TitlePage
 		title="Building intensification and neighbourhood change in transit-oriented development zones "
@@ -340,7 +340,7 @@
 		</h2>
 
 		<p>
-			In Panama, the story is what has not happened. Neighbourhoods not near transit stations across the South Shore saw strong growth in occupied dwellings and rising diversity, but Panama’s 800-metre catchment barely moved on either dimension. 
+			In <span class="highlight" style="background-color: #AB1368; color: white; opacity: 0.98;">Panama</span>, the story is what has not happened. Neighbourhoods not near transit stations across the South Shore saw strong growth in occupied dwellings and rising diversity, but Panama’s 800-metre catchment barely moved on either dimension. 
 		</p>
 
 	</div>
@@ -364,6 +364,32 @@
 	/>
 
 	<div class="text">
+
+		<h1>
+			Key conclusions and policy recommendations 
+		</h1>
+
+		<p>
+			Transit development cycles are typically longer than housing development periods. As such, our recommendations emphasize encouraging new diverse housing types while preserving and protecting naturally occurring affordable housing to ensure areas remain affordable for longstanding residents and lower income households. 
+		</p>
+
+		<Recommendation count=1 title="Aim for planning certainty"/>
+
+		<p>
+			Where municipalities have paired transit investment with clear land-use policy and upzoning, we see sharper, earlier spikes in residential investment. Where frameworks are weaker or more suburban in form, intensification is limited or highly uneven. This highlights the importance of aligning transit investment with supportive planning tools from the offset. Moreover, it offers opportunities to approach planning decisions regionally to connect development patterns across neighboring cities and communities.  
+		</p>
+
+		<Recommendation count=2 title="Use tailored planning strategies to activate slower-growth areas"/>
+
+		<p>
+			In places where development has lagged, targeted planning interventions can help unlock potential. Encouraging land-use diversification, streamlining approvals for mixed-use development, and requiring or incentivizing affordable and purpose-built rental housing can help distribute growth more evenly and prevent an overconcentration of development in one area.   
+		</p>
+
+		<Recommendation count=3 title="Act early to secure affordability in station areas"/>
+
+		<p>
+			As station areas intensify, shifts in who can afford to live near transit can happen rapidly. Ensuring that transit investment does not lead to displacement or exclusion requires acting early, before land values rise. To support diverse and inclusive neighbourhood change and long-term equity, policy-makers should prioritize deeply affordable and purpose-built rental housing, community amenities, and transit-oriented public spaces, ensuring populations most reliant on transit maintain access to essential services, jobs, and daily needs. With tools like inclusionary zoning, land banking, and the strategic use of public land at their disposal, municipalities should prioritize equity-deserving groups in their planning decisions.  
+		</p>	
 
 	</div>
 	
