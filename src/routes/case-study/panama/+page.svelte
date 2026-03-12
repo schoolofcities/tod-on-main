@@ -261,10 +261,10 @@
 	</div>
 
 	<ImageSingle
-		imageURL={"../web-assets/case-study/panama/bicycle_loop.png"}
+		imageURL={"../web-assets/case-study/panama/bicycle_loop_680.png"}
 		source={"<a href='https://brossard.ca/app/uploads/2025/02/Centre-ville-de-Brossard-15-1.png' target='_blank'>Ville de Brossard, 2025</a>."}
 		caption={"A proposed active loop of cycling and pedestrian paths will reconnect the neighbourhood."}
-		maxWidth="1080px"
+		maxWidth="680px"
 		link='No'
 	/>
 

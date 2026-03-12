@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   class="main-svg"
+   width="720"
+   height="500"
+   viewBox="0 0 720 500"
+   version="1.1"
+   id="svg116"
+   sodipodi:docname="Arbutus_Project_Values_720.svg"
+   inkscape:version="1.4.2 (ebf0e940, 2025-05-08)"
+   inkscape:export-filename="/Users/pgorn/Desktop/все/4th year.../WS/TOD/data visualizations/arbutus/Arbutus_Project_Values.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview116"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.1015144"
+     inkscape:cx="344.52568"
+     inkscape:cy="193.82406"
+     inkscape:window-width="1472"
+     inkscape:window-height="920"
+     inkscape:window-x="0"
+     inkscape:window-y="36"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g113">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="720"
+       height="500"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs-22f19f">
+    <g
+       class="clips"
+       id="g5">
+      <clipPath
+         id="clip22f19fxyplot"
+         class="plotclip">
+        <rect
+           width="434"
+           height="320"
+           id="rect2"
+           x="0"
+           y="0" />
+      </clipPath>
+      <clipPath
+         class="axesclip"
+         id="clip22f19fx">
+        <rect
+           x="38"
+           y="0"
+           width="434"
+           height="500"
+           id="rect3" />
+      </clipPath>
+      <clipPath
+         class="axesclip"
+         id="clip22f19fy">
+        <rect
+           x="0"
+           y="100"
+           width="720"
+           height="320"
+           id="rect4" />
+      </clipPath>
+      <clipPath
+         class="axesclip"
+         id="clip22f19fxy">
+        <rect
+           x="38"
+           y="100"
+           width="434"
+           height="320"
+           id="rect5" />
+      </clipPath>
+    </g>
+  </defs>
+  <g
+     class="cartesianlayer"
+     id="g83"
+     transform="matrix(1.1706913,0,0,1.1950467,48.735426,-50.131843)">
+    <g
+       class="subplot xy"
+       id="g82">
+      <g
+         class="layer-subplot"
+         id="g14">
+        <g
+           class="shapelayer"
+           id="g12" />
+        <g
+           class="imagelayer"
+           id="g13" />
+      </g>
+      <g
+         class="minor-gridlayer"
+         id="g17">
+        <g
+           class="x"
+           id="g15" />
+        <g
+           class="y"
+           id="g16" />
+      </g>
+      <g
+         class="gridlayer"
+         id="g27">
+        <g
+           class="x"
+           id="g20">
+          <path
+             class="xgrid crisp"
+             transform="translate(117.73)"
+             d="M 0,100 V 420"
+             style="stroke:#d3d3d3;stroke-width:1px;stroke-opacity:1"
+             id="path17" />
+          <path
+             class="xgrid crisp"
+             transform="translate(227.55)"
+             d="M 0,100 V 420"
+             style="stroke:#d3d3d3;stroke-width:1px;stroke-opacity:1"
+             id="path18" />
+          <path
+             class="xgrid crisp"
+             d="M 337.36,116.77619 V 415.86757"
+             style="stroke:#d3d3d3;stroke-width:3.43291;stroke-dasharray:20.5975, 3.43291;stroke-dashoffset:0;stroke-opacity:1"
+             id="path19" />
+          <path
+             class="xgrid crisp"
+             transform="translate(447.18)"
+             d="M 0,100 V 420"
+             style="stroke:#d3d3d3;stroke-width:1px;stroke-opacity:1"
+             id="path20" />
+        </g>
+        <g
+           class="y"
+           id="g26">
+          <path
+             class="ygrid crisp"
+             transform="translate(0,365.52)"
+             d="M 38,0 H 472"
+             style="stroke:#d3d3d3;stroke-width:1px;stroke-opacity:1"
+             id="path21" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,315.75)"
+             d="M 38,0 H 472"
+             style="stroke:#d3d3d3;stroke-width:1px;stroke-opacity:1"
+             id="path22" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,265.97)"
+             d="M 38,0 H 472"
+             style="stroke:#d3d3d3;stroke-width:1px;stroke-opacity:1"
+             id="path23" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,216.19)"
+             d="M 38,0 H 472"
+             style="stroke:#d3d3d3;stroke-width:1px;stroke-opacity:1"
+             id="path24" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,166.41)"
+             d="M 38,0 H 472"
+             style="stroke:#d3d3d3;stroke-width:1px;stroke-opacity:1"
+             id="path25" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,116.63)"
+             d="M 38,0 H 472"
+             style="stroke:#d3d3d3;stroke-width:1px;stroke-opacity:1"
+             id="path26" />
+        </g>
+      </g>
+      <g
+         class="zerolinelayer"
+         id="g28">
+        <path
+           class="yzl zl crisp"
+           transform="translate(0,415.3)"
+           d="M 38,0 H 472"
+           style="stroke:#ffffff;stroke-width:2px;stroke-opacity:1"
+           id="path27" />
+      </g>
+      <g
+         class="layer-between"
+         id="g31">
+        <g
+           class="shapelayer"
+           id="g29" />
+        <g
+           class="imagelayer"
+           id="g30" />
+      </g>
+      <path
+         class="xlines-below"
+         id="path31"
+         d="" />
+      <path
+         class="ylines-below"
+         id="path32"
+         d="" />
+      <g
+         class="overplot"
+         id="g62">
+        <g
+           class="xy"
+           transform="translate(38,100)"
+           clip-path="url(#clip22f19fxyplot)"
+           id="g61">
+          <g
+             class="scatterlayer mlayer"
+             id="g60">
+            <g
+               class="trace scatter tracea6c7c9"
+               style="opacity:1;stroke-miterlimit:2"
+               id="g47">
+              <g
+                 class="fills"
+                 id="g36" />
+              <g
+                 class="errorbars"
+                 id="g37" />
+              <g
+                 class="lines"
+                 id="g38">
+                <path
+                   class="js-line"
+                   d="m 24.83,269.77 54.9,-188.81 54.91,174.18 54.91,10.94 54.9,34.8 54.91,-44.27 54.91,-237.48 54.91,178.73"
+                   style="opacity:1;vector-effect:none;fill:none;stroke:#ab1368;stroke-width:3px;stroke-opacity:1"
+                   id="path37" />
+              </g>
+              <g
+                 class="points"
+                 id="g45">
+                <path
+                   class="point"
+                   transform="translate(24.83,269.77)"
+                   d="M 2.5,0 A 2.5,2.5 0 1 1 0,-2.5 2.5,2.5 0 0 1 2.5,0 Z"
+                   style="opacity:1;fill:#ab1368;fill-opacity:1;stroke-width:0px"
+                   id="path38" />
+                <path
+                   class="point"
+                   transform="translate(79.73,80.96)"
+                   d="M 2.5,0 A 2.5,2.5 0 1 1 0,-2.5 2.5,2.5 0 0 1 2.5,0 Z"
+                   style="opacity:1;fill:#ab1368;fill-opacity:1;stroke-width:0px"
+                   id="path39" />
+                <path
+                   class="point"
+                   transform="translate(134.64,255.14)"
+                   d="M 2.5,0 A 2.5,2.5 0 1 1 0,-2.5 2.5,2.5 0 0 1 2.5,0 Z"
+                   style="opacity:1;fill:#ab1368;fill-opacity:1;stroke-width:0px"
+                   id="path40" />
+                <path
+                   class="point"
+                   transform="translate(189.55,266.08)"
+                   d="M 2.5,0 A 2.5,2.5 0 1 1 0,-2.5 2.5,2.5 0 0 1 2.5,0 Z"
+                   style="opacity:1;fill:#ab1368;fill-opacity:1;stroke-width:0px"
+                   id="path41" />
+                <path
+                   class="point"
+                   transform="translate(244.45,300.88)"
+                   d="M 2.5,0 A 2.5,2.5 0 1 1 0,-2.5 2.5,2.5 0 0 1 2.5,0 Z"
+                   style="opacity:1;fill:#ab1368;fill-opacity:1;stroke-width:0px"
+                   id="path42" />
+                <path
+                   class="point"
+                   transform="translate(299.36,256.61)"
+                   d="M 2.5,0 A 2.5,2.5 0 1 1 0,-2.5 2.5,2.5 0 0 1 2.5,0 Z"
+                   style="opacity:1;fill:#ab1368;fill-opacity:1;stroke-width:0px"
+                   id="path43" />
+                <path
+                   class="point"
+                   transform="translate(354.27,19.13)"
+                   d="M 2.5,0 A 2.5,2.5 0 1 1 0,-2.5 2.5,2.5 0 0 1 2.5,0 Z"
+                   style="opacity:1;fill:#ab1368;fill-opacity:1;stroke-width:0px"
+                   id="path44" />
+                <path
+                   class="point"
+                   transform="translate(409.18,197.86)"
+                   d="M 2.5,0 A 2.5,2.5 0 1 1 0,-2.5 2.5,2.5 0 0 1 2.5,0 Z"
+                   style="opacity:1;fill:#ab1368;fill-opacity:1;stroke-width:0px"
+                   id="path45" />
+              </g>
+              <g
+                 class="text"
+                 id="g46" />
+            </g>
+            <g
+               class="trace scatter trace659590"
+               style="opacity:1;stroke-miterlimit:2"
+               id="g59">
+              <g
+                 class="fills"
+                 id="g48" />
+              <g
+                 class="errorbars"
+                 id="g49" />
+              <g
+                 class="lines"
+                 id="g50">
+                <path
+                   class="js-line"
+                   d="m 24.83,260.06 54.9,-83.46 54.91,35.96 54.91,41.38 54.9,-29.2 54.91,-63.24 54.91,-129.2 54.91,164.3"
+                   style="opacity:1;vector-effect:none;fill:none;stroke:#00a189;stroke-width:3px;stroke-opacity:1"
+                   id="path49" />
+              </g>
+              <g
+                 class="points"
+                 id="g57">
+                <path
+                   class="point"
+                   transform="translate(24.83,260.06)"
+                   d="M 2.5,0 A 2.5,2.5 0 1 1 0,-2.5 2.5,2.5 0 0 1 2.5,0 Z"
+                   style="opacity:1;fill:#00a189;fill-opacity:1;stroke-width:0px"
+                   id="path50" />
+                <path
+                   class="point"
+                   transform="translate(79.73,176.6)"
+                   d="M 2.5,0 A 2.5,2.5 0 1 1 0,-2.5 2.5,2.5 0 0 1 2.5,0 Z"
+                   style="opacity:1;fill:#00a189;fill-opacity:1;stroke-width:0px"
+                   id="path51" />
+                <path
+                   class="point"
+                   transform="translate(134.64,212.56)"
+                   d="M 2.5,0 A 2.5,2.5 0 1 1 0,-2.5 2.5,2.5 0 0 1 2.5,0 Z"
+                   style="opacity:1;fill:#00a189;fill-opacity:1;stroke-width:0px"
+                   id="path52" />
+                <path
+                   class="point"
+                   transform="translate(189.55,253.94)"
+                   d="M 2.5,0 A 2.5,2.5 0 1 1 0,-2.5 2.5,2.5 0 0 1 2.5,0 Z"
+                   style="opacity:1;fill:#00a189;fill-opacity:1;stroke-width:0px"
+                   id="path53" />
+                <path
+                   class="point"
+                   transform="translate(244.45,224.74)"
+                   d="M 2.5,0 A 2.5,2.5 0 1 1 0,-2.5 2.5,2.5 0 0 1 2.5,0 Z"
+                   style="opacity:1;fill:#00a189;fill-opacity:1;stroke-width:0px"
+                   id="path54" />
+                <path
+                   class="point"
+                   transform="translate(299.36,161.5)"
+                   d="M 2.5,0 A 2.5,2.5 0 1 1 0,-2.5 2.5,2.5 0 0 1 2.5,0 Z"
+                   style="opacity:1;fill:#00a189;fill-opacity:1;stroke-width:0px"
+                   id="path55" />
+                <path
+                   class="point"
+                   transform="translate(354.27,32.3)"
+                   d="M 2.5,0 A 2.5,2.5 0 1 1 0,-2.5 2.5,2.5 0 0 1 2.5,0 Z"
+                   style="opacity:1;fill:#00a189;fill-opacity:1;stroke-width:0px"
+                   id="path56" />
+                <path
+                   class="point"
+                   transform="translate(409.18,196.6)"
+                   d="M 2.5,0 A 2.5,2.5 0 1 1 0,-2.5 2.5,2.5 0 0 1 2.5,0 Z"
+                   style="opacity:1;fill:#00a189;fill-opacity:1;stroke-width:0px"
+                   id="path57" />
+              </g>
+              <g
+                 class="text"
+                 id="g58" />
+            </g>
+          </g>
+        </g>
+      </g>
+      <g
+         class="zerolinelayer-above"
+         id="g63" />
+      <path
+         class="xlines-above crisp"
+         d="M 37,421 H 472"
+         style="fill:none;stroke:#cccccc;stroke-width:2px;stroke-opacity:1"
+         id="path63" />
+      <path
+         class="ylines-above crisp"
+         d="M 37.5,100 V 420"
+         style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+         id="path64" />
+      <g
+         class="overlines-above"
+         id="g64" />
+      <g
+         class="xaxislayer-above"
+         id="g72">
+        <path
+           class="xtick ticks crisp"
+           d="m 0,422 v 5"
+           transform="translate(117.73)"
+           style="stroke:#444444;stroke-width:1px;stroke-opacity:1"
+           id="path65" />
+        <path
+           class="xtick ticks crisp"
+           d="m 0,422 v 5"
+           transform="translate(227.55)"
+           style="stroke:#444444;stroke-width:1px;stroke-opacity:1"
+           id="path66" />
+        <path
+           class="xtick ticks crisp"
+           d="m 0,422 v 5"
+           transform="translate(337.36)"
+           style="stroke:#444444;stroke-width:1px;stroke-opacity:1"
+           id="path67" />
+        <path
+           class="xtick ticks crisp"
+           d="m 0,422 v 5"
+           transform="translate(447.18)"
+           style="stroke:#444444;stroke-width:1px;stroke-opacity:1"
+           id="path68" />
+        <g
+           class="xtick"
+           id="g68"
+           style="fill:#000000">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="441.39999"
+             transform="translate(117.73)"
+             style="font-size:12px;font-family:'Inter 24pt';white-space:pre;fill:#000000;fill-opacity:1"
+             id="text68">2018</text>
+        </g>
+        <g
+           class="xtick"
+           id="g69"
+           style="fill:#000000">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="441.39999"
+             style="font-size:12px;font-family:'Inter 24pt';white-space:pre;fill:#000000;fill-opacity:1"
+             transform="translate(227.55)"
+             id="text69">2020</text>
+        </g>
+        <g
+           class="xtick"
+           id="g70"
+           style="fill:#000000">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="441.39999"
+             style="font-size:12px;font-family:'Inter 24pt';white-space:pre;fill:#000000;fill-opacity:1"
+             transform="translate(337.36)"
+             id="text70">2022</text>
+        </g>
+        <g
+           class="xtick"
+           id="g71"
+           style="fill:#000000">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="441.39999"
+             style="font-size:12px;font-family:'Inter 24pt';white-space:pre;fill:#000000;fill-opacity:1"
+             transform="translate(447.18)"
+             id="text71">2024</text>
+        </g>
+      </g>
+      <g
+         class="yaxislayer-above"
+         id="g80"
+         style="fill:#000000">
+        <g
+           class="ytick"
+           id="g73"
+           style="fill:#000000">
+          <text
+             text-anchor="end"
+             x="34.599998"
+             y="4.1999998"
+             transform="translate(0,415.3)"
+             style="font-size:12px;font-family:'Inter 24pt';white-space:pre;fill:#000000;fill-opacity:1"
+             id="text72">0</text>
+        </g>
+        <g
+           class="ytick"
+           id="g74"
+           style="fill:#000000">
+          <text
+             text-anchor="end"
+             x="34.599998"
+             y="4.1999998"
+             style="font-size:12px;font-family:'Inter 24pt';white-space:pre;fill:#000000;fill-opacity:1"
+             transform="translate(0,365.52)"
+             id="text73">5M</text>
+        </g>
+        <g
+           class="ytick"
+           id="g75"
+           style="fill:#000000">
+          <text
+             text-anchor="end"
+             x="34.599998"
+             y="4.1999998"
+             style="font-size:12px;font-family:'Inter 24pt';white-space:pre;fill:#000000;fill-opacity:1"
+             transform="translate(0,315.75)"
+             id="text74">10M</text>
+        </g>
+        <g
+           class="ytick"
+           id="g76"
+           style="fill:#000000">
+          <text
+             text-anchor="end"
+             x="34.599998"
+             y="4.1999998"
+             style="font-size:12px;font-family:'Inter 24pt';white-space:pre;fill:#000000;fill-opacity:1"
+             transform="translate(0,265.97)"
+             id="text75">15M</text>
+        </g>
+        <g
+           class="ytick"
+           id="g77"
+           style="fill:#000000">
+          <text
+             text-anchor="end"
+             x="34.599998"
+             y="4.1999998"
+             style="font-size:12px;font-family:'Inter 24pt';white-space:pre;fill:#000000;fill-opacity:1"
+             transform="translate(0,216.19)"
+             id="text76">20M</text>
+        </g>
+        <g
+           class="ytick"
+           id="g78"
+           style="fill:#000000">
+          <text
+             text-anchor="end"
+             x="34.599998"
+             y="4.1999998"
+             style="font-size:12px;font-family:'Inter 24pt';white-space:pre;fill:#000000;fill-opacity:1"
+             transform="translate(0,166.41)"
+             id="text77">25M</text>
+        </g>
+        <g
+           class="ytick"
+           id="g79"
+           style="fill:#000000">
+          <text
+             text-anchor="end"
+             x="34.599998"
+             y="4.1999998"
+             style="font-size:12px;font-family:'Inter 24pt';white-space:pre;fill:#000000;fill-opacity:1"
+             transform="translate(0,116.63)"
+             id="text78">30M</text>
+        </g>
+      </g>
+      <g
+         class="overaxes-above"
+         id="g81" />
+      <g
+         class="xaxislayer-above"
+         id="g127"
+         transform="translate(-53.431466)"
+         style="opacity:0.8;fill:#808080">
+        <path
+           class="xtick ticks crisp"
+           d="m 0,422 v 5"
+           transform="translate(117.73)"
+           style="fill:#808080;stroke:#444444;stroke-width:1px;stroke-opacity:1"
+           id="path120" />
+        <path
+           class="xtick ticks crisp"
+           d="m 0,422 v 5"
+           transform="translate(227.55)"
+           style="fill:#808080;stroke:#444444;stroke-width:1px;stroke-opacity:1"
+           id="path121" />
+        <path
+           class="xtick ticks crisp"
+           d="m 0,422 v 5"
+           transform="translate(337.36)"
+           style="fill:#808080;stroke:#444444;stroke-width:1px;stroke-opacity:1"
+           id="path122" />
+        <path
+           class="xtick ticks crisp"
+           d="m 0,422 v 5"
+           transform="translate(447.18)"
+           style="fill:#808080;stroke:#444444;stroke-width:1px;stroke-opacity:1"
+           id="path123" />
+        <g
+           class="xtick"
+           id="g123"
+           style="fill:#808080">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="441.39999"
+             transform="translate(117.73)"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:'Inter 24pt';-inkscape-font-specification:'Inter 24pt, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle;white-space:pre;fill:#808080;fill-opacity:1"
+             id="text123">2017</text>
+        </g>
+        <g
+           class="xtick"
+           id="g124"
+           style="fill:#808080">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="441.39999"
+             style="font-size:12px;font-family:'Inter 24pt';white-space:pre;fill:#808080;fill-opacity:1"
+             transform="translate(227.55)"
+             id="text124">2019</text>
+        </g>
+        <g
+           class="xtick"
+           id="g125"
+           style="fill:#808080">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="441.39999"
+             style="font-size:12px;font-family:'Inter 24pt';white-space:pre;fill:#808080;fill-opacity:1"
+             transform="translate(337.36)"
+             id="text125">2021</text>
+        </g>
+        <g
+           class="xtick"
+           id="g126"
+           style="fill:#808080">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="441.39999"
+             style="font-size:12px;font-family:'Inter 24pt';white-space:pre;fill:#808080;fill-opacity:1"
+             transform="translate(447.18)"
+             id="text126">2023</text>
+        </g>
+      </g>
+    </g>
+  </g>
+  <defs
+     id="topdefs-22f19f" />
+  <text
+     class="legendtext"
+     text-anchor="start"
+     x="133.11417"
+     y="161.41536"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.3333px;font-family:'Inter 24pt';-inkscape-font-specification:'Inter 24pt, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:start;white-space:pre;opacity:1;fill:#ab1368;fill-opacity:0.996078"
+     id="text97"
+     inkscape:label="Arbutus Station">Arbutus Station DAs</text>
+  <text
+     class="legendtext"
+     text-anchor="start"
+     x="382.12643"
+     y="83.918549"
+     style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.6667px;font-family:'Inter 24pt';-inkscape-font-specification:'Inter 24pt, Bold Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:start;white-space:pre;fill:#808080;fill-opacity:0.996078"
+     id="text97-8"
+     inkscape:label="Arbutus Station"><tspan
+       sodipodi:role="line"
+       id="tspan118"
+       x="382.12643"
+       y="83.918549">Broadway Plan Adoption</tspan></text>
+  <text
+     class="legendtext"
+     text-anchor="start"
+     x="513.07855"
+     y="324.90634"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.3333px;font-family:'Inter 24pt';-inkscape-font-specification:'Inter 24pt, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:start;white-space:pre;opacity:1;fill:#00a089;fill-opacity:1"
+     id="text103"
+     inkscape:label="BSP Station"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.3333px;font-family:'Inter 24pt';-inkscape-font-specification:'Inter 24pt, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#00a089;fill-opacity:1"
+       id="tspan117">BSP Station DAs (incl. Arbutus)</tspan></text>
+  <g
+     class="g-gtitle"
+     id="g113"
+     style="fill:#000000">
+    <text
+       class="gtitle"
+       x="360"
+       y="50"
+       text-anchor="middle"
+       dy="0em"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle;white-space:pre;opacity:1;fill:#000000;fill-opacity:1"
+       id="text112"><tspan
+         sodipodi:role="line"
+         id="tspan127"
+         x="360"
+         y="50">Dwelling Project Value, Millions of Dollars per Km²</tspan><tspan
+         sodipodi:role="line"
+         id="tspan128"
+         x="360"
+         y="80"></tspan></text>
+  </g>
+</svg>

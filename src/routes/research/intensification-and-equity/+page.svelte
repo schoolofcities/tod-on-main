@@ -29,10 +29,10 @@
 	];
 
 	const credits = [
-		{ role:"Research", names:"Prentiss Dantzler, Khalil Martin, and Abigail Meza"},
+		{ role:"Research", names:"Prentiss Dantzler, Khalil Martin, Abigail Meza"},
 		{ role:"Additional writing", names:"Anika Reisha Taboy, Kathryn Exon Smith"},
 		{ role:"Data visualization", names:"Polina Gorn, Jeff Allen"},
-		{ role:"Web development", names:"Jeff Allen, Mieko Yao"}
+		{ role:"Web development", names:"Mieko Yao, Jeff Allen"}
 	]
 
 </script>
@@ -81,7 +81,7 @@
 		title="Building intensification and neighbourhood change in transit-oriented development zones "
 		type="RESEARCH"
 		bgType="Video"
-		url="/tod-canada/web-assets/research/embodied-carbon/skylineVideo.mp4"
+		url="/tod-canada/web-assets/research/intensification-and-equity/light-rail-trains-crossing-each-other-in-ottawa-SBV-349142262-HD.mp4"
 		videoSpeed={0.67}
 		videoOpacity={0.8}
 		titleFontColour="var(--brandWhite)"
@@ -212,7 +212,7 @@
 		</h2>
 
 		<p>
-			Cooksville showed a dramatic spike in the value of new dwelling projects around 2023 as the Hazel McCallion line approached opening, with much lower investment in non-station control areas. At the same time, formal eviction filings per renter household trended downward. This suggests a modest improvement in housing stability within Cooksville, potentially linked to ongoing investment and gradual neighbourhood renewal tied to the LRT.
+			<span class="highlight" style="background-color: #AB1368; color: white; opacity: 0.98;">Cooksville</span> showed a dramatic spike in the value of new dwelling projects around 2023 as the Hazel McCallion line approached opening, with much lower investment in non-station control areas. At the same time, formal eviction filings per renter household trended downward. This suggests a modest improvement in housing stability within Cooksville, potentially linked to ongoing investment and gradual neighbourhood renewal tied to the LRT.
 		</p>
 
 	</div>
@@ -225,8 +225,17 @@
 	<div class="text">
 
 		<p>
-			The area’s population grew from 2016 to 2021, and the area became more racially diverse. This diversification trend aligns with broader demographic shifts along emerging transit corridors in the Greater Toronto Area, where new investment and redevelopment coincide with the movement of immigrant and racialized populations into more affordable, transit-accessible areas.<Footnote id={addFootnote(fns[1])}/>
+			The area’s population grew from 2016 to 2021, and the area became more racially diverse. 
 		</p>
+
+	</div>
+
+	<GraphicSingle
+		svg720={"../web-assets/research/intensification-and-equity/cooksville-visible-minority-720.svg"}
+		svg360={"../web-assets/research/intensification-and-equity/cooksville-visible-minority-360.svg"}
+	/>
+
+	<div class="text">
 
 		<p>
 			Cooksville is becoming a regional growth node, and the City has positioned Cooksville as a key redevelopment area in Mississauga’s downtown intensification strategy -- but whether that growth locks in affordability is still very much an open question.  
@@ -237,8 +246,17 @@
 		</h2>
 
 		<p>
-			Northfield is slowly shifting from employment- and institutional-heavy lands to a more mixed urban node. Compared to station areas in central Kitchener, Northfield has a moderate concentration of newly issued housing units relative to its total land area, indicating active, but still emerging, transit-oriented development. Intensification to date has been modest in absolute terms but high relative to the existing dwelling base, suggesting that the area could experience significant redevelopment momentum in the near future. 
+			<span class="highlight" style="background-color: #AB1368; color: white; opacity: 0.98;">Northfield</span> is slowly shifting from employment- and institutional-heavy lands to a more mixed urban node. Compared to station areas in central Kitchener, Northfield has a moderate concentration of newly issued housing units relative to its total land area, indicating active, but still emerging, transit-oriented development. Intensification to date has been modest in absolute terms but high relative to the existing dwelling base, suggesting that the area could experience significant redevelopment momentum in the near future. 
 		</p>
+
+	</div>
+
+	<GraphicSingle
+		svg720={"../web-assets/research/intensification-and-equity/northfield-buildings-720.svg"}
+		svg360={"../web-assets/research/intensification-and-equity/northfield-buildings-360.svg"}
+	/>
+
+	<div class="text">
 
 		<p>
 			The station area has seen a sizeable jump in visible minority residents since 2021, among the largest proportional increases in visible minority residents across the corridor.  
@@ -257,9 +275,125 @@
 			Northfield is an early-stage TOD zone where policy can still meaningfully shape outcomes. Its moderate growth demonstrates the corridor’s outward diffusion of TOD impacts. It also underscores the need for tailored planning strategies to activate underutilized lands and expand housing supply in station areas that were historically employment-focused. 
 		</p>
 
+		<h2>
+			Policy certainty can lead to speculation 
+		</h2>
+
+		<p>
+			Near <span class="highlight" style="background-color: #AB1368; color: white; opacity: 0.98;">Arbutus</span>, building permit values per square kilometre climbed sharply after the adoption of the Broadway Plan in 2022, signaling strong market anticipation. Investment is concentrated along West Broadway and Arbutus Street, where zoning flexibility and parcel assembly opportunities are greatest.  
+		</p>
+
+	</div>
+
+	<GraphicSingle
+		svg720={"../web-assets/research/intensification-and-equity/arbutus-dwelling-values-720.svg"}
+		svg360={"../web-assets/research/intensification-and-equity/arbutus-dwelling-values-360.svg"}
+	/>
+
+	<div class="text">
+
+		<p>
+			The station area is quietly diversifying while the overall population remains stable. This is TOD in a high-cost market: intense capital flows, constrained affordability, and a small but important demographic reshuffling.  
+		</p>
+
+	</div>
+
+	<GraphicSingle
+		svg720={"../web-assets/research/intensification-and-equity/arbutus-visible-minority-720.svg"}
+		svg360={"../web-assets/research/intensification-and-equity/arbutus-visible-minority-360.svg"}
+	/>
+
+	<div class="text">
+
+		<h2>
+			In more affordable cities, TOD can be slower 
+		</h2>
+
+		<p>
+			<span class="highlight" style="background-color: #AB1368; color: white; opacity: 0.98;">McKernan–Belgravia</span> has been on Edmonton’s LRT network since 2009. For several years, development was steady but moderate, until 2019, which saw a wave of higher-density infill and redevelopment occurring well after the station’s opening. In Edmonton, long-established station areas like McKernan–Belgravia are seeing the strongest proportional redevelopment, but there is also evidence of emerging transit-oriented development activity near the soon-to-open Valley Line station areas. 
+		</p>
+
+	</div>
+
+	<GraphicSingle
+		svg720={"../web-assets/research/intensification-and-equity/mckernan-buildings-720.svg"}
+		svg360={"../web-assets/research/intensification-and-equity/mckernan-buildings-360.svg"}
+	/>
+
+	<div class="text">
+
+		<p>
+			The demographic picture shows growth among several visible minority groups but uneven trajectories by subgroup. This is what a long-term TOD build-out looks like in a more affordable city.
+		</p>
+
+	</div>
+
+	<GraphicSingle
+		svg720={"../web-assets/research/intensification-and-equity/mckernan-visible-minority-720.svg"}
+		svg360={"../web-assets/research/intensification-and-equity/mckernan-visible-minority-360.svg"}
+	/>
+
+	<div class="text">
+
+		<h2>
+			Transit does not guarantee transformation (yet)
+		</h2>
+
+		<p>
+			In <span class="highlight" style="background-color: #AB1368; color: white; opacity: 0.98;">Panama</span>, the story is what has not happened. Neighbourhoods not near transit stations across the South Shore saw strong growth in occupied dwellings and rising diversity, but Panama’s 800-metre catchment barely moved on either dimension. 
+		</p>
+
+	</div>
+
+	<GraphicSingle
+		svg720={"../web-assets/research/intensification-and-equity/panama-dwellings-720.svg"}
+		svg360={"../web-assets/research/intensification-and-equity/panama-dwellings-360.svg"}
+	/>
+
+	<div class="text">
+
+		<p>
+			Despite a major transit investment and its strategic position close to downtown Montreal, the station area has not yet absorbed significant redevelopment pressure or demographic change, especially when compared to the broader South Shore, where non-station areas display clear signs of intensification and diversification. It is a reminder that TOD potential can be stalled by local zoning, ownership patterns, and market timing.  
+		</p>
+
+	</div>
+
+	<GraphicSingle
+		svg720={"../web-assets/research/intensification-and-equity/panama-visible-minority-720.svg"}
+		svg360={"../web-assets/research/intensification-and-equity/panama-visible-minority-360.svg"}
+	/>
+
+	<div class="text">
+
+		<h1>
+			Key conclusions and policy recommendations 
+		</h1>
+
+		<p>
+			Transit development cycles are typically longer than housing development periods. As such, our recommendations emphasize encouraging new diverse housing types while preserving and protecting naturally occurring affordable housing to ensure areas remain affordable for longstanding residents and lower income households. 
+		</p>
+
+		<Recommendation count=1 title="Aim for planning certainty"/>
+
+		<p>
+			Where municipalities have paired transit investment with clear land-use policy and upzoning, we see sharper, earlier spikes in residential investment. Where frameworks are weaker or more suburban in form, intensification is limited or highly uneven. This highlights the importance of aligning transit investment with supportive planning tools from the offset. Moreover, it offers opportunities to approach planning decisions regionally to connect development patterns across neighboring cities and communities.  
+		</p>
+
+		<Recommendation count=2 title="Use tailored planning strategies to activate slower-growth areas"/>
+
+		<p>
+			In places where development has lagged, targeted planning interventions can help unlock potential. Encouraging land-use diversification, streamlining approvals for mixed-use development, and requiring or incentivizing affordable and purpose-built rental housing can help distribute growth more evenly and prevent an overconcentration of development in one area.   
+		</p>
+
+		<Recommendation count=3 title="Act early to secure affordability in station areas"/>
+
+		<p>
+			As station areas intensify, shifts in who can afford to live near transit can happen rapidly. Ensuring that transit investment does not lead to displacement or exclusion requires acting early, before land values rise. To support diverse and inclusive neighbourhood change and long-term equity, policy-makers should prioritize deeply affordable and purpose-built rental housing, community amenities, and transit-oriented public spaces, ensuring populations most reliant on transit maintain access to essential services, jobs, and daily needs. With tools like inclusionary zoning, land banking, and the strategic use of public land at their disposal, municipalities should prioritize equity-deserving groups in their planning decisions.  
+		</p>	
+
 	</div>
 	
-
+	
 	<div class="text">
 
 		<div class="line-break"></div>

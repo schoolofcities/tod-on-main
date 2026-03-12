@@ -24,9 +24,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="2.0011122"
-     inkscape:cx="394.78046"
-     inkscape:cy="298.3341"
+     inkscape:zoom="0.7075"
+     inkscape:cx="347.70318"
+     inkscape:cy="-35.335689"
      inkscape:window-width="1920"
      inkscape:window-height="1016"
      inkscape:window-x="0"
@@ -202,7 +202,7 @@
          x="28.813477"
          y="69.853035"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:'Inter 24pt';-inkscape-font-specification:'Inter 24pt, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke-width:1.33333"
-         id="tspan12-3-6">Percent change in visible minority populations near Northfield station from 2011 to 2021</tspan></text>
+         id="tspan12-3-6">Percent change in visible minority populations near Northfield from 2011 to 2021</tspan></text>
     <rect
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.99999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect1"
@@ -991,7 +991,7 @@
        xml:space="preserve"><tspan
          x="386.75952"
          y="124.69415"
-         id="tspan1">4%</tspan></text>
+         id="tspan24">4%</tspan></text>
     <text
        class="annotation-text"
        text-anchor="middle"
@@ -1002,7 +1002,7 @@
        xml:space="preserve"><tspan
          x="332.30719"
          y="151.48595"
-         id="tspan4">-5%</tspan></text>
+         id="tspan25">-5%</tspan></text>
     <text
        class="annotation-text"
        text-anchor="middle"
@@ -1013,7 +1013,7 @@
        xml:space="preserve"><tspan
          x="404.49286"
          y="178.63594"
-         id="tspan5">17%</tspan></text>
+         id="tspan26">17%</tspan></text>
     <text
        class="annotation-text"
        text-anchor="middle"
@@ -1024,7 +1024,7 @@
        xml:space="preserve"><tspan
          x="268.18155"
          y="205.78593"
-         id="tspan6">-51%</tspan></text>
+         id="tspan27">-51%</tspan></text>
     <text
        class="annotation-text"
        text-anchor="middle"
@@ -1035,7 +1035,7 @@
        xml:space="preserve"><tspan
          x="590.81012"
          y="232.93593"
-         id="tspan7">156%</tspan></text>
+         id="tspan28">156%</tspan></text>
     <text
        class="annotation-text"
        text-anchor="middle"
@@ -1046,7 +1046,7 @@
        xml:space="preserve"><tspan
          x="537.35876"
          y="259.75418"
-         id="tspan18">117%</tspan></text>
+         id="tspan29">117%</tspan></text>
     <text
        class="annotation-text"
        text-anchor="middle"
@@ -1057,7 +1057,7 @@
        xml:space="preserve"><tspan
          x="424.04123"
          y="287.23596"
-         id="tspan19">30%</tspan></text>
+         id="tspan30">30%</tspan></text>
     <text
        class="annotation-text"
        text-anchor="middle"
@@ -1068,7 +1068,7 @@
        xml:space="preserve"><tspan
          x="612.8634"
          y="314.38593"
-         id="tspan20">175%</tspan></text>
+         id="tspan31">175%</tspan></text>
     <text
        class="annotation-text"
        text-anchor="middle"
@@ -1079,7 +1079,7 @@
        xml:space="preserve"><tspan
          x="519.71381"
          y="341.89417"
-         id="tspan21">100%</tspan></text>
+         id="tspan32">100%</tspan></text>
     <rect
        class="bg"
        x="194.68668"
@@ -1098,7 +1098,7 @@
        xml:space="preserve"><tspan
          x="202.58804"
          y="367.6297"
-         id="tspan22">-100%</tspan></text>
+         id="tspan33">-100%</tspan></text>
     <rect
        class="bg"
        x="194.68668"
@@ -1117,14 +1117,10 @@
        xml:space="preserve"><tspan
          x="202.58804"
          y="394.6297"
-         id="tspan23">-100%</tspan></text>
+         id="tspan34">-100%</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 401.88929,72.546394 H 523.76925"
-       id="path1" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 568.96509,73.046394 h 85.66872"
+       d="m 515.98851,73.046394 h 85.66872"
        id="path1-4" />
     <circle
        style="opacity:1;fill:#dc4633;fill-opacity:1;fill-rule:evenodd;stroke:#007fa3;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
@@ -1253,6 +1249,13 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:27.1px;font-family:'Inter 24pt';-inkscape-font-specification:'Inter 24pt, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
          id="tspan17"
          sodipodi:role="line">Multiple</tspan></text>
+    <rect
+       style="fill:#ab1368;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"
+       id="rect6"
+       width="69.409737"
+       height="4.0345988"
+       x="401.91232"
+       y="72.546394" />
   </g>
   <defs
      id="topdefs-a2c016" />
