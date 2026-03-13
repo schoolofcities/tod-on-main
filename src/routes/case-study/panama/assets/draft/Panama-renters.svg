@@ -22,8 +22,8 @@
       <path d="M171.7015,182.4437v-17.8706c0-1.2337-1.0001-2.2338-2.2338-2.2338h-8.9353c-1.2337,0-2.2338,1.0001-2.2338,2.2338v17.8706" fill="#f2f2f3" stroke="#231f20" stroke-miterlimit="10" stroke-width=".5"/>
     </g>
     <line x1="225.4886" y1="187.5645" x2="225.4886" y2="194.4455" fill="none" stroke="#bb90c2" stroke-miterlimit="10" stroke-width="2.5"/>
-    <text transform="translate(39.0039 64.595)" fill="#b280b8" font-family="Inter-Bold, Inter" font-variation-settings="&apos;opsz&apos; 14, &apos;wght&apos; 700" font-weight="700"><tspan font-size="37"><tspan x="0" y="0">60.5%</tspan></tspan><tspan font-size="21"><tspan x="0" y="25.2002">of households own </tspan></tspan><tspan font-size="21"><tspan x="0" y="50.3999">their homes </tspan></tspan></text>
-    <text transform="translate(40 207.6537)" fill="#bb90c2" font-family="InterItalic-MediumItalic, Inter" font-size="14" font-style="italic" font-variation-settings="&apos;opsz&apos; 14, &apos;wght&apos; 500" font-weight="500"><tspan x="0" y="0">67% own in Brossard</tspan></text>
+    <text transform="translate(39.0039 64.593)" fill="#b27fb8" font-family="Inter-Bold, Inter" font-variation-settings="&apos;opsz&apos; 14, &apos;wght&apos; 700" font-weight="700"><tspan font-size="37"><tspan x="0" y="0">60.5%</tspan></tspan><tspan font-size="21"><tspan x="0" y="25.2002">of households own</tspan></tspan></text>
+    <text transform="translate(40 207.6534)" fill="#bb90c2" font-family="InterItalic-MediumItalic, Inter" font-size="14" font-style="italic" font-variation-settings="&apos;opsz&apos; 14, &apos;wght&apos; 500" font-weight="500"><tspan x="0" y="0">67% own in Brossard</tspan></text>
     <g>
       <path d="M199.3501,181.7072c-1.2101-.7998-2.01-2.1699-2.01-3.73v-20.1099c0-1.3101.58-2.5601,1.5898-3.4102l.4202-.3599" fill="#b17eb7" stroke="#010101" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
       <path d="M224.15,164.5773v17.8699h-13.4v-17.8699c0-1.24,1-2.24,2.23-2.24h8.9401c1.23,0,2.23,1,2.23,2.24Z" fill="none" stroke="#010101" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
